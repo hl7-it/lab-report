@@ -1,15 +1,12 @@
-Profile: DiagnosticReportItLabReport
+Profile: DiagnosticReportLabXeh
 Parent: DiagnosticReport
-Id: DiagnosticReport-it-labReport
+Id: DiagnosticReport-lab-xeh
 Title: "DiagnosticReport: Laboratory Report"
-Description: "CDiagnosticReport used to represent an entry of a Laboratory Report, including its context, (IT REALM)."
+Description: "CDiagnosticReport used to represent an entry of a Laboratory Report, including its context, for the scope of the Xehealth project."
 * ^publisher = "X-eHealth Project"
 * ^copyright = "X-eHealth Project"
 * . ^short = "Laboratory Report DiagnosticReport"
 * . ^definition = "Laboratory Report DiagnosticReport"
-
-
-// add a reference also to the RequestGroup to enable the retrieval of all the DiagnosticReports associated with a RequestGroup ?
 
 /*
 content to be referred...
@@ -27,12 +24,14 @@ Mutimedia Embedded Content
 Annotation Comment
 */
 
-* basedOn only Reference ( ServiceRequest )
+* basedOn only Reference ( ServiceRequestLabXeh )
+* basedOn.extension contains DiagnosticReportBasedOnRequisition named basedOn-requisition 0..*
 * status ^short = "Status of this report"
 * category 1.. // 1.. ?
-* code from LabStudyTypesItLabReport (preferred) 
+* code from LabStudyTypesXeh (preferred) 
 * code 1..
 * subject 1..
+* subject only Reference (PatientXeh or Patient or Group or Location or Device)
 * encounter only Reference (Encounter) // profile defined for other scopes to be checked
 * effective[x] ^short = "Clinically relevant time/time-period for report."
 * performer ^short = "Responsible Diagnostic Service." // add reference to the used profiles

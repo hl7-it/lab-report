@@ -1,8 +1,10 @@
-Profile: BundleItLabReport
+Profile: BundleLabReportXeh
 Parent: Bundle
-Id: Bundle-it-labReport
+Id: Bundle-lab-xeh
 Title: "Bundle: Laboratory Report"
-Description: "Clinical document used to represent a Laboratory Report (IT REALM)."
+Description: "Clinical document used to represent a Laboratory Report for the scope of the Xehealth project."
+* ^publisher = "X-eHealth Project"
+* ^copyright = "X-eHealth Project"
 * . ^short = "Laboratory Report bundle"
 * . ^definition = "Laboratory Report bundle."
 * identifier ^short = "Business identifier for this Laboratory Report"
@@ -25,13 +27,13 @@ Description: "Clinical document used to represent a Laboratory Report (IT REALM)
 * entry ^slicing.rules = #open
 
 * entry contains composition 1..1
-* entry[composition].resource only CompositionItLabReport
+* entry[composition].resource only CompositionLabReportXeh
 
 * entry contains diagnosticReport 0..1
-* entry[diagnosticReport].resource only DiagnosticReportItLabReport
+* entry[diagnosticReport].resource only DiagnosticReportLabXeh
 
 * entry contains patient 0..1
-* entry[patient].resource only PatientItLabReport
+* entry[patient].resource only PatientXeh
 
 * entry contains observation 0..*
 * entry[observation].resource only Observation // Add profiles
@@ -40,7 +42,7 @@ Description: "Clinical document used to represent a Laboratory Report (IT REALM)
 * entry[specimen].resource only Specimen // Add profiles
 
 * entry contains serviceRequest 0..*
-* entry[serviceRequest].resource only ServiceRequest // Add profiles
+* entry[serviceRequest].resource only ServiceRequestLabXeh // Add profiles
 
-* entry contains requestGroup 0..1
-* entry[requestGroup].resource only RequestGroup // Add profiles */
+//* entry contains requestGroup 0..1
+//* entry[requestGroup].resource only RequestGroupLabXeh // Add profiles

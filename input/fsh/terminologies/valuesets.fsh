@@ -1,6 +1,6 @@
-ValueSet:      LabStudyTypesItLabReport
-Id:	       lab-studyType-ItLabReport
-Title:	       "Lab Study Types"
+ValueSet:      LabStudyTypesXeh
+Id:	       lab-studyType-xeh
+Title:	       "Lab Study Types (X-eHealth)"
 Description:   "Laboratory Specialties.\r\n
 Notes:\r\n
 Note 1:26436-6 (LABORATORY STUDIES) enables issuing a report putting together observations from multiple specialties (disciplines) in the same text block, allowing delivery of a global interpretation comment at the end of the text block that will be rendered at the end of the report.\r\n
@@ -8,7 +8,7 @@ Note 2:18721-1 (THERAPEUTIC DRUG MONITORING STUDIES) will be used for a section 
 Note 3:Mycology and parasitology, as well as bacteriology, are part of the 18725-2 (MICROBIOLOGY STUDIES) specialty.\r\n
 Note 4:Virology MAY be included in 18725-2 (MICROBIOLOGY STUDIES) specialty or 18727-8 (SEROLOGY STUDIES) or split between both specialties, depending upon the Content Creator Actor’s choice."
 
-
+* ^experimental = false
 * $loinc#18717-9 "BLOOD BANK STUDIES"
 * $loinc#18718-7 "CELL MARKER STUDIES"
 * $loinc#18719-5 "CHEMISTRY STUDIES"
