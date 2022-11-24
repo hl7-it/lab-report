@@ -26,6 +26,7 @@ jurisdiction: urn:iso:std:iso:3166#IT "Italy"
 dependencies:
   hl7.fhir.it.base: current
   hl7.fhir.uv.ips: current
+  hl7.fhir.extensions.r5: 4.0.1
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced

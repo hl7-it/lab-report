@@ -42,7 +42,8 @@ Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workfl
 Alias: $bodySite = http://hl7.org/fhir/StructureDefinition/bodySite
 Alias: $flag-detail = http://hl7.org/fhir/StructureDefinition/flag-detail
 Alias: $flag-priority = http://hl7.org/fhir/StructureDefinition/flag-priority
-Alias: $composition-diagnostic-report-reference = http://hl7.eu/fhir/ig/xeh/StructureDefinition/composition-DiagnosticReportReference
+Alias: $composition-diagnostic-report-reference = http://hl7.it/fhir/lab-report/StructureDefinition/composition-DiagnosticReportReference
+Alias: $diagnostic-report-composition-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition
 
 // --- Profiles
 Alias: $Composition-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips
