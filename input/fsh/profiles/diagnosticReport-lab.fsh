@@ -8,6 +8,8 @@ Description: "CDiagnosticReport used to represent an entry of a Laboratory Repor
 * . ^short = "Laboratory Report DiagnosticReport"
 * . ^definition = "Laboratory Report DiagnosticReport"
 * extension contains $diagnostic-report-composition-r5 named DiagnosticReportCompositionR5 0..1
+* extension[DiagnosticReportCompositionR5].value[x] only Reference(CompositionLabReportXeh)
+* extension[DiagnosticReportCompositionR5].value[x] 1..1
 
 /*
 content to be referred...
@@ -36,6 +38,8 @@ Annotation Comment
 * encounter only Reference (Encounter) // profile defined for other scopes to be checked
 * effective[x] ^short = "Clinically relevant time/time-period for report."
 * performer ^short = "Responsible Diagnostic Service." // add reference to the used profiles
-* specimen ^short = "Specimens this report is based on." // add reference to the used profile
-* result ^short = "results" // add reference to the used profiles
+* specimen only Reference ( SpecimenXeh )
+* specimen ^short = "Specimens this report is based on."
+* result only Reference (ObservationResultsLaboratoryXeh)
+* result ^short = "results" 
 * imagingStudy 0..0
