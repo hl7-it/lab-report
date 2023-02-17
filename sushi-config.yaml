@@ -40,12 +40,18 @@ dependencies:
 # sub-pages.
 #
 pages:
-  index.xml:
+  index.md:
     title: Home
   contesto.md:
     title: Contesto
   downloads.md:
     title: Downloads
+  methodology.md:
+    title: Metodologia
+  scenario.md:
+    title: Scenario
+  specifiche.md:
+    title: Specifiche
   # examples.md:
   #   title: Esempi
   # contesto.md:
@@ -82,15 +88,24 @@ pages:
 # │ input/includes. To use a provided input/includes/menu.xml file, delete the "menu"              │
 # │ property below.                                                                                │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+
 menu:
   IG Home: index.html
   Sommario: toc.html
-  Contesto: contesto.html
+  Contesto:
+    Contesto: contesto.html
+    Metodologia: methodology.html
+#  Specifiche Funzionali:
+ #   Scenari: scenario.html
+  Specifiche:
+    Scenari: scenario.html
+    Specifiche Tecniche: specifiche.html    
   Indice Artefatti: artifacts.html
   Support:
     FHIR Spec: new-tab http://hl7.org/fhir/R4/index.html
-    Maps: https://build.fhir.org/ig/hl7-it/cda2fhir/index.html
-    Download: downloads.html
+    Maps: new-tab https://build.fhir.org/ig/hl7-it/cda2fhir/index.html
+    Downloads: downloads.html
+ # Copyright: copyright.html 
     
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
