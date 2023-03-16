@@ -8,7 +8,6 @@ Il referto di laboratorio appartiene al nucleo minimo dei documenti del Fascicol
 Ai sensi dell'articolo 27, comma 1, lettera d), del  decreto n. 178 del 29 settembre 2015,  il referto di laboratorio e' il documento redatto dal medico di medicina di laboratorio. 
 
 
-
 ### Funzionalità del Referto di Medicina di Laboratorio
 Le macro funzioni relative ai servizi per la gestione dei referiti di laboratorio : 
 
