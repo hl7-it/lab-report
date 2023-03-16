@@ -3,8 +3,6 @@ Questa guida ha lo scopo di definire i modelli logici e i profili HL7 FHIR da ut
 
 
 
-
-
 ### Definizione del Referto di Medicina di Laboratorio
 Il referto di laboratorio appartiene al nucleo minimo dei documenti del Fascicolo Sanitario Elettronico.
 Ai sensi dell'articolo 27, comma 1, lettera d), del  decreto n. 178 del 29 settembre 2015,  il referto di laboratorio e' il documento redatto dal medico di medicina di laboratorio. 
