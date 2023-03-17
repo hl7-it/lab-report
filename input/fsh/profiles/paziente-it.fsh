@@ -36,7 +36,7 @@ Description: "Descrive come rappresentare le informazioni del paziente nei docum
 * identifier[codiceANA].system 1.. MS
 * identifier[codiceANA].value 1.. MS
 * identifier[team].system 1.. MS
-* identifier[team].system from $tessera-team 
+// * identifier[team].system from $tessera-team 
 * identifier[team] ^short = "Tessera Team"
 * identifier[anpr].system 1.. MS
 * identifier[anpr].system = $anpr

@@ -2,6 +2,8 @@ ValueSet: SezioniRefertoLaboratorio
 Id: sezione-referto-laboratorio
 Title: "Sezioni Referto Laboratorio"
 Description: "Codici della sezione padre"
+* ^status = #draft
+* ^experimental = false
 * $LOINC#18718-7 "Studi di marcatori cellulari"
 * $LOINC#18719-5 "Studi di chimica"
 * $LOINC#18720-3 "Studi di coagulazione"
