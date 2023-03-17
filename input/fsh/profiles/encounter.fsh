@@ -17,6 +17,6 @@ Description: "Descrizione della risorsa Encounter utile a descrivere nel referto
 * participant.individual only Reference(PractitionerRole-RL or Practitioner-it-RL or RelatedPerson)
 * participant.type MS
 * participant.period MS
-* period 1..1
+* period MS
 * location MS
 * location.location only Reference(Location-it-RL)

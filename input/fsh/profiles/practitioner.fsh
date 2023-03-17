@@ -10,6 +10,3 @@ Description: "Profilo base per Practitioner nel contesto italiano."
 
 * identifier MS
 * name MS
-* telecom MS
-* address MS
-* gender MS

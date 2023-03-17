@@ -9,9 +9,5 @@ Description: "Profilo base per Organization nel contesto italiano."
 * ^date = "2023-03-14T16:43:56.519+01:00"
 
 * identifier MS
-* name MS
-* telecom MS
 * telecom.use = #work
 * address.use = #work
-* address MS
-* partOf MS

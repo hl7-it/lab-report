@@ -47,6 +47,6 @@ Description: "Descrizione della risorsa Bundle per il contesto italiano del refe
 * entry[diagnosticReport].resource only DiagnosticReportLIta
 * entry[observation].resource only Observation-referto-laboratorio
 * entry[specimen].resource only Campione
-* entry[substance].resource only Substance
+* entry[substance].resource only additivo-campione
 * entry[procedure].resource only Procedure
 * entry[media].resource only Media
