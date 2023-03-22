@@ -6,4 +6,4 @@ Description: "Codice di riservatezza per la risorsa italiana Composition."
 * ^experimental = false
 * $conf#N "Normal"
 * $conf#R "Restricted" 
-* $conf#VR "Very Restricted"
+* $conf#V "Very Restricted"
