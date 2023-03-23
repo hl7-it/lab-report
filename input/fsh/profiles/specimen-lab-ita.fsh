@@ -11,15 +11,8 @@ Description: "Descrive come rappresentare in FHIR la risorsa Specimen utile a de
 * type from http://terminology.hl7.org/ValueSet/v3-EntityCode (preferred)
 * type 1..1 MS
 * collection.bodySite from http://hl7.org/fhir/ValueSet/body-site (preferred)
-* processing.additive only Reference(Substance or Additivo)
+* processing.additive only Reference(Substance)
 * container.type from ContainerCampioneLaboratorio (preferred)
 * subject 1..1
 * subject only Reference(Patient-it-RL)
 // ----------------------------------------
-
-Profile: Additivo
-Parent: Substance
-Id: additivo-campione
-Title: "Substance - Referto di Laboratorio"
-Description: """Additivo del Campione"""
-* code from AdditiviCampione (preferred)

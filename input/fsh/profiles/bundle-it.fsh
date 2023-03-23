@@ -30,14 +30,13 @@ Description: "Descrizione della risorsa Bundle per il contesto italiano del refe
     diagnosticReport 1..* MS and
     observation 0..* MS and
     specimen 0..* MS and
-    substance 0..* MS and
     procedure 0..* MS and
     media 0..* MS
 
 * entry[composition].resource only Composition-RL
 * entry[patient].resource only Patient-it-RL
 * entry[practitioner].resource only Practitioner-it-RL
-* entry[organization].resource only Organization-it-RL
+* entry[organization].resource only Organization
 * entry[practitionerRole].resource only PractitionerRole-RL
 * entry[person].resource only Person
 * entry[device].resource only Device
@@ -47,6 +46,5 @@ Description: "Descrizione della risorsa Bundle per il contesto italiano del refe
 * entry[diagnosticReport].resource only DiagnosticReportLIta
 * entry[observation].resource only Observation-referto-laboratorio
 * entry[specimen].resource only Campione
-* entry[substance].resource only additivo-campione
 * entry[procedure].resource only Procedure
 * entry[media].resource only Media
