@@ -34,19 +34,23 @@ Description: "Descrizione in FHIR di header e body nel contesto italiano del ref
     legalAuthenticator 1..1 MS and
     authenticator 0..1 and
     informationRecipient 0..*
+* attester[legalAuthenticator] ^short = "Firmatario del documento FHIR."
 * attester[legalAuthenticator].mode 1..1
 * attester[legalAuthenticator].mode = #legal
-* attester[legalAuthenticator].party only Reference(PractitionerRole-RL) 
+* attester[legalAuthenticator].party only Reference(PractitionerRole-RL or Practitioner) 
 * attester[legalAuthenticator].time 1..1
+* attester[authenticator] ^short = "Validatore del documento FHIR."
 * attester[authenticator].mode 1..1
 * attester[authenticator].mode = #professional
-* attester[authenticator].party only Reference(PractitionerRole-RL) 
+* attester[authenticator].party only Reference(PractitionerRole-RL or Practitioner) 
 * attester[informationRecipient].mode = #personal
-* attester[informationRecipient].party only Reference(PractitionerRole-RL) 
+* attester[informationRecipient].party only Reference(PractitionerRole-RL or Practitioner or Organization) 
 * attester[informationRecipient] ^short = "Professionisti sanitari che ricevono una copia del documento (es. MMG/PLS)"
 
 * custodian 1..1
+* custodian ^short = "Organizzazione che si occupa della conservazione del documento FHIR."
 
+* relatesTo ^short = "Ulteriori risorse Composition correlate al documento."
 * relatesTo MS
 * relatesTo.target[x] only Reference
 * relatesTo obeys it-composition-1
@@ -66,8 +70,8 @@ Description: "Descrizione in FHIR di header e body nel contesto italiano del ref
 // ---------------------------------
 
 * section.title 1..
-* section.code 1..
-* section.code from sezione-referto-laboratorio (required)
+// * section.code 1..
+// * section.code from sezione-referto-laboratorio (required)
 
 // -------------------------------------
 // Single section  0 .. 1
@@ -77,12 +81,17 @@ Description: "Descrizione in FHIR di header e body nel contesto italiano del ref
 * section[senza-sottosezione].text ^short = "Sintesi testuale della sezione, per l'interpretazione dell'utente."
 * section[senza-sottosezione].text 1..1
 * section[senza-sottosezione].section ..0
+* section[senza-sottosezione].code 1..
+* section[senza-sottosezione].code from sezione-referto-laboratorio (required)
+
 
 * section contains con-sottosezione ..* 
 * section[con-sottosezione] ^short = "Variant 2: questa sezione presenta una sottosezione e non prevede gli attributi entry e text"
 * section[con-sottosezione].code only CodeableConcept
 * section[con-sottosezione].text 0..0
 * section[con-sottosezione].entry 0..0
+* section[con-sottosezione].code 1..
+* section[con-sottosezione].code from sezione-referto-laboratorio (required)
 * section[con-sottosezione].section 1..
   * code 1..
   * code only CodeableConcept

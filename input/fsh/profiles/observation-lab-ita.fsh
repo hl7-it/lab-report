@@ -10,7 +10,7 @@ Description: """Profilo che descrive come rappresentare in FHIR la risorsa Obser
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
-* category ^definition = " Codice che classifica il tipo di osservazione (laboratory)."
+* category ^short = "Codice che classifica il tipo di osservazione (laboratory)."
 * category contains esame-laboratorio 1..1 MS
 * category[esame-laboratorio] = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
 * subject only Reference(Patient-it-RL)
@@ -19,10 +19,12 @@ Description: """Profilo che descrive come rappresentare in FHIR la risorsa Obser
 * encounter 1..1
 
 * performer 1.. MS
+* performer only Reference(Practitioner-it-RL or Patient-it-RL or PractitionerRole or Organization or RelatedPerson or CareTeam)
 * value[x] MS
-* value[x] ^definition = "Risultato dell'osservaizone."
+* value[x] ^short = "Risultato dell'osservaizone."
 * valueQuantity only quantity-RL
 * hasMember only Reference(OsservazioneRefertoLaboratorio)
+* specimen ^short = "Reference al campione su cui si basa l'osservazione."
 * specimen MS
 * specimen only Reference(Campione)
 

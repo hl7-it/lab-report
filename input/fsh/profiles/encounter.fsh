@@ -11,12 +11,12 @@ Description: "Descrizione della risorsa Encounter utile a descrivere nel referto
 * ^copyright = "HL7 Italy"
 
 * subject 1..1
-* subject only Reference(Patient-it-RL)
+* subject only Reference(Patient-it-RL) 
+* status ^short = "Stato attuale dell'incontro."
+* class ^short = "Classificazione dell'incontro con il paziente."
 * basedOn only Reference(ServiceRequest-RL)
+* basedOn ^short = "Reference alla ServiceRequest che ha avviato l'incontro."
 * participant MS
 * participant.individual only Reference(PractitionerRole-RL or Practitioner-it-RL or RelatedPerson)
-* participant.type MS
-* participant.period MS
 * period MS
-* location MS
 * location.location only Reference(Location-it-RL)

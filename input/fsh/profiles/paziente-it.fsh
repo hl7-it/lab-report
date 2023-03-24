@@ -11,7 +11,7 @@ Description: "Descrive come rappresentare le informazioni del paziente nei docum
 
 * extension contains
     $patient-birthPlace named birthPlace 0..1
-* extension[birthPlace].valueAddress
+* extension[birthPlace].valueAddress only Address-it
 * identifier 1..
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "$this.system"
@@ -23,9 +23,9 @@ Description: "Descrive come rappresentare le informazioni del paziente nei docum
 * identifier.value ^definition = "Identifictivo del paziente"
 * identifier contains
     codiceFiscale 0..1 MS and
-    team 0..1 and
+    // team 0..1 and
     anpr 0..1 and
-    codiceANA 0..1 and
+    // codiceANA 0..1 and
     idRegionale 0..1 and
     codiceENI 0..1 and
     codiceSTP 0..1
@@ -33,11 +33,10 @@ Description: "Descrive come rappresentare le informazioni del paziente nei docum
 * identifier[codiceFiscale].system = $cf 
 * identifier[codiceFiscale].value 1.. MS
 * identifier[codiceFiscale].value obeys pat-id-cf-1
-* identifier[codiceANA].system 1.. MS
-* identifier[codiceANA].value 1.. MS
-* identifier[team].system 1.. MS
-// * identifier[team].system from $tessera-team 
-* identifier[team] ^short = "Tessera Team"
+// * identifier[codiceANA].system 1.. MS
+// * identifier[codiceANA].value 1.. MS
+// * identifier[team].system 1.. MS
+// * identifier[team] ^short = "Tessera Team"
 * identifier[anpr].system 1.. MS
 * identifier[anpr].system = $anpr
 * identifier[idRegionale].system 1.. MS
@@ -51,10 +50,8 @@ Description: "Descrive come rappresentare le informazioni del paziente nei docum
 * name obeys it-pat-1
 // * gender from $gender-code (required)
 * telecom MS
-* address MS
+//* address only Address-it-base
 * birthDate MS
-* contact MS
-* managingOrganization MS 
 
 
 Invariant: pat-id-cf-1
@@ -64,7 +61,7 @@ Expression: "matches('^[A-Za-z]{6}[0-9LMNPQRSTUV]{2}[A-Za-z]{1}[0-9LMNPQRSTUV]{2
 XPath: "matches(@value,'^[A-Za-z]{6}[0-9LMNPQRSTUV]{2}[A-Za-z]{1}[0-9LMNPQRSTUV]{2}[A-Za-z]{1}[0-9LMNPQRSTUV]{3}[A-Za-z]{1}$')"
 
 Invariant: it-pat-1
-Description: "Patient.name.given o Patient.name.family entrambi DEVONO essere presenti"
+Description: "Patient.name.given o Patient.name.family o entrambi DEVONO essere presenti"
 Severity: #error
 Expression: "family.exists() or given.exists()"
 XPath: "f:given or f:family"
