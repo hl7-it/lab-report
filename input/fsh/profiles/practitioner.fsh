@@ -7,7 +7,7 @@ Description: "Descrive come rappresentare in FHIR la risorsa Practitioner nell'a
 * ^status = #draft
 * ^experimental = true
 * ^date = "2023-03-14T16:43:56.519+01:00"
-* identifier MS
+* identifier MS //valutare se si vuole rendere obbligatorio, altrimenti ha poco senso creare un profilo nostro.(valutare se portarlo nella IG Base.
 * identifier ^short = "Identificativo associato al professionista." 
 * name MS
 * name ^short = "Nome associato al professionista."
