@@ -12,6 +12,7 @@ Description: "Profilo per Location nel contesto italiano."
 * identifier ^short = "Identificativo della struttura (luogo)"
 * name MS
 * name ^short = "Nome della struttura (luogo)"
-* type MS //Ragionare se può servire restringere il valueset
-* address ^short = "Indirizzo della struttura (luogo)"
+* type MS 
+* type ^short = "Tipo di struttura sulla base dei servizi offerti."
+* address ^short = "Indirizzo fisico della struttura (luogo)"
 * managingOrganization ^short = "Organizzazione responsabile della gestione della struttura (provisioning e manutenzione)"

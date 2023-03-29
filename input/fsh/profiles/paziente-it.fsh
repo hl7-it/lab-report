@@ -48,10 +48,10 @@ Description: "Descrive come rappresentare le informazioni del paziente nei docum
 * identifier[codiceSTP].system from $uri-idStp (required)
 * name 1.. MS
 * name obeys it-pat-1
-// * gender from $gender-code (required)
+* name ^short = "Nome associato al paziente."
 * telecom MS
-//* address only Address-it-base
 * birthDate MS
+* address only Address-it
 
 
 Invariant: pat-id-cf-1

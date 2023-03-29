@@ -7,8 +7,9 @@ Description: "Descrizione della risorsa Encounter utile a descrivere nel referto
 * ^status = #draft
 * ^experimental = true
 * ^date = "2023-03-09T16:43:56.519+01:00"
-* ^publisher = "HL7 Italy"
-* ^copyright = "HL7 Italy"
+* ^publisher = "HL7 Italia"
+* ^copyright = "HL7 Italia"
+* . ^short = "Encounter Referto di Laboratorio"
 
 * subject 1..1
 * subject only Reference(Patient-it-RL) 

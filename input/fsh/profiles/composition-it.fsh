@@ -6,24 +6,32 @@ Description: "Descrizione in FHIR di header e body nel contesto italiano del ref
 * ^version = "0.0.1"
 * ^status = #draft
 * ^experimental = true
-* ^date = "2023-03-09T16:43:56.519+01:00"
-* ^publisher = "HL7 Italy"
-* ^copyright = "HL7 Italy"
+* ^publisher = "HL7 Italia"
+* ^copyright = "HL7 Italia"
+* . ^short = "Composition Referto di Laboratorio"
 
 * language from $common-language
 * language 1..1  
+* language ^short = "Metadato che indica la lingua utilizzata per descrivere la risorsa."
 * extension contains
     composition-dataenterer-it named dataEnterer 0..*
 
 * identifier 1..1
 * type = $LOINC#11502-2 "Referto di laboratorio"
-
+* status ^short = "Stato di completezza della risorsa Composition. Lo stato della risorsa rappresenta anche lo stato del documento."
+* status = #final
 * subject 1..1
 * subject only Reference(Patient-it-RL)
+* subject ^short = "Soggetto del documento."
 * encounter 1..1
+* encounter ^short = "Contesto in cui è stato generato il documento."
 * encounter only Reference(Encounter-RL)
+* date ^short = "Data di modifica della risorsa da parte del firmatario."
 * confidentiality from $conf
-
+* author ^short = "Autore del documento."
+* author ^definition = "Chi o cosa ha contribuito alla definizione del contenuto del documento e ne è responsabile."
+* title ^short = "Titolo o nome human-readable della Composition."
+* title = "Referto di Laboratorio" 
 * attester 1..*
 * attester ^slicing.discriminator.type = #value
 * attester ^slicing.discriminator.path = "$this"
@@ -52,7 +60,7 @@ Description: "Descrizione in FHIR di header e body nel contesto italiano del ref
 
 * relatesTo ^short = "Ulteriori risorse Composition correlate al documento."
 * relatesTo MS
-* relatesTo.target[x] only Reference
+* relatesTo.target[x] only Reference 
 * relatesTo obeys it-composition-1
 
 * section ^slicing.discriminator[0].type = #exists
@@ -64,25 +72,19 @@ Description: "Descrizione in FHIR di header e body nel contesto italiano del ref
 * section ^slicing.ordered = false
 * section ^slicing.rules = #open
 
-
-// --------------------------------------
-// Common rules for all the sections
-// ---------------------------------
-
 * section.title 1..
-// * section.code 1..
-// * section.code from sezione-referto-laboratorio (required)
+* section.title ^short = "Titolo della sezione."
+* section.code 1..
+* section.code ^short = "Codice della sezione (es. LOINC)."
 
-// -------------------------------------
-// Single section  0 .. 1
-// -------------------------------------
 * section contains senza-sottosezione ..* 
 * section[senza-sottosezione] ^short = "Variante 1: questa sezione presenta la entry è il text obbligatori"
 * section[senza-sottosezione].text ^short = "Sintesi testuale della sezione, per l'interpretazione dell'utente."
 * section[senza-sottosezione].text 1..1
 * section[senza-sottosezione].section ..0
 * section[senza-sottosezione].code 1..
-* section[senza-sottosezione].code from sezione-referto-laboratorio (required)
+* section[senza-sottosezione].code from sezione-referto-laboratorio (preferred)
+* section[senza-sottosezione].entry only Reference (Observation-referto-laboratorio)
 
 
 * section contains con-sottosezione ..* 
@@ -91,19 +93,22 @@ Description: "Descrizione in FHIR di header e body nel contesto italiano del ref
 * section[con-sottosezione].text 0..0
 * section[con-sottosezione].entry 0..0
 * section[con-sottosezione].code 1..
-* section[con-sottosezione].code from sezione-referto-laboratorio (required)
+* section[con-sottosezione].code from sezione-referto-laboratorio (preferred)
+* section[con-sottosezione].section ^short = "Sottosezione strutturata della sezione principale."
 * section[con-sottosezione].section 1..
   * code 1..
   * code only CodeableConcept
-
+  * code from sezione-referto-laboratorio (preferred)
   * text ^short = "Sintesi testuale della sezione, per l'interpretazione dell'utente."
   * entry 1..
+  * entry only Reference (Observation-referto-laboratorio)
 * section contains annotazioni ..*
 * section[annotazioni]
   * ^short = "Commenti testuali"
   * ^definition = """Rappresentazione testuale dei commenti che accompagnano il referto, come suggerimenti per la valutazione, note tecniche del laboratorio, ecc."""
   * code = $LOINC#48767-8 (exactly) 
   * text 1.. 
+  * text ^short = "Sintesi testuale della sezione, per l'interpretazione dell'utente."
   * section ..0 
 
 Invariant: it-composition-1

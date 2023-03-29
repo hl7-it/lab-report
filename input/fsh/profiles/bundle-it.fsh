@@ -3,8 +3,9 @@ Parent: Bundle
 Id: bundle-referto-laboratorio
 Title:    "Bundle - Referto di Laboratorio"
 Description: "Descrizione della risorsa Bundle per il contesto italiano del refero di laboratorio."
-
+* . ^short = "Bundle Referto di Laboratorio"
 * type = #document 
+* type ^short = "Indica cosa rappresenta e l'obiettivo del Bundle."
 * identifier MS
 * identifier 1.. 
 
