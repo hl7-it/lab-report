@@ -1,4 +1,4 @@
-Profile: PractitionerRL
+Profile: PractitionerRL //Utilizzerei questa dicitura per tutti i nostri profili, se siete d'accordo
 Parent: Practitioner
 Id: Practitioner-it-RL
 Title: "Practitioner - Referto di Laboratorio"
