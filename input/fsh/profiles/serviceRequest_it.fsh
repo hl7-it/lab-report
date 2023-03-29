@@ -20,4 +20,6 @@ Description: "Descrive come rappresentare in FHIR la risorsa ServiceRequest che 
 * authoredOn ^short = "Data di invio della richiesta."
 * reasonCode ^short = "Quesito diagnostico associato alla richiesta."
 * specimen ^short = "Reference usata solo se il campione cui punta la richiesta è già stato prelevato ed esiste."
-//* intent ^short = "Indica lo scopo associato ad una richiesta"
+* intent ^short = "Indica lo scopo associato ad una richiesta proposal | plan | directive | order | original-order | reflex-order | filler-order | instance-order | option"
+// aggiungere la constraint a intent
+//proposal | plan | directive | order | original-order | reflex-order | filler-order | instance-order | option
