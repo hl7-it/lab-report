@@ -16,7 +16,8 @@ Description: "Descrive come rappresentare in FHIR la risorsa ServiceRequest che 
 * subject only Reference(Patient-it-RL)
 * requisition ^short = "Idenificativo comune a più Service Request autorizzate simultaneamente. Rappresenta l'identificativo univoco della richiesta."
 * quantity[x] ^short = "Molteplicità della prestazione."
-//* occurrence[x] ^short = "Data di erogazione/pianificazione della richiesta."
+//* occurrence[x] ^short = "Data di erogazione/pianificazione della richiesta." 
+//Aggiungendo la descrizione short in questo modo si perde la struttura di valorizzazione. Capire come inserirla, altrimenti togliere la descrizione.
 * authoredOn ^short = "Data di invio della richiesta."
 * reasonCode ^short = "Quesito diagnostico associato alla richiesta."
 * specimen ^short = "Reference usata solo se il campione cui punta la richiesta è già stato prelevato ed esiste."
