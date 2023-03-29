@@ -1,4 +1,4 @@
-Profile: ServiceRequestRL
+Profile: ServiceRequestRL //decidiamo se vogliamo usare termini italiani, come Campione o aggiungere RL a tutti i profili.
 Parent: ServiceRequest
 Id: ServiceRequest-RL
 Title: "ServiceRequest - Referto di Laboratorio"
