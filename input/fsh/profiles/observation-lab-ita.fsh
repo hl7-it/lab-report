@@ -1,4 +1,4 @@
-Profile: OsservazioneRefertoLaboratorio
+Profile: OsservazioneRefertoLaboratorio //cerchiamo di essere coerenti nei nomi dei profili.
 Parent: Observation
 Id: Observation-referto-laboratorio
 Title:    "Observation - Referto di Laboratorio"
