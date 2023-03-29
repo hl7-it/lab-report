@@ -23,3 +23,4 @@ Description: "Descrive come rappresentare in FHIR la risorsa ServiceRequest che 
 * intent ^short = "Indica lo scopo associato ad una richiesta proposal | plan | directive | order | original-order | reflex-order | filler-order | instance-order | option"
 // aggiungere la constraint a intent
 //proposal | plan | directive | order | original-order | reflex-order | filler-order | instance-order | option
+// è mettere in preferred questo: http://hl7.org/fhir/R4/valueset-request-intent.html
