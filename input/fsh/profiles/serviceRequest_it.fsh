@@ -12,7 +12,7 @@ Description: "Descrive come rappresentare in FHIR la risorsa ServiceRequest che 
 
 * identifier 1..* 
 * priority MS 
-* priority ^short = "Priorità della richiesta."
+//* priority ^short = "Priorità della richiesta."
 * subject only Reference(Patient-it-RL)
 * requisition ^short = "Idenificativo comune a più Service Request autorizzate simultaneamente. Rappresenta l'identificativo univoco della richiesta."
 * quantity[x] ^short = "Molteplicità della prestazione."
@@ -20,4 +20,4 @@ Description: "Descrive come rappresentare in FHIR la risorsa ServiceRequest che 
 * authoredOn ^short = "Data di invio della richiesta."
 * reasonCode ^short = "Quesito diagnostico associato alla richiesta."
 * specimen ^short = "Reference usata solo se il campione cui punta la richiesta è già stato prelevato ed esiste."
-* intent ^short = "Indica lo scopo associato ad una richiesta"
+//* intent ^short = "Indica lo scopo associato ad una richiesta"
