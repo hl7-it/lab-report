@@ -6,12 +6,10 @@ Description: "Base StructureDefinition per il tipo Address con parti addizionali
 * ^version = "0.0.1"
 * ^status = #draft
 * ^copyright = "CC0"
-// * obeys it-address-official
 * . ^short = "Indirizzo fisico o postale"
 * . ^definition = "Esiste una varietà di formati di indirizzi postali definiti in tutto il mondo. Questo profilo (Address-it-base) estende il datatype base Address includendo una serie di informazioni rilevanti per esprimere gli indirizzi in Italia. \r \n \r \n Un Address-it-base è un indirizzo FHIR valido; i sistemi che non supportano le estensioni utilizzate saranno in grado comunque di eseguire il rendering e lavorare con un XXXX. \r \n \r \n Un indirizzo rende alcune parti di indirizzo comunicabili separatamente. Queste parti sono necessarie in alcuni scenari d'uso italiani, ma potrebbero non avere valore per i sistemi internazionali quando le informazioni vengono inviate all'estero."
 * . ^comment = "Nota: address è per indirizzi postali, non per la localizzazione fisica."
 * . ^alias[0] = "Indirizzo"
-//* . ^example.label = "Completo"
 * extension contains
     address-official named residenza 0..1 and
     recordCertification named certificazioneIndirizzo 0..*
@@ -62,7 +60,7 @@ Description: "Base StructureDefinition per il tipo Address con parti addizionali
     $iso21090-SC-coding named codiceRegione 0..1
 * state.extension[codiceRegione] ^sliceName = "codiceRegione"
 * state.extension[codiceRegione] ^short = "Codice Regione"
-// * postalCode obeys it-postal-code-pattern
+* postalCode obeys it-postal-code-pattern
 * postalCode ^comment = "I codici postali italiani hanno un pattern '[1,9]\\d{4}'."
 * postalCode ^alias[0] = "CAP"
 * postalCode ^alias[+] = "postcode"
@@ -70,7 +68,6 @@ Description: "Base StructureDefinition per il tipo Address con parti addizionali
 * country ^short = "Stato"
 * country.extension contains
     $iso21090-SC-coding named codiceStato 0..1
-// * country.extension[codiceStato] from $istat-stato (preferred)
 * country.extension[codiceStato] ^sliceName = "codiceStato"
 * country.extension[codiceStato] ^short = "Codice Stato"
 

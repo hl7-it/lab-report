@@ -1,5 +1,5 @@
 ValueSet:      ContainerCampioneLaboratorio
-Id:	       lab-specimenContainer-xeh
+Id:	       lab-specimenContainer-it
 Title:	       "Conteiner Campione Laboratorio"
 Description:   "Codice che identifica il container utilizzato per il campione"
 * ^status = #draft
