@@ -1,4 +1,4 @@
 ValueSet: ValuesetTc
 Id: Valueset-tc
-Title: "tipo certificatore - Address"
+Title: "Tipo certificatore - Address"
 * include codes from system $tipoCertificatore

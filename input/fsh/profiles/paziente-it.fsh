@@ -1,6 +1,6 @@
 Profile: PatientItRL
 Parent: Patient
-Id: Patient-it-RL
+Id: PatientRL
 Title: "Patient - Referto di Laboratorio"
 Description: "Descrive come rappresentare le informazioni del paziente nei documenti FHIR per il contesto Italiano."
 * ^version = "0.0.1"
@@ -23,9 +23,7 @@ Description: "Descrive come rappresentare le informazioni del paziente nei docum
 * identifier.value ^definition = "Identifictivo del paziente"
 * identifier contains
     codiceFiscale 0..1 MS and
-    // team 0..1 and
     anpr 0..1 and
-    // codiceANA 0..1 and
     idRegionale 0..1 and
     codiceENI 0..1 and
     codiceSTP 0..1
@@ -33,10 +31,6 @@ Description: "Descrive come rappresentare le informazioni del paziente nei docum
 * identifier[codiceFiscale].system = $cf 
 * identifier[codiceFiscale].value 1.. MS
 * identifier[codiceFiscale].value obeys pat-id-cf-1
-// * identifier[codiceANA].system 1.. MS
-// * identifier[codiceANA].value 1.. MS
-// * identifier[team].system 1.. MS
-// * identifier[team] ^short = "Tessera Team"
 * identifier[anpr].system 1.. MS
 * identifier[anpr].system = $anpr
 * identifier[idRegionale].system 1.. MS

@@ -1,9 +1,8 @@
-Instance: EsempioCampione
-InstanceOf: Campione
+Instance: Specimen-Lab-Esempio
+InstanceOf: SpecimenRL
 Usage: #example
-Title: "Specimen1"
-Description: "Campione di sangue prelevato dall'avambraccio del paziente."
-
+Title: "EsempioCampione"
+Description: "Esempio di campione: sangue prelevato dall'avambraccio del paziente."
 * type.coding.code = #BLD
 * type.coding.system = "http://terminology.hl7.org/ValueSet/v3-EntityCode"
 * type.coding.display = "Whole blood"

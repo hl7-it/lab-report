@@ -1,8 +1,8 @@
 Instance: ServiceRequest-Lab-Esempio
 InstanceOf: ServiceRequestRL
 Usage: #example
-Title: "ServiceRequest1"
-Description: "Richiesta di esami di laboratorio."
+Title: "Esempio Richiesta"
+Description: "Esempio di richiesta: prestazione richiesta facente parte di un'autorizzazione simultanea per esami di laboratorio."
 
 * identifier[+].type = #PLAC "Placer Identifier"
 * identifier[=].system = "http://example.it/identifiers/placer"
@@ -11,7 +11,7 @@ Description: "Richiesta di esami di laboratorio."
 * requisition.value = "1283139202209031800"
 * status = #active
 * intent = #order
-* category = $serviceRequest-category#LAB "Esami per laboratorio"
+* category = $serviceRequest-category#LAB "esami per laboratorio"
 * priority = #routine
 * code = $servicerequest-lab#100156-9
 * subject = Reference(Patient-SSN)

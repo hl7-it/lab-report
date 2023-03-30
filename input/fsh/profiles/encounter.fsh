@@ -12,12 +12,12 @@ Description: "Descrizione della risorsa Encounter utile a descrivere nel referto
 * . ^short = "Encounter Referto di Laboratorio"
 
 * subject 1..1
-* subject only Reference(Patient-it-RL) 
+* subject only Reference(PatientRL) 
 * status ^short = "Stato attuale dell'incontro."
 * class ^short = "Classificazione dell'incontro con il paziente."
-* basedOn only Reference(ServiceRequest-RL)
+* basedOn only Reference(ServiceRequestRL)
 * basedOn ^short = "Reference alla ServiceRequest che ha avviato l'incontro."
 * participant MS
-* participant.individual only Reference(PractitionerRole-RL or Practitioner-it-RL or RelatedPerson)
+* participant.individual only Reference(PractitionerRoleRL or PractitionerRL or RelatedPerson)
 * period MS
-* location.location only Reference(Location-it-RL)
+* location.location only Reference(LocationRL)

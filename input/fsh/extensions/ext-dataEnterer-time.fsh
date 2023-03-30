@@ -1,6 +1,6 @@
 Extension:   ExtDataEntererTIME
 Id:          dataEnterer-time
-Title:       "tempoCompilazione"
+Title:       "TempoCompilazione"
 Description: "Riferimento temporale."
 //------------------------------------------------------------------------------------------- 
 * value[x] only dateTime 

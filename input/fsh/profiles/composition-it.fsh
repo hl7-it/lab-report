@@ -1,6 +1,6 @@
 Profile: CompositionRL
 Parent: Composition
-Id: Composition-RL
+Id: CompositionRL
 Title: "Composition - Referto di Laboratorio"
 Description: "Descrizione in FHIR di header e body nel contesto italiano del referto di laboratorio."
 * ^version = "0.0.1"
@@ -21,11 +21,11 @@ Description: "Descrizione in FHIR di header e body nel contesto italiano del ref
 * status ^short = "Stato di completezza della risorsa Composition. Lo stato della risorsa rappresenta anche lo stato del documento."
 * status = #final
 * subject 1..1
-* subject only Reference(Patient-it-RL)
+* subject only Reference(PatientRL)
 * subject ^short = "Soggetto del documento."
 * encounter 1..1
 * encounter ^short = "Contesto in cui è stato generato il documento."
-* encounter only Reference(Encounter-RL)
+* encounter only Reference(EncounterRL)
 * date ^short = "Data di modifica della risorsa da parte del firmatario."
 * confidentiality from $conf
 * author ^short = "Autore del documento."
@@ -45,14 +45,14 @@ Description: "Descrizione in FHIR di header e body nel contesto italiano del ref
 * attester[legalAuthenticator] ^short = "Firmatario del documento FHIR."
 * attester[legalAuthenticator].mode 1..1
 * attester[legalAuthenticator].mode = #legal
-* attester[legalAuthenticator].party only Reference(PractitionerRole-RL or Practitioner) 
+* attester[legalAuthenticator].party only Reference(PractitionerRoleRL or Practitioner) 
 * attester[legalAuthenticator].time 1..1
 * attester[authenticator] ^short = "Validatore del documento FHIR."
 * attester[authenticator].mode 1..1
 * attester[authenticator].mode = #professional
-* attester[authenticator].party only Reference(PractitionerRole-RL or Practitioner) 
+* attester[authenticator].party only Reference(PractitionerRoleRL or Practitioner) 
 * attester[informationRecipient].mode = #personal
-* attester[informationRecipient].party only Reference(PractitionerRole-RL or Practitioner or Organization) 
+* attester[informationRecipient].party only Reference(PractitionerRoleRL or Practitioner or Organization) 
 * attester[informationRecipient] ^short = "Professionisti sanitari che ricevono una copia del documento (es. MMG/PLS)"
 
 * custodian 1..1
@@ -84,7 +84,7 @@ Description: "Descrizione in FHIR di header e body nel contesto italiano del ref
 * section[senza-sottosezione].section ..0
 * section[senza-sottosezione].code 1..
 * section[senza-sottosezione].code from sezione-referto-laboratorio (preferred)
-* section[senza-sottosezione].entry only Reference (Observation-referto-laboratorio)
+* section[senza-sottosezione].entry only Reference (ObservationRL)
 
 
 * section contains con-sottosezione ..* 
@@ -101,7 +101,7 @@ Description: "Descrizione in FHIR di header e body nel contesto italiano del ref
   * code from sezione-referto-laboratorio (preferred)
   * text ^short = "Sintesi testuale della sezione, per l'interpretazione dell'utente."
   * entry 1..
-  * entry only Reference (Observation-referto-laboratorio)
+  * entry only Reference (ObservationRL)
 * section contains annotazioni ..*
 * section[annotazioni]
   * ^short = "Commenti testuali"
