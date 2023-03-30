@@ -1,4 +1,4 @@
-Profile: AddressItBase
+Profile: AddressItBase //è identico al profilo base? oppure abbiamo fatto delle modifiche? (potremmo referenziarlo e fare modifiche eventuali)
 Parent: Address
 Id: Address-it
 Title: "Address - ITA"
