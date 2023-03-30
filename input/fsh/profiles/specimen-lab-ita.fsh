@@ -1,10 +1,9 @@
-Profile: Campione
+Profile: SpecimenRL
 Parent: Specimen
-Id: Campione
-//Title: "Specimen - Referto di Laboratorio"
-Title: "Campione"
-//Description: "Descrive come rappresentare in FHIR la risorsa Specimen utile a descrivere il campione nel referto di laboratorio."
+Id: SpecimenRL
+Title: "Specimen - Referto di Laboratorio"
 Description: "Rappresenta la risorsa Specimen per il Referto di Laboratorio, utile a descrivere il campione."
+
 * ^status = #draft
 * . ^short = "Campione Referto di Laboratorio"
 * . ^definition = "Campione Referto di Laboratorio"
@@ -18,5 +17,5 @@ Description: "Rappresenta la risorsa Specimen per il Referto di Laboratorio, uti
 * container.type from ContainerCampioneLaboratorio (preferred)
 * container.type ^short = "Tipo di dispositivo utilizzato per il contenere il campione."
 * subject 1..1
-* subject only Reference(Patient-it-RL)
+* subject only Reference(PatientRL)
 * subject ^short = "Soggetto da cui è stato prelevato il campione."

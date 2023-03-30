@@ -1,6 +1,6 @@
-Profile: BundleRefertoLaboratorio
+Profile: BundleRL
 Parent: Bundle
-Id: bundle-referto-laboratorio
+Id: BundleRL
 Title:    "Bundle - Referto di Laboratorio"
 Description: "Descrizione della risorsa Bundle per il contesto italiano del refero di laboratorio."
 * . ^short = "Bundle Referto di Laboratorio"
@@ -34,18 +34,18 @@ Description: "Descrizione della risorsa Bundle per il contesto italiano del refe
     procedure 0..* MS and
     media 0..* MS
 
-* entry[composition].resource only Composition-RL
-* entry[patient].resource only Patient-it-RL
-* entry[practitioner].resource only Practitioner-it-RL
+* entry[composition].resource only CompositionRL
+* entry[patient].resource only PatientRL
+* entry[practitioner].resource only PractitionerRL
 * entry[organization].resource only Organization
-* entry[practitionerRole].resource only PractitionerRole-RL
+* entry[practitionerRole].resource only PractitionerRoleRL
 * entry[person].resource only Person
 * entry[device].resource only Device
-* entry[encounter].resource only Encounter-RL
-* entry[location].resource only Location-it-RL
-* entry[serviceRequest].resource only ServiceRequest-RL
-* entry[diagnosticReport].resource only DiagnosticReportLIta
-* entry[observation].resource only Observation-referto-laboratorio
-* entry[specimen].resource only Campione
+* entry[encounter].resource only EncounterRL
+* entry[location].resource only LocationRL
+* entry[serviceRequest].resource only ServiceRequestRL
+* entry[diagnosticReport].resource only DiagnosticReportRL
+* entry[observation].resource only ObservationRL
+* entry[specimen].resource only SpecimenRL
 * entry[procedure].resource only Procedure
 * entry[media].resource only Media
