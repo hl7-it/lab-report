@@ -1,0 +1,27 @@
+Instance: ServiceRequest-Lab-Esempio
+InstanceOf: ServiceRequestRL
+Usage: #example
+Description: "Esempio di richiesta: prestazione richiesta facente parte di un'autorizzazione simultanea per esami di laboratorio."
+
+* identifier.value = "12345"
+* identifier.period.start = "2023-03-15"
+* identifier.period.end = "2023-04-15"
+
+* status = #completed
+* intent = #order
+
+* requisition.value = "1300A4000000248"
+
+* authoredOn = "2023-03-15"
+
+* category.coding.system = $sct
+* category.coding.code = #108252007
+* category.coding.display = "Laboratory procedure"
+
+* subject  = Reference(Paziente-SSN)
+
+* priority = #routine
+
+* reasonCode.coding = $sct#4307007 "Pregestational diabetes mellitus AND/OR impaired glucose tolerance, modified White class F"
+
+* specimen = Reference(Specimen-Lab-Esempio)
