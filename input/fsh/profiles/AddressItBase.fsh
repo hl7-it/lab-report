@@ -1,8 +1,8 @@
-Profile: AddressItBase //è identico al profilo base? oppure abbiamo fatto delle modifiche? (potremmo referenziarlo e fare modifiche eventuali)
+Profile: AddressItBase
 Parent: Address
 Id: Address-it
 Title: "Address - ITA"
-Description: "Base StructureDefinition per il tipo Address con parti addizionali specifiche per gli indirizzi italiani. Questo profilo struttura l'elemento  Address.line in più parti, consente la codifica di alcune di queste parti e supporta la caratterizzazine degli indirizzi di tipo Residenza. Questa prima versione è ispirata al data type Address Olandese."
+Description: "Descrizione di Address con parti addizionali specifiche per gli indirizzi italiani. Questo profilo struttura l'elemento  Address.line in più parti, consente la codifica di alcune di queste parti e supporta la caratterizzazine degli indirizzi di tipo Residenza. Questa prima versione è ispirata al data type Address Olandese."
 * ^version = "0.0.1"
 * ^status = #draft
 * ^copyright = "CC0"
@@ -74,8 +74,8 @@ Description: "Base StructureDefinition per il tipo Address con parti addizionali
 Invariant: it-postal-code-pattern
 Description: "I codici postali italiani hanno un pattern 'nnnnn' (n intero)"
 Severity: #error
-Expression: "(country in 'it' | 'ita' | 'italia' | 'italy').not() or matches('^[1-9]\\d{4}$')"
-XPath: "not(../f:country[lower-case(@value)=('it','ita','italia', 'italy')]) or matches(@value,'^[1-9]\\d{4}$')"
+Expression: "(country in 'it' | 'ita' | 'italia' | 'italy').not() or matches('^[0-9]{4}')"
+XPath: "not(../f:country[lower-case(@value)=('it','ita','italia', 'italy')]) or matches(@value,'^[0-9]{4}')"
 
 Invariant: it-address-official
 Description: "Se Address rappresenta la residenza allora city e line devono essere inclusi"

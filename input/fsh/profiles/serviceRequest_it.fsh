@@ -2,7 +2,7 @@ Profile: ServiceRequestRL
 Parent: ServiceRequest
 Id: ServiceRequestRL
 Title: "ServiceRequest - Referto di Laboratorio"
-Description: "Descrive come rappresentare in FHIR la risorsa ServiceRequest che genera l'incontro del referto di laboratorio per il contesto italiano."
+Description: "Descrive la risorsa ServiceRequest che genera l'incontro del referto di laboratorio."
 * ^version = "0.0.1"
 * ^status = #draft
 * ^experimental = true
@@ -12,10 +12,10 @@ Description: "Descrive come rappresentare in FHIR la risorsa ServiceRequest che 
 
 * identifier 1..* 
 * priority MS 
-* priority ^short = "routine | urgent | asap | stat \r\n Priorità della richiesta."
+* priority ^short = "routine | urgent | asap | stat \r\r\n\n Priorità della richiesta."
 * priority from http://hl7.org/fhir/ValueSet/request-priority (required)
 * subject only Reference(PatientRL)
-* requisition ^short = "Idenificativo comune a più Service Request autorizzate simultaneamente. Rappresenta l'identificativo univoco della richiesta."
+* requisition ^short = "Idenificativo comune a più ServiceRequest autorizzate simultaneamente. Rappresenta l'identificativo univoco della richiesta."
 * quantity[x] ^short = "Molteplicità della prestazione."
 //* occurrence[x] ^short = "Data di erogazione/pianificazione della richiesta." 
 //Aggiungendo la descrizione short in questo modo si perde la struttura di valorizzazione. Capire come inserirla, altrimenti togliere la descrizione.
@@ -24,4 +24,4 @@ Description: "Descrive come rappresentare in FHIR la risorsa ServiceRequest che 
 * specimen ^short = "Reference usata solo se il campione cui punta la richiesta è già stato prelevato ed esiste."
 * intent ^short = "proposal | plan | directive | order | original-order | reflex-order | filler-order | instance-order | option \r\n Indica lo scopo associato ad una richiesta."
 * intent from  $intent-code
-
+* subject ^short = "Soggetto cui si riferisce la richiesta."

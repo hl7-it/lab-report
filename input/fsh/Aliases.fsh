@@ -2,7 +2,8 @@
 Alias: $conf = http://terminology.hl7.org/ValueSet/v3-Confidentiality
 Alias: $sct = http://snomed.info/sct
 Alias: $LOINC = http://loinc.org
-
+Alias: $diagn-status = http://hl7.org/fhir/ValueSet/diagnostic-report-status
+Alias: $diagnosticreport-category = http://terminology.hl7.org/CodeSystem/v2-0074
 //------Profile------//
 Alias: $entityCode = http://terminology.hl7.org/ValueSet/v3-EntityCode
 Alias: $patient-birthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPlace

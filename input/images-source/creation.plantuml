@@ -1,0 +1,13 @@
+@startuml
+Sender -> Receiver: Crea Lab Report [POST]
+opt
+   Sender -> Receiver:  Aggiorna Lab Report [PUT]
+end
+group Consultazione per paziente
+   Consumer -> Receiver: Ricerca per ID prescrizione
+   Consumer -> Receiver: Ricerca per tipo esame
+   Consumer -> Receiver: Ricerca per tipo di campione
+   Consumer -> Receiver: Ricerca per periodo
+end
+Consumer -> Receiver: Ricerca per identificativo 
+@enduml

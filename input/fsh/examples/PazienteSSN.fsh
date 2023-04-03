@@ -3,8 +3,8 @@ InstanceOf: PatientRL
 Usage: #example
 Description: "Esempio di un Paziente: soggetto iscritto al Sistema Sanitario Nazionale (SSN) con rappresentazione strutturata dell'attributo birthPlace."
 
-* extension.url = "http://hl7.org/fhir/R4/extension-patient-birthplace"
-* extension.valueAddress.line.extension[0].url = "http://hl7.org/fhir/R4/extension-iso21090-adxp-streetname"
+* extension.url = "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
+* extension.valueAddress.line.extension[0].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"
 * extension.valueAddress.line.extension[0].valueString = "Via della Vittoria"
 * extension.valueAddress.line.extension[1].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"
 * extension.valueAddress.line.extension[1].valueString = "1"
@@ -39,9 +39,11 @@ Description: "Esempio di un Paziente: soggetto iscritto al Sistema Sanitario Naz
 * contact[1].name.family = "Bianchi"
 * contact[1].name.given = "Maria"
 * contact[0].relationship.coding.code = #C
-* contact[0].relationship.coding.system = "http://hl7.org/fhir/ValueSet/patient-contactrelationship"
+* contact[0].relationship.coding.system = "http://terminology.hl7.org/5.1.0/CodeSystem-v2-0131"
+* contact[0].relationship.coding.display = "Emergency Contact"
 * contact[1].relationship.coding.code = #C
-* contact[1].relationship.coding.system = "http://hl7.org/fhir/ValueSet/patient-contactrelationship"
+* contact[1].relationship.coding.system = "http://terminology.hl7.org/5.1.0/CodeSystem-v2-0131"
+* contact[1].relationship.coding.display = "Emergency Contact"
 * contact[0].telecom.system = #phone
 * contact[0].telecom.value = "3312345567"
 * contact[1].telecom.system = #phone

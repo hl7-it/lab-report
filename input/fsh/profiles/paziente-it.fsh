@@ -2,7 +2,7 @@ Profile: PatientItRL
 Parent: Patient
 Id: PatientRL
 Title: "Patient - Referto di Laboratorio"
-Description: "Descrive come rappresentare le informazioni del paziente nei documenti FHIR per il contesto Italiano."
+Description: "Descrive come rappresentare le informazioni del paziente nei documenti FHIR."
 * ^version = "0.0.1"
 * ^status = #draft
 * ^experimental = true

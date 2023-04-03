@@ -2,7 +2,7 @@ Profile: PractitionerRoleRL
 Parent: PractitionerRole
 Id: PractitionerRoleRL
 Title: "PractitionerRole - Referto di Laboratorio"
-Description: "Descrive la risorsa PractitionerRole utile al contesto italiano del referto di laboratorio."
+Description: "Descrive la risorsa PractitionerRole del referto di laboratorio."
 * ^version = "0.0.1"
 * ^status = #draft
 * ^experimental = true
