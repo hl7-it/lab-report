@@ -1,7 +1,7 @@
 Instance: Composition-Lab-Esempio
 InstanceOf: CompositionRL
 Usage: #example
-Description: "Esempio di una Composition: descrizione header e struttra body del referto."
+Description: "Esempio di una Composition: descrizione header e struttura body del referto."
 * language = #it
 * identifier.use = #official
 * identifier.value = "urn:uuid:10b545ea-725c-446d-9b95-8aeb444eddf3"

@@ -26,7 +26,6 @@ Description: "Esempio di location: struttura ospedaliera di Roma."
 * telecom[0].value = "33324567"
 
 * address[+].city = #36023
-* address[=].use = #home
 * address[=].type = #physical
 * address[=].postalCode = "00144"
 * address[=].city = "ROMA"
