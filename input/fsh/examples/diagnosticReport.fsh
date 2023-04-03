@@ -6,7 +6,7 @@ Description: "Esempio di un report diagnostico: report prodotto durante l'incont
 * basedOn = Reference(ServiceRequest-Lab-Esempio)
 * status = #final
 * category = $diagnosticreport-category#HM "Hematology"
-* code = $LOINC#10450-5 "Glucosio post 10h digiuno"
+* code = $LOINC#11502-2 "Referto di laboratorio"
 * subject = Reference(Paziente-SSN)
 * encounter = Reference(Encounter-Lab-Esempio)
 * result = Reference(Observation-Lab-Esempio)
