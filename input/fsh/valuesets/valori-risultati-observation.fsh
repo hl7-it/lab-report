@@ -1,7 +1,7 @@
-ValueSet: ResultsLaboratoryObservationUvIps
+ValueSet: ResultsLaboratoryObservation
 Id: risultato-osservazione
-Title: "Risultato - RL"
-Description: "Codice che identifica il risultato dell'osservazione nel contesto del Referto di Laboratorio"
+Title: "Risultato Osservazione"
+Description: "Valuset contente i codici che identificano il risultato dell'osservazione nel referto di laboratorio."
 * ^status = #draft
 * ^experimental = false
 * include codes from system $LOINC where STATUS = "ACTIVE" and CLASSTYPE = "1"

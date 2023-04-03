@@ -1,7 +1,7 @@
 Extension: ExtRecordCertification
 Id: recordCertification
 Title: "Certificazione"
-Description: "Estensione usata per indicare che l'informazione associata è stata certificata (od autocertificata) da una certa entità (persona, organizzazione).  L'estensione è caratterizzata da: (a) una data di certificazione o da una periodo di validità (b) un codice od un riferimento al certificatore."
+Description: "Estensione usata per indicare che l'informazione associata è stata certificata (o autocertificata) da una certa entità (persona, organizzazione).  L'estensione è caratterizzata da: (a) una data di certificazione o da una periodo di validità (b) un codice o un riferimento al certificatore."
 * ^version = "0.0.1"
 * ^status = #draft
 * ^context[0].type = #element

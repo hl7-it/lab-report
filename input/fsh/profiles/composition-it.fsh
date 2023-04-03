@@ -2,7 +2,7 @@ Profile: CompositionRL
 Parent: Composition
 Id: CompositionRL
 Title: "Composition - Referto di Laboratorio"
-Description: "Descrizione in FHIR di header e body nel contesto italiano del referto di laboratorio."
+Description: "Descrizione in tramite la risorsa Composition di header e body del referto di laboratorio."
 * ^version = "0.0.1"
 * ^status = #draft
 * ^experimental = true
@@ -34,7 +34,7 @@ Description: "Descrizione in FHIR di header e body nel contesto italiano del ref
 * title = "Referto di Laboratorio" 
 * attester 1..*
 * attester ^slicing.discriminator.type = #value
-* attester ^slicing.discriminator.path = "$this"
+* attester ^slicing.discriminator.path = "mode"
 * attester ^slicing.rules = #open
 * attester ^slicing.description = "Professionisti che attestano la validità del documento"
 * attester ^slicing.ordered = false
@@ -84,7 +84,7 @@ Description: "Descrizione in FHIR di header e body nel contesto italiano del ref
 * section[senza-sottosezione].section ..0
 * section[senza-sottosezione].code 1..
 * section[senza-sottosezione].code from sezione-referto-laboratorio (preferred)
-* section[senza-sottosezione].entry only Reference (ObservationRL)
+* section[senza-sottosezione].entry only Reference (DiagnosticReportRL)
 
 
 * section contains con-sottosezione ..* 
@@ -101,7 +101,7 @@ Description: "Descrizione in FHIR di header e body nel contesto italiano del ref
   * code from sezione-referto-laboratorio (preferred)
   * text ^short = "Sintesi testuale della sezione, per l'interpretazione dell'utente."
   * entry 1..
-  * entry only Reference (ObservationRL)
+  * entry only Reference (DiagnosticReportRL)
 * section contains annotazioni ..*
 * section[annotazioni]
   * ^short = "Commenti testuali"

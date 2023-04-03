@@ -2,7 +2,7 @@ Profile: LocationRL
 Parent: Location
 Id: LocationRL
 Title: "Location - Referto di Laboratorio"
-Description: "Profilo per Location nel contesto italiano."
+Description: "Profilo per Location utile alla descrizione delle informazioni relative alle strutture fisiche."
 * ^version = "0.0.1"
 * ^status = #draft
 * ^experimental = true

@@ -1,7 +1,7 @@
 Extension: ExtDug
 Id: address-dug
 Title: "DUG (Denominazione Urbanistica Generica)"
-Description: "Denominazione Urbanistica Ufficiale"
+Description: "Denominazione Urbanistica Ufficiale."
 * ^version = "0.0.1"
 * ^status = #draft
 * ^context.type = #element

@@ -2,7 +2,7 @@ Profile: BundleRL
 Parent: Bundle
 Id: BundleRL
 Title:    "Bundle - Referto di Laboratorio"
-Description: "Descrizione della risorsa Bundle per il contesto italiano del refero di laboratorio."
+Description: "Descrizione della risorsa Bundle per il contesto italiano del referto di laboratorio."
 * . ^short = "Bundle Referto di Laboratorio"
 * type = #document 
 * type ^short = "Indica cosa rappresenta e l'obiettivo del Bundle."
@@ -36,7 +36,7 @@ Description: "Descrizione della risorsa Bundle per il contesto italiano del refe
 
 * entry[composition].resource only CompositionRL
 * entry[patient].resource only PatientRL
-* entry[practitioner].resource only PractitionerRL
+* entry[practitioner].resource only Practitioner
 * entry[organization].resource only Organization
 * entry[practitionerRole].resource only PractitionerRoleRL
 * entry[person].resource only Person
