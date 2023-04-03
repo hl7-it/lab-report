@@ -28,7 +28,7 @@ Description: "Descrizione della risorsa DiagnosticReport per la descrizione dell
 * performer only Reference(Practitioner or PractitionerRoleRL or Organization or CareTeam)
 * performer ^short = "Responsabile del report clinico."
 * performer ^definition = "Organizzazione o Persona che è responsabile del report; non è necessariamente l'autore dei dati atomici o l'entità che ha interpretato i risultati. "
-* code from sezione-referto-laboratorio (preferred)
+* code = $LOINC#11502-2 "Referto di laboratorio"
 * result only Reference (ObservationRL)
 * result ^short = "Osservazioni cliniche del referto." 
 * imagingStudy 0..0 
