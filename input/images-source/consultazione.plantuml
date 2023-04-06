@@ -4,6 +4,7 @@ Consumer -> Provider: Ricerca per identificativo paziente e identificativo richi
 Consumer -> Provider: Ricerca per identificativo paziente e codice esame 
 Consumer -> Provider: Ricerca per identificativo paziente e tipo campione
 Consumer -> Provider: Ricerca per identificativo paziente e data 
+Consumer -> Provider: Ricerca per identificativo paziente e dati identificativi incontro
 
 else  Consultazione del documento specifico [GET/POST]
 Consumer -> Provider: Ricerca per identificativo documento

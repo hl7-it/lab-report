@@ -13,13 +13,16 @@ Description: "Descrizione della risorsa Encounter utile a descrivere i dati dell
 
 * subject 1..1
 * subject only Reference(PatientRL) 
-* status ^short = "planned | arrived | triaged | in-progress | onleave | finished | cancelled +\r\r\n\nStato attuale dell'incontro."
-* status from http://hl7.org/fhir/encounter-status (required)
+* status ^short = "planned | arrived | triaged | in-progress | onleave | finished | cancelled +\r\r\n\n   Stato attuale dell'incontro."
+* status from $encounter-status (required)
 * class ^short = "Classificazione dell'incontro con il paziente."
-* class from http://terminology.hl7.org/CodeSystem/v3-ActCode (extensible)
+* class from $encounter-class (extensible)
 * basedOn only Reference(ServiceRequestRL)
 * basedOn ^short = "Reference alla ServiceRequest che ha avviato l'incontro."
 * participant MS
 * participant.individual only Reference(PractitionerRoleRL or Practitioner or RelatedPerson)
 * period MS
+* period ^short = "L'inizio e la fine dell'incontro."
+* location ^short = "Dati relativi alle strutture in cui si svolge l'incontro."
 * location.location only Reference(LocationRL)
+* location.location ^short = "Reference alla struttura in cui si svolge l'incontro."
