@@ -2,12 +2,12 @@ Instance: CapabilityStatementReceiverLabReport
 InstanceOf: CapabilityStatement
 Usage: #definition
 * url = "http://hl7.it/fhir/lab-report/CapabilityStatement/CapabilityStatementReceiverLabReport"
-* name = "RefertoDiLaboratorio_Receiver"
+* name = "RefertoDiLaboratorio_Receiver BOZZA"
 * title = "Referto di Laboratorio - Receiver (server)"
 * status = #draft
 * experimental = false
 * date = "2023-04-05"
-* description = "CapabilityStatement per il Receiver definito nelle specifiche del Referto di Laboratorio"
+* description = "Versione BOZZA di CapabilityStatement per il Receiver definito nelle specifiche del Referto di Laboratorio"
 * kind = #requirements
 * fhirVersion = #4.0.1
 * format[0] = #application/fhir+json
