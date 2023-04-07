@@ -19,7 +19,7 @@ Description: "Descrizione della risorsa DiagnosticReport per la descrizione dell
 * subject 1..
 * subject ^short = "Soggetto del referto."
 * subject only Reference (PatientRL) 
-* status ^short = "registered | partial | preliminary | modified | final | amended | corrected | appended | cancelled | entered-in-error | unknown \r\r\n\n Stato del report clinico."
+* status ^short = "registered | partial | preliminary | modified | final | amended | corrected | appended | cancelled | entered-in-error | unknown \r\n Stato del report clinico."
 * status from $diagn-status (required)
 * encounter only Reference (EncounterRL) 
 * encounter ^short = "Evento sanitario che ha portato alla creazione del DiagnosticReport"

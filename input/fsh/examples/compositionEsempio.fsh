@@ -12,9 +12,6 @@ Description: "Esempio di una Composition: descrizione header e struttura body de
 * type.coding.code = #11502-2
 * type.coding.display = "Referto di laboratorio" 
 
-//* category.coding.system =  "http://hl7.org/fhir/ValueSet/document-classcodes"
-//* category.coding.code = 
-
 * subject = Reference(Paziente-SSN)
 
 * encounter = Reference(Encounter-Lab-Esempio)

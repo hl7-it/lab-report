@@ -4,7 +4,11 @@ Alias: $sct = http://snomed.info/sct
 Alias: $LOINC = http://loinc.org
 Alias: $diagn-status = http://hl7.org/fhir/ValueSet/diagnostic-report-status
 Alias: $diagnosticreport-category = http://terminology.hl7.org/CodeSystem/v2-0074
+Alias: $ucum = https://ucum.org/
 //------Profile------//
+Alias: $observation-status = http://hl7.org/fhir/ValueSet/observation-status
+Alias: $encounter-class = http://terminology.hl7.org/ValueSet/encounter-class
+Alias: $encounter-status = http://hl7.org/fhir/ValueSet/encounter-status
 Alias: $entityCode = http://terminology.hl7.org/ValueSet/v3-EntityCode
 Alias: $patient-birthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
 Alias: $gender-code = http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender

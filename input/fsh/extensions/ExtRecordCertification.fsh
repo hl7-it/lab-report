@@ -6,12 +6,7 @@ Description: "Estensione usata per indicare che l'informazione associata è stat
 * ^status = #draft
 * ^context[0].type = #element
 * ^context[=].expression = "Address"
-// * ^context[+].type = #element
-// * ^context[=].expression = "Patient"
-// * ^context[+].type = #element
-// * ^context[=].expression = "Patient.identifier"
 * . ^short = "Certificazione del record"
-// * . ^definition = "Identifica che un certo record paziente, o codice fiscale od indirizzo di residenza è stato certificato da una specifica entità (e.g. MEF)."
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

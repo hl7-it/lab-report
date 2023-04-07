@@ -7,8 +7,8 @@ Description: "Descrive come rappresentare la risorsa Observation per le rilevazi
 * obeys ita-lab-1
 * code from risultato-osservazione (preferred)
 * code ^short = "Codice dell'osservazione."
-* status = #final
-* status ^short = "Stato dell'osservazione."
+* status from $observation-status (required)
+* status ^short = "	registered | preliminary | final | amended +\nStato dell'osservazione."
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
@@ -29,8 +29,6 @@ Description: "Descrive come rappresentare la risorsa Observation per le rilevazi
 * performer only Reference(Practitioner or PatientRL or PractitionerRoleRL or Organization or RelatedPerson or CareTeam)
 * value[x] MS
 * value[x] ^short = "Risultato dell'osservaizone."
-* valueQuantity only quantity-RL
-* valueQuantity ^short = "Risultato misurabile tramite una quantità."
 * hasMember only Reference(OsservazioneRL)
 * hasMember ^short = "Osservazioni correlate alla risorsa."
 * specimen ^short = "Reference al campione su cui si basa l'osservazione."

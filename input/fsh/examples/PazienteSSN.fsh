@@ -16,17 +16,17 @@ Description: "Esempio di un Paziente: soggetto iscritto al Sistema Sanitario Naz
 * identifier.value = "RSSMRA71E01F205E"
 
 * name.family = "Rossi"
-* name.given = "Mario"
+* name.given = "Maria"
 
 * telecom[0].system = #phone
 * telecom[0].value = "3331245678"
 
 * telecom[1].system = #email
-* telecom[1].value = "mario.rossi@mail.com"
+* telecom[1].value = "maria.rossi@mail.com"
 
 * birthDate = "1971-05-01"
 
-* gender = #male
+* gender = #female
 
 * address.city = "Milano"
 * address.country = "Italia"

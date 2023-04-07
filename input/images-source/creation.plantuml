@@ -8,6 +8,7 @@ group Consultazione per paziente
    Consumer -> Receiver: Ricerca per tipo esame
    Consumer -> Receiver: Ricerca per tipo di campione
    Consumer -> Receiver: Ricerca per periodo
+   Consumer -> Receiver: Ricerca per incontro
 end
 Consumer -> Receiver: Ricerca per identificativo 
 @enduml

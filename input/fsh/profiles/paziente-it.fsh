@@ -9,9 +9,8 @@ Description: "Descrive come rappresentare le informazioni del paziente nei docum
 * ^date = "2023-03-08T16:43:56.519+01:00"
 * . MS
 
-* extension contains
-    $patient-birthPlace named birthPlace 0..1
-* extension[birthPlace].valueAddress only Address-it
+* extension contains 
+    BirthPlaceIta named birthPlace 0..1
 * identifier 1..
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "$this.system"

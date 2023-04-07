@@ -19,7 +19,6 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * identifier 1..1
 * type = $LOINC#11502-2 "Referto di laboratorio"
 * status ^short = "Stato di completezza della risorsa Composition. Lo stato della risorsa rappresenta anche lo stato del documento."
-* status = #final
 * subject 1..1
 * subject only Reference(PatientRL)
 * subject ^short = "Soggetto del documento."

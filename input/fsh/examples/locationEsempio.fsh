@@ -15,8 +15,6 @@ Description: "Esempio di location: struttura ospedaliera di Roma."
 
 * alias[1] = "Ospedale universitario di Roma"
 
-//mode??
-
 * type.coding.system = "http://terminology.hl7.org/CodeSystem/v3-RoleCode"
 * type.coding.code = #HOSP
 * type.coding.display = "Hospital"
