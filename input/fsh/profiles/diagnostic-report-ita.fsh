@@ -18,17 +18,27 @@ Description: "Descrizione della risorsa DiagnosticReport per la descrizione dell
 
 * subject 1..
 * subject ^short = "Soggetto del referto."
-* subject only Reference (PatientRL) 
+* subject.type 1..
+* subject.identifier 1..
+* subject.type = "Patient"
+* subject.identifier ^short = "Identificativo univoco del soggetto."
+* subject.reference 0..0
+
 * status ^short = "registered | partial | preliminary | modified | final | amended | corrected | appended | cancelled | entered-in-error | unknown \r\n Stato del report clinico."
 * status from $diagn-status (required)
 * encounter only Reference (EncounterRL) 
 * encounter ^short = "Evento sanitario che ha portato alla creazione del DiagnosticReport"
 * specimen only Reference (SpecimenRL)
 * specimen ^short = "Reference ai campioni su cui si basa DiagnosticReport."
-* performer only Reference(Practitioner or PractitionerRoleRL or Organization or CareTeam)
+* performer obeys performer-rule 
 * performer ^short = "Responsabile del report clinico."
 * performer ^definition = "Organizzazione o Persona che è responsabile del report; non è necessariamente l'autore dei dati atomici o l'entità che ha interpretato i risultati. "
-* code = $LOINC#11502-2 "Referto di laboratorio"
+* code = $LOINC#11502-2 "Referto di medicina di laboratorio"
 * result only Reference (ObservationRL)
 * result ^short = "Osservazioni cliniche del referto." 
 * imagingStudy 0..0 
+
+Invariant: performer-rule
+Description: "Practitioner-PractitionerRole-Organization-CareTeam gestione reference"
+Severity: #error
+Expression: "((type='Practitioner' or type='Organization') and reference.exists().not()) or (type.exists().not() and (reference.contains('PractitionerRole') or reference.contains('CareTeam')))"

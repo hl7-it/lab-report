@@ -1,4 +1,4 @@
-Profile: OsservazioneRL 
+Profile: ObservationRL
 Parent: Observation
 Id: ObservationRL
 Title:    "Observation - Referto di Laboratorio"
@@ -13,26 +13,32 @@ Description: "Descrive come rappresentare la risorsa Observation per le rilevazi
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
 * category ^short = "Codice che classifica il tipo di osservazione (laboratory)."
-* category contains esame-laboratorio 1..1 MS
+* category contains esame-laboratorio 1..1 
 * category[esame-laboratorio] = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
 * category[esame-laboratorio].coding.system ^short = "Terminologia utilizzata."
 * category[esame-laboratorio].coding.code ^short = "Codice della categoria."
-* subject 1..1
-* subject only Reference(PatientRL)
-* subject ^short = "Soggetto dell'osservazione."
+
+* subject 1..
+* subject ^short = "Soggetto della rilevazione clinica."
+* subject.type 1..
+* subject.identifier 1..
+* subject.type = "Patient"
+* subject.identifier ^short = "Identificativo univoco del soggetto."
+* subject.reference 0..0
+
 * encounter 1..1
 * encounter only Reference(EncounterRL)
 * encounter ^short = "Contesto in cui è stata prodotta l'osservazione."
 
-* performer 1.. MS
+* performer 1..
 * performer ^short = "Soggetto responsabile dell'osservazione."
-* performer only Reference(Practitioner or PatientRL or PractitionerRoleRL or Organization or RelatedPerson or CareTeam)
-* value[x] MS
+* . obeys performer-rule
 * value[x] ^short = "Risultato dell'osservaizone."
-* hasMember only Reference(OsservazioneRL)
+// * valueQuantity only quantity-RL
+// * valueQuantity ^short = "Risultato misurabile tramite una quantità."
+* hasMember only Reference(ObservationRL)
 * hasMember ^short = "Osservazioni correlate alla risorsa."
 * specimen ^short = "Reference al campione su cui si basa l'osservazione."
-* specimen MS
 * specimen only Reference(SpecimenRL)
 
 Invariant: ita-lab-1

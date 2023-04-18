@@ -17,48 +17,58 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
     composition-dataenterer-it named dataEnterer 0..*
 
 * identifier 1..1
-* type = $LOINC#11502-2 "Referto di laboratorio"
+* type = $LOINC#11502-2 "Referto di medicina di laboratorio"
 * status ^short = "Stato di completezza della risorsa Composition. Lo stato della risorsa rappresenta anche lo stato del documento."
 * subject 1..1
-* subject only Reference(PatientRL)
+* subject.type 1..
+* subject.identifier 1..
+* subject.type = "Patient"
+* subject.identifier ^short = "Identificativo univoco del soggetto."
+* subject.reference 0..0
 * subject ^short = "Soggetto del documento."
 * encounter 1..1
 * encounter ^short = "Contesto in cui è stato generato il documento."
 * encounter only Reference(EncounterRL)
 * date ^short = "Data di modifica della risorsa da parte del firmatario."
 * confidentiality from $conf
-* author ^short = "Autore del documento."
-* author ^definition = "Chi o cosa ha contribuito alla definizione del contenuto del documento e ne è responsabile."
+
+* author obeys practitioner-organization-patient-rule
+
 * title ^short = "Titolo o nome human-readable della Composition."
 * title = "Referto di Laboratorio" 
 * attester 1..*
 * attester ^slicing.discriminator.type = #value
 * attester ^slicing.discriminator.path = "mode"
 * attester ^slicing.rules = #open
-* attester ^slicing.description = "Professionisti che attestano la validità del documento"
+* attester ^slicing.description = "Professionisti che attestano la validità del documento."
 * attester ^slicing.ordered = false
 * attester contains
-    legalAuthenticator 1..1 MS and
+    legalAuthenticator 1..1 and
     authenticator 0..1 and
     informationRecipient 0..*
 * attester[legalAuthenticator] ^short = "Firmatario del documento FHIR."
 * attester[legalAuthenticator].mode 1..1
 * attester[legalAuthenticator].mode = #legal
-* attester[legalAuthenticator].party only Reference(PractitionerRoleRL or Practitioner) 
+* attester[legalAuthenticator] obeys practitioner-rule
 * attester[legalAuthenticator].time 1..1
+
 * attester[authenticator] ^short = "Validatore del documento FHIR."
 * attester[authenticator].mode 1..1
 * attester[authenticator].mode = #professional
-* attester[authenticator].party only Reference(PractitionerRoleRL or Practitioner) 
+* attester[authenticator].party obeys practitioner-rule
+
+* attester[informationRecipient] ^short = "Professionisti sanitari che ricevono una copia del documento (es. MMG/PLS)."
 * attester[informationRecipient].mode = #personal
-* attester[informationRecipient].party only Reference(PractitionerRoleRL or Practitioner or Organization) 
-* attester[informationRecipient] ^short = "Professionisti sanitari che ricevono una copia del documento (es. MMG/PLS)"
+* attester[informationRecipient].party obeys practitioner-organization-rule
 
 * custodian 1..1
+* custodian.type 1..
+* custodian.identifier 1..
+* custodian.type = "Organization"
+* custodian.identifier ^short = "Identificativo dell'organizzazione."
 * custodian ^short = "Organizzazione che si occupa della conservazione del documento FHIR."
 
 * relatesTo ^short = "Ulteriori risorse Composition correlate al documento."
-* relatesTo MS
 * relatesTo.target[x] only Reference 
 * relatesTo obeys it-composition-1
 
@@ -114,3 +124,18 @@ Invariant: it-composition-1
 Description: "relatesTo diventa obbligatorio per versioni della risorsa maggiori di 1"
 Severity: #error
 Expression: "version > 1"
+
+Invariant: practitioner-rule
+Description: "Practitioner-PractitionerRole gestione reference"
+Severity: #error
+Expression: "(party.type='Practitioner' and party.reference.exists().not()) or (party.type.exists().not() and party.reference.contains('PractitionerRole'))"
+
+Invariant: practitioner-organization-rule
+Description: "Practitioner-PractitionerRole-Organization gestione reference"
+Severity: #error
+Expression: "(party.type='Practitioner' or party.type='Organization' and party.reference.exists().not()) or (party.type.exists().not() and party.reference.contains('PractitionerRole'))"
+
+Invariant: practitioner-organization-patient-rule
+Description: "Practitioner-Patient-Organization gestione reference"
+Severity: #error
+Expression: "(type='Patient' or type = 'Practitioner' or type = 'Organization' and reference.exists().not()) or (type.exists().not() and reference.contains('PractitionerRole'))"
