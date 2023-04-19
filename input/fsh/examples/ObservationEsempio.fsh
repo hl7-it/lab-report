@@ -1,7 +1,9 @@
 Instance: Observation-Lab-Esempio
 InstanceOf: ObservationRL
-Usage: #example
+Usage: #inline
 Description: "Esempio di un'osservazione: rilevazione di glucosio nel sangue."
+
+* id = "333b62b2-47b0-43b5-9745-abec1f0c4656"
 
 * category[0][esame-laboratorio].coding.code = #laboratory
 * category[0][esame-laboratorio].coding.system = "http://terminology.hl7.org/CodeSystem/observation-category"
@@ -19,10 +21,13 @@ Description: "Esempio di un'osservazione: rilevazione di glucosio nel sangue."
 
 * valueQuantity.unit = "mg/dL"
 * valueQuantity.code = #mg/dL
-* valueQuantity.system = "https://ucum.org/"
+* valueQuantity.system = "https://ucum.org"
 * valueQuantity.value = 70
 
-* subject = Reference(Paziente-SSN)
+* subject.type = "Patient"
+* subject.identifier.system = "http://hl7.it/sid/codiceFiscale"
+* subject.identifier.value = "RSSMRA71E01F205E"
+
 * encounter = Reference(Encounter-Lab-Esempio)
 * performer = Reference(PractitionerRole-Lab-Esempio)
 * specimen = Reference (Specimen-Lab-Esempio)
