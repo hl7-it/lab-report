@@ -1,7 +1,7 @@
 Instance: Bundle-Lab-Esempio
 InstanceOf: BundleRL
 Title: "Bundle document - Referto di Medicina di Laboratorio"
-Description: "Bundle document di un referto di medicina di laboratorio - Esame del sangue"
+Description: "PROVA"
 Usage: #example
 
 * identifier.system = "urn:ietf:rfc:39861"

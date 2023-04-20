@@ -21,5 +21,6 @@ Description: "Esempio di un report diagnostico: report prodotto durante l'incont
 
 * issued = "2023-02-25T12:45:00+01:00"
 * performer = Reference(PractitionerRole-Lab-Esempio)
+//* performer.type = "Organization"
 * specimen = Reference(Specimen-Lab-Esempio)
 * conclusionCode = $sct#166921001 "Blood glucose normal"
