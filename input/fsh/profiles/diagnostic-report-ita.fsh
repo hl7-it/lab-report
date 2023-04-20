@@ -4,6 +4,7 @@ Id: DiagnosticReportRL
 Title: "DiagnosticReport - Referto di Laboratorio"
 Description: "Descrizione della risorsa DiagnosticReport per la descrizione delle informazioni cliniche del referto di laboratorio."
 
+* obeys performer-rule
 * ^publisher = "HL7 Italia"
 * ^copyright = "HL7 Italia"
 * . ^short = "DiagnosticReport Referto di Laboratorio"
@@ -30,7 +31,6 @@ Description: "Descrizione della risorsa DiagnosticReport per la descrizione dell
 * encounter ^short = "Evento sanitario che ha portato alla creazione del DiagnosticReport"
 * specimen only Reference (SpecimenRL)
 * specimen ^short = "Reference ai campioni su cui si basa DiagnosticReport."
-* performer obeys performer-rule 
 * performer ^short = "Responsabile del report clinico."
 * performer ^definition = "Organizzazione o Persona che è responsabile del report; non è necessariamente l'autore dei dati atomici o l'entità che ha interpretato i risultati. "
 * code = $LOINC#11502-2 "Referto di medicina di laboratorio"
@@ -41,4 +41,4 @@ Description: "Descrizione della risorsa DiagnosticReport per la descrizione dell
 Invariant: performer-rule
 Description: "Practitioner-PractitionerRole-Organization-CareTeam gestione reference"
 Severity: #error
-Expression: "((type='Practitioner' or type='Organization') and reference.exists().not()) or (type.exists().not() and (reference.contains('PractitionerRole') or reference.contains('CareTeam')))"
+Expression: "((performer.type='Practitioner' or performer.type='Organization') and performer.reference.exists().not()) or (performer.type.exists().not() and (performer.reference.contains('PractitionerRole') or performer.reference.contains('CareTeam')))"
