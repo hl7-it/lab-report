@@ -7,6 +7,8 @@ Description: "Descrizione della risorsa Bundle per il contesto italiano del refe
 * type = #document 
 * type ^short = "Indica cosa rappresenta e l'obiettivo del Bundle."
 * identifier 1.. 
+* identifier ^short = "Identificativo del FHIR Document."
+* identifier ^definition = "L'identificativo è dipendente dalla versione della Bundle, e per soddisfare i requisiti di persistenza deve essere unico."
 
 * entry ^slicing.discriminator[0].type = #type
 * entry ^slicing.discriminator[=].path = "resource"
