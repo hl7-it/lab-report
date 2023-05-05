@@ -1,7 +1,7 @@
 ValueSet: SezioniRefertoLaboratorio
 Id: sezione-referto-laboratorio
 Title: "Sezioni Referto Laboratorio"
-Description: "Valueset contente i codici LOINC per la specialità di laboratorio."
+Description: "Valueset contenente i codici LOINC per la specialità di laboratorio."
 * ^status = #draft
 * ^experimental = false
 * $LOINC#18718-7 "Studi di marcatori cellulari"

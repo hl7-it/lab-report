@@ -20,11 +20,7 @@ Description: "Descrive come rappresentare la risorsa Observation per le rilevazi
 
 * subject 1..
 * subject ^short = "Soggetto della rilevazione clinica."
-* subject.type 1..
-* subject.identifier 1..
-* subject.type = "Patient"
-* subject.identifier ^short = "Identificativo univoco del soggetto."
-* subject.reference 0..0
+* subject only Reference(Patient)
 
 * encounter 1..1
 * encounter only Reference(EncounterRL)
@@ -32,7 +28,7 @@ Description: "Descrive come rappresentare la risorsa Observation per le rilevazi
 
 * performer 1..
 * performer ^short = "Soggetto responsabile dell'osservazione."
-* . obeys performer-rule
+* performer only Reference(Practitioner or PractitionerRoleRL or Organization or CareTeam)
 * value[x] ^short = "Risultato dell'osservaizone."
 // * valueQuantity only quantity-RL
 // * valueQuantity ^short = "Risultato misurabile tramite una quantità."

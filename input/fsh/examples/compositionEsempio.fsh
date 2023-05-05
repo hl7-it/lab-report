@@ -17,9 +17,8 @@ Description: "Esempio di una Composition: descrizione header e struttura body de
 * type.coding.code = #11502-2
 * type.coding.display = "Referto di medicina di laboratorio" 
 
-* subject.type = "Patient"
-* subject.identifier.system = "http://hl7.it/sid/codiceFiscale"
-* subject.identifier.value = "RSSMRA71E01F205E"
+* subject.reference = $patient-url
+//"Patient/1"
 
 * encounter = Reference(Encounter-Lab-Esempio)
 
@@ -35,9 +34,7 @@ Description: "Esempio di una Composition: descrizione header e struttura body de
 * attester[legalAuthenticator].time = "2023-02-25T12:45:00+01:00"
 * attester[legalAuthenticator].party = Reference(PractitionerRole-Lab-Esempio)
 
-* custodian.type = "Organization"
-* custodian.identifier.value = "120201"
-* custodian.identifier.system = "http://hl7.it/sid/fls"
+* custodian = Reference(Organization-Lab-Esempio)
 
 * section.code.coding.system = $LOINC
 * section.code.coding.code = #26436-6

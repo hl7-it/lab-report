@@ -24,9 +24,10 @@ Description: "Esempio di un'osservazione: rilevazione di glucosio nel sangue."
 * valueQuantity.system = "https://ucum.org"
 * valueQuantity.value = 70
 
-* subject.type = "Patient"
-* subject.identifier.system = "http://hl7.it/sid/codiceFiscale"
-* subject.identifier.value = "RSSMRA71E01F205E"
+// * subject.type = "Patient"
+// * subject.identifier.system = "http://hl7.it/sid/codiceFiscale"
+// * subject.identifier.value = "RSSMRA71E01F205E"
+* subject.reference = $patient-url
 
 * encounter = Reference(Encounter-Lab-Esempio)
 * performer = Reference(PractitionerRole-Lab-Esempio)

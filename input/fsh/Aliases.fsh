@@ -35,6 +35,6 @@ Alias: $intent-code = http://hl7.org/fhir/ValueSet/request-intent
 Alias: $serviceRequest-category = http://example.it/FHIR/schema/serviceRequest-category
 Alias: $servicerequest-lab = http://example.it/FHIR/schema/servicerequest-englab
 Alias: $istat-DUG-CS = http://registry.geodati.gov.it/dug
-
+Alias: $patient-url = http://example.it/Patient/1
 //---Extension 
 Alias: $ext-dataEnterer-time = dataEnterer-time

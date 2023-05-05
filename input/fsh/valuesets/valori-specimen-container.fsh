@@ -1,6 +1,6 @@
 ValueSet:      ContainerCampioneLaboratorio
 Id:	       lab-specimenContainer-it
-Title:	       "Conteiner Campione Laboratorio"
+Title:	       "Container Campione Laboratorio"
 Description:   "Valueset contenente i codici che identificano il container utilizzato per il campione."
 * ^status = #draft
 * ^experimental = false

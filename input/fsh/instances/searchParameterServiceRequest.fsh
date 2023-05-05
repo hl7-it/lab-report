@@ -1,7 +1,7 @@
 Instance: DocumentServiceRequest
 InstanceOf: SearchParameter
 Usage: #definition
-Title: "ServiceRequest: identificativo"
+Title: "Bundle-ServiceRequest: identificativo"
 * status = #active
 * name = "document-servicerequest"
 * url = "http://example-it/document-servicerequest"

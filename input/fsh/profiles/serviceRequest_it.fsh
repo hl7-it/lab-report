@@ -17,16 +17,11 @@ Description: "Descrive la risorsa ServiceRequest che genera l'incontro del refer
 
 * subject 1..
 * subject ^short = "Soggetto cui si riferisce la richiesta."
-* subject.type 1..
-* subject.identifier 1..
-* subject.type = "Patient"
-* subject.identifier ^short = "Identificativo univoco del soggetto."
-* subject.reference 0..0
+* subject only Reference(Patient)
+
 
 * requisition ^short = "Idenificativo comune a più ServiceRequest autorizzate simultaneamente. Rappresenta l'identificativo univoco della richiesta."
 * quantity[x] ^short = "Molteplicità della prestazione."
-//* occurrence[x] ^short = "Data di erogazione/pianificazione della richiesta." 
-//Aggiungendo la descrizione short in questo modo si perde la struttura di valorizzazione. Capire come inserirla, altrimenti togliere la descrizione.
 * authoredOn ^short = "Data di invio della richiesta."
 * reasonCode ^short = "Quesito diagnostico associato alla richiesta."
 * specimen ^short = "Reference usata solo se il campione cui punta la richiesta è già stato prelevato ed esiste."

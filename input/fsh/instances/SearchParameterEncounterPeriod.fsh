@@ -1,7 +1,7 @@
 Instance: DocumentEncounterPeriod
 InstanceOf: SearchParameter
 Usage: #definition
-Title: "Ecounter: periodo"
+Title: "Bundle-Encounter: periodo"
 * status = #active
 * name = "document-encounter-period"
 * url = "http://hl7.it/fhir/lab-report/SearchParameter/DocumentEncounterPeriod"
@@ -9,4 +9,4 @@ Title: "Ecounter: periodo"
 * base = #Bundle
 * type = #date
 * expression = "Bundle.entry.resource.as(Encounter).period"
-* description = "Permette di RIcercare il Bundle in base alla data dell'incontro."
+* description = "Permette di ricercare il Bundle in base alla data dell'incontro."
