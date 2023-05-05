@@ -1,7 +1,7 @@
 Instance: DocumentServiceRequisition
 InstanceOf: SearchParameter
 Usage: #definition
-Title: "ServiceRequest: identificativo comune (es.NRE)"
+Title: "Bundle-ServiceRequest: identificativo comune (es.NRE)"
 * status = #active
 * name = "document-servicerequest-requisition"
 * url = "http://hl7.it/fhir/lab-report/SearchParameter/DocumentServiceRequisition"

@@ -17,9 +17,10 @@ Filler -> AutomationManager: Send ServiceRequest
     end
 AutomationManager -> Filler: Send Observations
 Filler -> Sender: Send DiagnosticReport
-Sender -> Placer: Retrive Patient,Practitioner,Organization,Location
+Sender -> Placer: Retrive Patient, Practitioner, Organization, Location
 Placer --> Sender: Response POST
 Sender -> Sender: Create Composition
-
+Sender -> Sender: Create Bundle
+Sender -> Receiver: POST Bundle Laboratory Report
 @enduml
 

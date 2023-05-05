@@ -38,7 +38,7 @@ Usage: #definition
 * rest.resource[=].searchParam.name = "Encounter.period"
 * rest.resource[=].searchParam.definition = "http://hl7.it/fhir/lab-report/SearchParameter/DocumentEncounterPeriod"
 * rest.resource[=].searchParam.type = #date
-* rest.resource[=].searchParam.documentation = "Permette di RIcercare il Bundle in base alla data dell'incontro."
+* rest.resource[=].searchParam.documentation = "Permette di ricercare il Bundle in base alla data dell'incontro."
 * rest.resource[=].searchParam.name = "Observation.code"
 * rest.resource[=].searchParam.definition = "http://hl7.it/fhir/lab-report/SearchParameter/DocumentObservationCode"
 * rest.resource[=].searchParam.type = #token
@@ -54,12 +54,11 @@ Usage: #definition
 * rest.resource[=].searchParam.name = "Encounter.identifier"
 * rest.resource[=].searchParam.definition = "http://hl7.it/fhir/lab-report/SearchParameter/DocumentEncounterIdentifier"
 * rest.resource[=].searchParam.type = #token
-* rest.resource[=].searchParam.documentation = "Permette di Ricercare il Bundle in base all'identificativo dell'incontro."
+* rest.resource[=].searchParam.documentation = "Permette di ricercare il Bundle in base all'identificativo dell'incontro."
 * rest.resource[=].searchParam.name = "Patient.identifier"
 * rest.resource[=].searchParam.definition = "http://hl7.it/fhir/lab-report/SearchParameter/DocumentPatientIdentifier"
 * rest.resource[=].searchParam.type = #token
 * rest.resource[=].searchParam.documentation = "Permette di ricercare il Bundle in base al paziente."
-
 
 * document[0].mode = #producer
 * document[=].profile = Canonical(BundleRL)
@@ -77,24 +76,6 @@ Usage: #definition
 * document[=].profile = Canonical(DiagnosticReportRL)
 * document[+].mode = #producer
 * document[=].profile = Canonical(PractitionerRoleRL)
-* document[+].mode = #producer
-* document[=].profile = Canonical(Device)
-* document[+].mode = #producer
-* document[=].profile = Canonical(Procedure)
-* document[+].mode = #producer
-* document[=].profile = Canonical(Media)
-
-* rest.resource[+].type = #Device
-* rest.resource[=].profile = Canonical( Device )
-* rest.resource[=].interaction[0].code = #read
-
-* rest.resource[+].type = #Media
-* rest.resource[=].profile = Canonical( Media )
-* rest.resource[=].interaction[0].code = #read
-
-* rest.resource[+].type = #Procedure
-* rest.resource[=].profile = Canonical( Procedure )
-* rest.resource[=].interaction[0].code = #read
 
 * rest.resource[+].type = #Composition
 * rest.resource[=].profile = Canonical( CompositionRL )

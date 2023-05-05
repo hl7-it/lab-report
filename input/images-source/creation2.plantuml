@@ -1,0 +1,10 @@
+@startuml
+Sender -> Receiver: Crea Lab Report [POST]
+opt
+   Sender -> Receiver:  Aggiorna Lab Report [PUT]
+end
+group Consultazione per paziente
+   Consumer -> Receiver: Ricerca con parametri aggiuntivi (FHIR Search)
+end
+Consumer -> Receiver: Ricerca per identificativo documento
+@enduml

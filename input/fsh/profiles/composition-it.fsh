@@ -20,11 +20,7 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * type = $LOINC#11502-2 "Referto di medicina di laboratorio"
 * status ^short = "Stato di completezza della risorsa Composition. Lo stato della risorsa rappresenta anche lo stato del documento."
 * subject 1..1
-* subject.type 1..
-* subject.identifier 1..
-* subject.type = "Patient"
-* subject.identifier ^short = "Identificativo univoco del soggetto."
-* subject.reference 0..0
+* subject only Reference(Patient)
 * subject ^short = "Soggetto del documento."
 * encounter 1..1
 * encounter ^short = "Contesto in cui è stato generato il documento."
@@ -32,7 +28,7 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * date ^short = "Data di modifica della risorsa da parte del firmatario."
 * confidentiality from $conf
 
-* author obeys practitioner-organization-patient-rule
+* author only Reference(Practitioner or PractitionerRoleRL or PatientRL or Organization)
 
 * title ^short = "Titolo o nome human-readable della Composition."
 * title = "Referto di Laboratorio" 
@@ -49,23 +45,20 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * attester[legalAuthenticator] ^short = "Firmatario del documento FHIR."
 * attester[legalAuthenticator].mode 1..1
 * attester[legalAuthenticator].mode = #legal
-* attester[legalAuthenticator] obeys practitioner-rule
+* attester[legalAuthenticator].party only Reference(Practitioner or PractitionerRoleRL)
 * attester[legalAuthenticator].time 1..1
 
 * attester[authenticator] ^short = "Validatore del documento FHIR."
 * attester[authenticator].mode 1..1
 * attester[authenticator].mode = #professional
-* attester[authenticator].party obeys practitioner-rule
+* attester[authenticator].party only Reference(Practitioner or PractitionerRoleRL)
 
 * attester[informationRecipient] ^short = "Professionisti sanitari che ricevono una copia del documento (es. MMG/PLS)."
 * attester[informationRecipient].mode = #personal
-* attester[informationRecipient].party obeys practitioner-organization-rule
+* attester[informationRecipient].party only Reference(Practitioner or PractitionerRoleRL or Organization)
 
 * custodian 1..1
-* custodian.type 1..
-* custodian.identifier 1..
-* custodian.type = "Organization"
-* custodian.identifier ^short = "Identificativo dell'organizzazione."
+* custodian only Reference(Organization)
 * custodian ^short = "Organizzazione che si occupa della conservazione del documento FHIR."
 
 * relatesTo ^short = "Ulteriori risorse Composition correlate al documento."
@@ -124,18 +117,3 @@ Invariant: it-composition-1
 Description: "relatesTo diventa obbligatorio per versioni della risorsa maggiori di 1"
 Severity: #error
 Expression: "version > 1"
-
-Invariant: practitioner-rule
-Description: "Practitioner-PractitionerRole gestione reference"
-Severity: #error
-Expression: "(party.type='Practitioner' and party.reference.exists().not()) or (party.type.exists().not() and party.reference.contains('PractitionerRole'))"
-
-Invariant: practitioner-organization-rule
-Description: "Practitioner-PractitionerRole-Organization gestione reference"
-Severity: #error
-Expression: "(party.type='Practitioner' or party.type='Organization' and party.reference.exists().not()) or (party.type.exists().not() and party.reference.contains('PractitionerRole'))"
-
-Invariant: practitioner-organization-patient-rule
-Description: "Practitioner-Patient-Organization gestione reference"
-Severity: #error
-Expression: "(type='Patient' or type = 'Practitioner' or type = 'Organization' and reference.exists().not()) or (type.exists().not() and reference.contains('PractitionerRole'))"

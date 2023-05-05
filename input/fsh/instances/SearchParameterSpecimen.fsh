@@ -1,7 +1,7 @@
 Instance: DocumentSpecimenType
 InstanceOf: SearchParameter
 Usage: #definition
-Title: "Specimen: tipo di campione"
+Title: "Bundle-Specimen: tipo di campione"
 * status = #active
 * name = "document-specimen"
 * url = "http://hl7.it/fhir/lab-report/SearchParameter/DocumentSpecimenType"

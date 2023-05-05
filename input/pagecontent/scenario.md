@@ -9,8 +9,8 @@ In questo scenario si delineano i seguenti casi d'uso:
 - Alimentazione
 - Aggiornamento
 - Consultazione
-I dettagli di ogni scenario sono descritti di seguito.
 
+I dettagli di ogni scenario sono descritti di seguito.
 ### Alimentazione Referto di Laboratorio
 Questa transazione è utilizzata per alimentare il repository con i referti di medicina di laboratorio.
 <p>{%include alimentazione.svg -%}</p>

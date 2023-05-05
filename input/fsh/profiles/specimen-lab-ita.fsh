@@ -20,9 +20,4 @@ Description: "Descrive la risorsa Specimen per il campione nel referto di labora
 
 * subject 1..
 * subject ^short = "Soggetto da cui è stato prelevato il campione."
-* subject.type 1..
-* subject.identifier 1..
-* subject.type = "Patient"
-* subject.identifier ^short = "Identificativo univoco del soggetto."
-* subject.reference 0..0
-
+* subject only Reference(Patient)

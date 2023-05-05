@@ -20,9 +20,10 @@ Description: "Esempio di richiesta: prestazione richiesta facente parte di un'au
 * category.coding.code = #108252007
 * category.coding.display = "Laboratory procedure"
 
-* subject.type = "Patient"
-* subject.identifier.system = "http://hl7.it/sid/codiceFiscale"
-* subject.identifier.value = "RSSMRA71E01F205E"
+* subject.reference = $patient-url
+// * subject.type = "Patient"
+// * subject.identifier.system = "http://hl7.it/sid/codiceFiscale"
+// * subject.identifier.value = "RSSMRA71E01F205E"
 
 * priority = #routine
 

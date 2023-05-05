@@ -9,9 +9,7 @@ Description: "Esempio di campione: sangue prelevato dall'avambraccio del pazient
 * type.coding.system = "http://terminology.hl7.org/CodeSystem/v3-SpecimenType"
 * type.coding.display = "Whole blood"
 
-* subject.type = "Patient"
-* subject.identifier.system = "http://hl7.it/sid/codiceFiscale"
-* subject.identifier.value = "RSSMRA71E01F205E"
+* subject.reference = $patient-url
 
 * collection.bodySite.coding.code = #7311008
 * collection.bodySite.coding.system = $sct

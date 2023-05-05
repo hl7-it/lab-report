@@ -1,7 +1,7 @@
 Instance: DocumentCompositionDate
 InstanceOf: SearchParameter
 Usage: #definition
-Title: "Composition: Data di modifica"
+Title: "Bundle-Composition: Data di modifica"
 * status = #active
 * name = "document-composition-date"
 * url = "http://hl7.it/fhir/lab-report/SearchParameter/DocumentCompositionDate"

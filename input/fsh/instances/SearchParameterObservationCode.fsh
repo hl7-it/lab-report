@@ -1,7 +1,7 @@
 Instance: DocumentObservationCode
 InstanceOf: SearchParameter
 Usage: #definition
-Title: "Observation: codice dell'osservazione"
+Title: "Bundle-Observation: codice dell'osservazione"
 * status = #active
 * name = "document-observation-code"
 * url = "http://hl7.it/fhir/lab-report/SearchParameter/DocumentObservationCode"

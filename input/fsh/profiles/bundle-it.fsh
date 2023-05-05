@@ -19,6 +19,8 @@ Description: "Descrizione della risorsa Bundle per il contesto italiano del refe
 * entry contains
     composition 1..* and
     practitionerRole 0..* and
+    practitioner 0..* and
+    organization 0..* and
     person 0..* and
     device 0..* and
     encounter 1..* and
@@ -32,6 +34,8 @@ Description: "Descrizione della risorsa Bundle per il contesto italiano del refe
 
 * entry[composition].resource only CompositionRL
 * entry[practitionerRole].resource only PractitionerRoleRL
+* entry[practitioner].resource only Practitioner
+* entry[organization].resource only Organization
 * entry[person].resource only Person
 * entry[device].resource only Device
 * entry[encounter].resource only EncounterRL
