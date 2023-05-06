@@ -16,7 +16,6 @@ Description: "Descrive come rappresentare le informazioni del paziente nei docum
 * identifier ^slicing.discriminator.path = "$this.system"
 * identifier ^slicing.rules = #open
 * identifier ^short = "Identificativo del paziente"
-* identifier ^definition = "Identificativo del paziente. \r\n Lo slicing specificato per questo element è di tipo open; questo significa che sono ammessi identificativi che non rispettano le regole definite per le sice specificate.  \r\n Esempi di possibili sistemi di identificazione sono elencati in https://confluence.hl7.org/display/HI/Identificatori"
 * identifier.value 1.. 
 * identifier.value ^short = "ID del paziente (e.g. Codice Fiscale)"
 * identifier.value ^definition = "Identifictivo del paziente"
