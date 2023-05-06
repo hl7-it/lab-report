@@ -5,7 +5,7 @@ Questa sezione dell'Implementation Guide del Referto di Laboratorio fornisce una
 
 Di seguito vengono riportati i concetti chiave per la corretta implementazione della IG di Referto di Laboratorio:
 1. Ogni attore deve supportare il corretto set di Capabilities al fine di compiere le opportune richieste HTTP (vedi:*[Capabilities](./artifacts.html#behavior-capability-statements)*, *[CapabilityStatement](https://hl7.org/fhir/R4/capabilitystatement.html)*);
-2. Le richieste HTTP devono seguire le specifiche descritte dallo standard FHIR (vedi: *[REST API](HTTPs://hl7.org/fhir/R4/Hhttp.html)*);
+2. Le richieste HTTP devono seguire le specifiche descritte dallo standard FHIR (vedi: *[REST API](https://hl7.org/fhir/R4/http.html)*);
 3. Il sender deve creare un Bundle di tipo documento la cui struttura è descritta dallo standard FHIR (vedi: *[Bundle Document](https://www.hl7.org/fhir/R4/documents.html#3.3)*);
 4. Il Consumer crea la richiesta HTTP aggiungendo i search parameter messi a disposizione dalla IG di Referto di Laboratorio (vedi: *[search-parameter-RL](./artifacts.html#behavior-search-parameters)*, *[search-parameter](https://www.hl7.org/fhir/R4/search.html#standard)*);
 5. Il Consumer riceve in risposta ad una chiamata di lettura un Bundle di tipo searchset che raccoglie i Bundle presenti nel server receiver corrisondenti ai criteri di ricerca (vedi: *[RESTful Search](http://hl7.org/fhir/R4B/bundle.html#searchset)*).

@@ -22,8 +22,3 @@ Description: "Esempio di un professionista sanitario: medico."
 * telecom[1].rank = 2
 
 * gender = #male
-
-* communication.coding.system = "urn:ietf:bcp:47"
-* communication.coding.code = #it-IT
-* communication.coding.display = "Italian (Italy)"
-
