@@ -23,7 +23,7 @@ Description: "Esempio di un professionista sanitario: medico."
 
 * gender = #male
 
-* communication.coding.system = "urn:ietf:bcp:47"
-* communication.coding.code = #it-IT
-* communication.coding.display = "Italian (Italy)"
+// * communication.coding.system = "urn:ietf:bcp:47"
+// * communication.coding.code = #it-IT
+// * communication.coding.display = "Italian (Italy)"
 
