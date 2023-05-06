@@ -1,4 +1,4 @@
-Instance: Location-esempio
+Instance: Location-Lab-Esempio
 InstanceOf: LocationRL
 Usage: #example
 Description: "Esempio di location: struttura ospedaliera di Roma."

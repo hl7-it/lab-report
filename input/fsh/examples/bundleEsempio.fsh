@@ -24,7 +24,7 @@ Usage: #example
 * entry[=].resource = PractitionerRole-Lab-Esempio
 * entry[+].fullUrl = "/Practitioner" //urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c
 * entry[=].resource = Practitioner-Lab-Esempio
-* entry[+].fullUrl = "/Practitioner" //urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c
+* entry[+].fullUrl = "/Practitioner/Infermiere1" //urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c
 * entry[=].resource = Infermiere-Lab-Esempio
 * entry[+].fullUrl = "/Organization" //urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c
 * entry[=].resource = Organization-Lab-Esempio
