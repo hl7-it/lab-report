@@ -1,4 +1,8 @@
 @startuml
-Sender -> Receiver: Creazione Lab Report [POST]
+Sender -> Receiver: Invio Bundle Lab Report [POST]
 Receiver --> Sender: POST Response
+opt
+Sender -> Receiver: Invio Risorse LAB [POST]
+Receiver --> Sender: POST Response
+end
 @enduml

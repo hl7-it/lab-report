@@ -36,5 +36,8 @@ Alias: $serviceRequest-category = http://example.it/FHIR/schema/serviceRequest-c
 Alias: $servicerequest-lab = http://example.it/FHIR/schema/servicerequest-englab
 Alias: $istat-DUG-CS = http://registry.geodati.gov.it/dug
 Alias: $patient-url = http://example.it/Patient/1
+Alias: $obs-interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
+Alias: $v2-0074 = http://terminology.hl7.org/CodeSystem/v2-0074
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 //---Extension 
 Alias: $ext-dataEnterer-time = dataEnterer-time

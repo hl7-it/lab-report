@@ -16,3 +16,54 @@ Le macro funzioni relative ai servizi per la gestione dei referiti di laboratori
 - Funzione di Alimentazione
 - Funzione di Identificazione
 - Funzione di Gestione del Consenso
+
+### Autori e contributori
+
+<table>
+<thead>
+<tr class="header">
+<th>Ruolo</th>
+<th>Nome</th>
+<th>Organizzazione</th>
+<th>Contatto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Autore</td>
+<td>Leonardo Alcaro</td>
+<td>HL7 Italia</td>
+<td>leonardo.alcaro@teamdigitale.governo.it</td>
+</tr>
+<tr class="even">
+<td>Autore</td>
+<td>Mario Sicuranza</td>
+<td>HL7 Italia</td>
+<td>mario.sicuranza@icar.cnr.it</td>
+</tr>
+<tr class="odd">
+<td>Autore</td>
+<td>Ilenia Centonze</td>
+<td>EY Advisory S.p.A.</td>
+<td>ilenia.centonze@it.ey.com</td>
+</tr>
+<tr class="odd">
+<td>Autore</td>
+<td>Davide Spanu</td>
+<td>EY Advisory S.p.A.</td>
+<td>davide.spanu@it.ey.com</td>
+</tr>
+<tr class="even">
+<td>Autore</td>
+<td>Maria Giovanna Preziosi</td>
+<td>SOGEI</td>
+<td>mpreziosi@sogei.it</td>
+</tr>
+<tr class="odd">
+<td>Contributore</td>
+<td>Giorgio Cangioli</td>
+<td>HL7 Italia</td>
+<td>giorgio.cangioli@gmail.com</td>
+</tr>
+</tbody>
+</table>

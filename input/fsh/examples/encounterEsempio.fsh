@@ -9,7 +9,7 @@ Usage: #inline
 * class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
 * class.code = #AMB
 * class.display = "ambulatory"
-* subject.reference = $patient-url
+* subject = Reference(Paziente-SSN)
 // * subject.type = "Patient"
 // * subject.identifier.system = "http://hl7.it/sid/codiceFiscale"
 // * subject.identifier.value = "RSSMRA71E01F205E"

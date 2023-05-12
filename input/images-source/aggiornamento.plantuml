@@ -1,4 +1,9 @@
 @startuml
+alt Interazione FHIR Document
 Sender -> Receiver: Aggiornamento Lab Report [PUT]
 Receiver --> Sender: PUT Response
+else Interazione Risorse FHIR
+Sender -> Receiver: Aggiornamento Risorse LAB [PUT]
+Receiver --> Sender: PUT Response
+end
 @enduml

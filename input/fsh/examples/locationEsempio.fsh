@@ -1,6 +1,6 @@
 Instance: Location-Lab-Esempio
 InstanceOf: LocationRL
-Usage: #example
+Usage: #inline
 Description: "Esempio di location: struttura ospedaliera di Roma."
 
 * identifier.use = #usual

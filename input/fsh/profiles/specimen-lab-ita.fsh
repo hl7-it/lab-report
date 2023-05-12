@@ -2,7 +2,7 @@ Profile: SpecimenRL
 Parent: Specimen
 Id: SpecimenRL
 Title: "Specimen - Referto di Laboratorio"
-Description: "Descrive la risorsa Specimen per il campione nel referto di laboratorio."
+Description: "Descrive la risorsa Specimen per il campione nel dominio della medicina di laboratorio."
 
 * ^status = #draft
 * . ^short = "Campione Referto di Laboratorio"

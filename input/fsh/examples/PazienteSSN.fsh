@@ -1,6 +1,6 @@
 Instance: Paziente-SSN
 InstanceOf: PatientRL
-Usage: #example
+Usage: #inline
 Description: "Esempio di un Paziente: soggetto iscritto al Sistema Sanitario Nazionale (SSN) con rappresentazione strutturata dell'attributo birthPlace."
 
 * extension.url = "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"

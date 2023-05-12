@@ -3,7 +3,7 @@ InstanceOf: CapabilityStatement
 Usage: #definition
 * url = "http://hl7.it/fhir/lab-report/CapabilityStatement/CapabilityStatementConsumerLabReport"
 * name = "RefertoDiLaboratorio_Consumer"
-* title = "Referto di Laboratorio - Consumer (client)"
+* title = "Referto di Laboratorio - Document Consumer (client)"
 * status = #draft
 * experimental = false
 * date = "2023-04-05"
@@ -16,7 +16,9 @@ Usage: #definition
 * rest.mode = #client
 * rest.resource.searchInclude 
 * rest.resource.searchRevInclude 
-
+* document.mode = #consumer
+// * document.documentation = ""
+* document.profile = Canonical(BundleRL)
 // --------------------------------------//
 //-----------------Bundle----------------//
 // --------------------------------------//
@@ -28,43 +30,6 @@ Usage: #definition
 // * rest.resource[=].interaction[+].code = #update
 // * rest.resource[=].interaction[+].code = #create
 // * rest.resource[=].interaction[+].code = #delete
-* rest.resource[=].searchParam.name = "identifier"
-* rest.resource[=].searchParam.definition = "http://hl7.org/fhir/SearchParameter/Bundle-identifier"
-* rest.resource[=].searchParam.type = #token
-* rest.resource[=].searchParam.documentation = "Permette di ricercare in base all'identifier del Bundle"
-* rest.resource[=].searchParam.name = "ServiceRequest.identifier"
-* rest.resource[=].searchParam.definition = "http://example-it/DocumentServiceRequest"
-* rest.resource[=].searchParam.type = #token
-* rest.resource[=].searchParam.documentation = "Permette di ricercare il Bundle in base all'identificativo della richiesta di prestazione."
-* rest.resource[=].searchParam.name = "Specimen.type"
-* rest.resource[=].searchParam.definition = "http://hl7.it/fhir/lab-report/SearchParameter/DocumentSpecimenType"
-* rest.resource[=].searchParam.type = #token
-* rest.resource[=].searchParam.documentation = "Permette di ricercare il Bundle in base al tipo di campione."
-* rest.resource[=].searchParam.name = "Encounter.period"
-* rest.resource[=].searchParam.definition = "http://hl7.it/fhir/lab-report/SearchParameter/DocumentEncounterPeriod"
-* rest.resource[=].searchParam.type = #date
-* rest.resource[=].searchParam.documentation = "Permette di ricercare il Bundle in base alla data dell'incontro."
-* rest.resource[=].searchParam.name = "Observation.code"
-* rest.resource[=].searchParam.definition = "http://hl7.it/fhir/lab-report/SearchParameter/DocumentObservationCode"
-* rest.resource[=].searchParam.type = #token
-* rest.resource[=].searchParam.documentation = "Permette di ricercare il Bundle in base al codice associato all'osservazione clinica."
-* rest.resource[=].searchParam.name = "Encounter.identifier"
-* rest.resource[=].searchParam.definition = "http://hl7.it/fhir/lab-report/SearchParameter/DocumentEncounterIdentifier"
-* rest.resource[=].searchParam.type = #token
-* rest.resource[=].searchParam.documentation = "Permette di Ricercare il Bundle in base all'identificativo dell'Encounter"
-* rest.resource[=].searchParam.name = "Composition.date"
-* rest.resource[=].searchParam.definition = "http://hl7.it/fhir/lab-report/SearchParameter/DocumentCompositionDate"
-* rest.resource[=].searchParam.type = #date
-* rest.resource[=].searchParam.documentation = "Permette di ricercare il Bundle in base all'ultima data di modifica del documento da parte del firmatario."
-* rest.resource[=].searchParam.name = "ServiceRequest.requisition"
-* rest.resource[=].searchParam.definition = "http://hl7.it/fhir/lab-report/SearchParameter/DocumentServiceRequisition"
-* rest.resource[=].searchParam.type = #token
-* rest.resource[=].searchParam.documentation = "Permette di ricercare il Bundle in all'NRE o altri identificativi comuni a più richieste di prestazione."
-* rest.resource[=].searchParam.name = "Patient.identifier"
-* rest.resource[=].searchParam.definition = "http://hl7.it/fhir/lab-report/SearchParameter/DocumentPatientIdentifier"
-* rest.resource[=].searchParam.type = #token
-* rest.resource[=].searchParam.documentation = "Permette di ricercare il Bundle in base al paziente."
-
 * rest.resource[+].type = #Composition
 * rest.resource[=].profile = Canonical( CompositionRL )
 * rest.resource[=].interaction[0].code = #read
@@ -100,20 +65,6 @@ Usage: #definition
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #search-type
 
-* rest.resource[+].type = #Device
-* rest.resource[=].profile = Canonical( Device )
-* rest.resource[=].interaction[0].code = #read
-* rest.resource[=].interaction[+].code = #search-type
-
-* rest.resource[+].type = #Media
-* rest.resource[=].profile = Canonical( Media )
-* rest.resource[=].interaction[0].code = #read
-* rest.resource[=].interaction[+].code = #search-type
-
-* rest.resource[+].type = #Procedure
-* rest.resource[=].profile = Canonical( Procedure )
-* rest.resource[=].interaction[0].code = #read
-* rest.resource[=].interaction[+].code = #search-type
 // // --------------------------
 // // Provenance
 // // --------------------------
