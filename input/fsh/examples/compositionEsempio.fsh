@@ -1,6 +1,6 @@
 Instance: Composition-Lab-Esempio
 InstanceOf: CompositionRL
-Usage: #inline
+Usage: #example
 Description: "Esempio di una Composition: descrizione header e struttura body del referto."
 
 * id = "2ae95a5c-9094-41a3-a437-ce6d34c55a54"
@@ -17,7 +17,7 @@ Description: "Esempio di una Composition: descrizione header e struttura body de
 * type.coding.code = #11502-2
 * type.coding.display = "Referto di medicina di laboratorio" 
 
-* subject.reference = $patient-url
+* subject = Reference(Paziente-SSN)
 //"Patient/1"
 
 * encounter = Reference(Encounter-Lab-Esempio)

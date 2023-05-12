@@ -1,17 +1,12 @@
 @startuml
-alt  Consultazione per paziente [GET/POST]
-Consumer -> Provider: Ricerca per identificativo paziente e identificativo richiesta
-Consumer -> Provider: Ricerca per identificativo paziente e codice esame 
-Consumer -> Provider: Ricerca per identificativo paziente e tipo campione
-Consumer -> Provider: Ricerca per identificativo paziente e data 
-Consumer -> Provider: Ricerca per identificativo paziente e dati identificativi incontro
-
+alt  Consultazione documento per paziente [GET/POST]
+    Consumer_DOC -> Provider: Ricerca per parametri documento
+    Provider --> Consumer_DOC: GET/POST Response
 else  Consultazione del documento specifico [GET/POST]
-Consumer -> Provider: Ricerca per identificativo documento
-
-else Altre consultazioni [GET/POST]
-Consumer -> Provider: Altre consultazioni (FHIR search)
-
+    Consumer_DOC -> Provider: Ricerca per identificativo documento
+    Provider --> Consumer_DOC: GET/POST Response 
+else Consultazione delle risorse LAB [GET/POST]
+    Consumer_RES -> Provider: Altre consultazioni (FHIR search)
+    Provider --> Consumer_RES: GET/POST Response 
 end
-Provider --> Consumer: GET/POST Response 
 @enduml

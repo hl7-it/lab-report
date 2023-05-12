@@ -2,7 +2,7 @@ Profile: DiagnosticReportRL
 Parent: DiagnosticReport
 Id: DiagnosticReportRL
 Title: "DiagnosticReport - Referto di Laboratorio"
-Description: "Descrizione della risorsa DiagnosticReport per la descrizione delle informazioni cliniche del referto di laboratorio."
+Description: "Descrizione della risorsa DiagnosticReport per la descrizione delle informazioni cliniche del dominio di medicina di laboratorio."
 
 * ^publisher = "HL7 Italia"
 * ^copyright = "HL7 Italia"
@@ -33,5 +33,5 @@ Description: "Descrizione della risorsa DiagnosticReport per la descrizione dell
 * performer ^definition = "Organizzazione o Persona che è responsabile del report; non è necessariamente l'autore dei dati atomici o l'entità che ha interpretato i risultati. "
 * code = $LOINC#11502-2 "Referto di medicina di laboratorio"
 * result only Reference (ObservationRL)
-* result ^short = "Osservazioni cliniche del referto." 
+* result ^short = "Osservazioni cliniche." 
 * imagingStudy 0..0 

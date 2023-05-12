@@ -1,6 +1,6 @@
 Instance: DiagnosticReport-Lab-Esempio
 InstanceOf: DiagnosticReportRL
-Usage: #inline
+Usage: #example
 Description: "Esempio di un report diagnostico: report prodotto durante l'incontro."
 
 * id = "56f19992-e73e-45b5-bbdd-6d9aeb60b15a"
@@ -9,7 +9,7 @@ Description: "Esempio di un report diagnostico: report prodotto durante l'incont
 * category = $diagnosticreport-category#HM "Hematology"
 * code = $LOINC#11502-2 "Referto di medicina di laboratorio"
 
-* subject.reference = $patient-url
+* subject = Reference(Paziente-SSN)
 
 * encounter = Reference(Encounter-Lab-Esempio)
 * result = Reference(Observation-Lab-Esempio)

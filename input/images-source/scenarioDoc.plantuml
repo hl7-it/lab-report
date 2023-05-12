@@ -1,0 +1,13 @@
+@startuml
+Sender -> Sender: Crea Lab Report
+
+Sender -> Receiver: Invia Lab Report [POST]
+
+Sender -> Receiver:  Aggiorna Lab Report [PUT]
+
+alt  consultazione documento FHIR specifico 
+      Consumer -> Receiver: Ricerca ID Bundle
+else consultazione per dati Lab-Report
+      Consumer -> Receiver: Ricerca per search parameters
+end
+@enduml

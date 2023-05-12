@@ -1,6 +1,6 @@
 Instance: Specimen-Lab-Esempio
 InstanceOf: SpecimenRL
-Usage: #inline
+Usage: #example
 Title: "EsempioCampione"
 Description: "Esempio di campione: sangue prelevato dall'avambraccio del paziente."
 
@@ -9,7 +9,7 @@ Description: "Esempio di campione: sangue prelevato dall'avambraccio del pazient
 * type.coding.system = "http://terminology.hl7.org/CodeSystem/v3-SpecimenType"
 * type.coding.display = "Whole blood"
 
-* subject.reference = $patient-url
+* subject = Reference(Paziente-SSN)
 
 * collection.bodySite.coding.code = #7311008
 * collection.bodySite.coding.system = $sct

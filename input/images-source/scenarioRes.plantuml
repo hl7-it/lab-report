@@ -1,0 +1,9 @@
+@startuml
+
+Sender -> Receiver: Invia Singola Risorsa [POST]
+
+Sender -> Receiver:  Aggiorna Singola Risorsa [PUT]
+
+Consumer -> Receiver: Consultazione Singola Risorsa (FHIR Search)
+
+@enduml

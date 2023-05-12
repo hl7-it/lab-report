@@ -1,14 +1,23 @@
 @startuml
-Sender -> Receiver: Crea Lab Report [POST]
+
+Sender_DOC -> Receiver: Invio Lab Report [POST]
+
+opt Invio FHIR Resources
+   Sender_RES -> Receiver: Invio Risorse\n(DiagnosticReport, Observation, Specimen, ecc.) [POST]
+end
 opt
-   Sender -> Receiver:  Aggiorna Lab Report [PUT]
+   Sender_DOC -> Receiver:  Aggiorna Lab Report [PUT]
 end
-group Consultazione per paziente
-   Consumer -> Receiver: Ricerca per ID prescrizione
-   Consumer -> Receiver: Ricerca per tipo esame
-   Consumer -> Receiver: Ricerca per tipo di campione
-   Consumer -> Receiver: Ricerca per periodo
-   Consumer -> Receiver: Ricerca per incontro
+opt
+   Sender_RES -> Receiver:  Aggiorna Risorse [PUT]
 end
-Consumer -> Receiver: Ricerca per identificativo 
+alt consultazione documento FHIR 
+      Consumer_DOC -> Receiver: Ricerca per paziente e/o ID prescrizione
+      Consumer_DOC -> Receiver: Ricerca per paziente e/o per tipo esame
+      Consumer_DOC -> Receiver: Ricerca per paziente e/o per tipo di campione
+      Consumer_DOC -> Receiver: Ricerca per paziente e/o per periodo
+      Consumer_DOC -> Receiver: Ricerca per paziente e/o per incontro
+else consultazione risorse FHIR
+      Consumer_RES -> Receiver: Ricerca tramite search parameters
+end
 @enduml

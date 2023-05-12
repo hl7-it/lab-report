@@ -2,21 +2,23 @@ Profile: ObservationRL
 Parent: Observation
 Id: ObservationRL
 Title:    "Observation - Referto di Laboratorio"
-Description: "Descrive come rappresentare la risorsa Observation per le rilevazioni cliniche del referto di laboratorio."
+Description: "Descrive come rappresentare la risorsa Observation per le rilevazioni cliniche nel dominio di medicina di laboratorio."
 
 * obeys ita-lab-1
 * code from risultato-osservazione (preferred)
-* code ^short = "Codice dell'osservazione."
+* code ^short = "Tipo di osservazione tramite codice."
 * status from $observation-status (required)
 * status ^short = "	registered | preliminary | final | amended +\nStato dell'osservazione."
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
 * category ^short = "Codice che classifica il tipo di osservazione (laboratory)."
-* category contains esame-laboratorio 1..1 
+* category ^definition = "La categoria di osservazione può definire la classificazione tramite diversi livelli di dettaglio, a partire da laboratory."
+* category contains 
+    esame-laboratorio 1..1 and
+    specialita-esame-laboratorio 0..*
 * category[esame-laboratorio] = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
-* category[esame-laboratorio].coding.system ^short = "Terminologia utilizzata."
-* category[esame-laboratorio].coding.code ^short = "Codice della categoria."
+* category[specialita-esame-laboratorio] ^short = "Codice o testo della specialità dell'esame di laboratorio."
 
 * subject 1..
 * subject ^short = "Soggetto della rilevazione clinica."
@@ -36,6 +38,19 @@ Description: "Descrive come rappresentare la risorsa Observation per le rilevazi
 * hasMember ^short = "Osservazioni correlate alla risorsa."
 * specimen ^short = "Reference al campione su cui si basa l'osservazione."
 * specimen only Reference(SpecimenRL)
+
+* interpretation ^short = "Interpretazione del risultato (Alto, Basso, Normale, ecc.)"
+* referenceRange ^short = "Range di riferimento per la caratterizzazione dell'osservazione sulla base di un criterio.\nEsempio: Range di normalità per uomo adulto."
+* referenceRange.low ^short = "Limite inferiore del range di riferimento, se rilevante."
+* referenceRange.high ^short = "Limite superiore del range di riferimento, se rilevante."
+* referenceRange.type ^short = "Contesto del range di riferimento. Esempio: Un intervallo atteso in un individuo prima della pubertà."
+* referenceRange.appliesTo ^short = "Categoria della popolazione a cui si applica il range di riferimento."
+* referenceRange.age ^short = "Età a cui si applica, se rilevante."
+* referenceRange.text ^short = "Note testuali."
+* device ^short = "Dispositivo utilizzato per ottenere l'osservazione."
+* method ^short = "Metodo di rilevazione dell'osservazione."
+* bodySite ^short = "Sito corporeo dell'osservazione."
+
 
 Invariant: ita-lab-1
 Description: "se  \"hasMember\" non è presente allora Observation deve avere un\" value\""

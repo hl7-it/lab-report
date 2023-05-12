@@ -1,6 +1,6 @@
 Instance: Infermiere-Lab-Esempio
 InstanceOf: Practitioner
-Usage: #example
+Usage: #inline
 Description: "Esempio di un professionista sanitario: infermiere."
 
 * identifier.use = #official

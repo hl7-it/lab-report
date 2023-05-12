@@ -10,6 +10,8 @@ Usage: #example
 * timestamp = "2023-02-25T14:30:00+01:00"
 * entry[+].fullUrl = "/Composition" //"urn:uuid:2ae95a5c-9094-41a3-a437-ce6d34c55a54"
 * entry[=].resource = Composition-Lab-Esempio
+* entry[+].fullUrl = "/Patient" //urn:uuid:168d4960-0a0b-43af-8025-180f0965f324
+* entry[=].resource = Paziente-SSN
 * entry[+].fullUrl = "/DiagnosticReport" //urn:uuid:56f19992-e73e-45b5-bbdd-6d9aeb60b15a
 * entry[=].resource = DiagnosticReport-Lab-Esempio
 * entry[+].fullUrl = "/Encounter" //urn:uuid:7b06368c-7089-4f66-acc8-29e1fcbd31f6
@@ -24,7 +26,7 @@ Usage: #example
 * entry[=].resource = PractitionerRole-Lab-Esempio
 * entry[+].fullUrl = "/Practitioner" //urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c
 * entry[=].resource = Practitioner-Lab-Esempio
-* entry[+].fullUrl = "/Practitioner/Infermiere1" //urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c
+* entry[+].fullUrl = "/PractitionerInfermiere1" //urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c
 * entry[=].resource = Infermiere-Lab-Esempio
 * entry[+].fullUrl = "/Organization" //urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c
 * entry[=].resource = Organization-Lab-Esempio

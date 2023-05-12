@@ -20,7 +20,7 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * type = $LOINC#11502-2 "Referto di medicina di laboratorio"
 * status ^short = "Stato di completezza della risorsa Composition. Lo stato della risorsa rappresenta anche lo stato del documento."
 * subject 1..1
-* subject only Reference(Patient)
+* subject only Reference(PatientRL)
 * subject ^short = "Soggetto del documento."
 * encounter 1..1
 * encounter ^short = "Contesto in cui è stato generato il documento."
@@ -37,6 +37,7 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * attester ^slicing.discriminator.path = "mode"
 * attester ^slicing.rules = #open
 * attester ^slicing.description = "Professionisti che attestano la validità del documento."
+* attester ^definition = "Professionisti che attestano la validità del documento. Se la risorsa è creata a fine documentale uno degli attester dovrebbe essere il firmatario, ovvero chi allega la firma digitale al documento."
 * attester ^slicing.ordered = false
 * attester contains
     legalAuthenticator 1..1 and
