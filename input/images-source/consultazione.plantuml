@@ -1,12 +1,9 @@
 @startuml
-alt  Consultazione documento per paziente [GET/POST]
-    Consumer_DOC -> Provider: Ricerca per parametri documento
-    Provider --> Consumer_DOC: GET/POST Response
-else  Consultazione del documento specifico [GET/POST]
-    Consumer_DOC -> Provider: Ricerca per identificativo documento
-    Provider --> Consumer_DOC: GET/POST Response 
-else Consultazione delle risorse LAB [GET/POST]
-    Consumer_RES -> Provider: Altre consultazioni (FHIR search)
-    Provider --> Consumer_RES: GET/POST Response 
+alt Consultazione per identificativo di prescrizione
+    "Consumer" -> "Provider" : Consultazione per order id (operation) [GET/POST]
+    "Provider" --> "Consumer" : Operation Response [GET/POST]
+else Altre consultazioni
+    "Consumer" -> "Provider" : altre consultazioni (FHIR search) [GET/POST]
+    "Provider" --> "Consumer" : GET/POST search response [Search Bundle]
 end
 @enduml

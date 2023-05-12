@@ -1,8 +1,8 @@
 @startuml
-Sender -> Receiver: Invio Bundle Lab Report [POST]
-Receiver --> Sender: POST Response
-opt
-Sender -> Receiver: Invio Risorse LAB [POST]
-Receiver --> Sender: POST Response
+alt Transaction, Batch
+    "Sender" -> "Receiver" : Alimentazione Dossier Farmaceutico (Bundle) [POST]
+else Singola Risorsa
+    "Sender" -> "Receiver" : Invia Singola Risorsa [POST]
 end
+    "Receiver" --> "Sender" : POST Response
 @enduml

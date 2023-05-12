@@ -1,0 +1,4 @@
+@startuml
+Sender -> Receiver: Invio Bundle Lab Report [POST]
+Receiver --> Sender: POST Response
+@enduml

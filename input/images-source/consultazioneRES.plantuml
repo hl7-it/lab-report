@@ -1,0 +1,6 @@
+@startuml
+
+    Consumer_RES -> Provider: Altre consultazioni (FHIR search) [GET/POST]
+    Provider --> Consumer_RES: GET/POST Response 
+
+@enduml

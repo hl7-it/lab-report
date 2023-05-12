@@ -1,0 +1,9 @@
+@startuml
+alt  Consultazione documento per paziente [GET/POST]
+    Consumer_DOC -> Provider: Ricerca per parametri documento
+    Provider --> Consumer_DOC: GET/POST Response
+else  Consultazione del documento specifico [GET/POST]
+    Consumer_DOC -> Provider: Ricerca per identificativo documento
+    Provider --> Consumer_DOC: GET/POST Response 
+end
+@enduml

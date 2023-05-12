@@ -1,0 +1,5 @@
+@startuml
+
+Sender_RES -> Receiver: Invio Risorse\n(DiagnosticReport, Observation, Specimen, ecc.) [POST]
+Receiver -> Sender_RES: POST Response
+@enduml

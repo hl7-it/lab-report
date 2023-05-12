@@ -1,0 +1,5 @@
+@startuml
+
+Sender_DOC -> Receiver: Invio Lab Report [POST]
+Receiver -> Sender_DOC: POST Response
+@enduml
