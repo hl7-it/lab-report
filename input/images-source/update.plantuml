@@ -1,0 +1,9 @@
+@startuml
+alt Singola Risorsa
+    "Sender" -> "Receiver" : Aggiorna Singola Risorsa [PUT/DELETE]
+    "Receiver" --> "Sender" : PUT/DELETE Response
+else Transaction, Batch
+    "Sender" -> "Receiver" : Aggiornamento (Bundle) [POST]
+    "Receiver" --> "Sender" : POST Response
+end
+@enduml

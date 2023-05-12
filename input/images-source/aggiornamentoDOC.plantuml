@@ -1,0 +1,5 @@
+@startuml
+
+Sender -> Receiver: Aggiornamento Bundle Lab Report [PUT]
+Receiver --> Sender: PUT Response
+@enduml

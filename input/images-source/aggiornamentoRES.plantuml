@@ -1,0 +1,4 @@
+@startuml
+Sender -> Receiver: Aggiornamento Risorsa [PUT]
+Receiver --> Sender: PUT Response
+@enduml

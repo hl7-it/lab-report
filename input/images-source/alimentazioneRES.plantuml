@@ -1,0 +1,4 @@
+@startuml
+Sender -> Receiver: Invio Risorse LAB [POST]
+Receiver --> Sender: POST Response
+@enduml
