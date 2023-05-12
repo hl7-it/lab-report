@@ -1,12 +1,12 @@
 Gli scenari previsti per il dominio di Referto di Laboratorio sono descritti di seguito utilizzando la rappresentazione tramite Sequence Diagram. 
 I sequence diagram sono diagrammi UML che ci permettono di descrivere uno scenario. Lo scenario rappresenta una sequenza di azioni per una attività.
 
-In questa sezione sono rappresentati i due scenari per la gedtione del Referto di Labvoratorio:
+In questa sezione sono rappresentati i due scenari per la gestione del Referto di Laboratorio:
 - *[Interazione con le risorse Singole](./scenario.html#overview-fhir-interazione-con-risorse-sigole)*
-- *[Interazione col Documento](./scenario.html#overview-fhir-interazione-col-docuemtno)*
+- *[Interazione col Documento](./scenario.html#overview-fhir-interazione-col-documento)*
 
 ### Overview FHIR Interazione con Risorse Sigole
-Gli attori coinvolti nella trasmissione e consultazione delle Risorse Singole del Referto di Laboratorio sono il Sender, il Receiver e il Consumer.
+Gli attori coinvolti nella trasmissione e consultazione delle Risorse Singole del Referto di Laboratorio sono il Sender, il Receiver (o Provider) e il Consumer.
 
 <p>{%include scenarioRes.svg -%}</p>
 
@@ -17,7 +17,7 @@ In questo scenario si delineano i seguenti casi d'uso:
 
 I dettagli di ogni scenario sono descritti di seguito.
 
-### Overview FHIR Interazione col Docuemtno
+### Overview FHIR Interazione col Documento
 
 Gli attori coinvolti nella trasmissione e consultazione del documento FHIR nativo Referto di Laboratorio sono il Sender, il Receiver (o Provider) e il Consumer.
 
