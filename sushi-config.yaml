@@ -20,7 +20,7 @@ contact:
 
 jurisdiction: urn:iso:std:iso:3166#IT "Italy"
 
-dependencies:
+# dependencies:
   # hl7.fhir.it.base: current
   # hl7.fhir.it.terminology: 0.1.1
   # hl7.fhir.extensions.r5: 4.0.1
@@ -52,3 +52,27 @@ menu:
     Maps: new-tab https://build.fhir.org/ig/hl7-it/cda2fhir/index.html
     Downloads: downloads.html
 
+groups:
+  LabReportDOC:
+    name: Profili Risorse Documento FHIR
+    description: Profili risorse necessarie per produrre il documento FHIR Lab Report.
+    resources:
+      - StructureDefinition/BundleRL
+      - StructureDefinition/CompositionRL
+  LabReportRES:
+    name: Profili Risorse Singole 
+    description: Profili risorse specifiche per il dominio di Lab Report.
+    resources:
+      - StructureDefinition/DiagnosticReportRL
+      - StructureDefinition/ObservationRL
+      - StructureDefinition/SpecimenRL
+  LabReportAltre:
+    name: Profili Risorse Indipendenti  
+    description: Profili risorse utili a descrivere il contesto in cui vengono prodotte le risorse per il dominio di Lab Report.
+    resources:
+      - StructureDefinition/PatientRL
+      - StructureDefinition/EncounterRL
+      - StructureDefinition/ServiceRequestRL
+      - StructureDefinition/LocationRL
+      - StructureDefinition/PractitionerRoleRL
+    
