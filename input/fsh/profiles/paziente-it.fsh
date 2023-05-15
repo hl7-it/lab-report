@@ -1,7 +1,7 @@
 Profile: PatientItRL
 Parent: Patient
 Id: PatientRL
-Title: "Patient - Referto di Laboratorio"
+Title: "Patient - Lab Report"
 Description: "Descrive come rappresentare le informazioni del paziente nei documenti FHIR."
 * ^version = "0.0.1"
 * ^status = #draft

@@ -1,6 +1,6 @@
 ValueSet: SezioniRefertoLaboratorio
 Id: sezione-referto-laboratorio
-Title: "Sezioni Referto Laboratorio"
+Title: "Sezioni Composition Lab Report"
 Description: "Valueset contenente i codici LOINC per la specialità di laboratorio."
 * ^status = #draft
 * ^experimental = false

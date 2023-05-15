@@ -6,7 +6,7 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2023-04-05"
-* description = "CapabilityStatement per il Consumer definito nelle specifiche del dominio di medicina di Laboratorio"
+* description = "CapabilityStatement per il Consumer definito nelle specifiche del dominio di medicina di Laboratorio."
 * kind = #requirements
 * fhirVersion = #4.0.1
 * format[0] = #application/fhir+json
@@ -51,21 +51,6 @@ Usage: #definition
 
 * rest.resource[+].type = #PractitionerRole
 * rest.resource[=].profile = Canonical( PractitionerRoleRL )
-* rest.resource[=].interaction[0].code = #read
-* rest.resource[=].interaction[+].code = #search-type
-
-* rest.resource[+].type = #Device
-* rest.resource[=].profile = Canonical( Device )
-* rest.resource[=].interaction[0].code = #read
-* rest.resource[=].interaction[+].code = #search-type
-
-* rest.resource[+].type = #Media
-* rest.resource[=].profile = Canonical( Media )
-* rest.resource[=].interaction[0].code = #read
-* rest.resource[=].interaction[+].code = #search-type
-
-* rest.resource[+].type = #Procedure
-* rest.resource[=].profile = Canonical( Procedure )
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #search-type
 
@@ -187,81 +172,81 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #string
 * rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [Patient](patient.html): A portion of the family name of the patient\r\n* [Practitioner](practitioner.html): A portion of the family name\r\n"
 
-* rest.resource[+].type = #Practitioner
-* rest.resource[=].profile = Canonical(Practitioner)
-* rest.resource[=].interaction[0].code = #search-type
-* rest.resource[=].interaction[+].code = #read
-* rest.resource[=].searchParam[0].name = "address-state"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/individual-address-state"
-* rest.resource[=].searchParam[=].type = #string
-* rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [Patient](patient.html): A state specified in an address\r\n* [Person](person.html): A state specified in an address\r\n* [Practitioner](practitioner.html): A state specified in an address\r\n* [RelatedPerson](relatedperson.html): A state specified in an address\r\n"
-* rest.resource[=].searchParam[+].name = "gender"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/individual-gender"
-* rest.resource[=].searchParam[=].type = #token
-* rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [Patient](patient.html): Gender of the patient\r\n* [Person](person.html): The gender of the person\r\n* [Practitioner](practitioner.html): Gender of the practitioner\r\n* [RelatedPerson](relatedperson.html): Gender of the related person\r\n"
-* rest.resource[=].searchParam[+].name = "address-country"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/individual-address-country"
-* rest.resource[=].searchParam[=].type = #string
-* rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [Patient](patient.html): A country specified in an address\r\n* [Person](person.html): A country specified in an address\r\n* [Practitioner](practitioner.html): A country specified in an address\r\n* [RelatedPerson](relatedperson.html): A country specified in an address\r\n"
-* rest.resource[=].searchParam[+].name = "phonetic"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/individual-phonetic"
-* rest.resource[=].searchParam[=].type = #string
-* rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [Patient](patient.html): A portion of either family or given name using some kind of phonetic matching algorithm\r\n* [Person](person.html): A portion of name using some kind of phonetic matching algorithm\r\n* [Practitioner](practitioner.html): A portion of either family or given name using some kind of phonetic matching algorithm\r\n* [RelatedPerson](relatedperson.html): A portion of name using some kind of phonetic matching algorithm\r\n"
-* rest.resource[=].searchParam[+].name = "telecom"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/individual-telecom"
-* rest.resource[=].searchParam[=].type = #token
-* rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [Patient](patient.html): The value in any kind of telecom details of the patient\r\n* [Person](person.html): The value in any kind of contact\r\n* [Practitioner](practitioner.html): The value in any kind of contact\r\n* [PractitionerRole](practitionerrole.html): The value in any kind of contact\r\n* [RelatedPerson](relatedperson.html): The value in any kind of contact\r\n"
-* rest.resource[=].searchParam[+].name = "address-city"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/individual-address-city"
-* rest.resource[=].searchParam[=].type = #string
-* rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [Patient](patient.html): A city specified in an address\r\n* [Person](person.html): A city specified in an address\r\n* [Practitioner](practitioner.html): A city specified in an address\r\n* [RelatedPerson](relatedperson.html): A city specified in an address\r\n"
-* rest.resource[=].searchParam[+].name = "communication"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Practitioner-communication"
-* rest.resource[=].searchParam[=].type = #token
-* rest.resource[=].searchParam[=].documentation = "One of the languages that the practitioner can communicate with"
-* rest.resource[=].searchParam[+].name = "email"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/individual-email"
-* rest.resource[=].searchParam[=].type = #token
-* rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [Patient](patient.html): A value in an email contact\r\n* [Person](person.html): A value in an email contact\r\n* [Practitioner](practitioner.html): A value in an email contact\r\n* [PractitionerRole](practitionerrole.html): A value in an email contact\r\n* [RelatedPerson](relatedperson.html): A value in an email contact\r\n"
-* rest.resource[=].searchParam[+].name = "given"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/individual-given"
-* rest.resource[=].searchParam[=].type = #string
-* rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [Patient](patient.html): A portion of the given name of the patient\r\n* [Practitioner](practitioner.html): A portion of the given name\r\n"
-* rest.resource[=].searchParam[+].name = "identifier"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Practitioner-identifier"
-* rest.resource[=].searchParam[=].type = #token
-* rest.resource[=].searchParam[=].documentation = "A practitioner's Identifier"
-* rest.resource[=].searchParam[+].name = "address"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/individual-address"
-* rest.resource[=].searchParam[=].type = #string
-* rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [Patient](patient.html): A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text\r\n* [Person](person.html): A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text\r\n* [Practitioner](practitioner.html): A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text\r\n* [RelatedPerson](relatedperson.html): A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text\r\n"
-* rest.resource[=].searchParam[+].name = "_security"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-security"
-* rest.resource[=].searchParam[=].type = #token
-* rest.resource[=].searchParam[=].documentation = "Security Labels applied to this resource"
-* rest.resource[=].searchParam[+].name = "active"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Practitioner-active"
-* rest.resource[=].searchParam[=].type = #token
-* rest.resource[=].searchParam[=].documentation = "Whether the practitioner record is active"
-* rest.resource[=].searchParam[+].name = "address-postalcode"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/individual-address-postalcode"
-* rest.resource[=].searchParam[=].type = #string
-* rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [Patient](patient.html): A postalCode specified in an address\r\n* [Person](person.html): A postal code specified in an address\r\n* [Practitioner](practitioner.html): A postalCode specified in an address\r\n* [RelatedPerson](relatedperson.html): A postal code specified in an address\r\n"
-* rest.resource[=].searchParam[+].name = "phone"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/individual-phone"
-* rest.resource[=].searchParam[=].type = #token
-* rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [Patient](patient.html): A value in a phone contact\r\n* [Person](person.html): A value in a phone contact\r\n* [Practitioner](practitioner.html): A value in a phone contact\r\n* [PractitionerRole](practitionerrole.html): A value in a phone contact\r\n* [RelatedPerson](relatedperson.html): A value in a phone contact\r\n"
-* rest.resource[=].searchParam[+].name = "address-use"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/individual-address-use"
-* rest.resource[=].searchParam[=].type = #token
-* rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [Patient](patient.html): A use code specified in an address\r\n* [Person](person.html): A use code specified in an address\r\n* [Practitioner](practitioner.html): A use code specified in an address\r\n* [RelatedPerson](relatedperson.html): A use code specified in an address\r\n"
-* rest.resource[=].searchParam[+].name = "name"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Practitioner-name"
-* rest.resource[=].searchParam[=].type = #string
-* rest.resource[=].searchParam[=].documentation = "A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text"
-* rest.resource[=].searchParam[+].name = "family"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/individual-family"
-* rest.resource[=].searchParam[=].type = #string
-* rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [Patient](patient.html): A portion of the family name of the patient\r\n* [Practitioner](practitioner.html): A portion of the family name\r\n"
-* rest.interaction.code[0] = #search-system
-* rest.interaction[+].code = #history-system
+// * rest.resource[+].type = #Practitioner
+// * rest.resource[=].profile = Canonical(Practitioner)
+// * rest.resource[=].interaction[0].code = #search-type
+// * rest.resource[=].interaction[+].code = #read
+// * rest.resource[=].searchParam[0].name = "address-state"
+// * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/individual-address-state"
+// * rest.resource[=].searchParam[=].type = #string
+// * rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [Patient](patient.html): A state specified in an address\r\n* [Person](person.html): A state specified in an address\r\n* [Practitioner](practitioner.html): A state specified in an address\r\n* [RelatedPerson](relatedperson.html): A state specified in an address\r\n"
+// * rest.resource[=].searchParam[+].name = "gender"
+// * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/individual-gender"
+// * rest.resource[=].searchParam[=].type = #token
+// * rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [Patient](patient.html): Gender of the patient\r\n* [Person](person.html): The gender of the person\r\n* [Practitioner](practitioner.html): Gender of the practitioner\r\n* [RelatedPerson](relatedperson.html): Gender of the related person\r\n"
+// * rest.resource[=].searchParam[+].name = "address-country"
+// * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/individual-address-country"
+// * rest.resource[=].searchParam[=].type = #string
+// * rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [Patient](patient.html): A country specified in an address\r\n* [Person](person.html): A country specified in an address\r\n* [Practitioner](practitioner.html): A country specified in an address\r\n* [RelatedPerson](relatedperson.html): A country specified in an address\r\n"
+// * rest.resource[=].searchParam[+].name = "phonetic"
+// * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/individual-phonetic"
+// * rest.resource[=].searchParam[=].type = #string
+// * rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [Patient](patient.html): A portion of either family or given name using some kind of phonetic matching algorithm\r\n* [Person](person.html): A portion of name using some kind of phonetic matching algorithm\r\n* [Practitioner](practitioner.html): A portion of either family or given name using some kind of phonetic matching algorithm\r\n* [RelatedPerson](relatedperson.html): A portion of name using some kind of phonetic matching algorithm\r\n"
+// * rest.resource[=].searchParam[+].name = "telecom"
+// * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/individual-telecom"
+// * rest.resource[=].searchParam[=].type = #token
+// * rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [Patient](patient.html): The value in any kind of telecom details of the patient\r\n* [Person](person.html): The value in any kind of contact\r\n* [Practitioner](practitioner.html): The value in any kind of contact\r\n* [PractitionerRole](practitionerrole.html): The value in any kind of contact\r\n* [RelatedPerson](relatedperson.html): The value in any kind of contact\r\n"
+// * rest.resource[=].searchParam[+].name = "address-city"
+// * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/individual-address-city"
+// * rest.resource[=].searchParam[=].type = #string
+// * rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [Patient](patient.html): A city specified in an address\r\n* [Person](person.html): A city specified in an address\r\n* [Practitioner](practitioner.html): A city specified in an address\r\n* [RelatedPerson](relatedperson.html): A city specified in an address\r\n"
+// * rest.resource[=].searchParam[+].name = "communication"
+// * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Practitioner-communication"
+// * rest.resource[=].searchParam[=].type = #token
+// * rest.resource[=].searchParam[=].documentation = "One of the languages that the practitioner can communicate with"
+// * rest.resource[=].searchParam[+].name = "email"
+// * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/individual-email"
+// * rest.resource[=].searchParam[=].type = #token
+// * rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [Patient](patient.html): A value in an email contact\r\n* [Person](person.html): A value in an email contact\r\n* [Practitioner](practitioner.html): A value in an email contact\r\n* [PractitionerRole](practitionerrole.html): A value in an email contact\r\n* [RelatedPerson](relatedperson.html): A value in an email contact\r\n"
+// * rest.resource[=].searchParam[+].name = "given"
+// * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/individual-given"
+// * rest.resource[=].searchParam[=].type = #string
+// * rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [Patient](patient.html): A portion of the given name of the patient\r\n* [Practitioner](practitioner.html): A portion of the given name\r\n"
+// * rest.resource[=].searchParam[+].name = "identifier"
+// * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Practitioner-identifier"
+// * rest.resource[=].searchParam[=].type = #token
+// * rest.resource[=].searchParam[=].documentation = "A practitioner's Identifier"
+// * rest.resource[=].searchParam[+].name = "address"
+// * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/individual-address"
+// * rest.resource[=].searchParam[=].type = #string
+// * rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [Patient](patient.html): A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text\r\n* [Person](person.html): A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text\r\n* [Practitioner](practitioner.html): A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text\r\n* [RelatedPerson](relatedperson.html): A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text\r\n"
+// * rest.resource[=].searchParam[+].name = "_security"
+// * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-security"
+// * rest.resource[=].searchParam[=].type = #token
+// * rest.resource[=].searchParam[=].documentation = "Security Labels applied to this resource"
+// * rest.resource[=].searchParam[+].name = "active"
+// * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Practitioner-active"
+// * rest.resource[=].searchParam[=].type = #token
+// * rest.resource[=].searchParam[=].documentation = "Whether the practitioner record is active"
+// * rest.resource[=].searchParam[+].name = "address-postalcode"
+// * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/individual-address-postalcode"
+// * rest.resource[=].searchParam[=].type = #string
+// * rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [Patient](patient.html): A postalCode specified in an address\r\n* [Person](person.html): A postal code specified in an address\r\n* [Practitioner](practitioner.html): A postalCode specified in an address\r\n* [RelatedPerson](relatedperson.html): A postal code specified in an address\r\n"
+// * rest.resource[=].searchParam[+].name = "phone"
+// * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/individual-phone"
+// * rest.resource[=].searchParam[=].type = #token
+// * rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [Patient](patient.html): A value in a phone contact\r\n* [Person](person.html): A value in a phone contact\r\n* [Practitioner](practitioner.html): A value in a phone contact\r\n* [PractitionerRole](practitionerrole.html): A value in a phone contact\r\n* [RelatedPerson](relatedperson.html): A value in a phone contact\r\n"
+// * rest.resource[=].searchParam[+].name = "address-use"
+// * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/individual-address-use"
+// * rest.resource[=].searchParam[=].type = #token
+// * rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [Patient](patient.html): A use code specified in an address\r\n* [Person](person.html): A use code specified in an address\r\n* [Practitioner](practitioner.html): A use code specified in an address\r\n* [RelatedPerson](relatedperson.html): A use code specified in an address\r\n"
+// * rest.resource[=].searchParam[+].name = "name"
+// * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Practitioner-name"
+// * rest.resource[=].searchParam[=].type = #string
+// * rest.resource[=].searchParam[=].documentation = "A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text"
+// * rest.resource[=].searchParam[+].name = "family"
+// * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/individual-family"
+// * rest.resource[=].searchParam[=].type = #string
+// * rest.resource[=].searchParam[=].documentation = "Multiple Resources: \r\n\r\n* [Patient](patient.html): A portion of the family name of the patient\r\n* [Practitioner](practitioner.html): A portion of the family name\r\n"
+// * rest.interaction.code[0] = #search-system
+// * rest.interaction[+].code = #history-system

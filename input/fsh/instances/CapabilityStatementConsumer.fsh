@@ -7,7 +7,7 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2023-04-05"
-* description = "CapabilityStatement per il Consumer definito nelle specifiche del Referto di Laboratorio"
+* description = "CapabilityStatement per il Consumer definito nelle specifiche del Referto di Laboratorio."
 * kind = #requirements
 * fhirVersion = #4.0.1
 * format[0] = #application/fhir+json

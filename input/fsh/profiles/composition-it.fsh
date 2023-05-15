@@ -1,8 +1,8 @@
 Profile: CompositionRL
 Parent: Composition
 Id: CompositionRL
-Title: "Composition - Referto di Laboratorio"
-Description: "Descrizione in tramite la risorsa Composition di header e body del referto di laboratorio."
+Title: "Composition - Lab Report"
+Description: "Descrizione in tramite la risorsa Composition di header e body del Lab Report."
 * ^version = "0.0.1"
 * ^status = #draft
 * ^experimental = true

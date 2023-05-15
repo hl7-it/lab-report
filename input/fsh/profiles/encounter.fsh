@@ -1,8 +1,8 @@
 Profile: EncounterRL
 Parent: Encounter
 Id: EncounterRL
-Title: "Encounter - Referto di Laboratorio"
-Description: "Descrizione della risorsa Encounter utile a descrivere i dati dell'incontro."
+Title: "Encounter - Lab Report"
+Description: "Descrizione della risorsa Encounter utile a descrivere i dati dell'incontro nel dominio di Lab Report."
 * ^version = "0.0.1"
 * ^status = #draft
 * ^experimental = true

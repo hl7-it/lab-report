@@ -4,9 +4,9 @@ Parent: PractitionerRole
 
 Id: PractitionerRoleRL
 
-Title: "PractitionerRole - Referto di Laboratorio"
+Title: "PractitionerRole - Lab Report"
 
-Description: "Descrive la risorsa PractitionerRole del referto di laboratorio."
+Description: "Descrive la risorsa PractitionerRole che prende parte all'incontro."
 
 * ^version = "0.0.1"
 

@@ -1,7 +1,7 @@
 Profile: LocationRL
 Parent: Location
 Id: LocationRL
-Title: "Location - Referto di Laboratorio"
+Title: "Location - Lab Report"
 Description: "Profilo per Location utile alla descrizione delle informazioni relative alle strutture fisiche."
 * ^version = "0.0.1"
 * ^status = #draft
