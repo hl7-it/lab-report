@@ -1,8 +1,8 @@
 Profile: ObservationRL
 Parent: Observation
 Id: ObservationRL
-Title:    "Observation - Referto di Laboratorio"
-Description: "Descrive come rappresentare la risorsa Observation per le rilevazioni cliniche nel dominio di medicina di laboratorio."
+Title:    "Observation - Lab Report"
+Description: "Descrive come rappresentare la risorsa Observation per le rilevazioni cliniche nel dominio di Lab Report."
 
 * obeys ita-lab-1
 * code from risultato-osservazione (preferred)

@@ -6,7 +6,7 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2023-04-05"
-* description = "CapabilityStatement per il Sender definito nelle specifiche del dominio di medicina di Laboratorio"
+* description = "CapabilityStatement per il Sender definito nelle specifiche del dominio di medicina di Laboratorio."
 * kind = #requirements
 * fhirVersion = #4.0.1
 * format[0] = #application/fhir+json
@@ -14,12 +14,6 @@ Usage: #definition
 
 
 * rest.mode = #client
-
-* rest.resource[+].type = #Composition
-* rest.resource[=].profile = Canonical( CompositionRL )
-* rest.resource[=].interaction[0].code = #read
-* rest.resource[=].interaction[+].code = #create
-* rest.resource[=].interaction[+].code = #update
 
 * rest.resource[+].type = #DiagnosticReport
 * rest.resource[=].profile = Canonical( DiagnosticReportRL )
@@ -35,24 +29,6 @@ Usage: #definition
 
 * rest.resource[+].type = #Specimen
 * rest.resource[=].profile = Canonical( SpecimenRL )
-* rest.resource[=].interaction[0].code = #read
-* rest.resource[=].interaction[+].code = #create
-* rest.resource[=].interaction[+].code = #update
-
-* rest.resource[+].type = #Device
-* rest.resource[=].profile = Canonical( Device )
-* rest.resource[=].interaction[0].code = #read
-* rest.resource[=].interaction[+].code = #create
-* rest.resource[=].interaction[+].code = #update
-
-* rest.resource[+].type = #Media
-* rest.resource[=].profile = Canonical( Media )
-* rest.resource[=].interaction[0].code = #read
-* rest.resource[=].interaction[+].code = #create
-* rest.resource[=].interaction[+].code = #update
-
-* rest.resource[+].type = #Procedure
-* rest.resource[=].profile = Canonical( Procedure )
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #create
 * rest.resource[=].interaction[+].code = #update

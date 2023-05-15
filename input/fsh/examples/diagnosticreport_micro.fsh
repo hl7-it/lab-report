@@ -9,7 +9,7 @@ Usage: #example
 * type = #transaction
 * timestamp = "2023-02-25T14:30:00+01:00"
 * entry[+].fullUrl = "/DiagnosticReport" //urn:uuid:56f19992-e73e-45b5-bbdd-6d9aeb60b15a
-* entry[=].resource = DiagnosticReport-Lab-Esempio
+* entry[=].resource = DiagnosticReport-Lab-Esempio2
 * entry[+].fullUrl = "/Observazion/1"
 * entry[=].resource = Inline-Observation-org-id2-susc-2
 * entry[+].fullUrl = "/Observazion/2"
@@ -59,7 +59,7 @@ Usage: #inline
 Description: "Esempio di un report diagnostico: report di un esame del sangue che mette in evidenza i risultati di microbiologia, con i collegamenti tra risultato - germe - antibiotico."
 Title: "DiagnosticReport - Esempio Laboratorio"
 * status = #final
-* category = $v2-0074#LAB
+* category = $diagnosticreport-category#LAB "Laboratory"
 * code.text = "Coltura e suscettibilità batterica aerobica e anaerobica"
 * subject = Reference(Paziente-SSN1)
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
@@ -211,7 +211,6 @@ Usage: #inline
 Instance: Inline-Observation-org-id1-susc-panel
 InstanceOf: ObservationRL
 Usage: #inline
-Description: "Esempio di Observation: rilevazione suscettibilità agli batterica."
 * id = "31747c3c-0a07-4937-9529-378140609e96"
 * status = #final
 * category[esame-laboratorio] = $observation-category#laboratory
@@ -424,7 +423,7 @@ Description: "Esempio di Observation: rilevazione coltura anaerobi da campione d
 * status = #final
 * category[esame-laboratorio] = $observation-category#laboratory
 * category[+] = $v2-0074#MB "Microbiology"
-* code = $LOINC#635-3 "Coltura anaerobi Microbiologia Presenza o Identità Punto nel tempo (episodio)"
+* code = $LOINC#635-3 "Batteri , identificato: Coltura anaerobica"
 * code.text = "Coltura Anaerobi"
 * subject = Reference(Paziente-SSN)
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"

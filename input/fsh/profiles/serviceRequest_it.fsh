@@ -1,8 +1,8 @@
 Profile: ServiceRequestRL 
 Parent: ServiceRequest
 Id: ServiceRequestRL
-Title: "ServiceRequest - Referto di Laboratorio"
-Description: "Descrive la risorsa ServiceRequest che genera l'incontro del referto di laboratorio."
+Title: "ServiceRequest - Lab Report"
+Description: "Descrive la risorsa ServiceRequest che genera l'incontro del Lab Report."
 * ^version = "0.0.1"
 * ^status = #draft
 * ^experimental = true

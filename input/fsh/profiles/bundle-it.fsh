@@ -1,16 +1,19 @@
 Profile: BundleRL
 Parent: Bundle
 Id: BundleRL
-Title:    "Bundle - Referto di Laboratorio"
-Description: "Descrizione della risorsa Bundle per il contesto italiano del referto di laboratorio."
+Title:    "Bundle - Lab Report"
+Description: "Descrizione della risorsa Bundle per il contesto italiano del Lab Report."
 * . ^definition = "La creazione di un FHIR Document prevede la costruzione di una Bundle con le seguenti caratteristiche:\n - ′type′=document\n - identifier obbligatorio\n - prima risorsa referenziata ′Composition′ di cui ′identifier′ opzionale e ′date′ obbligatorio\n - ′timestamp′ obbligatorio\n"
 * . ^short = "Bundle Referto di Laboratorio"
 * type = #document 
 * type ^short = "Indica cosa rappresenta e l'obiettivo del Bundle."
 * identifier 1.. 
 * identifier ^short = "Identificativo del FHIR Document."
+* identifier.system 1..
+* identifier.value 1..
 * identifier ^definition = "L'identificativo è dipendente dalla versione della Bundle, e per soddisfare i requisiti di persistenza deve essere unico."
-
+* timestamp 1..
+* timestamp ^short = "Quando la Bundle è stata assemblata."
 * entry ^slicing.discriminator[0].type = #type
 * entry ^slicing.discriminator[=].path = "resource"
 * entry ^slicing.rules = #open

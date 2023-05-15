@@ -1,8 +1,8 @@
 Profile: DiagnosticReportRL
 Parent: DiagnosticReport
 Id: DiagnosticReportRL
-Title: "DiagnosticReport - Referto di Laboratorio"
-Description: "Descrizione della risorsa DiagnosticReport per la descrizione delle informazioni cliniche del dominio di medicina di laboratorio."
+Title: "DiagnosticReport - Lab Report"
+Description: "Descrizione della risorsa DiagnosticReport per la descrizione delle informazioni cliniche del dominio di Lab Report."
 
 * ^publisher = "HL7 Italia"
 * ^copyright = "HL7 Italia"
