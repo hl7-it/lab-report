@@ -1,5 +1,6 @@
 ### Scopo
-Questa guida ha lo scopo di definire i modelli logici e i profili HL7 FHIR da utilizzare per l'implementazione del referto di Laboratorio.   
+Questa guida ha lo scopo di definire i modelli logici e i profili HL7 FHIR da utilizzare per l'implementazione del Referto di Laboratorio nel contesto italiano. 
+Il Referto di Laboratorio appartiene al nucleo minimo dei documenti del Fascicolo Sanitario Elettronico.  
 
 
 
@@ -11,9 +12,9 @@ Ai sensi dell'articolo 27, comma 1, lettera d), del  decreto n. 178 del 29 sette
 ### Funzionalità del Referto di Medicina di Laboratorio
 Le macro funzioni relative ai servizi per la gestione dei referiti di laboratorio : 
 
-- Funzione di Indicizzazione Documenti
-- Funzione di Ricerca e Recupero Documenti
-- Funzione di Alimentazione
+- Funzione di Indicizzazione Documenti e Risorse
+- Funzione di Ricerca e Recupero Documenti e Risorse
+- Funzione di Alimentazione Risorse e Documetni
 - Funzione di Identificazione
 - Funzione di Gestione del Consenso
 
