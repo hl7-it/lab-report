@@ -61,23 +61,33 @@ Usage: #definition
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #search-type
 
+* rest.resource[+].type = #Media
+* rest.resource[=].profile = Canonical( MediaRL )
+* rest.resource[=].interaction[0].code = #read
+* rest.resource[=].interaction[+].code = #search-type
+
+* rest.resource[+].type = #Patient
+* rest.resource[=].profile = Canonical( PatientRL )
+* rest.resource[=].interaction[0].code = #read
+* rest.resource[=].interaction[+].code = #search-type
+
+* rest.resource[+].type = #Practitioner
+* rest.resource[=].profile = Canonical( PractitionerRL )
+* rest.resource[=].interaction[0].code = #read
+* rest.resource[=].interaction[+].code = #search-type
+
 * rest.resource[+].type = #PractitionerRole
 * rest.resource[=].profile = Canonical( PractitionerRoleRL )
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #search-type
 
-* rest.resource[+].type = #Device
-* rest.resource[=].profile = Canonical( Device )
+* rest.resource[+].type = #Location
+* rest.resource[=].profile = Canonical( LocationRL )
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #search-type
 
-* rest.resource[+].type = #Media
-* rest.resource[=].profile = Canonical( Media )
-* rest.resource[=].interaction[0].code = #read
-* rest.resource[=].interaction[+].code = #search-type
-
-* rest.resource[+].type = #Procedure
-* rest.resource[=].profile = Canonical( Procedure )
+* rest.resource[+].type = #Organization
+* rest.resource[=].profile = Canonical( OrganizationRL )
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #search-type
 // // --------------------------

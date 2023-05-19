@@ -29,6 +29,7 @@ Usage: #definition
 * rest.resource[+].type = #Composition
 * rest.resource[=].profile = Canonical( CompositionRL )
 * rest.resource[=].interaction[0].code = #read
+
 * rest.resource[+].type = #DiagnosticReport
 * rest.resource[=].profile = Canonical( DiagnosticReportRL )
 * rest.resource[=].interaction[0].code = #read
@@ -49,6 +50,26 @@ Usage: #definition
 * rest.resource[=].profile = Canonical( SpecimenRL )
 * rest.resource[=].interaction[0].code = #read
 
+* rest.resource[+].type = #Media
+* rest.resource[=].profile = Canonical( MediaRL )
+* rest.resource[=].interaction[0].code = #read
+
+* rest.resource[+].type = #Patient
+* rest.resource[=].profile = Canonical( PatientRL )
+* rest.resource[=].interaction[0].code = #read
+
+* rest.resource[+].type = #Practitioner
+* rest.resource[=].profile = Canonical( PractitionerRL )
+* rest.resource[=].interaction[0].code = #read
+
 * rest.resource[+].type = #PractitionerRole
 * rest.resource[=].profile = Canonical( PractitionerRoleRL )
+* rest.resource[=].interaction[0].code = #read
+
+* rest.resource[+].type = #Location
+* rest.resource[=].profile = Canonical( LocationRL )
+* rest.resource[=].interaction[0].code = #read
+
+* rest.resource[+].type = #Organization
+* rest.resource[=].profile = Canonical( OrganizationRL )
 * rest.resource[=].interaction[0].code = #read
