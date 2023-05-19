@@ -16,3 +16,4 @@ Description: "Profilo per Location utile alla descrizione delle informazioni rel
 * type from $location-type (extensible)
 * address ^short = "Indirizzo fisico della struttura (luogo)"
 * managingOrganization ^short = "Organizzazione responsabile della gestione della struttura (provisioning e manutenzione)"
+* managingOrganization only Reference(OrganizationRL)

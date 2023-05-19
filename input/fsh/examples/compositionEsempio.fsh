@@ -6,6 +6,7 @@ Description: "Esempio di una Composition: descrizione header e struttura body de
 * id = "2ae95a5c-9094-41a3-a437-ce6d34c55a54"
 * extension[dataEnterer].extension[dataEnterer].valueReference = Reference(PractitionerRole-Lab-Esempio)
 * extension[dataEnterer].extension[tempoCompilazione].valueDateTime = "2023-02-25T10:45:00+01:00"
+* extension[diagnostic-report].valueReference = Reference(DiagnosticReport-Lab-Esempio)
 
 * language = #it
 * identifier.use = #official
@@ -45,4 +46,4 @@ Description: "Esempio di una Composition: descrizione header e struttura body de
 * section.section.code.coding.system = $LOINC
 * section.section.code.coding.code = #10450-5
 * section.section.code.coding.display = "Glucosio [massa / volume] nel siero o nel plasma - 10 ore di digiuno"
-* section.section.entry = Reference(DiagnosticReport-Lab-Esempio)
+* section.section.entry = Reference(Observation-Lab-Esempio)

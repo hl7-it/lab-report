@@ -1,5 +1,5 @@
 Instance: Practitioner-Lab-Esempio
-InstanceOf: Practitioner
+InstanceOf: PractitionerRL
 Usage: #inline
 Description: "Esempio di un professionista sanitario: medico."
 

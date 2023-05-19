@@ -33,37 +33,50 @@ Usage: #definition
 * rest.resource[+].type = #Composition
 * rest.resource[=].profile = Canonical( CompositionRL )
 * rest.resource[=].interaction[0].code = #read
-* rest.resource[=].interaction[+].code = #search-type
 
 * rest.resource[+].type = #DiagnosticReport
 * rest.resource[=].profile = Canonical( DiagnosticReportRL )
 * rest.resource[=].interaction[0].code = #read
-* rest.resource[=].interaction[+].code = #search-type
 
 * rest.resource[+].type = #Encounter
 * rest.resource[=].profile = Canonical( EncounterRL )
 * rest.resource[=].interaction[0].code = #read
-* rest.resource[=].interaction[+].code = #search-type
 
 * rest.resource[+].type = #Observation
 * rest.resource[=].profile = Canonical( ObservationRL )
 * rest.resource[=].interaction[0].code = #read
-* rest.resource[=].interaction[+].code = #search-type
 
 * rest.resource[+].type = #ServiceRequest
 * rest.resource[=].profile = Canonical( ServiceRequestRL )
 * rest.resource[=].interaction[0].code = #read
-* rest.resource[=].interaction[+].code = #search-type
 
 * rest.resource[+].type = #Specimen
 * rest.resource[=].profile = Canonical( SpecimenRL )
 * rest.resource[=].interaction[0].code = #read
-* rest.resource[=].interaction[+].code = #search-type
+
+* rest.resource[+].type = #Media
+* rest.resource[=].profile = Canonical( MediaRL )
+* rest.resource[=].interaction[0].code = #read
+
+* rest.resource[+].type = #Patient
+* rest.resource[=].profile = Canonical( PatientRL )
+* rest.resource[=].interaction[0].code = #read
+
+* rest.resource[+].type = #Practitioner
+* rest.resource[=].profile = Canonical( PractitionerRL )
+* rest.resource[=].interaction[0].code = #read
 
 * rest.resource[+].type = #PractitionerRole
 * rest.resource[=].profile = Canonical( PractitionerRoleRL )
 * rest.resource[=].interaction[0].code = #read
-* rest.resource[=].interaction[+].code = #search-type
+
+* rest.resource[+].type = #Location
+* rest.resource[=].profile = Canonical( LocationRL )
+* rest.resource[=].interaction[0].code = #read
+
+* rest.resource[+].type = #Organization
+* rest.resource[=].profile = Canonical( OrganizationRL )
+* rest.resource[=].interaction[0].code = #read
 
 // // --------------------------
 // // Provenance

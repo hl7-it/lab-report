@@ -33,17 +33,17 @@ pages:
     title: Contesto
   downloads.md:
     title: Downloads
-  methodology.md:
-    title: Metodologia
+  # methodology.md:
+  #   title: Metodologia
   scenario.md:
     title: Scenario 
 
 menu:
   IG Home: index.html
   Sommario: toc.html
-  Contesto:
-    Contesto: contesto.html
-    Metodologia: methodology.html
+  Contesto: contesto.html
+    # Contesto: 
+    # Metodologia: methodology.html
   Specifiche:
     Scenari: scenario.html
   Indice Artefatti: artifacts.html
@@ -66,13 +66,11 @@ groups:
       - StructureDefinition/DiagnosticReportRL
       - StructureDefinition/ObservationRL
       - StructureDefinition/SpecimenRL
-  LabReportAltre:
-    name: Profili Risorse Indipendenti  
-    description: Profili risorse utili a descrivere il contesto in cui vengono prodotte le risorse per il dominio di Lab Report.
-    resources:
+      - StructureDefinition/MediaRL
       - StructureDefinition/PatientRL
       - StructureDefinition/EncounterRL
       - StructureDefinition/ServiceRequestRL
       - StructureDefinition/LocationRL
       - StructureDefinition/PractitionerRoleRL
-    
+      - StructureDefinition/PractitionerRL
+      - StructureDefinition/OrganizationRL

@@ -28,10 +28,14 @@ Description: "Descrizione della risorsa DiagnosticReport per la descrizione dell
 * specimen only Reference (SpecimenRL)
 * specimen ^short = "Reference ai campioni su cui si basa DiagnosticReport."
 
-* performer only Reference(Practitioner or PractitionerRoleRL or Organization or CareTeam)
+* performer only Reference(PractitionerRL or PractitionerRoleRL or OrganizationRL or CareTeam)
 * performer ^short = "Responsabile del report clinico."
 * performer ^definition = "Organizzazione o Persona che è responsabile del report; non è necessariamente l'autore dei dati atomici o l'entità che ha interpretato i risultati. "
 * code = $LOINC#11502-2 "Referto di medicina di laboratorio"
 * result only Reference (ObservationRL)
 * result ^short = "Osservazioni cliniche." 
 * imagingStudy 0..0 
+* media ^short = "Contenuto multimediale associate al DiagnosticReport."
+* media.comment ^short = "Commento sull'immagine."
+* media.link only Reference(MediaRL)
+* media.link ^short = "Riferimento al contenuto multimediale."

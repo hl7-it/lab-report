@@ -30,7 +30,7 @@ Description: "Descrive come rappresentare la risorsa Observation per le rilevazi
 
 * performer 1..
 * performer ^short = "Soggetto responsabile dell'osservazione."
-* performer only Reference(Practitioner or PractitionerRoleRL or Organization or CareTeam)
+* performer only Reference(PractitionerRL or PractitionerRoleRL or OrganizationRL or CareTeam)
 * value[x] ^short = "Risultato dell'osservaizone."
 // * valueQuantity only quantity-RL
 // * valueQuantity ^short = "Risultato misurabile tramite una quantità."
@@ -49,6 +49,7 @@ Description: "Descrive come rappresentare la risorsa Observation per le rilevazi
 * referenceRange.text ^short = "Note testuali."
 * device ^short = "Dispositivo utilizzato per ottenere l'osservazione."
 * method ^short = "Metodo di rilevazione dell'osservazione."
+* method from $sct-method (example)
 * bodySite ^short = "Sito corporeo dell'osservazione."
 
 

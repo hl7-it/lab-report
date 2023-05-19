@@ -21,6 +21,18 @@ Usage: #definition
 * rest.resource[=].interaction[+].code = #create
 * rest.resource[=].interaction[+].code = #update
 
+* rest.resource[+].type = #Encounter
+* rest.resource[=].profile = Canonical( EncounterRL )
+* rest.resource[=].interaction[0].code = #read
+* rest.resource[=].interaction[+].code = #create
+* rest.resource[=].interaction[+].code = #update
+
+* rest.resource[+].type = #ServiceRequest
+* rest.resource[=].profile = Canonical( ServiceRequestRL )
+* rest.resource[=].interaction[0].code = #read
+* rest.resource[=].interaction[+].code = #create
+* rest.resource[=].interaction[+].code = #update
+
 * rest.resource[+].type = #Observation
 * rest.resource[=].profile = Canonical( ObservationRL )
 * rest.resource[=].interaction[0].code = #read
@@ -29,6 +41,42 @@ Usage: #definition
 
 * rest.resource[+].type = #Specimen
 * rest.resource[=].profile = Canonical( SpecimenRL )
+* rest.resource[=].interaction[0].code = #read
+* rest.resource[=].interaction[+].code = #create
+* rest.resource[=].interaction[+].code = #update
+
+* rest.resource[+].type = #Media
+* rest.resource[=].profile = Canonical( MediaRL )
+* rest.resource[=].interaction[0].code = #read
+* rest.resource[=].interaction[+].code = #create
+* rest.resource[=].interaction[+].code = #update
+
+* rest.resource[+].type = #Patient
+* rest.resource[=].profile = Canonical( PatientRL )
+* rest.resource[=].interaction[0].code = #read
+* rest.resource[=].interaction[+].code = #create
+* rest.resource[=].interaction[+].code = #update
+
+* rest.resource[+].type = #Practitioner
+* rest.resource[=].profile = Canonical( PractitionerRL )
+* rest.resource[=].interaction[0].code = #read
+* rest.resource[=].interaction[+].code = #create
+* rest.resource[=].interaction[+].code = #update
+
+* rest.resource[+].type = #PractitionerRole
+* rest.resource[=].profile = Canonical( PractitionerRoleRL )
+* rest.resource[=].interaction[0].code = #read
+* rest.resource[=].interaction[+].code = #create
+* rest.resource[=].interaction[+].code = #update
+
+* rest.resource[+].type = #Location
+* rest.resource[=].profile = Canonical( LocationRL )
+* rest.resource[=].interaction[0].code = #read
+* rest.resource[=].interaction[+].code = #create
+* rest.resource[=].interaction[+].code = #update
+
+* rest.resource[+].type = #Organization
+* rest.resource[=].profile = Canonical( OrganizationRL )
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #create
 * rest.resource[=].interaction[+].code = #update

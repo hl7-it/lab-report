@@ -24,7 +24,7 @@ Description: "Descrizione della risorsa Encounter utile a descrivere i dati dell
 * basedOn ^short = "Reference alla ServiceRequest che ha avviato l'incontro."
 * participant ^short = "Partecipanti coinvolti durante l'incontro."
 
-* participant.individual only Reference(Practitioner or PractitionerRoleRL or RelatedPerson)
+* participant.individual only Reference(PractitionerRL or PractitionerRoleRL or RelatedPerson)
 
 * period ^short = "L'inizio e la fine dell'incontro."
 * location ^short = "Dati relativi alle strutture in cui si svolge l'incontro."

@@ -48,6 +48,8 @@ Description: "Descrive come rappresentare le informazioni del paziente nei docum
 * name obeys it-pat-1
 * name ^short = "Nome associato al paziente."
 * address only Address-it
+* managingOrganization ^short = "’organizzazione a cui è lasciata la custodia del dei dati del paziente."
+* managingOrganization only Reference(OrganizationRL)
 
 
 Invariant: pat-id-cf-1

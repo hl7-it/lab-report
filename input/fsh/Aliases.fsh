@@ -31,6 +31,7 @@ Alias: $istat-dug = http://hl7.it/fhir/ValueSet/istat-dug
 Alias: $tipoCertificatore = http://terminology.hl7.it/CodeSystem/it-tipoEntita
 Alias: $location-type = http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType
 Alias: $intent-code = http://hl7.org/fhir/ValueSet/request-intent
+Alias: $sct-method = http://hl7.org/fhir/ValueSet/observation-methods
 //---Example
 Alias: $serviceRequest-category = http://example.it/FHIR/schema/serviceRequest-category
 Alias: $servicerequest-lab = http://example.it/FHIR/schema/servicerequest-englab
