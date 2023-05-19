@@ -15,10 +15,19 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * language ^short = "Metadato che indica la lingua utilizzata per descrivere la risorsa."
 * extension contains
     composition-dataenterer-it named dataEnterer 0..*
+* extension contains DiagnosticReportReference named diagnostic-report 1..1
+
+* extension[diagnostic-report] ^short = "DiagnosticReport legato al documento."
+* extension[dataEnterer] ^short = "Persona o dispositivo che trasforma un testo dettato nel documento FHIR."
 
 * identifier 1..1
-* type = $LOINC#11502-2 "Referto di medicina di laboratorio"
+* identifier ^short = "Identificatore indipendente dalla versione."
+* type.coding.system = $LOINC
+* type.coding.code = #11502-2 
+* type.coding.display = "Referto di medicina di laboratorio"
+* type ^short = "Tipo di Composition."
 * status ^short = "Stato di completezza della risorsa Composition. Lo stato della risorsa rappresenta anche lo stato del documento."
+* status ^definition = "Lo stato della Composition si sviluppa generalmente solo attraverso questo elenco: passa da preliminary a final e poi può passare a amended (ovvero modificato). "
 * subject 1..1
 * subject only Reference(PatientRL)
 * subject ^short = "Soggetto del documento."
@@ -27,9 +36,10 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * encounter only Reference(EncounterRL)
 * date ^short = "Data di modifica della risorsa da parte del firmatario."
 * confidentiality from $conf
+* confidentiality ^short = "Codice di confidenzialità della Composition."
 
-* author only Reference(Practitioner or PractitionerRoleRL or PatientRL or Organization)
-
+* author only Reference(PractitionerRL or PractitionerRoleRL or PatientRL or OrganizationRL)
+* author ^short = "Autore della Composition."
 * title ^short = "Titolo o nome human-readable della Composition."
 * title = "Referto di Laboratorio" 
 * attester 1..*
@@ -37,7 +47,7 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * attester ^slicing.discriminator.path = "mode"
 * attester ^slicing.rules = #open
 * attester ^slicing.description = "Professionisti che attestano la validità del documento."
-* attester ^definition = "Professionisti che attestano la validità del documento. Se la risorsa è creata a fine documentale uno degli attester dovrebbe essere il firmatario, ovvero chi allega la firma digitale al documento."
+* attester ^short = "Professionisti che attestano la validità del documento. Se la risorsa è creata a fine documentale uno degli attester dovrebbe essere il firmatario, ovvero chi allega la firma digitale al documento."
 * attester ^slicing.ordered = false
 * attester contains
     legalAuthenticator 1..1 and
@@ -46,23 +56,28 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * attester[legalAuthenticator] ^short = "Firmatario del documento FHIR."
 * attester[legalAuthenticator].mode 1..1
 * attester[legalAuthenticator].mode = #legal
-* attester[legalAuthenticator].party only Reference(Practitioner or PractitionerRoleRL)
+* attester[legalAuthenticator].party only Reference(PractitionerRL or PractitionerRoleRL)
 * attester[legalAuthenticator].time 1..1
+* attester[legalAuthenticator].time ^short = "Riferimento temporale della firma."
+* attester[legalAuthenticator].party ^short = "Riferimento al firmatario."
 
 * attester[authenticator] ^short = "Validatore del documento FHIR."
 * attester[authenticator].mode 1..1
 * attester[authenticator].mode = #professional
-* attester[authenticator].party only Reference(Practitioner or PractitionerRoleRL)
+* attester[authenticator].party only Reference(PractitionerRL or PractitionerRoleRL)
+* attester[authenticator].party ^short = "Riferimento al validatore."
 
 * attester[informationRecipient] ^short = "Professionisti sanitari che ricevono una copia del documento (es. MMG/PLS)."
 * attester[informationRecipient].mode = #personal
-* attester[informationRecipient].party only Reference(Practitioner or PractitionerRoleRL or Organization)
+* attester[informationRecipient].party only Reference(PractitionerRL or PractitionerRoleRL or OrganizationRL)
+* attester[informationRecipient].party ^short = "Riferimento al informationRecipient."
 
 * custodian 1..1
-* custodian only Reference(Organization)
+* custodian only Reference(OrganizationRL)
 * custodian ^short = "Organizzazione che si occupa della conservazione del documento FHIR."
 
 * relatesTo ^short = "Ulteriori risorse Composition correlate al documento."
+* relatesTo.target[x] ^short = "Riferimento alla risorsa Composition correlata."
 * relatesTo.target[x] only Reference 
 * relatesTo obeys it-composition-1
 
@@ -87,7 +102,7 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * section[senza-sottosezione].section ..0
 * section[senza-sottosezione].code 1..
 * section[senza-sottosezione].code from sezione-referto-laboratorio (preferred)
-* section[senza-sottosezione].entry only Reference (DiagnosticReportRL)
+* section[senza-sottosezione].entry only Reference (ObservationRL)
 
 
 * section contains con-sottosezione ..* 
@@ -104,7 +119,7 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
   * code from sezione-referto-laboratorio (preferred)
   * text ^short = "Sintesi testuale della sezione, per l'interpretazione dell'utente."
   * entry 1..
-  * entry only Reference (DiagnosticReportRL)
+  * entry only Reference (ObservationRL)
 * section contains annotazioni ..*
 * section[annotazioni]
   * ^short = "Commenti testuali"
