@@ -1,5 +1,5 @@
 Instance: Organization-Lab-Esempio
-InstanceOf: Organization
+InstanceOf: OrganizationRL
 Usage: #inline
 Description: "Esempio di un'organizzazione: Azienda sanitaria locale."
 
