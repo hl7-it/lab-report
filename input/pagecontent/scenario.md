@@ -117,13 +117,11 @@ Per il corretto aggiornamento delle risorse Bundle di tipo *document*, il Sender
 PUT [base_url]/Bundle/[Logical ID-Bundle]
 ```
 
-Per evitare la perdita di dati, il processo di aggiornamento deve includere due step:
-1. Aggiornamento dell'attributo `status` col valore "entered-in-error", sulla risorsa affetta da errore e sulla Bundle di tipo document;
-2. Invio della risorsa Bundle aggiornata correttamente.
+Per evitare la perdita di dati, il processo di aggiornamento deve prevedere l'invio della risorsa Bundle aggiornata correttamente e la dismissione della versione precedente.
+Una casistica di aggiornamento della Bundle document è l'aggiunta di risorse (APPEND) alla Bundle. 
 
-Lo step 1 risulta propedeutico per i sistemi sottoscritti al servizio. L'aggiornamento dello status permette l'attivazione del processo di notifica per i sistemi che hanno consultato la Bundle in una versione precedente.
-
-Un'ulteriore casistica di aggiornamento della Bundle document è l'aggiunta di risorse (APPEND). 
+Un'altra casistica è la creazione errata della risorsa Composition nel flusso di lavoro: ovvero se la Composition riguarda il paziente sbagliato o è scritta dall'autore sbagliato, e l'errore viene rilevato solo dopo che la Composition è stata consultata o è già stata utilizzata per la creazione di un documento. 
+Per supportare la risoluzione di questo caso, la risorsa Composition è aggiornata per essere contrassegnata come "entered-in-error" e può essere creato un nuovo documento derivato. Ciò significa che l'intera serie di documenti derivati è ora considerata creata per errore e i sistemi che ricevono documenti derivati basati su Composition modificate DOVREBBERO rimuovere i dati presi dai documenti precedenti dall'uso di routine e/o intraprendere altre azioni appropriate. 
 
 <span style="background-color: LightYellow;">Nota: Qualora il sender invii anche le risorse contenute nella Bundle in modo atomico, allora queste devono essere aggiornate conseguentemente all'aggiornamento della Bundle cui appartengono.</span>
 
