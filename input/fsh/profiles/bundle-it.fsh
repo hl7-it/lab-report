@@ -23,12 +23,11 @@ Description: "Descrizione della risorsa Bundle per il contesto italiano del Lab 
 
 * entry 1..
 * entry contains
-    composition 1..* and
+    composition 1..1 and
     practitionerRole 0..* and
     practitioner 0..* and
     organization 0..* and
     patient 1..1 and
-    person 0..* and
     encounter 1..* and
     location 0..* and
     serviceRequest 0..* and
@@ -42,7 +41,6 @@ Description: "Descrizione della risorsa Bundle per il contesto italiano del Lab 
 * entry[practitioner].resource only PractitionerRL
 * entry[organization].resource only OrganizationRL
 * entry[patient].resource only PatientRL
-* entry[person].resource only Person
 * entry[encounter].resource only EncounterRL
 * entry[location].resource only LocationRL
 * entry[serviceRequest].resource only ServiceRequestRL

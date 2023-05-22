@@ -37,6 +37,8 @@ pages:
   #   title: Metodologia
   scenario.md:
     title: Scenario 
+  modelliLogici.md:
+    title: Modelli Logici  
 
 menu:
   IG Home: index.html
@@ -46,6 +48,7 @@ menu:
     # Metodologia: methodology.html
   Specifiche:
     Scenari: scenario.html
+    Modelli Logici: modelliLogici.html
   Indice Artefatti: artifacts.html
   Support:
     FHIR Spec: new-tab http://hl7.org/fhir/R4/index.html
