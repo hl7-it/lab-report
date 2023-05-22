@@ -9,7 +9,7 @@ Description: "Esempio di un report diagnostico: report prodotto durante l'incont
 * category = $diagnosticreport-category#HM "Hematology"
 * code = $LOINC#11502-2 "Referto di medicina di laboratorio"
 
-* subject = Reference(Paziente-SSN)
+* subject.reference = "Patient/Paziente-SSN"
 
 * encounter = Reference(Encounter-Lab-Esempio)
 * result = Reference(Observation-Lab-Esempio)

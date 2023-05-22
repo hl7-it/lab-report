@@ -21,9 +21,17 @@ I dettagli di ogni scenario sono descritti di seguito.
 <p>{%include alimentazioneRES.svg -%}</p>
 
 L'attore Sender alimenta il Receiver, attraverso il metodo POST, inviando le informazioni racchiuse nel Referto di Laboratorio in risorse FHIR. Le risorse profilate che è possibile trasmettere sono:
-- Observation
-- Specimen
 - DiagnosticReport
+- Encounter
+- ServiceRequest
+- Observation 
+- Specimen
+- Media
+- Patient
+- Practitioner
+- PractitionerRole
+- Location
+- Organization 
 
 In questo scenario, il Sender invia un'unica risorsa FHIR chiamando il metodo: 
 
