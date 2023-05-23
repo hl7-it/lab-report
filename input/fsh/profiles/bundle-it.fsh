@@ -31,7 +31,7 @@ Description: "Descrizione della risorsa Bundle per il contesto italiano del Lab 
     encounter 1..* and
     location 0..* and
     serviceRequest 0..* and
-    diagnosticReport 1..* and
+    diagnosticReport 1..1 and
     observation 0..* and
     specimen 0..* and
     media 0..* 
