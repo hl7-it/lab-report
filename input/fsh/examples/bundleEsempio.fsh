@@ -1,5 +1,5 @@
 Instance: Bundle-Lab-Esempio
-InstanceOf: BundleRL
+InstanceOf: bundle-it-lab
 Title: "Bundle document - Referto di Medicina di Laboratorio"
 Description: "Esempio di un Bundle rappresentante un FHIR document completo di Referto di Medicina di Laboratorio."
 Usage: #example
@@ -19,7 +19,7 @@ Usage: #example
 * entry[+].fullUrl = "/Specimen" //urn:uuid:168d4960-0a0b-43af-8025-180f0965f324
 * entry[=].resource = Specimen-Lab-Esempio
 * entry[+].fullUrl = "/Observation" //urn:uuid:333b62b2-47b0-43b5-9745-abec1f0c4656
-* entry[=].resource = Observation-Lab-Esempio
+* entry[=].resource = Observation-Lab-Esempio-Glucosio
 * entry[+].fullUrl = "/ServiceRequest" //urn:uuid:463ae6fe-60d4-4b38-84b3-1008e0925678
 * entry[=].resource = ServiceRequest-Lab-Esempio
 * entry[+].fullUrl = "/PractitionerRole" //urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c
