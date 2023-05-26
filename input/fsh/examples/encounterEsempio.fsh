@@ -1,7 +1,7 @@
 Instance: Encounter-Lab-Esempio
-InstanceOf: EncounterRL
+InstanceOf: encounter-it-lab
 Description: "Esempio di incontro: informazioni di base per descrivere un incontro ambulatoriale pianificato."
-Usage: #inline
+Usage: #example
 
 * id = "7b06368c-7089-4f66-acc8-29e1fcbd31f6"
 * status = #finished

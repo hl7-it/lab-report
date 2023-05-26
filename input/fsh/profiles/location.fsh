@@ -1,6 +1,6 @@
-Profile: LocationRL
+Profile: LocationRefertoLabIt
 Parent: Location
-Id: LocationRL
+Id: location-it-lab
 Title: "Location - Lab Report"
 Description: "Profilo per Location utile alla descrizione delle informazioni relative alle strutture fisiche."
 * ^version = "0.0.1"
@@ -16,4 +16,4 @@ Description: "Profilo per Location utile alla descrizione delle informazioni rel
 * type from $location-type (extensible)
 * address ^short = "Indirizzo fisico della struttura (luogo)"
 * managingOrganization ^short = "Organizzazione responsabile della gestione della struttura (provisioning e manutenzione)"
-* managingOrganization only Reference(OrganizationRL)
+* managingOrganization only Reference(organization-it-lab)

@@ -18,5 +18,5 @@ Description: "Estensione usata per indicare che l'informazione associata è stat
 * extension[when].value[x] only dateTime or Period
 * extension[who] ^short = "Entità Certificante"
 * extension[who].value[x] only CodeableConcept or Reference
-* extension[who].value[x] from Valueset-tc (extensible)
+* extension[who].value[x] from valueset-tc (extensible)
 * extension[rank].value[x] only decimal

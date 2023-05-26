@@ -1,6 +1,6 @@
 Instance: ServiceRequest-Lab-Esempio
-InstanceOf: ServiceRequestRL
-Usage: #inline
+InstanceOf: servicerequest-it-lab
+Usage: #example
 Description: "Esempio di richiesta: prestazione richiesta facente parte di un'autorizzazione simultanea per esami di laboratorio."
 
 * id = "463ae6fe-60d4-4b38-84b3-1008e0925678"
@@ -20,7 +20,7 @@ Description: "Esempio di richiesta: prestazione richiesta facente parte di un'au
 * category.coding.code = #108252007
 * category.coding.display = "Laboratory procedure"
 
-* subject.reference = $patient-url
+* subject = Reference(Paziente-SSN) //$patient-url
 // * subject.type = "Patient"
 // * subject.identifier.system = "http://hl7.it/sid/codiceFiscale"
 // * subject.identifier.value = "RSSMRA71E01F205E"

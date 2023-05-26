@@ -1,6 +1,6 @@
-Profile: PatientItRL
+Profile: PatientRefertoLabIt
 Parent: Patient
-Id: PatientRL
+Id: patient-it-lab
 Title: "Patient - Lab Report"
 Description: "Descrive come rappresentare le informazioni del paziente nei documenti FHIR."
 * ^version = "0.0.1"
@@ -49,7 +49,7 @@ Description: "Descrive come rappresentare le informazioni del paziente nei docum
 * name ^short = "Nome associato al paziente."
 * address only Address-it
 * managingOrganization ^short = "’organizzazione a cui è lasciata la custodia del dei dati del paziente."
-* managingOrganization only Reference(OrganizationRL)
+* managingOrganization only Reference(organization-it-lab)
 
 
 Invariant: pat-id-cf-1

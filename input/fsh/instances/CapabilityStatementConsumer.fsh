@@ -18,64 +18,72 @@ Usage: #definition
 * rest.resource.searchRevInclude 
 * document.mode = #consumer
 // * document.documentation = ""
-* document.profile = Canonical(BundleRL)
+* document.profile = Canonical(bundle-it-lab)
 // --------------------------------------//
 //-----------------Bundle----------------//
 // --------------------------------------//
 
 * rest.resource[+].type = #Bundle
-* rest.resource[=].profile = Canonical( BundleRL)
+* rest.resource[=].profile = Canonical( bundle-it-lab)
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #search-type 
 // * rest.resource[=].interaction[+].code = #update
 // * rest.resource[=].interaction[+].code = #create
 // * rest.resource[=].interaction[+].code = #delete
 * rest.resource[+].type = #Composition
-* rest.resource[=].profile = Canonical( CompositionRL )
+* rest.resource[=].profile = Canonical( composition-it-lab )
 * rest.resource[=].interaction[0].code = #read
 
 * rest.resource[+].type = #DiagnosticReport
-* rest.resource[=].profile = Canonical( DiagnosticReportRL )
+* rest.resource[=].profile = Canonical( diagnosticreport-it-lab )
 * rest.resource[=].interaction[0].code = #read
 
 * rest.resource[+].type = #Encounter
-* rest.resource[=].profile = Canonical( EncounterRL )
+* rest.resource[=].profile = Canonical( encounter-it-lab )
+* rest.resource[=].interaction[0].code = #read
+
+* rest.resource[+].type = #Device
+* rest.resource[=].profile = Canonical(device-it-lab )
+* rest.resource[=].interaction[0].code = #read
+
+* rest.resource[+].type = #Substance
+* rest.resource[=].profile = Canonical(specimen-additive-substance-it-lab )
 * rest.resource[=].interaction[0].code = #read
 
 * rest.resource[+].type = #Observation
-* rest.resource[=].profile = Canonical( ObservationRL )
+* rest.resource[=].profile = Canonical( observation-it-lab )
 * rest.resource[=].interaction[0].code = #read
 
 * rest.resource[+].type = #ServiceRequest
-* rest.resource[=].profile = Canonical( ServiceRequestRL )
+* rest.resource[=].profile = Canonical( servicerequest-it-lab )
 * rest.resource[=].interaction[0].code = #read
 
 * rest.resource[+].type = #Specimen
-* rest.resource[=].profile = Canonical( SpecimenRL )
+* rest.resource[=].profile = Canonical( specimen-it-lab )
 * rest.resource[=].interaction[0].code = #read
 
 * rest.resource[+].type = #Media
-* rest.resource[=].profile = Canonical( MediaRL )
+* rest.resource[=].profile = Canonical( media-it-lab )
 * rest.resource[=].interaction[0].code = #read
 
 * rest.resource[+].type = #Patient
-* rest.resource[=].profile = Canonical( PatientRL )
+* rest.resource[=].profile = Canonical( patient-it-lab )
 * rest.resource[=].interaction[0].code = #read
 
 * rest.resource[+].type = #Practitioner
-* rest.resource[=].profile = Canonical( PractitionerRL )
+* rest.resource[=].profile = Canonical( practitioner-it-lab )
 * rest.resource[=].interaction[0].code = #read
 
 * rest.resource[+].type = #PractitionerRole
-* rest.resource[=].profile = Canonical( PractitionerRoleRL )
+* rest.resource[=].profile = Canonical( practitionerrole-it-lab )
 * rest.resource[=].interaction[0].code = #read
 
 * rest.resource[+].type = #Location
-* rest.resource[=].profile = Canonical( LocationRL )
+* rest.resource[=].profile = Canonical( location-it-lab )
 * rest.resource[=].interaction[0].code = #read
 
 * rest.resource[+].type = #Organization
-* rest.resource[=].profile = Canonical( OrganizationRL )
+* rest.resource[=].profile = Canonical( organization-it-lab )
 * rest.resource[=].interaction[0].code = #read
 
 // // --------------------------
@@ -96,7 +104,7 @@ Usage: #definition
 // * rest.resource[=].searchParam[=].documentation = "permette di ricercare in base ai metadati necessari per accedere ad un documento nel profilo XDS definito da IHE. In particolare deve veicolare il documentEntry.repositoryUniqueId ed il documentEntry.UniqueID del documento referenziato nella risorsa Provenance (e.g. entity:identifier=RepoID|DocUniqueId)"
 
 // * rest.resource[+].type = #PractitionerRole
-// * rest.resource[=].profile = Canonical( PractitionerRoleRL )
+// * rest.resource[=].profile = Canonical( practitionerrole-it-lab )
 // * rest.resource[=].interaction[0].code = #search-type
 // * rest.resource[=].interaction[+].code = #read
 // * rest.resource[=].searchParam.name = "identifier"
@@ -105,7 +113,7 @@ Usage: #definition
 // * rest.resource[=].searchParam.documentation = "Permette di ricercare in base all'identifier del PractitionerRole"
 
 // * rest.resource[+].type = #Location
-// * rest.resource[=].profile = Canonical( LocationRL )
+// * rest.resource[=].profile = Canonical( location-it-lab )
 // * rest.resource[=].interaction[0].code = #search-type
 // * rest.resource[=].interaction[+].code = #read
 // * rest.resource[=].searchParam.name = "identifier"
@@ -114,7 +122,7 @@ Usage: #definition
 // * rest.resource[=].searchParam.documentation = "Permette di ricercare in base all'identifier della Location"
 
 // * rest.resource[+].type = #Patient
-// * rest.resource[=].profile = Canonical( PatientRL )
+// * rest.resource[=].profile = Canonical( patient-it-lab )
 // * rest.resource[=].interaction[0].code = #search-type
 // * rest.resource[=].interaction[+].code = #read
 // * rest.resource[=].searchParam[0].name = "birthdate"

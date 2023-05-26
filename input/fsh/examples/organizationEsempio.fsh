@@ -1,6 +1,6 @@
 Instance: Organization-Lab-Esempio
-InstanceOf: OrganizationRL
-Usage: #inline
+InstanceOf: organization-it-lab
+Usage: #example
 Description: "Esempio di un'organizzazione: Azienda sanitaria locale."
 
 * identifier[0].system = "http://hl7.it/sid/fls"

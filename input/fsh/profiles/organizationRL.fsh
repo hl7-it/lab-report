@@ -1,6 +1,6 @@
-Profile:  OrganizationRL
+Profile:  OrganizationRefertoLabIt
 Parent:   Organization
-Id:       OrganizationRL
+Id:       organization-it-lab
 Title:    "Organization - Lab Report"
 Description: "Descrizione della risorsa Organization nel dominio di Lab Report."
 //-------------------------------------------------------------------------------------------

@@ -1,6 +1,6 @@
 Instance: PractitionerRole-Lab-Esempio
-InstanceOf: PractitionerRoleRL
-Usage: #inline
+InstanceOf: practitionerrole-it-lab
+Usage: #example
 Description: "Esempio di un PractitionerRole: medico in ematologia clinica presso il policlinico."
 
 * id = "dc5842a1-83b6-43c7-b063-75ae989b803c"

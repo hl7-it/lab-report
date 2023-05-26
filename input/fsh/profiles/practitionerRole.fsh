@@ -1,8 +1,8 @@
-Profile: PractitionerRoleRL
+Profile: PractitionerRoleRefertoLabIt
 
 Parent: PractitionerRole
 
-Id: PractitionerRoleRL
+Id: practitionerrole-it-lab
 
 Title: "PractitionerRole - Lab Report"
 

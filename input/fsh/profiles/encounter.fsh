@@ -1,6 +1,6 @@
-Profile: EncounterRL
+Profile: EncounterRefertoLabIt
 Parent: Encounter
-Id: EncounterRL
+Id: encounter-it-lab
 Title: "Encounter - Lab Report"
 Description: "Descrizione della risorsa Encounter utile a descrivere i dati dell'incontro nel dominio di Lab Report."
 * ^version = "0.0.1"
@@ -14,19 +14,19 @@ Description: "Descrizione della risorsa Encounter utile a descrivere i dati dell
 
 * subject 1..
 * subject ^short = "Soggetto dell'incontro."
-* subject only Reference(PatientRL)
+* subject only Reference(patient-it-lab)
 
 * status ^short = "planned | arrived | triaged | in-progress | onleave | finished | cancelled +\r\r\n\n   Stato attuale dell'incontro."
 * status from $encounter-status (required)
 * class ^short = "Classificazione dell'incontro con il paziente."
 * class from $encounter-class (extensible)
-* basedOn only Reference(ServiceRequestRL)
+* basedOn only Reference(servicerequest-it-lab)
 * basedOn ^short = "Reference alla ServiceRequest che ha avviato l'incontro."
 * participant ^short = "Partecipanti coinvolti durante l'incontro."
 
-* participant.individual only Reference(PractitionerRL or PractitionerRoleRL or RelatedPerson)
+* participant.individual only Reference(practitioner-it-lab or practitionerrole-it-lab or RelatedPerson)
 
 * period ^short = "L'inizio e la fine dell'incontro."
 * location ^short = "Dati relativi alle strutture in cui si svolge l'incontro."
-* location.location only Reference(LocationRL)
+* location.location only Reference(location-it-lab)
 * location.location ^short = "Struttura in cui si svolge l'incontro."

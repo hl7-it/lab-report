@@ -16,67 +16,82 @@ Usage: #definition
 * rest.mode = #client
 
 * rest.resource[+].type = #DiagnosticReport
-* rest.resource[=].profile = Canonical( DiagnosticReportRL )
+* rest.resource[=].profile = Canonical( diagnosticreport-it-lab )
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #create
 * rest.resource[=].interaction[+].code = #update
 
 * rest.resource[+].type = #Encounter
-* rest.resource[=].profile = Canonical( EncounterRL )
+* rest.resource[=].profile = Canonical( encounter-it-lab )
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #create
 * rest.resource[=].interaction[+].code = #update
 
 * rest.resource[+].type = #ServiceRequest
-* rest.resource[=].profile = Canonical( ServiceRequestRL )
+* rest.resource[=].profile = Canonical( servicerequest-it-lab )
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #create
 * rest.resource[=].interaction[+].code = #update
 
 * rest.resource[+].type = #Observation
-* rest.resource[=].profile = Canonical( ObservationRL )
+* rest.resource[=].profile = Canonical( observation-it-lab )
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #create
 * rest.resource[=].interaction[+].code = #update
 
 * rest.resource[+].type = #Specimen
-* rest.resource[=].profile = Canonical( SpecimenRL )
+* rest.resource[=].profile = Canonical( specimen-it-lab )
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #create
 * rest.resource[=].interaction[+].code = #update
 
 * rest.resource[+].type = #Media
-* rest.resource[=].profile = Canonical( MediaRL )
+* rest.resource[=].profile = Canonical( media-it-lab )
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #create
 * rest.resource[=].interaction[+].code = #update
 
 * rest.resource[+].type = #Patient
-* rest.resource[=].profile = Canonical( PatientRL )
+* rest.resource[=].profile = Canonical( patient-it-lab )
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #create
 * rest.resource[=].interaction[+].code = #update
 
 * rest.resource[+].type = #Practitioner
-* rest.resource[=].profile = Canonical( PractitionerRL )
+* rest.resource[=].profile = Canonical( practitioner-it-lab )
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #create
 * rest.resource[=].interaction[+].code = #update
 
 * rest.resource[+].type = #PractitionerRole
-* rest.resource[=].profile = Canonical( PractitionerRoleRL )
+* rest.resource[=].profile = Canonical( practitionerrole-it-lab )
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #create
 * rest.resource[=].interaction[+].code = #update
 
 * rest.resource[+].type = #Location
-* rest.resource[=].profile = Canonical( LocationRL )
+* rest.resource[=].profile = Canonical( location-it-lab )
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #create
 * rest.resource[=].interaction[+].code = #update
 
 * rest.resource[+].type = #Organization
-* rest.resource[=].profile = Canonical( OrganizationRL )
+* rest.resource[=].profile = Canonical( organization-it-lab )
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #create
 * rest.resource[=].interaction[+].code = #update
+
+
+* rest.resource[+].type = #Device
+* rest.resource[=].profile = Canonical(device-it-lab )
+* rest.resource[=].interaction[0].code = #read
+* rest.resource[=].interaction[+].code = #create
+* rest.resource[=].interaction[+].code = #update
+
+
+* rest.resource[+].type = #Substance
+* rest.resource[=].profile = Canonical(specimen-additive-substance-it-lab )
+* rest.resource[=].interaction[0].code = #read
+* rest.resource[=].interaction[+].code = #create
+* rest.resource[=].interaction[+].code = #update
+

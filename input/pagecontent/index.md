@@ -1,20 +1,19 @@
 ### Scopo
-Questa guida ha lo scopo di definire i modelli logici e i profili HL7 FHIR da utilizzare per l'implementazione del Referto di Laboratorio nel contesto italiano. 
+Questa guida ha lo scopo di definire i modelli logici e i profili HL7 FHIR da utilizzare per l'implementazione del referto di Laboratorio.   
 
 
 
 ### Definizione del Referto di Medicina di Laboratorio
 Il referto di laboratorio appartiene al nucleo minimo dei documenti del Fascicolo Sanitario Elettronico.
 Ai sensi dell'articolo 27, comma 1, lettera d), del  decreto n. 178 del 29 settembre 2015,  il referto di laboratorio e' il documento redatto dal medico di medicina di laboratorio. 
-Il contenuto informativo del Referto di Laboratorio è disciplinato all'art.2 dal Decreto del 18 maggio 2022 del Ministero della Salute ([Decreto Contenuti](https://www.gazzettaufficiale.it/eli/id/2022/07/11/22A03960)). 
 
 
 ### Funzionalità del Referto di Medicina di Laboratorio
 Le macro funzioni relative ai servizi per la gestione dei referiti di laboratorio : 
 
-- Funzione di Indicizzazione Documenti e Risorse
-- Funzione di Ricerca e Recupero Documenti e Risorse
-- Funzione di Alimentazione Risorse e Documetni
+- Funzione di Indicizzazione Documenti
+- Funzione di Ricerca e Recupero Documenti
+- Funzione di Alimentazione
 - Funzione di Identificazione
 - Funzione di Gestione del Consenso
 
@@ -56,7 +55,7 @@ Le macro funzioni relative ai servizi per la gestione dei referiti di laboratori
 </tr>
 <tr class="even">
 <td>Autore</td>
-<td>Maria Giovanna Preziosi</td>
+<td>Maria Giovanna Antida Preziosi</td>
 <td>SOGEI</td>
 <td>mpreziosi@sogei.it</td>
 </tr>

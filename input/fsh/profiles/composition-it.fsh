@@ -1,6 +1,6 @@
-Profile: CompositionRL
+Profile: CompositionRefertoLabIt
 Parent: Composition
-Id: CompositionRL
+Id: composition-it-lab
 Title: "Composition - Lab Report"
 Description: "Descrizione in tramite la risorsa Composition di header e body del Lab Report."
 * ^version = "0.0.1"
@@ -10,35 +10,33 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * ^copyright = "HL7 Italia"
 * . ^short = "Composition Referto di Laboratorio"
 
-* language from $common-language
+* language = #IT-it
 * language 1..1  
 * language ^short = "Metadato che indica la lingua utilizzata per descrivere la risorsa."
 * extension contains
     composition-dataenterer-it named dataEnterer 0..*
-* extension contains DiagnosticReportReference named diagnostic-report 1..1
 
-* extension[diagnostic-report] ^short = "DiagnosticReport legato al documento."
 * extension[dataEnterer] ^short = "Persona o dispositivo che trasforma un testo dettato nel documento FHIR."
 
 * identifier 1..1
 * identifier ^short = "Identificatore indipendente dalla versione."
 * type.coding.system = $LOINC
 * type.coding.code = #11502-2 
-* type.coding.display = "Referto di medicina di laboratorio"
+* type.coding.display = "Referto di laboratorio"
 * type ^short = "Tipo di Composition."
 * status ^short = "Stato di completezza della risorsa Composition. Lo stato della risorsa rappresenta anche lo stato del documento."
 * status ^definition = "Lo stato della Composition si sviluppa generalmente solo attraverso questo elenco: passa da preliminary a final e poi può passare a amended (ovvero modificato). "
 * subject 1..1
-* subject only Reference(PatientRL)
+* subject only Reference(patient-it-lab)
 * subject ^short = "Soggetto del documento."
 * encounter 1..1
 * encounter ^short = "Contesto in cui è stato generato il documento."
-* encounter only Reference(EncounterRL)
+* encounter only Reference(encounter-it-lab)
 * date ^short = "Data di modifica della risorsa da parte del firmatario."
 * confidentiality from $conf
 * confidentiality ^short = "Codice di confidenzialità della Composition."
 
-* author only Reference(PractitionerRL or PractitionerRoleRL or PatientRL or OrganizationRL)
+* author only Reference(practitioner-it-lab or practitionerrole-it-lab or patient-it-lab or organization-it-lab)
 * author ^short = "Autore della Composition."
 * title ^short = "Titolo o nome human-readable della Composition."
 * title = "Referto di Laboratorio" 
@@ -56,7 +54,7 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * attester[legalAuthenticator] ^short = "Firmatario del documento FHIR."
 * attester[legalAuthenticator].mode 1..1
 * attester[legalAuthenticator].mode = #legal
-* attester[legalAuthenticator].party only Reference(PractitionerRL or PractitionerRoleRL)
+* attester[legalAuthenticator].party only Reference(practitioner-it-lab or practitionerrole-it-lab)
 * attester[legalAuthenticator].time 1..1
 * attester[legalAuthenticator].time ^short = "Riferimento temporale della firma."
 * attester[legalAuthenticator].party ^short = "Riferimento al firmatario."
@@ -64,16 +62,16 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * attester[authenticator] ^short = "Validatore del documento FHIR."
 * attester[authenticator].mode 1..1
 * attester[authenticator].mode = #professional
-* attester[authenticator].party only Reference(PractitionerRL or PractitionerRoleRL)
+* attester[authenticator].party only Reference(practitioner-it-lab or practitionerrole-it-lab)
 * attester[authenticator].party ^short = "Riferimento al validatore."
 
 * attester[informationRecipient] ^short = "Professionisti sanitari che ricevono una copia del documento (es. MMG/PLS)."
 * attester[informationRecipient].mode = #personal
-* attester[informationRecipient].party only Reference(PractitionerRL or PractitionerRoleRL or OrganizationRL)
+* attester[informationRecipient].party only Reference(practitioner-it-lab or practitionerrole-it-lab or organization-it-lab)
 * attester[informationRecipient].party ^short = "Riferimento al informationRecipient."
 
 * custodian 1..1
-* custodian only Reference(OrganizationRL)
+* custodian only Reference(organization-it-lab)
 * custodian ^short = "Organizzazione che si occupa della conservazione del documento FHIR."
 
 * relatesTo ^short = "Ulteriori risorse Composition correlate al documento."
@@ -102,7 +100,7 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * section[senza-sottosezione].section ..0
 * section[senza-sottosezione].code 1..
 * section[senza-sottosezione].code from sezione-referto-laboratorio (preferred)
-* section[senza-sottosezione].entry only Reference (ObservationRL)
+* section[senza-sottosezione].entry only Reference (observation-it-lab)
 
 
 * section contains con-sottosezione ..* 
@@ -119,7 +117,7 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
   * code from sezione-referto-laboratorio (preferred)
   * text ^short = "Sintesi testuale della sezione, per l'interpretazione dell'utente."
   * entry 1..
-  * entry only Reference (ObservationRL)
+  * entry only Reference (observation-it-lab)
 * section contains annotazioni ..*
 * section[annotazioni]
   * ^short = "Commenti testuali"

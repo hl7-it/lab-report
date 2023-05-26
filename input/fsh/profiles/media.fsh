@@ -1,6 +1,6 @@
-Profile: MediaRL
+Profile: MediaRefertoLabIt
 Parent: Media
-Id: MediaRL
+Id: media-it-lab
 Title: "Media - Lab Report"
 Description: "Descrizione della risorsa Media per il contesto italiano del Lab Report."
 * ^status = #active
@@ -9,7 +9,7 @@ Description: "Descrizione della risorsa Media per il contesto italiano del Lab R
 * status = #completed (exactly)
 * status ^short = "Stato del valore del risultato."
 * subject 1..
-* subject only Reference(PatientRL)
+* subject only Reference(patient-it-lab)
 * subject.reference 1..
 * subject ^short = "Reference al soggetto del  file multimediali."
 * device ^short = "Dispositivo utilizzato per raccogliere i file multimediali."

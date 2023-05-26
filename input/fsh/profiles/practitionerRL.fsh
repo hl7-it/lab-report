@@ -1,6 +1,6 @@
-Profile:  PractitionerRL
+Profile:  PractitionerRefertoLabIt
 Parent:   Practitioner
-Id:       PractitionerRL
+Id:       practitioner-it-lab
 Title:    "Practitioner - Lab Report"
 Description: "Profilo del Practitioner nel nel dominio di Lab Report."
 //-------------------------------------------------------------------------------------------
