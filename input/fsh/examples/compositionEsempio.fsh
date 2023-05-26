@@ -1,14 +1,13 @@
 Instance: Composition-Lab-Esempio
-InstanceOf: CompositionRL
+InstanceOf: composition-it-lab
 Usage: #example
 Description: "Esempio di una Composition: descrizione header e struttura body del referto."
 
 * id = "2ae95a5c-9094-41a3-a437-ce6d34c55a54"
 * extension[dataEnterer].extension[dataEnterer].valueReference = Reference(PractitionerRole-Lab-Esempio)
 * extension[dataEnterer].extension[tempoCompilazione].valueDateTime = "2023-02-25T10:45:00+01:00"
-* extension[diagnostic-report].valueReference = Reference(DiagnosticReport-Lab-Esempio)
 
-* language = #it
+* language = #IT-it
 * identifier.use = #official
 * identifier.value = "urn:uuid:10b545ea-725c-446d-9b95-8aeb444eddf3"
 
@@ -16,7 +15,7 @@ Description: "Esempio di una Composition: descrizione header e struttura body de
 
 * type.coding.system = "http://loinc.org" 
 * type.coding.code = #11502-2
-* type.coding.display = "Referto di medicina di laboratorio" 
+* type.coding.display = "Referto di laboratorio" 
 
 * subject = Reference(Paziente-SSN)
 //"Patient/1"
