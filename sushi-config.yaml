@@ -60,20 +60,22 @@ groups:
     name: Profili Risorse Documento FHIR
     description: Profili risorse necessarie per produrre il documento FHIR Lab Report.
     resources:
-      - StructureDefinition/BundleRL
-      - StructureDefinition/CompositionRL
+      - StructureDefinition/bundle-it-lab
+      - StructureDefinition/composition-it-lab
   LabReportRES:
-    name: Profili Risorse Singole 
+    name: Profili Risorse  
     description: Profili risorse specifiche per il dominio di Lab Report.
     resources:
-      - StructureDefinition/DiagnosticReportRL
-      - StructureDefinition/ObservationRL
-      - StructureDefinition/SpecimenRL
-      - StructureDefinition/MediaRL
-      - StructureDefinition/PatientRL
-      - StructureDefinition/EncounterRL
-      - StructureDefinition/ServiceRequestRL
-      - StructureDefinition/LocationRL
-      - StructureDefinition/PractitionerRoleRL
-      - StructureDefinition/PractitionerRL
-      - StructureDefinition/OrganizationRL
+      - StructureDefinition/diagnosticreport-it-lab
+      - StructureDefinition/observation-it-lab
+      - StructureDefinition/specimen-it-lab
+      - StructureDefinition/media-it-lab
+      - StructureDefinition/patient-it-lab
+      - StructureDefinition/encounter-it-lab
+      - StructureDefinition/servicerequest-it-lab
+      - StructureDefinition/location-it-lab
+      - StructureDefinition/practitionerrole-it-lab
+      - StructureDefinition/practitioner-it-lab
+      - StructureDefinition/organization-it-lab
+      - StructureDefinition/device-it-lab
+      - StructureDefinition/specimen-additive-substance-it-lab
