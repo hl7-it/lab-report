@@ -1,7 +1,7 @@
-Instance: Observation-Lab-Esempio-Glucosio
+Instance: Observation-Lab-Esempio-Cloruro
 InstanceOf: observation-it-lab
 Usage: #example
-Description: "Esempio di un'osservazione: rilevazione di glucosio nel sangue."
+Description: "Esempio di un'osservazione: rilevazione di cloruro nel sangue."
 
 
 * category[+][esame-laboratorio].coding.code = #laboratory
@@ -15,13 +15,13 @@ Description: "Esempio di un'osservazione: rilevazione di glucosio nel sangue."
 * status = #final
 
 * code.coding.system = "http://loinc.org"
-* code.coding.code = #10450-5 	
-* code.coding.display = "Glucosio^post 10h digiuno"
+* code.coding.code = #100745-9
+* code.coding.display = "Chloride [Moles/volume] in Mixed venous blood"
 
-* valueQuantity.unit = "mg/dL"
-* valueQuantity.code = #mg/dL
+* valueQuantity.unit = "meq/L"
+* valueQuantity.code = #meq/L
 * valueQuantity.system = "https://ucum.org"
-* valueQuantity.value = 70
+* valueQuantity.value = 100
 
 // * subject.type = "Patient"
 // * subject.identifier.system = "http://hl7.it/sid/codiceFiscale"
@@ -31,3 +31,7 @@ Description: "Esempio di un'osservazione: rilevazione di glucosio nel sangue."
 * encounter = Reference(Encounter-Lab-Esempio)
 * performer = Reference(PractitionerRole-Lab-Esempio)
 * specimen = Reference (Specimen-Lab-Esempio)
+
+
+
+
