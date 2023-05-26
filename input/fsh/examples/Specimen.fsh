@@ -1,5 +1,5 @@
 Instance: Specimen-Lab-Esempio
-InstanceOf: SpecimenRL
+InstanceOf: specimen-it-lab
 Usage: #example
 Title: "EsempioCampione"
 Description: "Esempio di campione: sangue prelevato dall'avambraccio del paziente."

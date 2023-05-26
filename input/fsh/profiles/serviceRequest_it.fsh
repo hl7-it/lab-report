@@ -1,6 +1,6 @@
-Profile: ServiceRequestRL 
+Profile: ServiceRequestRefertoLabIt 
 Parent: ServiceRequest
-Id: ServiceRequestRL
+Id: servicerequest-it-lab
 Title: "ServiceRequest - Lab Report"
 Description: "Descrive la risorsa ServiceRequest che genera l'incontro del Lab Report."
 * ^version = "0.0.1"
@@ -12,12 +12,12 @@ Description: "Descrive la risorsa ServiceRequest che genera l'incontro del Lab R
 
 * identifier 1..* 
 * priority MS 
-* priority ^short = "routine | urgent | asap | stat \r\r\n\n Priorità della richiesta."
-* priority from http://hl7.org/fhir/ValueSet/request-priority (required)
+* priority ^short = "Descrizione attributo: Priorità della richiesta. Possibili valori: routine | urgent | asap | stat"
+* priority from http://hl7.org/fhir/ValueSet/request-priority (required) //mettere il nostro DEMA
 
 * subject 1..
 * subject ^short = "Soggetto cui si riferisce la richiesta."
-* subject only Reference(Patient)
+* subject only Reference(patient-it-lab)
 
 
 * requisition ^short = "Idenificativo comune a più ServiceRequest autorizzate simultaneamente. Rappresenta l'identificativo univoco della richiesta."
@@ -25,5 +25,6 @@ Description: "Descrive la risorsa ServiceRequest che genera l'incontro del Lab R
 * authoredOn ^short = "Data di invio della richiesta."
 * reasonCode ^short = "Quesito diagnostico associato alla richiesta."
 * specimen ^short = "Reference usata solo se il campione cui punta la richiesta è già stato prelevato ed esiste."
-* intent ^short = "proposal | plan | directive | order | original-order | reflex-order | filler-order | instance-order | option \r\n Indica lo scopo associato ad una richiesta."
+* specimen only Reference(specimen-it-lab)
+* intent ^short = "Descrizione attributo: Indica lo scopo associato ad una richiesta. Possibili valori: proposal | plan | directive | order | original-order | reflex-order | filler-order | instance-order | option "
 * intent from  $intent-code
