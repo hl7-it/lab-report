@@ -3,6 +3,7 @@ Parent: Patient
 Id: patient-it-lab
 Title: "Patient - Lab Report"
 Description: "Descrive come rappresentare le informazioni del paziente nei documenti FHIR."
+* . ^short = "Patient Referto di Laboratorio"
 * ^version = "0.0.1"
 * ^status = #draft
 * ^experimental = true

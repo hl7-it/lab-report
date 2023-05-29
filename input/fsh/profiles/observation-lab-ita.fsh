@@ -3,7 +3,7 @@ Parent: Observation
 Id: observation-it-lab
 Title:    "Observation - Lab Report"
 Description: "Descrive come rappresentare la risorsa Observation per le rilevazioni cliniche nel dominio di Lab Report."
-
+* . ^short = "Observation Referto di Laboratorio"
 * obeys ita-lab-1
 * code from risultato-osservazione (preferred)
 * code ^short = "Tipo di osservazione tramite codice."

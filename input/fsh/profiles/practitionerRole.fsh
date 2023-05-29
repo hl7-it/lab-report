@@ -6,7 +6,9 @@ Id: practitionerrole-it-lab
 
 Title: "PractitionerRole - Lab Report"
 
-Description: "Descrive la risorsa PractitionerRole che prende parte all'incontro."
+Description: "Descrive la risorsa PractitionerRole per il dominio di Lab Report."
+
+* . ^short = "PractitionerRole Referto di Laboratorio"
 
 * ^version = "0.0.1"
 

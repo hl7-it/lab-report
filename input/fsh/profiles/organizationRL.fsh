@@ -3,6 +3,7 @@ Parent:   Organization
 Id:       organization-it-lab
 Title:    "Organization - Lab Report"
 Description: "Descrizione della risorsa Organization nel dominio di Lab Report."
+* . ^short = "Organization Referto di Laboratorio"
 //-------------------------------------------------------------------------------------------
 * identifier MS // SI	0..*	Identifier	Identifies this organization across multiple systems
 * identifier ^short = "Identificativo dell'organizzazione."
