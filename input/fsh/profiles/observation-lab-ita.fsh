@@ -3,7 +3,7 @@ Parent: Observation
 Id: observation-it-lab
 Title:    "Observation - Lab Report"
 Description: "Descrive come rappresentare la risorsa Observation per le rilevazioni cliniche nel dominio di Lab Report."
-
+* . ^short = "Observation Referto di Laboratorio"
 * obeys ita-lab-1
 * code from risultato-osservazione (preferred)
 * code ^short = "Tipo di osservazione tramite codice."
@@ -17,6 +17,7 @@ Description: "Descrive come rappresentare la risorsa Observation per le rilevazi
 * category contains 
     esame-laboratorio 1..1 and
     specialita-esame-laboratorio 0..*
+* category[esame-laboratorio] ^short = "Classificazione del tipo di osservazione."
 * category[esame-laboratorio] = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
 * category[esame-laboratorio].coding ^short = "Codice definito da un sistema terminologico."
 * category[esame-laboratorio].coding.code ^short = "Codice della terminologia per descrivere il dominio di laboratorio."

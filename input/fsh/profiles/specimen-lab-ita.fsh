@@ -3,7 +3,6 @@ Parent: Specimen
 Id: specimen-it-lab
 Title: "Specimen - Lab Report"
 Description: "Descrive la risorsa Specimen per il campione nel dominio del Lab Report."
-
 * ^status = #draft
 * . ^short = "Campione Referto di Laboratorio"
 * . ^definition = "Campione Referto di Laboratorio"

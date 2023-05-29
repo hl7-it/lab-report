@@ -2,7 +2,8 @@ Profile:  PractitionerRefertoLabIt
 Parent:   Practitioner
 Id:       practitioner-it-lab
 Title:    "Practitioner - Lab Report"
-Description: "Profilo del Practitioner nel nel dominio di Lab Report."
+Description: "Descrive la risorsa Practitioner per il dominio di Lab Report."
+* . ^short = "Practitioner Referto di Laboratorio"
 //-------------------------------------------------------------------------------------------
 * identifier MS // add a slice for the fiscal code
 * identifier ^short = "Identificativo dell'operatore sanitario" //

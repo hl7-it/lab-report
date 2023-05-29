@@ -79,3 +79,4 @@ groups:
       - StructureDefinition/organization-it-lab
       - StructureDefinition/device-it-lab
       - StructureDefinition/specimen-additive-substance-it-lab
+      - StructureDefinition/observation-grouping-it-lab

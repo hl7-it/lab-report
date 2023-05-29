@@ -3,6 +3,7 @@ Parent: Location
 Id: location-it-lab
 Title: "Location - Lab Report"
 Description: "Profilo per Location utile alla descrizione delle informazioni relative alle strutture fisiche."
+* . ^short = "Location Referto di Laboratorio"
 * ^version = "0.0.1"
 * ^status = #draft
 * ^experimental = true

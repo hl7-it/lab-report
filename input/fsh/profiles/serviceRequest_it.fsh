@@ -3,6 +3,7 @@ Parent: ServiceRequest
 Id: servicerequest-it-lab
 Title: "ServiceRequest - Lab Report"
 Description: "Descrive la risorsa ServiceRequest che genera l'incontro del Lab Report."
+* . ^short = "ServiceRequest Referto di Laboratorio"
 * ^version = "0.0.1"
 * ^status = #draft
 * ^experimental = true
@@ -10,6 +11,7 @@ Description: "Descrive la risorsa ServiceRequest che genera l'incontro del Lab R
 * ^publisher = "HL7 Italia"
 * ^copyright = "HL7 Italia"
 
+* identifier ^short = "Identificativo assegnato all'ordine."
 * identifier 1..* 
 * priority MS 
 * priority ^short = "Descrizione attributo: Priorità della richiesta. Possibili valori: routine | urgent | asap | stat"

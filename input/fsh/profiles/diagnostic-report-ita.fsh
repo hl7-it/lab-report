@@ -34,13 +34,14 @@ Description: "Descrizione della risorsa DiagnosticReport per la descrizione dell
 * status ^short = "Descrizione attributo: Stato del report clinico. Possibili valori: registered | partial | preliminary | modified | final | amended | corrected | appended | cancelled | entered-in-error | unknown"
 * status from $diagn-status (required)
 * encounter only Reference (encounter-it-lab) 
-* encounter ^short = "Evento sanitario che ha portato alla creazione del DiagnosticReport"
+* encounter ^short = "Contesto in cui è stato generato il DiagnosticReport."
 * specimen only Reference (specimen-it-lab)
 * specimen ^short = "Reference ai campioni su cui si basa DiagnosticReport."
 
 * performer only Reference(practitioner-it-lab or practitionerrole-it-lab or organization-it-lab or CareTeam)
 * performer ^short = "Responsabile del report clinico."
 * performer ^definition = "Organizzazione o Persona che è responsabile del report; non è necessariamente l'autore dei dati atomici o l'entità che ha interpretato i risultati. "
+* code ^short = "Nome/codice della diagnostic report."
 * code = $LOINC#11502-2 "Referto di medicina di laboratorio"
 * result only Reference (observation-it-lab or observation-grouping-it-lab)
 * result ^short = "Osservazioni cliniche." 
