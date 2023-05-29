@@ -2,7 +2,7 @@ Profile: ObservationGroupingRefertoLabIt
 Parent: ObservationRefertoLabIt
 Id: observation-grouping-it-lab
 Title: "Observation battery - Lab Report"
-Description: "Descrizione in tramite la risorsa Observation del contenitore di rilevazioni 'battery' del Lab Report."
+Description: "Descrive come rappresentare un insieme di esami nel contesto del Referto di Laboratorio."
 * . ^short = "Observatio battery Referto di Laboratorio"
 * value[x] 0..0
 * interpretation 0..0

@@ -28,21 +28,27 @@ Description: "Descrive come rappresentare le informazioni del paziente nei docum
     codiceANA 0..1 and
     tesseraTEAM 0..1 and
     codiceSTP 0..1
+* identifier[codiceFiscale] ^short = "Codice Fiscale"
 * identifier[codiceFiscale].system 1.. 
 * identifier[codiceFiscale].system = $cf
+* identifier[codiceANA] ^short = "Codice ANA"
 * identifier[codiceANA].system = "urn:oid:2.16.840.1.113883.2.9.4.3.15"
 * identifier[codiceANA].system 1..
+* identifier[tesseraTEAM] ^short = "Tessera TEAM"
 * identifier[tesseraTEAM].system = "urn:oid:2.16.840.1.113883.2.9.4.3.7"
 * identifier[tesseraTEAM].system 1..
 * identifier[codiceFiscale].value 1.. 
 * identifier[codiceFiscale].value obeys pat-id-cf-1
+* identifier[anpr] ^short = "Identificativo del paziente nell'Anagrafe nazionale della popolazione residente"
 * identifier[anpr].system 1.. 
 * identifier[anpr].system = $anpr
+* identifier[idRegionale] ^short = "Identificativo Regionale"
 * identifier[idRegionale].system 1.. 
 * identifier[idRegionale].system from $uri-idRegionali (required)
 * identifier[codiceENI] ^short = "Codice ENI"
 * identifier[codiceENI].system 1.. 
 * identifier[codiceENI].system from $uri-idEni (required)
+* identifier[codiceSTP] ^short = "Codice STP" 
 * identifier[codiceSTP].system 1.. 
 * identifier[codiceSTP].system from $uri-idStp (required)
 * name 1.. 
