@@ -29,7 +29,6 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * subject 1..1
 * subject only Reference(patient-it-lab)
 * subject ^short = "Soggetto del documento."
-* encounter 1..1
 * encounter ^short = "Contesto in cui è stato generato il documento."
 * encounter only Reference(encounter-it-lab)
 * date ^short = "Data di modifica della risorsa da parte del firmatario."
