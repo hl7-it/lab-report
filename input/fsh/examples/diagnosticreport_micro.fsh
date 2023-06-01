@@ -70,7 +70,7 @@ Title: "DiagnosticReport - Esempio Laboratorio"
 * result[+] = Reference(Inline-Observation-anaerobic-culture)
 
 Instance: Inline-Observation-gram-stain
-InstanceOf: observation-it-lab
+InstanceOf: observation-grouping-it-lab
 Usage: #inline
 Description: "Esempio di Observation: rilevazione della colorazione di gram su campione di sangue."
 
@@ -78,6 +78,7 @@ Description: "Esempio di Observation: rilevazione della colorazione di gram su c
 * status = #final
 * category[esame-laboratorio] = $observation-category#laboratory
 * category[+] = $v2-0074#MB "Microbiology"
+* code = $LOINC#664-3 "Colorazione di Gram Microbiologia Presenza o Identità Punto nel tempo (episodio)"
 * code.text = "Gram Stain"
 * subject = Reference(Paziente-SSN)
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
@@ -167,13 +168,14 @@ Usage: #inline
 * encounter = Reference(Encounter-Lab-Esempio)
 
 Instance: Inline-Observation-aerobic-culture
-InstanceOf: observation-it-lab
+InstanceOf: observation-grouping-it-lab
 Usage: #inline
 Description: "Esempio di Observation: rilevazione coltura aerobica da campione di sangue."
 * id = "297c84f2-28d6-41b5-a270-6f563ef0fdfc"
 * status = #final
 * category[esame-laboratorio] = $observation-category#laboratory
 * category[+] = $v2-0074#MB "Microbiology"
+* code = $LOINC#LP6103-8 "Coltura Aerobica"
 * code.text = "Coltura Aerobica"
 * subject = Reference(Paziente-SSN)
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"

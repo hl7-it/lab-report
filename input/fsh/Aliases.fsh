@@ -5,6 +5,8 @@ Alias: $LOINC = http://loinc.org
 Alias: $diagn-status = http://hl7.org/fhir/ValueSet/diagnostic-report-status
 Alias: $diagnosticreport-category = http://terminology.hl7.org/CodeSystem/v2-0074 
 Alias: $ucum = https://ucum.org
+Alias: $practitionerRole-code = http://terminology.hl7.org/CodeSystem/practitioner-role
+Alias: $tipo-org = http://terminology.hl7.it/ValueSet/tipoOrganizzazione
 //------Profile------//
 Alias: $sct-device = http://hl7.org/fhir/ValueSet/device-type
 Alias: $observation-status = http://hl7.org/fhir/ValueSet/observation-status
@@ -45,3 +47,4 @@ Alias: $v2-0074 = http://terminology.hl7.org/CodeSystem/v2-0074
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 //---Extension 
 Alias: $ext-dataEnterer-time = dataEnterer-time
+Alias: $sequelTo = http://hl7.org/fhir/StructureDefinition/observation-sequelTo

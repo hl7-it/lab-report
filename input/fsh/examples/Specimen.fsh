@@ -8,7 +8,6 @@ Description: "Esempio di campione: sangue prelevato dall'avambraccio del pazient
 * type.coding.code = #BLD
 * type.coding.system = "http://terminology.hl7.org/CodeSystem/v3-SpecimenType"
 * type.coding.display = "Whole blood"
-
 * subject = Reference(Paziente-SSN)
 
 * collection.bodySite.coding.code = #7311008

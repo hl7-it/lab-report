@@ -141,7 +141,7 @@ Title:	       "Container Campione"
 Description:   "Container Campione di Laboratorio."
 * ^status = #draft
 * ^experimental = false
-* $sct#702290003	"Cervical cytology microscopy slide"
+* $sct#702290003	"Cervical cytology microscopy slide" 
 * $sct#706057008	"Cytology specimen container"
 * $sct#706052002	"Evacuated blood collection tube"
 * $sct#702292006	"Evacuated blood collection tube , K3EDTA/sodium fluoride"

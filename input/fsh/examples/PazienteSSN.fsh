@@ -1,13 +1,14 @@
 Instance: Paziente-SSN
 InstanceOf: patient-it-lab
 Usage: #example
-Description: "Esempio di un Paziente: soggetto iscritto al Sistema Sanitario Nazionale (SSN) con rappresentazione strutturata dell'attributo birthPlace."
+Description: "Esempio di un paziente: soggetto iscritto al Sistema Sanitario Nazionale (SSN) con rappresentazione strutturata dell'attributo birthPlace."
 
 * extension.url = "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
 * extension.valueAddress.line.extension[0].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"
 * extension.valueAddress.line.extension[0].valueString = "Via della Vittoria"
 * extension.valueAddress.line.extension[1].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"
 * extension.valueAddress.line.extension[1].valueString = "1"
+* extension.valueAddress.line = "Via della Vittoria, 1"
 * extension.valueAddress.city = "Milano"
 * extension.valueAddress.postalCode = "20100"
 * extension.valueAddress.country = "Italia"
