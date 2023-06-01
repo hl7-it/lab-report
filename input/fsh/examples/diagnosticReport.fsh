@@ -4,7 +4,7 @@ Usage: #example
 Description: "Esempio di un report diagnostico: report prodotto durante l'incontro."
 
 * id = "56f19992-e73e-45b5-bbdd-6d9aeb60b15a"
-// * extension[DiagnosticReportCompositionR5].valueReference = Reference(Composition-Lab-Esempio)
+* extension[DiagnosticReportCompositionR5].valueReference = Reference(Composition-Lab-Esempio)
 
 * basedOn = Reference(ServiceRequest-Lab-Esempio)
 * status = #final
