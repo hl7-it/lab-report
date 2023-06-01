@@ -15,8 +15,7 @@ Description: "Descrizione della risorsa DiagnosticReport per la descrizione dell
 // * extension[DiagnosticReportCompositionR5] ^short = "Reference a Composition del FHIR document."
 
 * extension contains $extension-DiagnosticReport.composition named DiagnosticReportCompositionR5 1..1
-* extension[DiagnosticReportCompositionR5].value[x] 1..
-* extension[DiagnosticReportCompositionR5].extension.url = "https://hl7.org/fhir/versions.html#extensions"
+* extension[DiagnosticReportCompositionR5].value[x] 1..1
 * extension[DiagnosticReportCompositionR5].value[x] only Reference(CompositionRefertoLabIt)
 
 * basedOn only Reference (servicerequest-it-lab)
