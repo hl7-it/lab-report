@@ -1,7 +1,7 @@
 Instance: Organization-Lab-Esempio
 InstanceOf: organization-it-lab
 Usage: #example
-Description: "Esempio di un'organizzazione: Azienda sanitaria locale."
+Description: "Esempio di un'organizzazione: Azienda Sanitaria Locale."
 
 * identifier[0].system = "http://hl7.it/sid/fls"
 * identifier[0].value = "120201"

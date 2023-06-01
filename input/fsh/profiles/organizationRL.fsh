@@ -2,7 +2,7 @@ Profile:  OrganizationRefertoLabIt
 Parent:   Organization
 Id:       organization-it-lab
 Title:    "Organization - Lab Report"
-Description: "Descrizione della risorsa Organization nel dominio di Lab Report."
+Description: "Profilo della risorsa Organization che per la descrizione delle informazioni nel dominio di Lab Report."
 * . ^short = "Organization Referto di Laboratorio"
 //-------------------------------------------------------------------------------------------
 * identifier MS // SI	0..*	Identifier	Identifies this organization across multiple systems
@@ -11,6 +11,6 @@ Description: "Descrizione della risorsa Organization nel dominio di Lab Report."
 * active	MS
 * type ^short = "Tipo di organizzazione."
 * type	MS
-* type from http://terminology.hl7.it/ValueSet/tipoOrganizzazione (example) 
+* type from $tipo-org (example) 
 * name ^short = "Nome human-readable dell'organizzazione."
 * name	MS

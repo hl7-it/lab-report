@@ -2,7 +2,7 @@ Profile: EncounterRefertoLabIt
 Parent: Encounter
 Id: encounter-it-lab
 Title: "Encounter - Lab Report"
-Description: "Descrizione della risorsa Encounter utile a descrivere i dati dell'incontro nel dominio di Lab Report."
+Description: "Profilo della risorsa Encounter utile a descrivere i dati dell'incontro nel dominio di Lab Report."
 * ^version = "0.0.1"
 * ^status = #draft
 * ^experimental = true
@@ -16,7 +16,7 @@ Description: "Descrizione della risorsa Encounter utile a descrivere i dati dell
 * subject ^short = "Soggetto dell'incontro."
 * subject only Reference(patient-it-lab)
 
-* status ^short = "planned | arrived | triaged | in-progress | onleave | finished | cancelled +\r\r\n\n   Stato attuale dell'incontro."
+* status ^short = "Descrizione attributo: Stato attuale dell'incontro. Possibili valori: planned | arrived | triaged | in-progress | onleave | finished | cancelled"
 * status from $encounter-status (required)
 * class ^short = "Classificazione dell'incontro con il paziente."
 * class from $encounter-class (extensible)
