@@ -88,6 +88,12 @@ Usage: #definition
 * rest.resource[=].profile = Canonical(specimen-additive-substance-it-lab )
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #search-type
+
+
+* rest.resource[+].type = #Observation
+* rest.resource[=].profile = Canonical( observation-grouping-it-lab )
+* rest.resource[=].interaction[0].code = #read
+* rest.resource[=].interaction[+].code = #search-type
 //----------- searchparameter------------ da completare
 
 // * rest.resource[+].type = #PractitionerRole
