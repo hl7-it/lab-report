@@ -17,6 +17,6 @@ Description: "Descrive la risorsa Specimen per il campione nel dominio del Lab R
 * container.type from campione-container-lab-it (preferred)
 * container.type ^short = "Tipo di dispositivo utilizzato per il contenere il campione."
 
-* subject 1..
+// * subject 1..
 * subject ^short = "Soggetto da cui è stato prelevato il campione."
 * subject only Reference(patient-it-lab)
