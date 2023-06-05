@@ -17,7 +17,7 @@ Description: "Descrizione della risorsa DiagnosticReport per la descrizione dell
 * extension contains $extension-DiagnosticReport.composition named DiagnosticReportCompositionR5 1..1
 
 * extension[DiagnosticReportCompositionR5].value[x] 0..1 //1..1 nel documento
-* extension[DiagnosticReportCompositionR5].value[x] only Reference(composition-lab-it)
+* extension[DiagnosticReportCompositionR5].value[x] only Reference(composition-it-lab)
 
 * basedOn only Reference (servicerequest-it-lab)
 * basedOn ^short = "Reference a una o più prestazioni richieste associate al referto."
