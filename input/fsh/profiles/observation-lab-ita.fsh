@@ -23,7 +23,8 @@ Description: "Descrive come rappresentare la risorsa Observation per le rilevazi
 * category[esame-laboratorio].coding.code ^short = "Codice della terminologia per descrivere il dominio di laboratorio."
 * category[esame-laboratorio].coding.system ^short = "Terminologia utilizzata."
 * category[specialita-esame-laboratorio] ^short = "Codice o testo della specialità dell'esame di laboratorio."
-* category[specialita-esame-laboratorio] from http://terminology.hl7.org/CodeSystem/observation-category (preferred)
+//* category[specialita-esame-laboratorio] from http://terminology.hl7.org/CodeSystem/observation-category (preferred)
+* category[specialita-esame-laboratorio] from sezione-referto-laboratorio (preferred)
 * category[specialita-esame-laboratorio].coding ^short = "Codice della terminologia per dettagliare la specialità di laboratorio"
 * category[specialita-esame-laboratorio].coding.system ^short = "Terminologia utilizzata."
 
