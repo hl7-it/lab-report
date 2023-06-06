@@ -37,6 +37,7 @@ Alias: $location-type = http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLo
 Alias: $intent-code = http://hl7.org/fhir/ValueSet/request-intent
 Alias: $sct-method = http://hl7.org/fhir/ValueSet/observation-methods
 Alias: $MediaType = http://hl7.org/fhir/ValueSet/media-type
+Alias: $typeName-device = http://hl7.org/fhir/ValueSet/device-nametype
 
 //---Example
 Alias: $serviceRequest-category = http://example.it/FHIR/schema/serviceRequest-category
