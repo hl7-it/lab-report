@@ -38,10 +38,10 @@ Description: "Descrive come rappresentare la risorsa Observation per le rilevazi
 
 * performer 1..
 * performer ^short = "Soggetto responsabile dell'osservazione."
-* performer only Reference(practitioner-it-lab or practitionerrole-it-lab or organization-it-lab or CareTeam)
+* performer only Reference(practitioner-it-lab or practitionerrole-it-lab or organization-it-lab or CareTeam or RelatedPerson)
 * value[x] ^short = "Risultato dell'osservaizone."
-// * valueQuantity only quantity-RL
-// * valueQuantity ^short = "Risultato misurabile tramite una quantità."
+* valueQuantity only quantity-it-lab
+* valueQuantity ^short = "Risultato misurabile tramite una quantità."
 * hasMember only Reference(observation-it-lab)
 * hasMember ^short = "Osservazioni correlate alla risorsa."
 * specimen ^short = "Reference al campione su cui si basa l'osservazione."
