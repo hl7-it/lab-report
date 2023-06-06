@@ -29,8 +29,8 @@ dependencies:
 pages:
   index.md:
     title: Home
-  contesto.md:
-    title: Contesto
+  # contesto.md:
+  #   title: Contesto
   downloads.md:
     title: Downloads
   # methodology.md:
@@ -43,7 +43,7 @@ pages:
 menu:
   IG Home: index.html
   Sommario: toc.html
-  Contesto: contesto.html
+  # Contesto: contesto.html
     # Contesto: 
     # Metodologia: methodology.html
   Specifiche:
@@ -62,6 +62,7 @@ groups:
     resources:
       - StructureDefinition/bundle-it-lab
       - StructureDefinition/composition-it-lab
+      - StructureDefinition/observation-doc-it-lab
   LabReportRES:
     name: Profili Risorse  
     description: Profili risorse specifiche per il dominio di Lab Report.
