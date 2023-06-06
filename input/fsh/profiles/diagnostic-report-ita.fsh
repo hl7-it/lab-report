@@ -18,7 +18,7 @@ Description: "Descrizione della risorsa DiagnosticReport per la descrizione dell
 * category 1.. 
 * category ^short = "Categoria del servizio."
 * category ^definition = "Un codice che classifica la disciplina clinica, il reparto o il servizio diagnostico che ha creato il referto (es. cardiologia, biochimica, ematologia)."
-* category from $diagnosticreport-category (example)
+* category from $diagnosticreport-category-valueset (example)
 
 * subject 1..
 * subject ^short = "Soggetto del referto."
