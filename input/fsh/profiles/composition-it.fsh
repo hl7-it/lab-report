@@ -90,7 +90,7 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * section.title 1..
 * section.title ^short = "Titolo della sezione."
 * section.code 1..
-* section.code ^short = "Codice della sezione (es. LOINC)."
+* section.code ^short = "Codice della sezione."
 
 * section contains senza-sottosezione ..* 
 * section[senza-sottosezione] ^short = "Variante 1: questa sezione presenta la entry è il text obbligatori"

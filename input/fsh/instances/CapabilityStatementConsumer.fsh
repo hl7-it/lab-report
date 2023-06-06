@@ -27,9 +27,7 @@ Usage: #definition
 * rest.resource[=].profile = Canonical( bundle-it-lab)
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #search-type 
-// * rest.resource[=].interaction[+].code = #update
-// * rest.resource[=].interaction[+].code = #create
-// * rest.resource[=].interaction[+].code = #delete
+
 * rest.resource[+].type = #Composition
 * rest.resource[=].profile = Canonical( composition-it-lab )
 * rest.resource[=].interaction[0].code = #read
@@ -86,6 +84,9 @@ Usage: #definition
 * rest.resource[=].profile = Canonical( organization-it-lab )
 * rest.resource[=].interaction[0].code = #read
 
+* rest.resource[+].type = #Observation
+* rest.resource[=].profile = Canonical( observation-grouping-it-lab )
+* rest.resource[=].interaction[0].code = #read
 // // --------------------------
 // // Provenance
 // // --------------------------

@@ -246,8 +246,8 @@ Usage: #inline
 * performer = Reference(PractitionerRole-Lab-Esempio)
 * valueQuantity.value = 2
 * valueQuantity.comparator = #<=
-* valueQuantity.code = #1
-* valueQuantity.system = $ucum
+* valueQuantity.code = #ug/mL
+* valueQuantity.system = "http://unitsofmeasure.org"
 * interpretation = $obs-interpretation#S "Susceptible"
 * encounter = Reference(Encounter-Lab-Esempio)
 
@@ -264,8 +264,8 @@ Usage: #inline
 * performer = Reference(PractitionerRole-Lab-Esempio)
 * valueQuantity.value = 4
 * valueQuantity.comparator = #>
-* valueQuantity.code = #1
-* valueQuantity.system = $ucum
+* valueQuantity.code = #ug/mL
+* valueQuantity.system = "http://unitsofmeasure.org"
 * interpretation = $obs-interpretation#R "Resistant"
 * encounter = Reference(Encounter-Lab-Esempio)
 
@@ -281,8 +281,8 @@ Usage: #inline
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
 * performer = Reference(PractitionerRole-Lab-Esempio)
 * valueQuantity.value = 0.5
-* valueQuantity.code = #1
-* valueQuantity.system = $ucum
+* valueQuantity.code = #ug/mL
+* valueQuantity.system = "http://unitsofmeasure.org"
 * interpretation = $obs-interpretation#S "Susceptible"
 * encounter = Reference(Encounter-Lab-Esempio)
 
@@ -299,8 +299,8 @@ Usage: #inline
 * performer = Reference(PractitionerRole-Lab-Esempio)
 * valueQuantity.value = 1
 * valueQuantity.comparator = #<=
-* valueQuantity.code = #1
-* valueQuantity.system = $ucum
+* valueQuantity.code = #ug/mL
+* valueQuantity.system = "http://unitsofmeasure.org"
 * interpretation = $obs-interpretation#S "Susceptible"
 * encounter = Reference(Encounter-Lab-Esempio)
 
@@ -366,8 +366,8 @@ Usage: #inline
 * performer = Reference(PractitionerRole-Lab-Esempio)
 * valueQuantity.value = 16
 * valueQuantity.comparator = #>
-* valueQuantity.code = #1
-* valueQuantity.system = $ucum
+* valueQuantity.code = #ug/mL
+* valueQuantity.system = "http://unitsofmeasure.org"
 * interpretation = $obs-interpretation#R "Resistant"
 * encounter = Reference(Encounter-Lab-Esempio)
 
@@ -384,8 +384,8 @@ Usage: #inline
 * performer = Reference(PractitionerRole-Lab-Esempio)
 * valueQuantity.value = 0.5
 * valueQuantity.comparator = #<=
-* valueQuantity.code = #1
-* valueQuantity.system = $ucum
+* valueQuantity.code = #ug/mL
+* valueQuantity.system = "http://unitsofmeasure.org"
 * interpretation = $obs-interpretation#S "Susceptible"
 * encounter = Reference(Encounter-Lab-Esempio)
 
@@ -402,8 +402,8 @@ Usage: #inline
 * performer = Reference(PractitionerRole-Lab-Esempio)
 * valueQuantity.value = 8
 * valueQuantity.comparator = #>
-* valueQuantity.code = #1
-* valueQuantity.system = $ucum
+* valueQuantity.code = #ug/mL
+* valueQuantity.system = "http://unitsofmeasure.org"
 * interpretation = $obs-interpretation#R "Resistant"
 * encounter = Reference(Encounter-Lab-Esempio)
 
@@ -420,8 +420,8 @@ Usage: #inline
 * performer = Reference(PractitionerRole-Lab-Esempio)
 * valueQuantity.value = 1
 * valueQuantity.comparator = #<=
-* valueQuantity.code = #1
-* valueQuantity.system = $ucum
+* valueQuantity.code = #ug/mL
+* valueQuantity.system = "http://unitsofmeasure.org"
 * interpretation = $obs-interpretation#S "Susceptible"
 * encounter = Reference(Encounter-Lab-Esempio)
 

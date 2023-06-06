@@ -100,6 +100,11 @@ Usage: #definition
 * rest.resource[=].profile = Canonical( organization-it-lab )
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #search-type
+
+* rest.resource[+].type = #Observation
+* rest.resource[=].profile = Canonical( observation-grouping-it-lab )
+* rest.resource[=].interaction[0].code = #read
+* rest.resource[=].interaction[+].code = #search-type
 // // --------------------------
 // // Provenance
 // // --------------------------

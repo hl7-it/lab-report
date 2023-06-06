@@ -48,3 +48,4 @@ Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation
 //---Extension 
 Alias: $ext-dataEnterer-time = dataEnterer-time
 Alias: $sequelTo = http://hl7.org/fhir/StructureDefinition/observation-sequelTo
+Alias: $diagnostic-report-composition-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition

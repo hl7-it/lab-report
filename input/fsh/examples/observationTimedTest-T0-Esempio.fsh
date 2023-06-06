@@ -19,7 +19,7 @@ Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue a d
 
 * valueQuantity.unit = "u[IU]/mL"
 * valueQuantity.code = #u[IU]/mL
-* valueQuantity.system = "https://ucum.org"
+* valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.value = 20
 
 * subject = Reference(Paziente-SSN)
@@ -48,7 +48,7 @@ Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue dop
 
 * valueQuantity.unit = "u[IU]/mL"
 * valueQuantity.code = #u[IU]/mL
-* valueQuantity.system = "https://ucum.org"
+* valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.value = 120
 
 // * subject.type = "Patient"
@@ -81,7 +81,7 @@ Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue dop
 
 * valueQuantity.unit = "u[IU]/mL"
 * valueQuantity.code = #u[IU]/mL
-* valueQuantity.system = "https://ucum.org"
+* valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.value = 87
 
 // * subject.type = "Patient"
@@ -115,7 +115,7 @@ Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue dop
 
 * valueQuantity.unit = "u[IU]/mL"
 * valueQuantity.code = #u[IU]/mL
-* valueQuantity.system = "https://ucum.org"
+* valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.value = 70
 
 // * subject.type = "Patient"
@@ -148,7 +148,7 @@ Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue dop
 
 * valueQuantity.unit = "u[IU]/mL"
 * valueQuantity.code = #u[IU]/mL
-* valueQuantity.system = "https://ucum.org"
+* valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.value = 35
 
 // * subject.type = "Patient"

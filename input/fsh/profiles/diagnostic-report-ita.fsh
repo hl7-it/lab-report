@@ -1,6 +1,3 @@
-Alias: $extension-DiagnosticReport.composition = http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition
-
-
 Profile: DiagnosticReportRefertoLabIt
 Parent: DiagnosticReport
 Id: diagnosticreport-it-lab
@@ -11,13 +8,10 @@ Description: "Descrizione della risorsa DiagnosticReport per la descrizione dell
 * ^copyright = "HL7 Italia"
 * . ^short = "DiagnosticReport Referto di Laboratorio"
 * . ^definition = "Laboratory Report DiagnosticReport"
-// * extension contains DiagnosticReportReference named DiagnosticReportCompositionR5 1..1
-// * extension[DiagnosticReportCompositionR5] ^short = "Reference a Composition del FHIR document."
 
-* extension contains $extension-DiagnosticReport.composition named DiagnosticReportCompositionR5 1..1
-
-* extension[DiagnosticReportCompositionR5].value[x] 0..1 //1..1 nel documento
+* extension contains $diagnostic-report-composition-r5 named DiagnosticReportCompositionR5 0..1
 * extension[DiagnosticReportCompositionR5].value[x] only Reference(composition-it-lab)
+* extension[DiagnosticReportCompositionR5].value[x] 1..1
 
 * basedOn only Reference (servicerequest-it-lab)
 * basedOn ^short = "Reference a una o più prestazioni richieste associate al referto."

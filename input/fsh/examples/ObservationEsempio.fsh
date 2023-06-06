@@ -20,7 +20,7 @@ Description: "Esempio di un'osservazione: rilevazione di glucosio nel sangue."
 
 * valueQuantity.unit = "mg/dL"
 * valueQuantity.code = #mg/dL
-* valueQuantity.system = "https://ucum.org"
+* valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.value = 70
 
 // * subject.type = "Patient"

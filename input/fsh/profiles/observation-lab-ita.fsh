@@ -23,7 +23,8 @@ Description: "Descrive come rappresentare la risorsa Observation per le rilevazi
 * category[esame-laboratorio].coding.code ^short = "Codice della terminologia per descrivere il dominio di laboratorio."
 * category[esame-laboratorio].coding.system ^short = "Terminologia utilizzata."
 * category[specialita-esame-laboratorio] ^short = "Codice o testo della specialità dell'esame di laboratorio."
-* category[specialita-esame-laboratorio] from http://terminology.hl7.org/CodeSystem/observation-category (preferred)
+//* category[specialita-esame-laboratorio] from http://terminology.hl7.org/CodeSystem/observation-category (preferred)
+* category[specialita-esame-laboratorio] from sezione-referto-laboratorio (preferred)
 * category[specialita-esame-laboratorio].coding ^short = "Codice della terminologia per dettagliare la specialità di laboratorio"
 * category[specialita-esame-laboratorio].coding.system ^short = "Terminologia utilizzata."
 
@@ -37,10 +38,10 @@ Description: "Descrive come rappresentare la risorsa Observation per le rilevazi
 
 * performer 1..
 * performer ^short = "Soggetto responsabile dell'osservazione."
-* performer only Reference(practitioner-it-lab or practitionerrole-it-lab or organization-it-lab or CareTeam)
+* performer only Reference(practitioner-it-lab or practitionerrole-it-lab or organization-it-lab or CareTeam or RelatedPerson)
 * value[x] ^short = "Risultato dell'osservaizone."
-// * valueQuantity only quantity-RL
-// * valueQuantity ^short = "Risultato misurabile tramite una quantità."
+* valueQuantity only quantity-it-lab
+* valueQuantity ^short = "Risultato misurabile tramite una quantità."
 * hasMember only Reference(observation-it-lab)
 * hasMember ^short = "Osservazioni correlate alla risorsa."
 * specimen ^short = "Reference al campione su cui si basa l'osservazione."
