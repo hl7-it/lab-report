@@ -20,7 +20,7 @@ Description: "Esempio di un'osservazione: rilevazione di cloruro nel sangue."
 
 * valueQuantity.unit = "meq/L"
 * valueQuantity.code = #meq/L
-* valueQuantity.system = "https://ucum.org"
+* valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.value = 100
 
 // * subject.type = "Patient"

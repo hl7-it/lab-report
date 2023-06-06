@@ -1,11 +1,12 @@
-// Profile: QuantityLab
-// Parent: Quantity
-// Id: quantity-RL
-// Title: "Quantity - Referto di Laboratorio"
-// Description: "Descrizione del valore ottenuto da una misurazione."
-// // * unit 1..1 
-// * unit ^short = "Descrizione testuale dell'unità di misura."
-// // * code 1..1
-// * code ^short = "Descrizione codificata dell'unità di misura secondo UCUM."
-// * system from $ucum (preferred)
-// * value ^short = "Valore della misurazione."
+Profile: QuantityLab
+Parent: Quantity
+Id: quantity-it-lab
+Title: "Quantity - Lab Report"
+Description: "Descrizione del valore ottenuto da una misurazione."
+// * unit 1..1 
+* unit ^short = "Descrizione testuale dell'unità di misura."
+* code 1..
+* code from uqum-valueset-it (required) 
+* code ^short = "Descrizione codificata dell'unità di misura secondo UCUM."
+* system = "http://unitsofmeasure.org" (exactly)
+* value ^short = "Valore della misurazione."
