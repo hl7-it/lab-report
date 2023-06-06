@@ -43,6 +43,7 @@ Usage: #definition
 * rest.resource[=].profile = Canonical( observation-it-lab )
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #search-type
+* rest.resource[=].supportedProfile = Canonical( observation-grouping-it-lab )
 
 * rest.resource[+].type = #Specimen
 * rest.resource[=].profile = Canonical( specimen-it-lab )
@@ -89,11 +90,6 @@ Usage: #definition
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #search-type
 
-
-* rest.resource[+].type = #Observation
-* rest.resource[=].profile = Canonical( observation-grouping-it-lab )
-* rest.resource[=].interaction[0].code = #read
-* rest.resource[=].interaction[+].code = #search-type
 //----------- searchparameter------------ da completare
 
 // * rest.resource[+].type = #PractitionerRole

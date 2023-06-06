@@ -15,7 +15,7 @@ Description: "Esempio di una Composition: descrizione header e struttura body de
 
 * type.coding.system = "http://loinc.org" 
 * type.coding.code = #11502-2
-* type.coding.display = "Referto di laboratorio" 
+* type.coding.display = "Referto di medicina di laboratorio" 
 
 * subject = Reference(Paziente-SSN)
 //"Patient/1"

@@ -22,7 +22,7 @@ jurisdiction: urn:iso:std:iso:3166#IT "Italy"
 
 dependencies:
   hl7.fhir.it.base: current
-  #hl7.fhir.it.terminology: 0.1.1
+  # hl7.fhir.it.terminology: 0.1.1
   hl7.fhir.extensions.r5: 4.0.1
   hl7.fhir.it.cda2fhir: current
 
@@ -81,3 +81,4 @@ groups:
       - StructureDefinition/device-it-lab
       - StructureDefinition/specimen-additive-substance-it-lab
       - StructureDefinition/observation-grouping-it-lab
+      

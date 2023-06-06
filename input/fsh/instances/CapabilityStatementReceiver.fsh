@@ -60,6 +60,7 @@ Usage: #definition
 * rest.resource[=].profile = Canonical( observation-it-lab )
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #search-type
+* rest.resource[=].supportedProfile = Canonical( observation-grouping-it-lab )
 
 * rest.resource[+].type = #ServiceRequest
 * rest.resource[=].profile = Canonical( servicerequest-it-lab )
@@ -101,10 +102,6 @@ Usage: #definition
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #search-type
 
-* rest.resource[+].type = #Observation
-* rest.resource[=].profile = Canonical( observation-grouping-it-lab )
-* rest.resource[=].interaction[0].code = #read
-* rest.resource[=].interaction[+].code = #search-type
 // // --------------------------
 // // Provenance
 // // --------------------------

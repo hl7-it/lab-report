@@ -61,7 +61,7 @@ Title: "DiagnosticReport - Esempio Laboratorio"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/v2-0074#LAB "Laboratory"
 * code.text = "Coltura e suscettibilità batterica aerobica e anaerobica"
-* subject = Reference(Paziente-SSN)
+* subject = Reference(Paziente-SSN1)
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
 * performer = Reference(PractitionerRole-Lab-Esempio)
 * specimen = Reference(Specimen-Lab-Esempio)

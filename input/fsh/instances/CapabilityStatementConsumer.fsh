@@ -51,6 +51,7 @@ Usage: #definition
 * rest.resource[+].type = #Observation
 * rest.resource[=].profile = Canonical( observation-it-lab )
 * rest.resource[=].interaction[0].code = #read
+* rest.resource[=].supportedProfile = Canonical( observation-grouping-it-lab )
 
 * rest.resource[+].type = #ServiceRequest
 * rest.resource[=].profile = Canonical( servicerequest-it-lab )
@@ -84,9 +85,6 @@ Usage: #definition
 * rest.resource[=].profile = Canonical( organization-it-lab )
 * rest.resource[=].interaction[0].code = #read
 
-* rest.resource[+].type = #Observation
-* rest.resource[=].profile = Canonical( observation-grouping-it-lab )
-* rest.resource[=].interaction[0].code = #read
 // // --------------------------
 // // Provenance
 // // --------------------------

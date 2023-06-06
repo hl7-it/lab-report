@@ -14,7 +14,8 @@ Description: "Esempio di un report diagnostico: report prodotto durante l'incont
 * subject.reference = "Patient/Paziente-SSN"
 
 * encounter = Reference(Encounter-Lab-Esempio)
-* result = Reference(Observation-Lab-Esempio-Glucosio)
+* result[+] = Reference(Observation-Lab-Esempio-Glucosio)
+* result[+] = Reference(Observation-Lab-Esempio-Cloruro)
 
 * effectivePeriod.start = "2023-02-25T11:45:00+01:00"
 * effectivePeriod.end = "2023-02-25T12:45:00+01:00"
