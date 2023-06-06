@@ -7,7 +7,7 @@ Description: "Descrizione della risorsa Media per la descrizione dei contenuti m
 * ^status = #active
 * ^experimental = false
 * ^purpose = "Questa risorsa viene utilizzata per illustrare i contenuti multimediali legati al Referto di Laboratorio."
-* status = #completed (exactly)
+// * status = #completed (exactly)
 * status ^short = "Stato del valore del risultato."
 * subject 1..
 * subject only Reference(patient-it-lab)
