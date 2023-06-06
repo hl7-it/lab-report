@@ -7,9 +7,9 @@ Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue a d
 * category[=][esame-laboratorio].coding.system = "http://terminology.hl7.org/CodeSystem/observation-category"
 * category[=][esame-laboratorio].coding.display = "Laboratory"
 
-* category[+][specialita-esame-laboratorio].coding.code = #HM
-* category[=][specialita-esame-laboratorio].coding.system = "https://terminology.hl7.org/5.1.0/CodeSystem-v2-0074"
-* category[=][specialita-esame-laboratorio].coding.display = "Hematology"
+* category[+][specialita-esame-laboratorio].coding.code = #18723-7
+* category[=][specialita-esame-laboratorio].coding.system = "http://loinc.org"
+* category[=][specialita-esame-laboratorio].coding.display = "Studi di ematologia"
 
 * status = #final
 
@@ -36,9 +36,9 @@ Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue dop
 * category[=][esame-laboratorio].coding.system = "http://terminology.hl7.org/CodeSystem/observation-category"
 * category[=][esame-laboratorio].coding.display = "Laboratory"
 
-* category[+][specialita-esame-laboratorio].coding.code = #HM
-* category[=][specialita-esame-laboratorio].coding.system = "https://terminology.hl7.org/5.1.0/CodeSystem-v2-0074"
-* category[=][specialita-esame-laboratorio].coding.display = "Hematology"
+* category[+][specialita-esame-laboratorio].coding.code = #18723-7
+* category[=][specialita-esame-laboratorio].coding.system = "http://loinc.org"
+* category[=][specialita-esame-laboratorio].coding.display = "Studi di ematologia"
 
 * status = #final
 
@@ -69,9 +69,9 @@ Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue dop
 * category[=][esame-laboratorio].coding.system = "http://terminology.hl7.org/CodeSystem/observation-category"
 * category[=][esame-laboratorio].coding.display = "Laboratory"
 
-* category[+][specialita-esame-laboratorio].coding.code = #HM
-* category[=][specialita-esame-laboratorio].coding.system = "https://terminology.hl7.org/5.1.0/CodeSystem-v2-0074"
-* category[=][specialita-esame-laboratorio].coding.display = "Hematology"
+* category[+][specialita-esame-laboratorio].coding.code = #18723-7
+* category[=][specialita-esame-laboratorio].coding.system = "http://loinc.org"
+* category[=][specialita-esame-laboratorio].coding.display = "Studi di ematologia"
 
 * status = #final
 
@@ -103,9 +103,9 @@ Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue dop
 * category[=][esame-laboratorio].coding.system = "http://terminology.hl7.org/CodeSystem/observation-category"
 * category[=][esame-laboratorio].coding.display = "Laboratory"
 
-* category[+][specialita-esame-laboratorio].coding.code = #HM
-* category[=][specialita-esame-laboratorio].coding.system = "https://terminology.hl7.org/5.1.0/CodeSystem-v2-0074"
-* category[=][specialita-esame-laboratorio].coding.display = "Hematology"
+* category[+][specialita-esame-laboratorio].coding.code = #18723-7
+* category[=][specialita-esame-laboratorio].coding.system = "http://loinc.org"
+* category[=][specialita-esame-laboratorio].coding.display = "Studi di ematologia"
 
 * status = #final
 
@@ -136,9 +136,9 @@ Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue dop
 * category[=][esame-laboratorio].coding.system = "http://terminology.hl7.org/CodeSystem/observation-category"
 * category[=][esame-laboratorio].coding.display = "Laboratory"
 
-* category[+][specialita-esame-laboratorio].coding.code = #HM
-* category[=][specialita-esame-laboratorio].coding.system = "https://terminology.hl7.org/5.1.0/CodeSystem-v2-0074"
-* category[=][specialita-esame-laboratorio].coding.display = "Hematology"
+* category[+][specialita-esame-laboratorio].coding.code = #18723-7
+* category[=][specialita-esame-laboratorio].coding.system = "http://loinc.org"
+* category[=][specialita-esame-laboratorio].coding.display = "Studi di ematologia"
 
 * status = #final
 
