@@ -14,8 +14,6 @@ Usage: #definition
 * format[+] = #application/fhir+xml
 
 * rest.mode = #client
-* rest.resource.searchInclude 
-* rest.resource.searchRevInclude 
 * document.mode = #consumer
 // * document.documentation = ""
 * document.profile = Canonical(bundle-it-lab)

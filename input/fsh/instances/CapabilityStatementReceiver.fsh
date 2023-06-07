@@ -13,9 +13,6 @@ Usage: #definition
 * format[0] = #application/fhir+json
 * format[+] = #application/fhir+xml
 
-* rest.mode = #server
-* rest.resource.searchInclude 
-* rest.resource.searchRevInclude 
 * document.mode = #consumer
 // * document.documentation = ""
 * document.profile = Canonical(bundle-it-lab)
@@ -23,7 +20,10 @@ Usage: #definition
 //-----------------Bundle----------------//
 // --------------------------------------//
 
-* rest.resource[+].type = #Bundle
+* rest.mode = #server
+* rest.resource[=].searchInclude 
+* rest.resource[=].searchRevInclude 
+* rest.resource[=].type = #Bundle
 * rest.resource[=].profile = Canonical( bundle-it-lab)
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #update
