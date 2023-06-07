@@ -15,7 +15,7 @@ Description: "Esempio di una Composition: descrizione header e struttura body de
 
 * type.coding.system = "http://loinc.org" 
 * type.coding.code = #11502-2
-* type.coding.display = "Referto di laboratorio" 
+* type.coding.display = "Referto di medicina di laboratorio" 
 
 * subject = Reference(Paziente-SSN)
 //"Patient/1"
@@ -36,13 +36,13 @@ Description: "Esempio di una Composition: descrizione header e struttura body de
 
 * custodian = Reference(Organization-Lab-Esempio)
 
-* section.code.coding.system = $LOINC
-* section.code.coding.code = #26436-6
-* section.code.coding.display = "Esami di laboratorio"
-* section.title = "Esami di laboratorio"
+* section[con-sottosezione].code.coding.system = $LOINC
+* section[con-sottosezione].code.coding.code = #26436-6
+* section[con-sottosezione].code.coding.display = "Esami di laboratorio"
+* section[con-sottosezione].title = "Esami di laboratorio"
 
-* section.section.title = "Esame del sangue"
-* section.section.code.coding.system = $LOINC
-* section.section.code.coding.code = #10450-5
-* section.section.code.coding.display = "Glucosio [massa / volume] nel siero o nel plasma - 10 ore di digiuno"
-* section.section.entry = Reference(Observation-Lab-Esempio)
+* section[con-sottosezione].section.title = "Esame del sangue"
+* section[con-sottosezione].section.code.coding.system = $LOINC
+* section[con-sottosezione].section.code.coding.code = #10450-5
+* section[con-sottosezione].section.code.coding.display = "Glucosio [massa / volume] nel siero o nel plasma - 10 ore di digiuno"
+* section[con-sottosezione].section.entry = Reference(Observation-Lab-Esempio-Glucosio)

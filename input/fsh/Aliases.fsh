@@ -8,6 +8,7 @@ Alias: $diagnosticreport-category-valueset = http://hl7.org/fhir/ValueSet/diagno
 Alias: $ucum = https://ucum.org
 Alias: $practitionerRole-code = http://terminology.hl7.org/CodeSystem/practitioner-role
 Alias: $tipo-org = http://terminology.hl7.it/ValueSet/tipoOrganizzazione
+Alias: $Codice-Observation = http://hl7.org/fhir/uv/ips/ValueSet/results-laboratory-observations-uv-ips
 //------Profile------//
 Alias: $sct-device = http://hl7.org/fhir/ValueSet/device-type
 Alias: $observation-status = http://hl7.org/fhir/ValueSet/observation-status
@@ -37,6 +38,7 @@ Alias: $location-type = http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLo
 Alias: $intent-code = http://hl7.org/fhir/ValueSet/request-intent
 Alias: $sct-method = http://hl7.org/fhir/ValueSet/observation-methods
 Alias: $MediaType = http://hl7.org/fhir/ValueSet/media-type
+Alias: $typeName-device = http://hl7.org/fhir/ValueSet/device-nametype
 
 //---Example
 Alias: $serviceRequest-category = http://example.it/FHIR/schema/serviceRequest-category

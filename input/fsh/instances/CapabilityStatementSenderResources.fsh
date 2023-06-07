@@ -38,12 +38,8 @@ Usage: #definition
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #create
 * rest.resource[=].interaction[+].code = #update
+* rest.resource[=].supportedProfile = Canonical( observation-grouping-it-lab )
 
-* rest.resource[+].type = #Observation
-* rest.resource[=].profile = Canonical( observation-grouping-it-lab )
-* rest.resource[=].interaction[0].code = #read
-* rest.resource[=].interaction[+].code = #create
-* rest.resource[=].interaction[+].code = #update
 
 * rest.resource[+].type = #Specimen
 * rest.resource[=].profile = Canonical( specimen-it-lab )
