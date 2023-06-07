@@ -13,11 +13,6 @@ Usage: #definition
 * format[+] = #application/fhir+xml
 
 * rest.mode = #client
-* rest.resource.searchInclude 
-* rest.resource.searchRevInclude 
-// --------------------------------------//
-//-----------------Bundle----------------//
-// --------------------------------------//
 
 * rest.resource[+].type = #Composition
 * rest.resource[=].profile = Canonical( composition-it-lab )
