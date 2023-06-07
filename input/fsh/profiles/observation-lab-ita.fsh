@@ -39,9 +39,17 @@ Description: "Descrive come rappresentare la risorsa Observation per le rilevazi
 * performer 1..
 * performer ^short = "Soggetto responsabile dell'osservazione."
 * performer only Reference(practitioner-it-lab or practitionerrole-it-lab or organization-it-lab or CareTeam or RelatedPerson)
+
 * value[x] ^short = "Risultato dell'osservaizone."
+
+* value[x] ^slicing.discriminator.type = #type
+* value[x] ^slicing.discriminator.path = "$this"
+* value[x] ^slicing.rules = #closed
+
 * valueQuantity only quantity-it-lab
+* valueQuantity ^sliceName = "valueQuantity"
 * valueQuantity ^short = "Risultato misurabile tramite una quantità."
+
 * hasMember only Reference(observation-it-lab)
 * hasMember ^short = "Osservazioni correlate alla risorsa."
 * specimen ^short = "Reference al campione su cui si basa l'osservazione."
@@ -62,6 +70,31 @@ Description: "Descrive come rappresentare la risorsa Observation per le rilevazi
 * bodySite ^short = "Sito corporeo dell'osservazione."
 * derivedFrom only Reference(observation-it-lab)
 * derivedFrom ^short = "Reference dell'osservazione da cui deriva questo valore di osservazione. Ad esempio, un gap anionico calcolato o una misurazione fetale basata su un'immagine ecografica."
+
+* valueCodeableConcept from http://hl7.org/fhir/uv/ips/ValueSet/results-coded-values-laboratory-uv-ips (preferred)
+* valueCodeableConcept ^sliceName = "valueCodeableConcept"
+* valueCodeableConcept ^binding.extension[0].extension[0].url = "purpose"
+* valueCodeableConcept ^binding.extension[=].extension[=].valueCode = #candidate
+* valueCodeableConcept ^binding.extension[=].extension[+].url = "valueSet"
+* valueCodeableConcept ^binding.extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ValueSet/results-blood-group-snomed-ct-ips-free-set"
+* valueCodeableConcept ^binding.extension[=].extension[+].url = "documentation"
+* valueCodeableConcept ^binding.extension[=].extension[=].valueMarkdown = "Additional conformance binding to a blood group findings value set for laboratory result values from the SNOMED CT IPS free set for use globally (in SNOMED member and non-member jurisdictions)."
+* valueCodeableConcept ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
+* valueCodeableConcept ^binding.extension[+].extension[0].url = "purpose"
+* valueCodeableConcept ^binding.extension[=].extension[=].valueCode = #candidate
+* valueCodeableConcept ^binding.extension[=].extension[+].url = "valueSet"
+* valueCodeableConcept ^binding.extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ValueSet/results-presence-absence-snomed-ct-ips-free-set"
+* valueCodeableConcept ^binding.extension[=].extension[+].url = "documentation"
+* valueCodeableConcept ^binding.extension[=].extension[=].valueMarkdown = "Additional conformance binding to a presence and absence findings (qualifier values) value set for laboratory result values from the SNOMED CT IPS free set for use globally (in SNOMED member and non-member jurisdictions)."
+* valueCodeableConcept ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
+* valueCodeableConcept ^binding.extension[+].extension[0].url = "purpose"
+* valueCodeableConcept ^binding.extension[=].extension[=].valueCode = #candidate
+* valueCodeableConcept ^binding.extension[=].extension[+].url = "valueSet"
+* valueCodeableConcept ^binding.extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ValueSet/results-microorganism-snomed-ct-ips-free-set"
+* valueCodeableConcept ^binding.extension[=].extension[+].url = "documentation"
+* valueCodeableConcept ^binding.extension[=].extension[=].valueMarkdown = "Additional conformance binding to a microorganisms value set for laboratory result values from the SNOMED CT IPS free set for use globally (in SNOMED member and non-member jurisdictions)."
+* valueCodeableConcept ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
+
 
 Invariant: ita-lab-1
 Description: "se  \"hasMember\" non è presente allora Observation deve avere un\" value\""

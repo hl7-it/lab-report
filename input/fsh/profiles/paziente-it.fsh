@@ -11,8 +11,64 @@ Description: "Descrive come rappresentare le informazioni del paziente nei docum
 * . MS
 
 * extension contains 
-    BirthPlaceIta named birthPlace 0..1
-* extension[BirthPlaceIta] ^short = "Luogo di nascita."    
+    BirthPlaceIta named luogoNascita 0..1 and 
+    ExtRecordCertification named certificazione 0..1 and
+    ExtCodeableBirthPlace named luogoNascitaCodeable 0..* and
+    http://hl7.org/fhir/StructureDefinition/patient-citizenship named cittadinanza 0..1 and
+    ExtProfessionePaziente named professione 0..1 and
+    ExtTitoloStudioPaziente named titoloStudio 0..1
+* extension[luogoNascita] ^short = "Luogo di nascita." 
+* extension[certificazione] ^short = "Indica che i dati presenti nella risorsa sono stati certificati da uno specifico entità"
+* extension[certificazione] ^definition = "Indica che i dati presenti nella risorsa (non quelli referenziati) sono stati certificati da uno specifico entità"
+* extension[luogoNascitaCodeable] ^binding.strength = #example
+* extension[luogoNascitaCodeable] ^binding.valueSet = http://terminology.hl7.it/ValueSet/istat-luogoNascita
+* extension[luogoNascitaCodeable] ^short = "Codice del comune e/o dello stato di nascita"
+* extension[luogoNascitaCodeable] ^definition = "Codice del comune e/o dello stato di nascita del paziente. In via eccezionle, può essere usato per indicare comune e/o stato di nascita in forma testuale"
+* extension[cittadinanza] ^binding.strength = #example
+* extension[cittadinanza] ^binding.valueSet = http://terminology.hl7.it/ValueSet/istat-cittadinanza
+* extension[cittadinanza] ^short = "Cittadinanza"
+* extension[cittadinanza] ^definition = "Indica la cittadinanza del cittadino attraverso lo stato di provenienza"
+* extension[professione] ^binding.strength = #preferred
+* extension[professione] ^binding.valueSet = http://terminology.hl7.it/ValueSet/istat-professione
+* extension[professione] ^short = "Professione"
+* extension[professione] ^definition = "Indica la professione del cittadino come semplice CodeableConcept"
+* extension[professione] ^mustSupport = false
+* extension[titoloStudio] ^binding.strength = #example
+* extension[titoloStudio] ^binding.valueSet = $istat-titoloStudio
+* extension[titoloStudio] ^short = "Titolo di studio"
+* extension[titoloStudio] ^definition = "Indica il titolo di studio del cittadino come semplice CodeableConcept"
+* extension[titoloStudio] ^mustSupport = false
+
+// * extension contains
+    //$recordCertification named certificazione 0..1 and
+    // $patient-birthPlace named luogoNascita 0..1 and
+    // $patient-codeableBirthPlace named luogoNascitaCodeable 0..* and
+    // $patient-citizenship named cittadinanza 0..1 and
+    // $patient-occupation-it named professione 0..1 and
+    // $patient-qualification-it named titoloStudio 0..1
+// * extension[certificazione] ^short = "Indica che i dati presenti nella risorsa sono stati certificati da uno specifico entità"
+// * extension[certificazione] ^definition = "Indica che i dati presenti nella risorsa (non quelli referenziati) sono stati certificati da uno specifico entità"
+// * extension[luogoNascita] ^short = "Indica il luogo di nascita. Tipicamente attraverso il codice comune o stato di nascita"
+// * extension[luogoNascita] ^definition = "Luogo di Nascita del paziente. In base al contesto può includere informazioni testuali e/o codificate, in forma strutturata o non strutturata. Tipicamente attraverso il codice comune o stato di nascita."
+// * extension[luogoNascita].valueAddress only $Address-it-base
+// * extension[luogoNascita].valueAddress ^short = "Indirizzo del luogo di Nascita"
+// * extension[luogoNascita].valueAddress ^definition = "Indirizzo del luogo di Nascita"
+// * extension[luogoNascitaCodeable] from $istat-luogoNascita (example)
+// * extension[luogoNascitaCodeable] ^short = "Codice del comune e/o dello stato di nascita"
+// * extension[luogoNascitaCodeable] ^definition = "Codice del comune e/o dello stato di nascita del paziente. In via eccezionle, può essere usato per indicare comune e/o stato di nascita in forma testuale"
+// * extension[cittadinanza] from $istat-cittadinanza (example)
+// * extension[cittadinanza] ^short = "Cittadinanza"
+// * extension[cittadinanza] ^definition = "Indica la cittadinanza del cittadino attraverso lo stato di provenienza"
+// * extension[professione] from $istat-professione (preferred)
+// * extension[professione] ^short = "Professione"
+// * extension[professione] ^definition = "Indica la professione del cittadino come semplice CodeableConcept"
+// * extension[professione] ^mustSupport = false
+// * extension[titoloStudio] from $istat-titoloStudio (preferred)
+// * extension[titoloStudio] ^short = "Titolo di studio"
+// * extension[titoloStudio] ^definition = "Indica il titolo di studio del cittadino come semplice CodeableConcept"
+// * extension[titoloStudio] ^mustSupport = false
+
+
 * identifier 1..
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "$this.system"
