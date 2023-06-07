@@ -8,6 +8,7 @@ Alias: $diagnosticreport-category-valueset = http://hl7.org/fhir/ValueSet/diagno
 Alias: $ucum = https://ucum.org
 Alias: $practitionerRole-code = http://terminology.hl7.org/CodeSystem/practitioner-role
 Alias: $tipo-org = http://terminology.hl7.it/ValueSet/tipoOrganizzazione
+Alias: $Codice-Observation = http://hl7.org/fhir/uv/ips/ValueSet/results-laboratory-observations-uv-ips
 //------Profile------//
 Alias: $sct-device = http://hl7.org/fhir/ValueSet/device-type
 Alias: $observation-status = http://hl7.org/fhir/ValueSet/observation-status
