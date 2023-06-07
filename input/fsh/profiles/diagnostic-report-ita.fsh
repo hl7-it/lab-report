@@ -1,5 +1,4 @@
-Alias: $extension-DiagnosticReport.composition = http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition
-
+Alias: $diagnostic-report-composition-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition
 Profile: DiagnosticReportRefertoLabIt
 Parent: DiagnosticReport
 Id: diagnosticreport-it-lab
