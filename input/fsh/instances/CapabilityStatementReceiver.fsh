@@ -21,9 +21,9 @@ Usage: #definition
 // --------------------------------------//
 
 * rest.mode = #server
+* rest.resource[+].type = #Bundle
 * rest.resource[=].searchInclude 
 * rest.resource[=].searchRevInclude 
-* rest.resource[=].type = #Bundle
 * rest.resource[=].profile = Canonical( bundle-it-lab)
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #update
