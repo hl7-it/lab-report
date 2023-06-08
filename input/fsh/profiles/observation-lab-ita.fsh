@@ -46,9 +46,10 @@ Description: "Descrive come rappresentare la risorsa Observation per le rilevazi
 * value[x] ^slicing.discriminator.path = "$this"
 * value[x] ^slicing.rules = #closed
 
-* valueQuantity only quantity-it-lab
+
 * valueQuantity ^sliceName = "valueQuantity"
 * valueQuantity ^short = "Risultato misurabile tramite una quantità."
+* valueQuantity only quantity-it-lab
 
 * hasMember only Reference(observation-it-lab)
 * hasMember ^short = "Osservazioni correlate alla risorsa."
