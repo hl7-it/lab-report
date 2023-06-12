@@ -1,5 +1,5 @@
 Instance: Observation-Lab-Esempio-Glucosio
-InstanceOf: observation-it-lab
+InstanceOf: observation-doc-it-lab
 Usage: #example
 Description: "Esempio di un'osservazione: rilevazione di glucosio nel sangue."
 
