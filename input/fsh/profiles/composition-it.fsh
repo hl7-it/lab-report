@@ -28,6 +28,7 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * status ^definition = "Lo stato della Composition si sviluppa generalmente solo attraverso questo elenco: passa da preliminary a final e poi può passare a amended (ovvero modificato). "
 * subject 1..1
 * subject only Reference(patient-it-lab)
+
 * subject ^short = "Soggetto del documento."
 * encounter ^short = "Contesto in cui è stato generato il documento."
 * encounter only Reference(encounter-it-lab)
@@ -93,7 +94,7 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * section.code ^short = "Codice della sezione."
 
 * section contains senza-sottosezione ..* 
-* section[senza-sottosezione] ^short = "Variante 1: questa sezione presenta la entry è il text obbligatori"
+* section[senza-sottosezione] ^short = "Variante 1: questa sezione presenta la entry e il text obbligatori."
 * section[senza-sottosezione].text ^short = "Sintesi testuale della sezione, per l'interpretazione dell'utente."
 * section[senza-sottosezione].text 1..1
 * section[senza-sottosezione].section ..0
@@ -103,7 +104,7 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 
 
 * section contains con-sottosezione ..* 
-* section[con-sottosezione] ^short = "Variant 2: questa sezione presenta una sottosezione e non prevede gli attributi entry e text"
+* section[con-sottosezione] ^short = "Variante 2: questa sezione presenta una sottosezione e non prevede gli attributi entry e text."
 * section[con-sottosezione].code only CodeableConcept
 * section[con-sottosezione].text 0..0
 * section[con-sottosezione].entry 0..0

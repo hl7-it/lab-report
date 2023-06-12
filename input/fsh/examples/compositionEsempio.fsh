@@ -18,7 +18,7 @@ Description: "Esempio di una Composition: descrizione header e struttura body de
 * type.coding.display = "Referto di medicina di laboratorio" 
 
 * subject = Reference(Paziente-SSN)
-//"Patient/1"
+* subject.display = "Rossi Maria"
 
 * encounter = Reference(Encounter-Lab-Esempio)
 
