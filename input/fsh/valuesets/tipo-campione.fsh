@@ -1,7 +1,7 @@
 ValueSet:      LabSpecimenTypesIt
 Id:	       tipo-campione-lab-it
 Title:	       "Tipo campione"
-Description:   "Laboratory Specimen."
+Description:   "Valueset contenente i codici SNOMED per la risorsa Specimen - Lab Report per la descrizione del tipo di campione di laboratorio."
 * ^status = #draft
 * ^experimental = false
 * $sct#119376003	"Tissue specimen"
@@ -111,8 +111,9 @@ Description:   "Laboratory Specimen."
 
 ValueSet:      LabSpecimenAdditiveIt
 Id:	       additivo-campione-it
-Title:	       "Lab Specimen Additive"
-Description:   "Laboratory specimen additives."
+Title:	       "Additivo Campione"
+Description:   "Valueset contenente i codici SNOMED per la risorsa Specimen - Lab Report per la descrizione dell'additivo utilizzato per il campione di laboratorio."
+
 * ^status = #draft
 * ^experimental = false
 * $sct#1259913003   "Heparin ammonium (substance)"
@@ -138,7 +139,7 @@ Description:   "Laboratory specimen additives."
 ValueSet:      LabSpecimenContainerIt
 Id:	       campione-container-lab-it
 Title:	       "Container Campione"
-Description:   "Container Campione di Laboratorio."
+Description:   "Valueset contenente i codici SNOMED per la risorsa Specimen - Lab Report per la descrizione del container del campione di laboratorio."
 * ^status = #draft
 * ^experimental = false
 * $sct#702290003	"Cervical cytology microscopy slide" 

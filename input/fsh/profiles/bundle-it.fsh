@@ -52,7 +52,7 @@ Description: "Descrizione della risorsa Bundle per il contesto italiano del Lab 
 * entry[location].resource only location-it-lab
 * entry[serviceRequest].resource only servicerequest-it-lab
 * entry[diagnosticReport].resource only diagnosticreport-it-lab
-* entry[observation].resource only observation-it-lab  
+* entry[observation].resource only observation-doc-it-lab  
 * entry[specimen].resource only specimen-it-lab
 * entry[media].resource only media-it-lab
 * entry[observationGroup].resource only observation-grouping-it-lab
