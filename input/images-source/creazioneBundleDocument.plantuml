@@ -1,0 +1,28 @@
+@startuml
+Placer -> Placer: Creazione ServiceRequest,Encounter
+
+Placer -> Filler: Invio ServiceRequest,Encounter
+
+alt risposta OK
+    Filler -> Filler: ServiceRequest, Encounter status UPDATE
+    Filler -> Filler: Creazione Specimen
+else risposta KO
+    Filler --> Placer !!: ServiceRequest status "enterer-in-error"
+end
+
+Filler -> ApplicativoClinico: Invio ServiceRequest
+    loop ServiceRequest
+        ApplicativoClinico-> ApplicativoClinico++: Creazione Observation, status=registered 
+        ApplicativoClinico-> ApplicativoClinico: Generazione Risultati
+        ApplicativoClinico-> ApplicativoClinico--: Aggiornamento Observation, status=preliminary 
+    end
+ApplicativoClinico-> ReportCreator: Invio Observation
+ReportCreator -> ReportCreator: Validazione Observation, status=final
+ReportCreator -> ReportCreator: Creazione DiagnosticReport
+ReportCreator -> Sender: Invio  DiagnosticReport
+Sender -> Placer: Recupero Patient, Practitioner, Organization, Location
+Placer --> Sender: Risposta POST
+Sender -> Sender: Creazione Composition
+Sender -> Sender: Creazione Bundle
+Sender -> Receiver: POST Bundle Laboratory Report
+@enduml

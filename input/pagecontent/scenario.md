@@ -134,3 +134,15 @@ Per supportare la risoluzione di questo caso, la risorsa Composition è aggiorna
 <span style="background-color: LightYellow;">Nota: Qualora il sender invii anche le risorse contenute nella Bundle in modo atomico, allora queste devono essere aggiornate conseguentemente all'aggiornamento della Bundle cui appartengono.</span>
 
 Il Receiver processa la richiesta ottenuta e, se non riscontra errori, invia al Sender un messaggio di "OperationOutcome" positivo, creando la nuova istanza della Bundle inviata all'interno del server. Se invece la pubblicazione fallisce, il Receiver invia al Sender un messaggio di "OperationOutcome" negativo, e il relativo codice di errore.
+
+#### Esempio di Creazione di una Bundle Document
+
+Si riporta di seguito un esempio di creazione di Bundle document. Gli attori coinvolti nel processo di creazione sono:
+- Placer: rappresenta la parte amministrativa;
+- Filler: rappresenta la parte di prenotazione e raccolta del campione, ad esempio CUP;
+- ApplicativoClinico: rappresenta l'applicativo responsabile di ottenere i risultati delle rilevazioni e creare le risorse Observation;
+- ReportCreator: rappresenta l'applicativo in grado di creare report diagnostici;
+- Sender: rappresenta l'applicativo che invia il documento al receiver;
+- Receiver: rappresenta il server che conserva i Bundle di tipo document.
+
+<p>{%include creazioneBundleDocument.svg -%}</p>
