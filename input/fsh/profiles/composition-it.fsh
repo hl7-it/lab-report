@@ -101,7 +101,7 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * section[senza-sottosezione].code 1..
 * section[senza-sottosezione].code from sezione-referto-laboratorio (preferred)
 * section[senza-sottosezione].entry only Reference (observation-it-lab)
-
+* section[senza-sottosezione].entry 1..*
 
 * section contains con-sottosezione ..* 
 * section[con-sottosezione] ^short = "Variante 2: questa sezione presenta una sottosezione e non prevede gli attributi entry e text."
