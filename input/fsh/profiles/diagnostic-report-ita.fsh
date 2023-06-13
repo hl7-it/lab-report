@@ -1,3 +1,5 @@
+Alias: $extension-DiagnosticReport.composition = http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition
+
 Profile: DiagnosticReportRefertoLabIt
 Parent: DiagnosticReport
 Id: diagnosticreport-it-lab
@@ -10,9 +12,10 @@ Description: "Descrizione della risorsa DiagnosticReport per la descrizione dell
 * . ^definition = "Laboratory Report DiagnosticReport"
 // * extension contains DiagnosticReportReference named DiagnosticReportCompositionR5 1..1
 
-* extension contains $diagnostic-report-composition-r5 named DiagnosticReportCompositionR5 0..1
-* extension[DiagnosticReportCompositionR5].value[x] 1..1
-* extension[DiagnosticReportCompositionR5].value[x] only Reference(composition-it-lab)
+* extension contains $extension-DiagnosticReport.composition named DiagnosticReportCompositionR5 1..1
+* extension[DiagnosticReportCompositionR5] ^short = "Reference a Composition del FHIR document."
+* extension[DiagnosticReportCompositionR5].value[x] 0..1
+* extension[DiagnosticReportCompositionR5].value[x] only Reference(CompositionRefertoLabIt)
 
 * basedOn only Reference (servicerequest-it-lab)
 * basedOn ^short = "Reference a una o più prestazioni richieste associate al referto."
@@ -38,7 +41,13 @@ Description: "Descrizione della risorsa DiagnosticReport per la descrizione dell
 * performer ^short = "Responsabile del report clinico."
 * performer ^definition = "Organizzazione o Persona che è responsabile del report; non è necessariamente l'autore dei dati atomici o l'entità che ha interpretato i risultati. "
 * code ^short = "Nome/codice della diagnostic report."
-* code = $LOINC#11502-2 "Referto di medicina di laboratorio"
+* code.coding ^short = "Codice definito da un sistema terminologico."
+* code.coding.system = $LOINC
+* code.coding.system ^short = "Sistema terminologico."
+* code.coding.code = #11502-2
+* code.coding.code ^short = "Codice appartenente al sistema terminologico."
+* code.coding.display = "Referto di medicina di laboratorio"
+* code.coding.display ^short = "Descrizione del codice."
 * result only Reference (observation-it-lab or observation-grouping-it-lab)
 * result ^short = "Osservazioni cliniche." 
 * imagingStudy 0..0 
