@@ -54,7 +54,7 @@ Usage: #example
 * entry[=].resource = Inline-Observation-gs-org2-quant
 
 Instance: DiagnosticReport-Lab-Esempio2
-InstanceOf: diagnosticreport-it-lab
+InstanceOf: DiagnosticReport
 Usage: #inline
 Description: "Esempio di un report diagnostico: report di un esame del sangue che mette in evidenza i risultati di microbiologia, con i collegamenti tra risultato - germe - antibiotico."
 Title: "DiagnosticReport - Esempio Laboratorio"

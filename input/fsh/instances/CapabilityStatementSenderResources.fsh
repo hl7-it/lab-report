@@ -39,6 +39,7 @@ Usage: #definition
 * rest.resource[=].interaction[+].code = #create
 * rest.resource[=].interaction[+].code = #update
 * rest.resource[=].supportedProfile = Canonical( observation-grouping-it-lab )
+* rest.resource[=].supportedProfile = Canonical( observation-doc-it-lab )
 
 
 * rest.resource[+].type = #Specimen
