@@ -21,52 +21,23 @@ Description: "Descrive come rappresentare le informazioni del paziente nei docum
 * extension[certificazione] ^short = "Indica che i dati presenti nella risorsa sono stati certificati da uno specifico entità"
 * extension[certificazione] ^definition = "Indica che i dati presenti nella risorsa (non quelli referenziati) sono stati certificati da uno specifico entità"
 * extension[luogoNascitaCodeable] ^binding.strength = #example
-* extension[luogoNascitaCodeable] ^binding.valueSet = http://terminology.hl7.it/ValueSet/istat-luogoNascita
+* extension[luogoNascitaCodeable] ^binding.valueSet = istat-luogoNascita
 * extension[luogoNascitaCodeable] ^short = "Codice del comune e/o dello stato di nascita"
 * extension[luogoNascitaCodeable] ^definition = "Codice del comune e/o dello stato di nascita del paziente. In via eccezionle, può essere usato per indicare comune e/o stato di nascita in forma testuale"
 * extension[cittadinanza] ^binding.strength = #example
-* extension[cittadinanza] ^binding.valueSet = http://terminology.hl7.it/ValueSet/istat-cittadinanza
+* extension[cittadinanza] ^binding.valueSet = istat-cittadinanza
 * extension[cittadinanza] ^short = "Cittadinanza"
 * extension[cittadinanza] ^definition = "Indica la cittadinanza del cittadino attraverso lo stato di provenienza"
 * extension[professione] ^binding.strength = #preferred
-* extension[professione] ^binding.valueSet = http://terminology.hl7.it/ValueSet/istat-professione
+* extension[professione] ^binding.valueSet = istat-professione
 * extension[professione] ^short = "Professione"
 * extension[professione] ^definition = "Indica la professione del cittadino come semplice CodeableConcept"
 * extension[professione] ^mustSupport = false
 * extension[titoloStudio] ^binding.strength = #example
-* extension[titoloStudio] ^binding.valueSet = $istat-titoloStudio
+* extension[titoloStudio] ^binding.valueSet = istat-titoloStudio
 * extension[titoloStudio] ^short = "Titolo di studio"
 * extension[titoloStudio] ^definition = "Indica il titolo di studio del cittadino come semplice CodeableConcept"
 * extension[titoloStudio] ^mustSupport = false
-
-// * extension contains
-    //$recordCertification named certificazione 0..1 and
-    // $patient-birthPlace named luogoNascita 0..1 and
-    // $patient-codeableBirthPlace named luogoNascitaCodeable 0..* and
-    // $patient-citizenship named cittadinanza 0..1 and
-    // $patient-occupation-it named professione 0..1 and
-    // $patient-qualification-it named titoloStudio 0..1
-// * extension[certificazione] ^short = "Indica che i dati presenti nella risorsa sono stati certificati da uno specifico entità"
-// * extension[certificazione] ^definition = "Indica che i dati presenti nella risorsa (non quelli referenziati) sono stati certificati da uno specifico entità"
-// * extension[luogoNascita] ^short = "Indica il luogo di nascita. Tipicamente attraverso il codice comune o stato di nascita"
-// * extension[luogoNascita] ^definition = "Luogo di Nascita del paziente. In base al contesto può includere informazioni testuali e/o codificate, in forma strutturata o non strutturata. Tipicamente attraverso il codice comune o stato di nascita."
-// * extension[luogoNascita].valueAddress only $Address-it-base
-// * extension[luogoNascita].valueAddress ^short = "Indirizzo del luogo di Nascita"
-// * extension[luogoNascita].valueAddress ^definition = "Indirizzo del luogo di Nascita"
-// * extension[luogoNascitaCodeable] from $istat-luogoNascita (example)
-// * extension[luogoNascitaCodeable] ^short = "Codice del comune e/o dello stato di nascita"
-// * extension[luogoNascitaCodeable] ^definition = "Codice del comune e/o dello stato di nascita del paziente. In via eccezionle, può essere usato per indicare comune e/o stato di nascita in forma testuale"
-// * extension[cittadinanza] from $istat-cittadinanza (example)
-// * extension[cittadinanza] ^short = "Cittadinanza"
-// * extension[cittadinanza] ^definition = "Indica la cittadinanza del cittadino attraverso lo stato di provenienza"
-// * extension[professione] from $istat-professione (preferred)
-// * extension[professione] ^short = "Professione"
-// * extension[professione] ^definition = "Indica la professione del cittadino come semplice CodeableConcept"
-// * extension[professione] ^mustSupport = false
-// * extension[titoloStudio] from $istat-titoloStudio (preferred)
-// * extension[titoloStudio] ^short = "Titolo di studio"
-// * extension[titoloStudio] ^definition = "Indica il titolo di studio del cittadino come semplice CodeableConcept"
-// * extension[titoloStudio] ^mustSupport = false
 
 
 * identifier 1..
@@ -77,6 +48,10 @@ Description: "Descrive come rappresentare le informazioni del paziente nei docum
 * identifier.value 1.. 
 * identifier.value ^short = "ID del paziente (e.g. Codice Fiscale)."
 * identifier.value ^definition = "Identifictivo del paziente."
+* identifier.extension contains ExtRecordCertification named certificazioneId 0..1
+* identifier.extension[certificazioneId] ^short = "Identificativo certificato (tipicamente per CF)"
+* identifier.extension[certificazioneId] ^definition = "Indica che questo identificativo è stato certificato. Usato tipicamente per il Codice Fiscale."
+* identifier.type from $tipoIdentificatore (extensible)
 * identifier contains
     codiceFiscale 0..1 and
     anpr 0..1 and
@@ -119,9 +94,26 @@ Description: "Descrive come rappresentare le informazioni del paziente nei docum
 * name 1.. 
 * name obeys it-pat-1
 * name ^short = "Nome associato al paziente."
+* name ^constraint.source = "http://hl7.org/fhir/StructureDefinition/Patient"
+* name.extension contains http://hl7.org/fhir/StructureDefinition/data-absent-reason named name-absent-reason 0..*
+* name.extension[name-absent-reason] ^binding.valueSet = $data-absent-reason
+* name.extension[name-absent-reason] ^sliceName = "name-absent-reason"
+* name.extension[name-absent-reason] ^short = "Ragione non valorizzazione elemento name"
+* name.extension[name-absent-reason] ^definition = "Ragione per cui l'elemento name non è stato valorizzato"
 * address only Address-it
 * managingOrganization ^short = "’organizzazione a cui è lasciata la custodia del dei dati del paziente."
 * managingOrganization only Reference(organization-it-lab)
+* address only Address-it
+* generalPractitioner ^slicing.discriminator.type = #profile
+* generalPractitioner ^slicing.discriminator.path = "$this"
+* generalPractitioner ^slicing.rules = #open
+* generalPractitioner contains
+    mmgPlsRole 0..* MS and
+    mmgPls 0..* MS and
+    aziendaAssistenza 0..* MS
+* generalPractitioner[mmgPlsRole] only Reference(PractitionerRoleRefertoLabIt)
+* generalPractitioner[mmgPls] only Reference(PractitionerRefertoLabIt)
+* generalPractitioner[aziendaAssistenza] only Reference(OrganizationRefertoLabIt)
 
 
 Invariant: pat-id-cf-1
