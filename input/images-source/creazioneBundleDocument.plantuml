@@ -7,7 +7,7 @@ alt risposta OK
     Filler -> Filler: ServiceRequest,\n Encounter status UPDATE
     Filler -> Filler: Creazione Specimen
 else risposta KO
-    Filler --> Placer !!: ServiceRequest\n status "enterer-in-error"
+    Filler --> Placer !!: ServiceRequest status "enterer-in-error"
 end
 
 Filler -> ApplicativoClinico: Invio ServiceRequest

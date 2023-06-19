@@ -10,7 +10,7 @@ Description: "Descrizione della risorsa DiagnosticReport per la descrizione dell
 * . ^definition = "Laboratory Report DiagnosticReport"
 // * extension contains DiagnosticReportReference named DiagnosticReportCompositionR5 1..1
 
-* extension contains $diagnostic-report-composition-r5 named DiagnosticReportCompositionR5 1..1
+* extension contains $diagnostic-report-composition-r5 named DiagnosticReportCompositionR5 0..1
 * extension[DiagnosticReportCompositionR5] ^short = "Estensione di FHIR R5 per legare la DiagnosticReport a Composition."
 * extension[DiagnosticReportCompositionR5].value[x] ^short = "Reference a Composition."
 * extension[DiagnosticReportCompositionR5].value[x] 1..1

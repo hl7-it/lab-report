@@ -11,6 +11,7 @@ Alias: $tipo-org = http://terminology.hl7.it/ValueSet/tipoOrganizzazione
 Alias: $Codice-Observation = http://hl7.org/fhir/uv/ips/ValueSet/results-laboratory-observations-uv-ips
 Alias: $tipoIdentificatore = http://terminology.hl7.it/ValueSet/tipoIdentificatore
 Alias: $data-absent-reason = 	http://hl7.org/fhir/ValueSet/data-absent-reason
+Alias: $MMG-PLS-code-lab-it = http://terminology.hl7.it/ValueSet/mmgOrPls
 //------Profile------//
 Alias: $sct-device = http://hl7.org/fhir/ValueSet/device-type
 Alias: $observation-status = http://hl7.org/fhir/ValueSet/observation-status
