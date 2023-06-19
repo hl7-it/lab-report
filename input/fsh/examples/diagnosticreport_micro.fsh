@@ -1,6 +1,6 @@
 Instance: Bundle-Lab-Esempio-2
 InstanceOf: Bundle
-Title: "DiagnosticReport - Observation - Specimen"
+Title: "Microbiologia - DiagnosticReport - Observation - Specimen"
 Description: "Esempio di un Report diagnostico per esame del sangue che mette in evidenza i risultati di microbiologia."
 Usage: #example
 
@@ -10,47 +10,47 @@ Usage: #example
 * timestamp = "2023-02-25T14:30:00+01:00"
 * entry[+].fullUrl = "/DiagnosticReport" //urn:uuid:56f19992-e73e-45b5-bbdd-6d9aeb60b15a
 * entry[=].resource = DiagnosticReport-Lab-Esempio2
-* entry[+].fullUrl = "/Observazion/1"
+* entry[+].fullUrl = "/Observation/1"
 * entry[=].resource = Inline-Observation-org-id2-susc-2
-* entry[+].fullUrl = "/Observazion/2"
+* entry[+].fullUrl = "/Observation/2"
 * entry[=].resource = Inline-Observation-gs-org2
-* entry[+].fullUrl = "/Observazion/3"
+* entry[+].fullUrl = "/Observation/3"
 * entry[=].resource = Inline-Observation-aerobic-culture
-* entry[+].fullUrl =  "/Observazion/4"
+* entry[+].fullUrl =  "/Observation/4"
 * entry[=].resource = Inline-Observation-wbc
-* entry[+].fullUrl =  "/Observazion/5"
+* entry[+].fullUrl =  "/Observation/5"
 * entry[=].resource = Inline-Observation-gram-stain
-* entry[+].fullUrl =  "/Observazion/6"
+* entry[+].fullUrl =  "/Observation/6"
 * entry[=].resource = Inline-Observation-org-id1-susc-panel
-* entry[+].fullUrl = "/Observazion/7"
+* entry[+].fullUrl = "/Observation/7"
 * entry[=].resource = Inline-Observation-org-id2
-* entry[+].fullUrl =  "/Observazion/8"
+* entry[+].fullUrl =  "/Observation/8"
 * entry[=].resource = Inline-Observation-org-id2-susc-panel
-* entry[+].fullUrl = "/Observazion/9"
+* entry[+].fullUrl = "/Observation/9"
 * entry[=].resource = Inline-Observation-org-id2-susc-1
-* entry[+].fullUrl =  "/Observazion/10"
+* entry[+].fullUrl =  "/Observation/10"
 * entry[=].resource = Inline-Observation-gs-org1
-* entry[+].fullUrl = "/Observazion/11"
+* entry[+].fullUrl = "/Observation/11"
 * entry[=].resource = Inline-Observation-org-id1-susc-3
-* entry[+].fullUrl = "/Observazion/12"
+* entry[+].fullUrl = "/Observation/12"
 * entry[=].resource = Inline-Observation-org-id1-susc-1
-* entry[+].fullUrl = "/Observazion/13"
+* entry[+].fullUrl = "/Observation/13"
 * entry[=].resource = Inline-Observation-org-id1
-* entry[+].fullUrl = "/Observazion/14"
+* entry[+].fullUrl = "/Observation/14"
 * entry[=].resource = Inline-Observation-org-id1-susc-4
-* entry[+].fullUrl = "/Observazion/15"
+* entry[+].fullUrl = "/Observation/15"
 * entry[=].resource = Inline-Observation-gs-org1-quant
-* entry[+].fullUrl = "/Observazion/16"
+* entry[+].fullUrl = "/Observation/16"
 * entry[=].resource = Inline-Observation-org-id1-growth
-* entry[+].fullUrl = "/Observazion/17"
+* entry[+].fullUrl = "/Observation/17"
 * entry[=].resource = Inline-Observation-org-id2-susc-4
-* entry[+].fullUrl = "/Observazion/18"
+* entry[+].fullUrl = "/Observation/18"
 * entry[=].resource = Inline-Observation-org-id1-susc-2
-* entry[+].fullUrl = "/Observazion/19"
+* entry[+].fullUrl = "/Observation/19"
 * entry[=].resource = Inline-Observation-anaerobic-culture
-* entry[+].fullUrl = "/Observazion/20"
+* entry[+].fullUrl = "/Observation/20"
 * entry[=].resource = Inline-Observation-org-id2-growth
-* entry[+].fullUrl = "/Observazion/21"
+* entry[+].fullUrl = "/Observation/21"
 * entry[=].resource = Inline-Observation-gs-org2-quant
 
 Instance: DiagnosticReport-Lab-Esempio2

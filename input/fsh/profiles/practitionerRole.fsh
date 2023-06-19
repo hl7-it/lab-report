@@ -34,7 +34,7 @@ Description: "Profilo della risorsa PractitionerRole per la descrizione delle in
 * organization ^short = "Organizzazione cui il professionista fa parte."
 * organization only Reference(organization-it-lab)
 * code MS
-* code from practitionerrole-code-lab-it (example)
+* code from $practitionerrole-code-lab-it (example)
 * code ^short = "Ruolo/i del professionista."
 
 Profile: PractitionerRoleMMGPLSRefertoLabIt

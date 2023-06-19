@@ -1,7 +1,7 @@
 ValueSet: ResultsLaboratoryObservation
 Id: risultato-osservazione
 Title: "Tipo Osservazione"
-Description: "Valuset contente i codici che identificano il tipo di osservazione nel referto di laboratorio."
+Description: "Valueset contente i codici che identificano il tipo di osservazione nel referto di laboratorio."
 * ^status = #draft
 * ^experimental = false
 
