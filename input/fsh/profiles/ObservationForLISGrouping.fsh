@@ -10,7 +10,7 @@ Description: "Descrive come rappresentare un insieme di esami nel contesto del R
 * component 0..0
 
 * code.coding.code ^short = "Codice che identifica la tipologia dell'insieme di esami."
-* code.coding.code from sezione-referto-laboratorio (preferred)
+* code.coding.code from $sezione-referto-laboratorio (preferred)
 * hasMember ^short = "Osservazioni contenenti i risultati degli esami svolti."
 * hasMember 1..
 * hasMember only Reference(observation-it-lab)
