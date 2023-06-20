@@ -6,7 +6,7 @@ Description: "Descrive la risorsa Specimen per il campione nel dominio del Lab R
 * ^status = #draft
 * . ^short = "Campione Referto di Laboratorio"
 * . ^definition = "Campione Referto di Laboratorio"
-* type from tipo-campione-lab-it (preferred)
+* type from $tipo-campione-lab-it (preferred)
 * type 1..1
 * type ^short = "Tipo di campione."
 * identifier ^short = "Identificativo esterno del campione (identificativo locale al LIS)"

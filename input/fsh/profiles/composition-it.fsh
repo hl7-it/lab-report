@@ -99,7 +99,7 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * section[senza-sottosezione].text 1..1
 * section[senza-sottosezione].section ..0
 * section[senza-sottosezione].code 1..
-* section[senza-sottosezione].code from sezione-referto-laboratorio (preferred)
+* section[senza-sottosezione].code from $sezione-referto-laboratorio (preferred)
 * section[senza-sottosezione].entry only Reference (observation-it-lab)
 * section[senza-sottosezione].entry 1..*
 
@@ -110,12 +110,12 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * section[con-sottosezione].text 0..0
 * section[con-sottosezione].entry 0..0
 * section[con-sottosezione].code 1..
-* section[con-sottosezione].code from sezione-referto-laboratorio (preferred)
+* section[con-sottosezione].code from $sezione-referto-laboratorio (preferred)
 * section[con-sottosezione].section ^short = "Sottosezione strutturata della sezione principale."
 * section[con-sottosezione].section 1..
   * code 1..
   * code only CodeableConcept
-  * code from sezione-referto-laboratorio (preferred)
+  * code from $sezione-referto-laboratorio (preferred)
   * text ^short = "Sintesi testuale della sezione, per l'interpretazione dell'utente."
   * entry 1..
   * entry only Reference (observation-it-lab)

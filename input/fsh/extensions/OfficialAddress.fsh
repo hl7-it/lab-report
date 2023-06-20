@@ -15,7 +15,7 @@ Description: "Definizione dell'indirizzo inteso come indirizzo 'ufficiale' di qu
 * url = "http://hl7.it/fhir/lab-report/StructureDefinition/address-official" (exactly)
 * value[x] 1..1
 * value[x] only boolean or CodeableConcept
-* value[x] ^meaningWhenMissing = "Nothing can be inferred when this extension is missing. I.e. the absence of this extension shall not be interpreted as non-official address."
+//* value[x] ^meaningWhenMissing = "Nothing can be inferred when this extension is missing. I.e. the absence of this extension shall not be interpreted as non-official address."
 
 
 Extension: BirthPlaceIta
