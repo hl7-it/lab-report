@@ -18,7 +18,7 @@ Usage: #example
 * entry[=].resource = Encounter-Lab-Esempio
 * entry[+].fullUrl = "/Specimen" //urn:uuid:168d4960-0a0b-43af-8025-180f0965f324
 * entry[=].resource = Specimen-Lab-Esempio
-* entry[+].fullUrl = "/Observation" //urn:uuid:333b62b2-47b0-43b5-9745-abec1f0c4656
+* entry[observation].fullUrl = "/Observation" //urn:uuid:333b62b2-47b0-43b5-9745-abec1f0c4656
 * entry[=].resource = Observation-Lab-Esempio-Glucosio
 * entry[+].fullUrl = "/ServiceRequest" //urn:uuid:463ae6fe-60d4-4b38-84b3-1008e0925678
 * entry[=].resource = ServiceRequest-Lab-Esempio

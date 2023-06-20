@@ -9,12 +9,13 @@ Description: "Valueset contenente i codici per la risorsa Observation - Lab Repo
 * include codes from valueset valueset-observation-value-microorganism
 * include codes from valueset valueset-observation-value-bloodgroup
 * include codes from valueset valueset-observation-value-presence-absence
+* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 
 ValueSet: ObservationBloodGroup
 Id: valueset-observation-value-bloodgroup
 Title: "Risultato osservazione codificato gruppo sanguigno"
 Description: "Valueset contenente i codici SNOMED di gruppo sanguigno per la risorsa Observation - Lab Report per la descrizione del risultato della rilevazione."
-
+* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * include codes from system $sct where concept descendent-of #365636006
 
 ValueSet: ObservationPresenzaAssenza
@@ -24,7 +25,7 @@ Description: "Valueset contenente i codici SNOMED di presenza/assenza per la ris
 
 * include codes from system $sct where concept descendent-of #272519000 
 * include codes from system $sct where concept descendent-of #260411009
-
+* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 
 
 ValueSet: ObservationMicroorganismi
@@ -44,6 +45,7 @@ Description: "Valueset contenente i codici SNOMED di microorganismi per la risor
 * include codes from system $sct where concept descendent-of #370570004
 * include codes from system $sct where concept descendent-of #417377004 
 * include codes from system $sct where concept descendent-of #243565002 
+* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 
 ValueSet: GruppoSanguigno
 Id: results-observation-bloodgroup
@@ -101,13 +103,13 @@ Description: "Questo valueset include i codici per i risultati dei gruppi sangui
 * ^expansion.contains[=].display = "Blood group O"
 * include codes from system http://snomed.info/sct|http://snomed.info/sct/900000000000207008
     where constraint = "< 365636006 |Finding of blood group (finding)| AND ^ 816080008 |International Patient Summary (foundation metadata concept)|"
-
+* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 
 ValueSet: ResultsPresenceAbsenceSnomedCtIpsFreeSet
 Id: results-presence-absence-snomed-ct-ips-free-set
 Title: "Risultato osservazione codificato -  presenza/assenza IPS di SNOMED CT"
 Description: "Questo valueset include i codici per i risultati di presenza o assenza dal sottoinsieme SNOMED International Patient Set (IPS) di SNOMED CT."
-// * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 // * ^version = "1.0.0"
 // * ^status = #active
 // * ^experimental = false
