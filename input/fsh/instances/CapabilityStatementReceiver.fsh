@@ -1,7 +1,7 @@
 Instance: CapabilityStatementReceiverLabReport
 InstanceOf: CapabilityStatement
 Usage: #definition
-Title: = "Referto di Laboratorio - Receiver (server)"
+Title: "Referto di Laboratorio - Receiver (server)"
 * url = "http://hl7.it/fhir/lab-report/CapabilityStatement/CapabilityStatementReceiverLabReport"
 * name = "RefertoDiLaboratorio_Receiver"
 * status = #draft
