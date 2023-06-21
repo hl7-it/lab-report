@@ -16,7 +16,7 @@ Description: "Esempio di un'osservazione: rilevazione di cloruro nel sangue."
 
 * code.coding.system = "http://loinc.org"
 * code.coding.code = #100745-9
-* code.coding.display = "Chloride [Moles/volume] in Mixed venous blood"
+* code.coding.display = "Chimica Concentrazione di Sostanza Punto nel tempo (episodio) Sangue venoso misto"
 
 * valueQuantity.unit = "meq/L"
 * valueQuantity.code = #meq/L
