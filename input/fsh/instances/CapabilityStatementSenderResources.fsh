@@ -1,8 +1,8 @@
 Instance: CapabilityStatementSenderResourceLabReport
 InstanceOf: CapabilityStatement
 Usage: #definition
+Title: "Referto di Laboratorio - Resources Sender (client)"
 * name = "RefertoDiLaboratorio_Sender_Resource"
-* title = "Referto di Laboratorio - Resources Sender (client)"
 * status = #draft
 * experimental = false
 * date = "2023-04-05"
