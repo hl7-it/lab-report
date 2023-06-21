@@ -25,6 +25,7 @@ Alias: $results-presence-absence-snomed-ct-ips-free-set = http://terminology.hl7
 Alias: $additivo-campione-it = http://terminology.hl7.it/ValueSet/additivo-campione-it
 Alias: $sezione-referto-laboratorio = http://terminology.hl7.it/ValueSet/sezione-referto-laboratorio
 Alias: $risultato-osservazione = http://terminology.hl7.it/ValueSet/risultato-osservazione
+Alias: $media-type = http://terminology.hl7.org/CodeSystem/media-type
 //------Profile------//
 Alias: $sct-device = http://hl7.org/fhir/ValueSet/device-type
 Alias: $observation-status = http://hl7.org/fhir/ValueSet/observation-status
