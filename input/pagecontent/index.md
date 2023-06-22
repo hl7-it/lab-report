@@ -14,7 +14,7 @@ Le macro funzioni relative ai servizi per la gestione dei referiti di laboratori
 
 - Funzione di Indicizzazione Documenti e Risorse
 - Funzione di Ricerca e Recupero Documenti e Risorse
-- Funzione di Alimentazione Risorse e Documetni
+- Funzione di Alimentazione Risorse e Documenti
 - Funzione di Identificazione
 - Funzione di Gestione del Consenso
 

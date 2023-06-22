@@ -1,9 +1,9 @@
 Instance: CapabilityStatementConsumerLabReport
 InstanceOf: CapabilityStatement
 Usage: #definition
+Title: "Referto di Laboratorio - Document Consumer (client)"
 * url = "http://hl7.it/fhir/lab-report/CapabilityStatement/CapabilityStatementConsumerLabReport"
 * name = "RefertoDiLaboratorio_Consumer"
-* title = "Referto di Laboratorio - Document Consumer (client)"
 * status = #draft
 * experimental = false
 * date = "2023-04-05"

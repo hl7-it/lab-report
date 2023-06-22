@@ -1,9 +1,9 @@
 Instance: CapabilityStatementReceiverLabReport
 InstanceOf: CapabilityStatement
 Usage: #definition
+Title: "Referto di Laboratorio - Receiver (server)"
 * url = "http://hl7.it/fhir/lab-report/CapabilityStatement/CapabilityStatementReceiverLabReport"
 * name = "RefertoDiLaboratorio_Receiver"
-* title = "Referto di Laboratorio - Receiver (server)"
 * status = #draft
 * experimental = false
 * date = "2023-04-05"
@@ -14,7 +14,6 @@ Usage: #definition
 * format[+] = #application/fhir+xml
 
 * document.mode = #consumer
-// * document.documentation = ""
 * document.profile = Canonical(bundle-it-lab)
 // --------------------------------------//
 //-----------------Bundle----------------//

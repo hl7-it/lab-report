@@ -1,8 +1,8 @@
 Instance: CapabilityStatementConsumerResourcesLabReport
 InstanceOf: CapabilityStatement
 Usage: #definition
+Title: "Referto di Laboratorio - Resources Consumer (client)"
 * name = "RefertoDiLaboratorio_Consumer_Resources"
-* title = "Referto di Laboratorio - Resources Consumer (client)"
 * status = #draft
 * experimental = false
 * date = "2023-04-05"
