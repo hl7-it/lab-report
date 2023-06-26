@@ -13,7 +13,7 @@ Le possibili votazioni sono:
 - *Change Proposal*
 
 ## Come utilizzare le label:
-- **Commento positivo**
+- **Commento positivo** {%include comment.png -%}
 
   Esempio [Issue positiva](https://github.com/hl7-it/lab-report/issues/87#issue-1774264290) : *Comment*
 - **Richiesta chiarimento sulle casistiche individuate nel profilo**
