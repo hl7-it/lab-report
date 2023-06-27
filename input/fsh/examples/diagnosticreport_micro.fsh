@@ -227,7 +227,8 @@ Description: "Esempio di Observation: rilevazione coltura aerobica da campione d
 * status = #final
 * category[+] = $observation-category#laboratory
 * category[+] = $v2-0074#MB "Microbiology"
-* code = $LOINC#LP6103-8 //"Coltura Aerobica"
+* code = $LOINC#17898-8
+ //"Coltura Aerobica"
 * code.text = "Coltura Aerobica"
 * subject = Reference(Paziente-SSN)
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
