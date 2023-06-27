@@ -9,8 +9,8 @@ Description: "Descrive come rappresentare la risorsa Observation per le rilevazi
 * code ^short = "Tipo di osservazione tramite codice."
 * status from $observation-status (required)
 * status ^short = "Descrizione attributo: Stato dell'osservazione. Possibili valori: registered | preliminary | final | amended +"
-* category ^slicing.discriminator.type = #value
-* category ^slicing.discriminator.path = "$position"
+* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.path = "$this.coding.system"
 * category ^slicing.rules = #open
 * category ^short = "Codice che classifica il tipo di osservazione."
 * category ^definition = "La categoria di osservazione può definire la classificazione tramite diversi livelli di dettaglio, a partire da laboratory."
@@ -28,6 +28,7 @@ Description: "Descrive come rappresentare la risorsa Observation per le rilevazi
 * category[specialita-esame-laboratorio] from $sezione-referto-laboratorio (preferred)
 * category[specialita-esame-laboratorio].coding ^short = "Codice della terminologia per dettagliare la specialità di laboratorio"
 * category[specialita-esame-laboratorio].coding.system ^short = "Terminologia utilizzata."
+* category[specialita-esame-laboratorio].coding.system = $LOINC
 
 * subject 1..
 * subject ^short = "Soggetto della rilevazione clinica."
