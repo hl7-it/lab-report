@@ -40,8 +40,8 @@ Description: "Descrizione della risorsa Bundle per il contesto italiano del Lab 
     diagnosticReport 1..1 and
     observation 0..* and
     specimen 0..* and
-    media 0..* and
-    observationGroup 0..*
+    media 0..* //and
+ //   observationGroup 0..*
 
 * entry[composition].resource only composition-it-lab
 * entry[practitionerRole].resource only practitionerrole-it-lab
@@ -55,7 +55,7 @@ Description: "Descrizione della risorsa Bundle per il contesto italiano del Lab 
 * entry[observation].resource only observation-doc-it-lab  
 * entry[specimen].resource only specimen-it-lab
 * entry[media].resource only media-it-lab
-* entry[observationGroup].resource only observation-grouping-it-lab
+//* entry[observationGroup].resource only observation-grouping-it-lab
 
 
 

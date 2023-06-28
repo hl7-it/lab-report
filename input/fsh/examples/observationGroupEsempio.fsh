@@ -1,5 +1,5 @@
 Instance: Observation-Lab-Esempio-Group
-InstanceOf: observation-it-lab
+InstanceOf: observation-grouping-it-lab
 Usage: #example
 Description: "Esempio di contenitore per Battery Test: rilevazione di glucosio nel sangue."
 
@@ -14,7 +14,7 @@ Description: "Esempio di contenitore per Battery Test: rilevazione di glucosio n
 
 * code.coding.system = $LOINC
 * code.coding.code = #18723-7
-* code.coding.display = "Studi di ematologia"
+// * code.coding.display = "Studi di ematologia"
 
 
 * subject = Reference(Paziente-SSN)
