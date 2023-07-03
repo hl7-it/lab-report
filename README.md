@@ -5,7 +5,7 @@ HL7 Italy - HL7 FHIR R4 Laboratory Report Implementation Guide.
 https://build.fhir.org/ig/hl7-it/lab-report/
 
 # Ballot: Guida alla votazione
-La procedura di ballot segue lo standard Jira Balloting di HL7 international FHIR, che prevede l'utilizzo delle Issue GitHub (le Issue aperte prima dell'inizio del ballot sono segnalate come "Pre-Ballot Close"). Tale procedura è utile a segnalare commenti correlati alla votazione, che ufficialmente deve avvenire nell'area ballot del sito HL7 Italia (LINK TBD). 
+La procedura di ballot segue lo standard Jira Balloting di HL7 international FHIR, che prevede l'utilizzo delle Issue GitHub (le Issue aperte prima dell'inizio del ballot sono segnalate come "Pre-Ballot Close"). Tale procedura è utile a segnalare commenti correlati alla votazione, che ufficialmente deve avvenire nell'area ballot del sito HL7 Italia (http://www.hl7italia.it/ballot/). 
 Le possibili votazioni sono: 
 - *Comment*
 - *Question*
