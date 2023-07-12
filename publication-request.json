@@ -1,0 +1,14 @@
+{
+  "package-id" : "hl7.fhir.it.lab-report",
+  "version" : "0.1.0",
+  "path" : "http://hl7.it/fhir/lab-report/0.1.0",
+  "status" : "ballot",
+  "sequence" : "Release 1",
+  "first": true,
+  "mode": "milestone",
+  "ci-build": "https://build.fhir.org/ig/hl7-it/lab-report",
+  "desc" : "This is the June 2023 STU ballot version.",
+  "title" : "HL7 FHIR Implementation Guide Laboratory Report",
+  "category" : "Laboratory Report",
+  "introduction" : "HL7 FHIR Implementation Guide Laboratory Report specifica come utilizzare lo standard HL7 FHIR per documentare un referto di medicina di laboratorio."
+}

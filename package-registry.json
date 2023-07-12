@@ -1,0 +1,17 @@
+{
+  "packages" : [
+    {
+      "path" : "package-list.json",
+      "package-id" : "hl7.fhir.it.lab-report",
+      "title" : "HL7 FHIR Implementation Guide Laboratory Report",
+      "canonical" : "http://hl7.it/fhir/lab-report",
+      "category" : "Laboratory Report",
+      "version-count" : 1,
+      "latest" : {
+        "version" : "0.1.0",
+        "date" : "2023-06-30",
+        "path" : "http://hl7.it/fhir/lab-report/0.1.0"
+      }
+    }
+  ]
+}
