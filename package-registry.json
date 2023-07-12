@@ -12,6 +12,25 @@
         "date" : "2023-06-30",
         "path" : "http://hl7.it/fhir/lab-report/0.1.0"
       }
+    },
+    {
+      "path" : "lab-report/package-list.json",
+      "package-id" : "hl7.fhir.it.lab-report",
+      "title" : "HL7 FHIR Implementation Guide Laboratory Report",
+      "canonical" : "http://hl7.it/fhir/lab-report",
+      "category" : "Laboratory Report",
+      "ci-build" : "https://build.fhir.org/ig/hl7-it/lab-report",
+      "version-count" : 1,
+      "latest" : {
+        "version" : "0.1.0",
+        "date" : "2023-07-11",
+        "path" : "http://hl7.it/fhir/lab-report/0.1.0"
+      },
+      "milestone" : {
+        "version" : "0.1.0",
+        "date" : "2023-07-11",
+        "path" : "http://hl7.it/fhir/lab-report/0.1.0"
+      }
     }
   ]
 }
