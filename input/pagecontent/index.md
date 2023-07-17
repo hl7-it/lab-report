@@ -1,22 +1,27 @@
 ### Scopo
-Questa guida ha lo scopo di definire i modelli logici e i profili HL7 FHIR da utilizzare per l'implementazione del Referto di Laboratorio nel contesto italiano. 
-
-
+L'obbiettivo della seguente guida è quello di definire, secondo lo standard HL7 FHIR versione R4, le specifiche per l'implementazione dei profili che verranno utilizzati nel referto di medicina di laboratorio nel contesto italiano.   
 
 ### Definizione del Referto di Medicina di Laboratorio
 Il referto di laboratorio appartiene al nucleo minimo dei documenti del Fascicolo Sanitario Elettronico.
 Ai sensi dell'articolo 27, comma 1, lettera d), del  decreto n. 178 del 29 settembre 2015,  il referto di laboratorio e' il documento redatto dal medico di medicina di laboratorio. 
 Il contenuto informativo del Referto di Laboratorio è disciplinato all'art.2 dal Decreto del 18 maggio 2022 del Ministero della Salute ([Decreto Contenuti](https://www.gazzettaufficiale.it/eli/id/2022/07/11/22A03960)). 
 
+### Contesto
+La guida intende fornire delle specifiche adeguate al contesto italiano secondo lo standard HL7 FHIR per assicurare l’accuratezza dei risultati degli esami di laboratorio e la trasmissione degli stessi al paziente o ad altra figura professionale in modo chiaro e corretto.
+Questa guida implementativa è stata creata per descrivere in modo più completo gli elementi standard necessari per supportare lo scambio sia semantico che sintattico di informazioni inerenti al referto di laboratorio. 
 
-### Funzionalità del Referto di Medicina di Laboratorio
-Le macro funzioni relative ai servizi per la gestione dei referiti di laboratorio : 
+La guida può essere utilizzata  per descrivere i risultati di laboratorio nei settori chiave della diagnostica in vitro, come:
+- biochimica clinica
+- ematologia 
+- medicina trasfusionale
+- microbiologia 
+- immunologia.
 
-- Funzione di Indicizzazione Documenti e Risorse
-- Funzione di Ricerca e Recupero Documenti e Risorse
-- Funzione di Alimentazione Risorse e Documenti
-- Funzione di Identificazione
-- Funzione di Gestione del Consenso
+### Navigazione
+Questa guida implementativa utilizza come metodo di pubblicazione i tool web-based offerti dallo standard FHIR. Ciò consente una facile navigazione tra le varie risorse, i data type, i set di valori e altri componenti offerti dallo standard FHIR. Questo approccio consente inoltre agli implementatori di accedere facilmente alle informazioni necessarie per lo sviluppo di sistemi di interoperabilità.
+
+### Dipendenze
+{% include dependency-table.xhtml %}
 
 ### Autori e contributori
 
