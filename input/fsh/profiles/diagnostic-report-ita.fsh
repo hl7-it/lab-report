@@ -32,7 +32,7 @@ Description: "Descrizione della risorsa DiagnosticReport per la descrizione dell
 * status ^short = "Descrizione attributo: Stato del report clinico. Possibili valori: registered | partial | preliminary | modified | final | amended | corrected | appended | cancelled | entered-in-error | unknown"
 * status from $diagn-status (required)
 * encounter only Reference (encounter-it-lab) 
-* encounter ^short = "Contesto in cui è stato generato il DiagnosticReport."
+* encounter ^short = "Evento sanitario a cui si riferisce il Referto di Laboratorio (al momento della prescrizione)."
 * specimen only Reference (specimen-it-lab)
 * specimen ^short = "Reference ai campioni su cui si basa DiagnosticReport."
 
