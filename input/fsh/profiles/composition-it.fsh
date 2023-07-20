@@ -33,7 +33,7 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * subject only Reference(patient-it-lab)
 
 * subject ^short = "Soggetto del documento."
-* encounter ^short = "Evento sanitario a cui si riferisce il Referto di Laboratorio (al momento della prescrizione)."
+* encounter ^short = "Evento sanitario a cui si riferisce il Referto di Laboratorio (es. al momento della prescrizione)."
 * encounter only Reference(encounter-it-lab)
 * date ^short = "Data di modifica della risorsa Composition."
 * confidentiality from $conf

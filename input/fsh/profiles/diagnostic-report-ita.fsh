@@ -33,7 +33,7 @@ Description: "Descrizione della risorsa DiagnosticReport per la descrizione dell
 * status from $diagn-status (required)
 * insert ReportStatusRule
 * encounter only Reference (encounter-it-lab) 
-* encounter ^short = "Evento sanitario a cui si riferisce il Referto di Laboratorio (al momento della prescrizione)."
+* encounter ^short = "Evento sanitario a cui si riferisce il Referto di Laboratorio (es. al momento della prescrizione)."
 * specimen only Reference (specimen-it-lab)
 * specimen ^short = "Reference ai campioni su cui si basa DiagnosticReport."
 * performer only Reference(practitioner-it-lab or practitionerrole-it-lab or organization-it-lab or CareTeam)
