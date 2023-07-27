@@ -60,22 +60,25 @@ Description: "Descrizione di Address con parti addizionali specifiche per gli in
     $iso21090-SC-coding named codiceRegione 0..1
 * state.extension[codiceRegione] ^sliceName = "codiceRegione"
 * state.extension[codiceRegione] ^short = "Codice Regione"
-* postalCode obeys it-postal-code-pattern
+//* postalCode obeys it-postal-code-pattern
 * postalCode ^comment = "I codici postali italiani hanno un pattern '[1,9]\\d{4}'."
 * postalCode ^alias[0] = "CAP"
 * postalCode ^alias[+] = "postcode"
 * postalCode ^condition = "it-postal-code-pattern"
+* postalCode ^constraint.human = "I codici postali italiani hanno un pattern 'nnnnn' (n intero)"
+* postalCode ^constraint.expression = "(country in 'it' | 'ita' | 'italia' | 'italy').not() or matches('^[1-9]\\d{4}$')"
+* postalCode ^constraint.xpath = "not(../f:country[lower-case(@value)=('it','ita','italia', 'italy')]) or matches(@value,'^[1-9]\\d{4}$')"
 * country ^short = "Stato"
 * country.extension contains
     $iso21090-SC-coding named codiceStato 0..1
 * country.extension[codiceStato] ^sliceName = "codiceStato"
 * country.extension[codiceStato] ^short = "Codice Stato"
 
-Invariant: it-postal-code-pattern
-Description: "I codici postali italiani hanno un pattern 'nnnnn' (n intero)"
-Severity: #error
-Expression: "(country in 'it' | 'ita' | 'italia' | 'italy').not() or matches('^[0-9]{4}')"
-XPath: "not(../f:country[lower-case(@value)=('it','ita','italia', 'italy')]) or matches(@value,'^[0-9]{4}')"
+// Invariant: it-postal-code-pattern
+// Description: "I codici postali italiani hanno un pattern 'nnnnn' (n intero)"
+// Severity: #error
+// Expression: "(country in 'it' | 'ita' | 'italia' | 'italy').not() or matches('^[0-9]{4}')"
+// XPath: "not(../f:country[lower-case(@value)=('it','ita','italia', 'italy')]) or matches(@value,'^[0-9]{4}')"
 
 Invariant: it-address-official
 Description: "Se Address rappresenta la residenza allora city e line devono essere inclusi"
