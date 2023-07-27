@@ -10,13 +10,13 @@ Description: "Esempio di un'osservazione: rilevazione di glucosio nel sangue."
 
 * category[+][specialita-esame-laboratorio].coding.code = #18723-7
 * category[=][specialita-esame-laboratorio].coding.system = "http://loinc.org"
-* category[=][specialita-esame-laboratorio].coding.display = "Studi di ematologia"
+* category[=][specialita-esame-laboratorio].coding.display = "Hematology studies (set)"
 
 * status = #final
 
 * code.coding.system = "http://loinc.org"
 * code.coding.code = #10450-5 	
-* code.coding.display = "Glucosio^post 10h digiuno"
+* code.coding.display = "Glucose [Mass/volume] in Serum or Plasma --10 hours fasting"
 
 * valueQuantity.unit = "mg/dL"
 * valueQuantity.code = #mg/dL

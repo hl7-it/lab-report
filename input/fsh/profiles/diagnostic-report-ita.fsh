@@ -46,7 +46,7 @@ Description: "Descrizione della risorsa DiagnosticReport per la descrizione dell
 * code.coding.system ^short = "Sistema terminologico."
 * code.coding.code = #11502-2
 * code.coding.code ^short = "Codice appartenente al sistema terminologico."
-* code.coding.display = "Referto di medicina di laboratorio"
+* code.coding.display = "Laboratory report"
 * code.coding.display ^short = "Descrizione del codice."
 * insert ReportTypeRule ( code )
 * result only Reference (observation-it-lab or observation-grouping-it-lab)

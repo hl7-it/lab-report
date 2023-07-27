@@ -25,7 +25,7 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * identifier ^short = "Identificatore indipendente dalla versione."
 * type.coding.system = $LOINC
 * type.coding.code = #11502-2 
-* type.coding.display = "Referto di medicina di laboratorio"
+* type.coding.display = "Laboratory report"
 * type ^short = "Tipo di Composition."
 * status ^short = "Stato di completezza della risorsa Composition. Lo stato della risorsa rappresenta anche lo stato del documento."
 * status ^definition = "Lo stato della Composition si sviluppa generalmente solo attraverso questo elenco: passa da preliminary a final e poi può passare a amended (ovvero modificato). "
