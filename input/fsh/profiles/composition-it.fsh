@@ -20,20 +20,24 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 
 * extension contains InformationRecipient named information-recipient 0..*
 * extension[information-recipient] ^short = "Professionisti sanitari che ricevono una copia del documento (es. MMG/PLS)."
-
+* category ^constraint.source = Canonical(CompositionRefertoLabIt)
 * identifier 1..1
 * identifier ^short = "Identificatore indipendente dalla versione."
+* identifier ^constraint.source = Canonical(CompositionRefertoLabIt)
 * type.coding.system = $LOINC
 * type.coding.code = #11502-2 
 * type.coding.display = "Laboratory report"
 * type ^short = "Tipo di Composition."
 * status ^short = "Stato di completezza della risorsa Composition. Lo stato della risorsa rappresenta anche lo stato del documento."
+* status ^constraint.source = Canonical(CompositionRefertoLabIt)
 * status ^definition = "Lo stato della Composition si sviluppa generalmente solo attraverso questo elenco: passa da preliminary a final e poi può passare a amended (ovvero modificato). "
 * subject 1..1
 * subject only Reference(patient-it-lab)
+* subject ^constraint.source = Canonical(CompositionRefertoLabIt)
 
 * subject ^short = "Soggetto del documento."
 * encounter ^short = "Evento sanitario a cui si riferisce il Referto di Laboratorio (es. al momento della prescrizione)."
+* encounter ^constraint.source = Canonical(CompositionRefertoLabIt)
 * encounter only Reference(encounter-it-lab)
 * date ^short = "Data di modifica della risorsa Composition."
 * confidentiality from $conf
@@ -41,6 +45,7 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 
 * author only Reference(practitioner-it-lab or practitionerrole-it-lab or patient-it-lab or organization-it-lab)
 * author ^short = "Autore della Composition."
+* author ^constraint.source = Canonical(CompositionRefertoLabIt)
 * title ^short = "Titolo o nome human-readable della Composition."
 * title = "Referto di Laboratorio" 
 * attester 1..*
@@ -89,6 +94,7 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * section.title ^short = "Titolo della sezione."
 * section.code 1..
 * insert ReportTypeRule ( type )
+* type ^constraint.source = Canonical(CompositionRefertoLabIt)
 * section.code ^short = "Codice della sezione."
 
 * section contains senza-sottosezione ..* 
@@ -127,6 +133,7 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
   * section ..0 
 
 * insert ReportIdentifierRule
+
 * insert ReportStatusRule
 // * category 1.. // add VS binding
 * insert ReportCategoryRule 

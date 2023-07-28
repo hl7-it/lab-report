@@ -68,7 +68,8 @@ Description: "Descrizione di Address con parti addizionali specifiche per gli in
 * postalCode ^constraint.human = "I codici postali italiani hanno un pattern 'nnnnn' (n intero)"
 * postalCode ^constraint.expression = "(country in 'it' | 'ita' | 'italia' | 'italy').not() or matches('^[1-9]\\d{4}$')"
 * postalCode ^constraint.xpath = "not(../f:country[lower-case(@value)=('it','ita','italia', 'italy')]) or matches(@value,'^[1-9]\\d{4}$')"
-* country ^short = "Stato"
+* postalCode ^constraint.source = Canonical(Address-it) 
+// * country ^short = "Stato"
 * country.extension contains
     $iso21090-SC-coding named codiceStato 0..1
 * country.extension[codiceStato] ^sliceName = "codiceStato"
@@ -80,7 +81,7 @@ Description: "Descrizione di Address con parti addizionali specifiche per gli in
 // Expression: "(country in 'it' | 'ita' | 'italia' | 'italy').not() or matches('^[0-9]{4}')"
 // XPath: "not(../f:country[lower-case(@value)=('it','ita','italia', 'italy')]) or matches(@value,'^[0-9]{4}')"
 
-Invariant: it-address-official
-Description: "Se Address rappresenta la residenza allora city e line devono essere inclusi"
-Severity: #error
-Expression: "extension.where(url = 'http://hl7.org/fhir/StructureDefinition/address-official').valueBoolean.where(true).empty() or ( line.exists() and city.exists() )"
+// Invariant: it-address-official
+// Description: "Se Address rappresenta la residenza allora city e line devono essere inclusi"
+// Severity: #error
+// Expression: "extension.where(url = 'http://hl7.org/fhir/StructureDefinition/address-official').valueBoolean.where(true).empty() or ( line.exists() and city.exists() )"
