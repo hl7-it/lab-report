@@ -22,22 +22,27 @@ Description: "Descrizione della risorsa DiagnosticReport per la descrizione dell
 * category ^short = "Categoria del servizio."
 * category ^definition = "Un codice che classifica la disciplina clinica, il reparto o il servizio diagnostico che ha creato il referto (es. cardiologia, biochimica, ematologia)."
 //* category from $diagnosticreport-category (example)
+* category ^constraint.source = Canonical(DiagnosticReportRefertoLabIt)
 * category from $diagnosticreport-category-valueset (example)
 
 * subject 1..
 * subject ^short = "Soggetto del referto."
+* subject ^constraint.source = Canonical(DiagnosticReportRefertoLabIt)
 * subject only Reference(patient-it-lab)
 
-
+* identifier ^constraint.source = Canonical(DiagnosticReportRefertoLabIt)
 * status ^short = "Descrizione attributo: Stato del report clinico. Possibili valori: registered | partial | preliminary | modified | final | amended | corrected | appended | cancelled | entered-in-error | unknown"
 * status from $diagn-status (required)
+* status ^constraint.source = Canonical(DiagnosticReportRefertoLabIt)
 * insert ReportStatusRule
 * encounter only Reference (encounter-it-lab) 
 * encounter ^short = "Evento sanitario a cui si riferisce il Referto di Laboratorio (es. al momento della prescrizione)."
+* encounter ^constraint.source = Canonical(DiagnosticReportRefertoLabIt)
 * specimen only Reference (specimen-it-lab)
 * specimen ^short = "Reference ai campioni su cui si basa DiagnosticReport."
 * performer only Reference(practitioner-it-lab or practitionerrole-it-lab or organization-it-lab or CareTeam)
   * insert ReportAuthorRule
+* performer ^constraint.source = Canonical(DiagnosticReportRefertoLabIt)
 * performer ^short = "Persona o Organizzazione che partecipa all'evento clinico descritto."
 * performer ^definition = "Organizzazione o Persona che è responsabile del report; non è necessariamente l'autore dei dati atomici o l'entità che ha interpretato i risultati. "
 * code ^short = "Nome/codice della diagnostic report."
@@ -49,6 +54,7 @@ Description: "Descrizione della risorsa DiagnosticReport per la descrizione dell
 * code.coding.display = "Laboratory report"
 * code.coding.display ^short = "Descrizione del codice."
 * insert ReportTypeRule ( code )
+* code ^constraint.source = Canonical(DiagnosticReportRefertoLabIt)
 * result only Reference (observation-it-lab or observation-grouping-it-lab)
 * result ^short = "Osservazioni cliniche." 
 * imagingStudy 0..0 
@@ -67,3 +73,4 @@ Description: "Descrizione della risorsa DiagnosticReport per la descrizione dell
   
 * resultsInterpreter
   * insert ReportAuthorRule
+* resultsInterpreter ^constraint.source = Canonical(DiagnosticReportRefertoLabIt)
