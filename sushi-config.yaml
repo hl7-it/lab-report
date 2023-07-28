@@ -21,21 +21,33 @@ contact:
 jurisdiction: urn:iso:std:iso:3166#IT "Italy"
 
 dependencies:
+  #hl7.fhir.it.base: current
   hl7.fhir.it.terminology: current
   hl7.fhir.extensions.r5: 4.0.1
+  # hl7.fhir.it.cda2fhir: 0.1.0
 
 pages:
   index.md:
     title: Home
+  # contesto.md:
+  #   title: Contesto
   downloads.md:
     title: Downloads
+  # methodology.md:
+  #   title: Metodologia
+  #scenario.md:
+  #  title: Scenario 
   modelliLogici.md:
     title: Modelli Logici  
 
 menu:
   IG Home: index.html
   Sommario: toc.html
+  # Contesto: contesto.html
+    # Contesto: 
+    # Metodologia: methodology.html
   Specifiche:
+    # Scenari: scenario.html
     Modelli Logici: modelliLogici.html
   Indice Artefatti: artifacts.html
   Support:
@@ -44,6 +56,20 @@ menu:
     Downloads: downloads.html
 
 groups:
+  LabReportLogicalModel:
+    name:  Linee Guida Referto di Laboratorio
+    description: Modelli Logici che rappresentano il contenuto informativo del Referto di Laboratorio.
+    resources:
+      - StructureDefinition/RefertoLaboratorio
+      - StructureDefinition/SoggettoCura
+      - StructureDefinition/Autore
+      - StructureDefinition/Validatore
+      - StructureDefinition/Firmatario
+      - StructureDefinition/Destinatario
+      - StructureDefinition/Richiesta
+      - StructureDefinition/Risultato
+      - StructureDefinition/Campione
+      - StructureDefinition/Organizer
   LabReportDOC:
     name: Profili Risorse Documento FHIR
     description: Profili risorse necessarie per produrre il documento FHIR Lab Report.
@@ -51,15 +77,15 @@ groups:
       - StructureDefinition/bundle-it-lab
       - StructureDefinition/composition-it-lab
       - StructureDefinition/observation-doc-it-lab
+      - StructureDefinition/diagnosticreport-it-lab
+      - StructureDefinition/patient-it-lab
   LabReportRES:
     name: Profili Risorse  
     description: Profili risorse specifiche per il dominio di Lab Report.
     resources:
-      - StructureDefinition/diagnosticreport-it-lab
       - StructureDefinition/observation-it-lab
       - StructureDefinition/specimen-it-lab
-      - StructureDefinition/media-it-lab
-      - StructureDefinition/patient-it-lab
+      - StructureDefinition/media-it-lab      
       - StructureDefinition/encounter-it-lab
       - StructureDefinition/servicerequest-it-lab
       - StructureDefinition/location-it-lab
