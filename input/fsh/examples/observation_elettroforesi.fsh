@@ -10,7 +10,7 @@ Description: "Esempio di un'osservazione: rilevazione di albumina da elettrofore
 
 * category[+][specialita-esame-laboratorio].coding.code = #26436-6	
 * category[=][specialita-esame-laboratorio].coding.system = "http://loinc.org"
-* category[=][specialita-esame-laboratorio].coding.display = "Esami di laboratorio"
+* category[=][specialita-esame-laboratorio].coding.display = "Laboratory studies (set)"
 
 * status = #final
 

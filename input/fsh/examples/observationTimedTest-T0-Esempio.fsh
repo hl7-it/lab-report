@@ -9,7 +9,7 @@ Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue a d
 
 * category[+][specialita-esame-laboratorio].coding.code = #18723-7
 * category[=][specialita-esame-laboratorio].coding.system = "http://loinc.org"
-* category[=][specialita-esame-laboratorio].coding.display = "Studi di ematologia"
+* category[=][specialita-esame-laboratorio].coding.display = "Hematology studies (set)"
 
 * status = #final
 
@@ -38,7 +38,7 @@ Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue dop
 
 * category[+][specialita-esame-laboratorio].coding.code = #18723-7
 * category[=][specialita-esame-laboratorio].coding.system = "http://loinc.org"
-* category[=][specialita-esame-laboratorio].coding.display = "Studi di ematologia"
+* category[=][specialita-esame-laboratorio].coding.display = "Hematology studies (set)"
 
 * status = #final
 
@@ -71,7 +71,7 @@ Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue dop
 
 * category[+][specialita-esame-laboratorio].coding.code = #18723-7
 * category[=][specialita-esame-laboratorio].coding.system = "http://loinc.org"
-* category[=][specialita-esame-laboratorio].coding.display = "Studi di ematologia"
+* category[=][specialita-esame-laboratorio].coding.display = "Hematology studies (set)"
 
 * status = #final
 
@@ -105,7 +105,7 @@ Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue dop
 
 * category[+][specialita-esame-laboratorio].coding.code = #18723-7
 * category[=][specialita-esame-laboratorio].coding.system = "http://loinc.org"
-* category[=][specialita-esame-laboratorio].coding.display = "Studi di ematologia"
+* category[=][specialita-esame-laboratorio].coding.display = "Hematology studies (set)"
 
 * status = #final
 
@@ -138,7 +138,7 @@ Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue dop
 
 * category[+][specialita-esame-laboratorio].coding.code = #18723-7
 * category[=][specialita-esame-laboratorio].coding.system = "http://loinc.org"
-* category[=][specialita-esame-laboratorio].coding.display = "Studi di ematologia"
+* category[=][specialita-esame-laboratorio].coding.display = "Hematology studies (set)"
 
 * status = #final
 

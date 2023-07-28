@@ -2,7 +2,7 @@ Profile: EncounterRefertoLabIt
 Parent: Encounter
 Id: encounter-it-lab
 Title: "Encounter - Lab Report"
-Description: "Profilo della risorsa Encounter utile a descrivere i dati dell'incontro nel dominio di Lab Report."
+Description: "Profilo della risorsa Encounter utile a descrivere i dati dell'incontro per la richiesta specifica nel dominio di Referto di Laboratorio."
 * ^version = "0.0.1"
 * ^status = #draft
 * ^experimental = true

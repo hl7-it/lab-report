@@ -10,7 +10,7 @@ Description: "Descrive la risorsa ServiceRequest che genera l'incontro del Lab R
 * ^date = "2023-03-09T16:43:56.519+01:00"
 * ^publisher = "HL7 Italia"
 * ^copyright = "HL7 Italia"
-
+* code from http://hl7.org/fhir/ValueSet/procedure-code (example)
 * identifier ^short = "Identificativo assegnato all'ordine."
 * identifier 1..* 
 * priority MS 

@@ -15,7 +15,7 @@ Description: "Esempio di una Composition: descrizione header e struttura body de
 
 * type.coding.system = "http://loinc.org" 
 * type.coding.code = #11502-2
-* type.coding.display = "Referto di medicina di laboratorio" 
+* type.coding.display = "Laboratory report" 
 
 * subject = Reference(Paziente-SSN)
 * subject.display = "Rossi Maria"
@@ -38,8 +38,8 @@ Description: "Esempio di una Composition: descrizione header e struttura body de
 
 * section[con-sottosezione].code.coding.system = $LOINC
 * section[con-sottosezione].code.coding.code = #26436-6
-* section[con-sottosezione].code.coding.display = "Esami di laboratorio"
-* section[con-sottosezione].title = "Esami di laboratorio"
+* section[con-sottosezione].code.coding.display = "Laboratory studies (set)"
+* section[con-sottosezione].title = "Laboratory studies (set)"
 
 * section[con-sottosezione].section.title = "Esame del sangue"
 * section[con-sottosezione].section.code.coding.system = $LOINC

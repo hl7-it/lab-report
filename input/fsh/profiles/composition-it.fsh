@@ -1,5 +1,5 @@
 Profile: CompositionRefertoLabIt
-Parent: Composition
+Parent: $clinical-document
 Id: composition-it-lab
 Title: "Composition - Lab Report"
 Description: "Descrizione in tramite la risorsa Composition di header e body del Lab Report."
@@ -18,11 +18,14 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 
 * extension[dataEnterer] ^short = "Persona o dispositivo che trasforma un testo dettato nel documento FHIR."
 
+* extension contains InformationRecipient named information-recipient 0..*
+* extension[information-recipient] ^short = "Professionisti sanitari che ricevono una copia del documento (es. MMG/PLS)."
+
 * identifier 1..1
 * identifier ^short = "Identificatore indipendente dalla versione."
 * type.coding.system = $LOINC
 * type.coding.code = #11502-2 
-* type.coding.display = "Referto di medicina di laboratorio"
+* type.coding.display = "Laboratory report"
 * type ^short = "Tipo di Composition."
 * status ^short = "Stato di completezza della risorsa Composition. Lo stato della risorsa rappresenta anche lo stato del documento."
 * status ^definition = "Lo stato della Composition si sviluppa generalmente solo attraverso questo elenco: passa da preliminary a final e poi può passare a amended (ovvero modificato). "
@@ -30,9 +33,9 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * subject only Reference(patient-it-lab)
 
 * subject ^short = "Soggetto del documento."
-* encounter ^short = "Contesto in cui è stato generato il documento."
+* encounter ^short = "Evento sanitario a cui si riferisce il Referto di Laboratorio (es. al momento della prescrizione)."
 * encounter only Reference(encounter-it-lab)
-* date ^short = "Data di modifica della risorsa da parte del firmatario."
+* date ^short = "Data di modifica della risorsa Composition."
 * confidentiality from $conf
 * confidentiality ^short = "Codice di confidenzialità della Composition."
 
@@ -48,9 +51,8 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * attester ^short = "Professionisti che attestano la validità del documento. Se la risorsa è creata a fine documentale uno degli attester dovrebbe essere il firmatario, ovvero chi allega la firma digitale al documento."
 * attester ^slicing.ordered = false
 * attester contains
-    legalAuthenticator 1..1 and
-    authenticator 0..1 and
-    informationRecipient 0..*
+    legalAuthenticator 0..1 and
+    authenticator 0..1 
 * attester[legalAuthenticator] ^short = "Firmatario del documento FHIR."
 * attester[legalAuthenticator].mode 1..1
 * attester[legalAuthenticator].mode = #legal
@@ -65,11 +67,6 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * attester[authenticator].party only Reference(practitioner-it-lab or practitionerrole-it-lab)
 * attester[authenticator].party ^short = "Riferimento al validatore."
 
-* attester[informationRecipient] ^short = "Professionisti sanitari che ricevono una copia del documento (es. MMG/PLS)."
-* attester[informationRecipient].mode = #personal
-* attester[informationRecipient].party only Reference(practitioner-it-lab or practitionerrole-it-lab or organization-it-lab)
-* attester[informationRecipient].party ^short = "Riferimento al informationRecipient."
-
 * custodian 1..1
 * custodian only Reference(organization-it-lab)
 * custodian ^short = "Organizzazione che si occupa della conservazione del documento FHIR."
@@ -77,7 +74,7 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * relatesTo ^short = "Ulteriori risorse Composition correlate al documento."
 * relatesTo.target[x] ^short = "Riferimento alla risorsa Composition correlata."
 * relatesTo.target[x] only Reference 
-* relatesTo obeys it-composition-1
+//* relatesTo obeys it-composition-1
 
 * section ^slicing.discriminator[0].type = #exists
 * section ^slicing.discriminator[0].path = "$this.section"
@@ -91,6 +88,7 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * section.title 1..
 * section.title ^short = "Titolo della sezione."
 * section.code 1..
+* insert ReportTypeRule ( type )
 * section.code ^short = "Codice della sezione."
 
 * section contains senza-sottosezione ..* 
@@ -113,7 +111,7 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * section[con-sottosezione].code from $sezione-referto-laboratorio (preferred)
 * section[con-sottosezione].section ^short = "Sottosezione strutturata della sezione principale."
 * section[con-sottosezione].section 1..
-  * code 1..
+  * code 1..  
   * code only CodeableConcept
   * code from $sezione-referto-laboratorio (preferred)
   * text ^short = "Sintesi testuale della sezione, per l'interpretazione dell'utente."
@@ -128,7 +126,23 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
   * text ^short = "Sintesi testuale della sezione, per l'interpretazione dell'utente."
   * section ..0 
 
-Invariant: it-composition-1
-Description: "relatesTo diventa obbligatorio per versioni della risorsa maggiori di 1"
-Severity: #error
-Expression: "version > 1"
+* insert ReportIdentifierRule
+* insert ReportStatusRule
+// * category 1.. // add VS binding
+* insert ReportCategoryRule 
+// * type = $loinc#11502-2 // change to a VS binding
+
+// * insert ReportTypeRule ( type )
+
+  // slice the subject tp cover the three cases of human ; non-human and mixed
+* insert ReportSubjectRule
+* insert ReportEncounterRule
+* author 1..
+  * ^short = "Who and/or what authored the Laboratory Report"
+  * ^definition = "Identifies who is responsible for the information in the Laboratory Report, not necessarily who typed it in."
+  * insert ReportAuthorRule
+
+// Invariant: it-composition-1
+// Description: "relatesTo diventa obbligatorio per versioni della risorsa maggiori di 1"
+// Severity: #error
+// Expression: "version > 1"

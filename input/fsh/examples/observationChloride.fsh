@@ -10,7 +10,7 @@ Description: "Esempio di un'osservazione: rilevazione di cloruro nel sangue."
 
 * category[+][specialita-esame-laboratorio].coding.code = #18723-7
 * category[=][specialita-esame-laboratorio].coding.system = "http://loinc.org"
-* category[=][specialita-esame-laboratorio].coding.display = "Studi di ematologia"
+* category[=][specialita-esame-laboratorio].coding.display = "Hematology studies (set)"
 
 * status = #final
 

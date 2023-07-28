@@ -4,7 +4,7 @@ name: HL7ITLabReport
 title: HL7 FHIR Implementation Guide Laboratory Report
 description: HL7 FHIR Implementation Guide Laboratory Report specifica come utilizzare lo standard HL7 FHIR per documentare un referto di medicina di laboratorio.
 status: draft # draft | active | retired | unknown
-version: 0.2.0
+version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2022+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -21,7 +21,7 @@ contact:
 jurisdiction: urn:iso:std:iso:3166#IT "Italy"
 
 dependencies:
-  hl7.fhir.it.base: current
+  #hl7.fhir.it.base: current
   hl7.fhir.it.terminology: current
   hl7.fhir.extensions.r5: 4.0.1
   # hl7.fhir.it.cda2fhir: 0.1.0
@@ -35,8 +35,8 @@ pages:
     title: Downloads
   # methodology.md:
   #   title: Metodologia
-  scenario.md:
-    title: Scenario 
+  #scenario.md:
+  #  title: Scenario 
   modelliLogici.md:
     title: Modelli Logici  
 
@@ -47,7 +47,7 @@ menu:
     # Contesto: 
     # Metodologia: methodology.html
   Specifiche:
-    Scenari: scenario.html
+    # Scenari: scenario.html
     Modelli Logici: modelliLogici.html
   Indice Artefatti: artifacts.html
   Support:
@@ -56,6 +56,20 @@ menu:
     Downloads: downloads.html
 
 groups:
+  LabReportLogicalModel:
+    name:  Linee Guida Referto di Laboratorio
+    description: Modelli Logici che rappresentano il contenuto informativo del Referto di Laboratorio.
+    resources:
+      - StructureDefinition/RefertoLaboratorio
+      - StructureDefinition/SoggettoCura
+      - StructureDefinition/Autore
+      - StructureDefinition/Validatore
+      - StructureDefinition/Firmatario
+      - StructureDefinition/Destinatario
+      - StructureDefinition/Richiesta
+      - StructureDefinition/Risultato
+      - StructureDefinition/Campione
+      - StructureDefinition/Organizer
   LabReportDOC:
     name: Profili Risorse Documento FHIR
     description: Profili risorse necessarie per produrre il documento FHIR Lab Report.
@@ -63,15 +77,15 @@ groups:
       - StructureDefinition/bundle-it-lab
       - StructureDefinition/composition-it-lab
       - StructureDefinition/observation-doc-it-lab
+      - StructureDefinition/diagnosticreport-it-lab
+      - StructureDefinition/patient-it-lab
   LabReportRES:
     name: Profili Risorse  
     description: Profili risorse specifiche per il dominio di Lab Report.
     resources:
-      - StructureDefinition/diagnosticreport-it-lab
       - StructureDefinition/observation-it-lab
       - StructureDefinition/specimen-it-lab
-      - StructureDefinition/media-it-lab
-      - StructureDefinition/patient-it-lab
+      - StructureDefinition/media-it-lab      
       - StructureDefinition/encounter-it-lab
       - StructureDefinition/servicerequest-it-lab
       - StructureDefinition/location-it-lab
