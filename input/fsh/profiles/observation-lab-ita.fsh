@@ -1,17 +1,18 @@
 Profile: ObservationRefertoLabIt
-Parent: Observation
+Parent:  $Observation-resultslab-eu-lab //  Observation
 Id: observation-it-lab
 Title:    "Observation - Lab Report"
 Description: "Descrive come rappresentare la risorsa Observation per le rilevazioni cliniche nel dominio di Lab Report."
 * . ^short = "Observation Referto di Laboratorio"
+* insert SetFmmandStatusRule ( 1, draft )
 * obeys ita-lab-1
 * code from $risultato-osservazione (preferred)
 * code ^short = "Tipo di osservazione tramite codice."
 * status from $observation-status (required)
 * status ^short = "Descrizione attributo: Stato dell'osservazione. Possibili valori: registered | preliminary | final | amended +"
-* category ^slicing.discriminator.type = #pattern
+/* * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "$this.coding.system"
-* category ^slicing.rules = #open
+* category ^slicing.rules = #open */
 * category ^short = "Codice che classifica il tipo di osservazione."
 * category ^definition = "La categoria di osservazione può definire la classificazione tramite diversi livelli di dettaglio, a partire da laboratory."
 * category contains 
@@ -28,7 +29,7 @@ Description: "Descrive come rappresentare la risorsa Observation per le rilevazi
 * category[specialita-esame-laboratorio] from $sezione-referto-laboratorio (preferred)
 * category[specialita-esame-laboratorio].coding ^short = "Codice della terminologia per dettagliare la specialità di laboratorio"
 * category[specialita-esame-laboratorio].coding.system ^short = "Terminologia utilizzata."
-* category[specialita-esame-laboratorio].coding.system = $LOINC
+* category[specialita-esame-laboratorio].coding.system = $loinc
 
 * subject 1..
 * subject ^short = "Soggetto della rilevazione clinica."
@@ -40,7 +41,7 @@ Description: "Descrive come rappresentare la risorsa Observation per le rilevazi
 
 * performer 1..
 * performer ^short = "Soggetto responsabile dell'osservazione."
-* performer only Reference(practitioner-it-lab or practitionerrole-it-lab or organization-it-lab or CareTeam or RelatedPerson)
+* performer only Reference(PractitionerRefertoLabIt or PractitionerRefertoLabIt or OrganizationRefertoLabIt or CareTeam or RelatedPerson)
 
 * value[x] ^short = "Risultato dell'osservaizone."
 
@@ -69,7 +70,9 @@ Description: "Descrive come rappresentare la risorsa Observation per le rilevazi
 * device ^short = "Dispositivo utilizzato per ottenere l'osservazione."
 * device only Reference(device-it-lab or DeviceMetric)
 * method ^short = "Metodo di rilevazione dell'osservazione."
-* method from $sct-method (example)
+// * method from $sct-method (example)
+//  the binding is preferred in the EU guide
+* method from $sct-method (preferred)
 * bodySite ^short = "Sito corporeo dell'osservazione."
 * derivedFrom only Reference(observation-it-lab or MediaRefertoLabIt)
 * derivedFrom ^short = "Reference dell'osservazione da cui deriva questo valore di osservazione. Ad esempio, un gap anionico calcolato o una misurazione fetale basata su un'immagine ecografica."

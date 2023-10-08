@@ -4,11 +4,13 @@ Id: patient-it-lab
 Title: "Patient - Lab Report"
 Description: "Descrive come rappresentare le informazioni del paziente nei documenti FHIR."
 * . ^short = "Patient Referto di Laboratorio"
-* ^version = "0.0.1"
+/* * ^version = "0.0.1" */
 * ^status = #draft
-* ^experimental = true
-* ^date = "2023-03-08T16:43:56.519+01:00"
-* . MS
+* ^experimental = false
+/* * ^date = "2023-03-08T16:43:56.519+01:00"
+* . MS */
+* insert SetFmmandStatusRule ( 1, draft )
+* insert ImposeProfile ( $Patient-eu-lab )
 
 * extension contains 
     BirthPlaceIta named luogoNascita 0..1 and 
@@ -98,7 +100,7 @@ Description: "Descrive come rappresentare le informazioni del paziente nei docum
 * birthDate MS
 * name obeys it-pat-1
 * name ^short = "Nome associato al paziente."
-* name ^constraint.source = Canonical(PatientRefertoLabIt) //"http://hl7.org/fhir/StructureDefinition/Patient"
+// * name ^constraint.source = Canonical(PatientRefertoLabIt) //"http://hl7.org/fhir/StructureDefinition/Patient"
 * name.extension contains http://hl7.org/fhir/StructureDefinition/data-absent-reason named name-absent-reason 0..*
 * name.extension[name-absent-reason] ^binding.strength = #example
 * name.extension[name-absent-reason] ^binding.valueSet = $data-absent-reason

@@ -1,10 +1,11 @@
 Profile: BundleRefertoLabIt
-Parent: Bundle
+Parent: $Bundle-eu-lab // Bundle
 Id: bundle-it-lab
 Title:    "Bundle - Lab Report"
 Description: "Descrizione della risorsa Bundle per il contesto italiano del Lab Report."
 * . ^definition = "La creazione di un FHIR Document prevede la costruzione di una Bundle con le seguenti caratteristiche:\n - ′type′=document\n - identifier obbligatorio\n - prima risorsa referenziata ′Composition′ di cui ′identifier′ opzionale e ′date′ obbligatorio\n - ′timestamp′ obbligatorio\n"
 * . ^short = "Bundle Referto di Laboratorio"
+* insert SetFmmandStatusRule ( 1, draft )
 * type = #document 
 * type ^short = "Indica cosa rappresenta e l'obiettivo del Bundle."
 * identifier 1.. 
@@ -27,24 +28,24 @@ Description: "Descrizione della risorsa Bundle per il contesto italiano del Lab 
 * entry.response 0..0
 * entry ^short = "Risorse contenute nel documento FHIR."
 
-* entry 1..
+/* * entry 1.. */
 * entry contains
-    composition 1..1 and
+ /*    composition 1..1 and
     practitionerRole 0..* and
     practitioner 0..* and
     organization 0..* and
-    patient 1..1 and
+    patient 1..1 and 
     encounter 0..1 and
     location 0..* and
-    serviceRequest 0..* and
+     serviceRequest 0..* and
     diagnosticReport 1..1 and
     observation 0..* and
-    specimen 0..* and
+    specimen 0..* and */
     media 0..* //and
  //   observationGroup 0..*
 
 * entry[composition].resource only composition-it-lab
-* entry[practitionerRole].resource only practitionerrole-it-lab
+* entry[practitionerRole].resource only PractitionerRoleRefertoLabIt
 * entry[practitioner].resource only practitioner-it-lab
 * entry[organization].resource only organization-it-lab
 * entry[patient].resource only patient-it-lab

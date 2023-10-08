@@ -3,6 +3,7 @@ Parent: ObservationRefertoLabIt
 Id: observation-grouping-it-lab
 Title: "Observation battery - Lab Report"
 Description: "Descrive come rappresentare un insieme di esami nel contesto del Referto di Laboratorio."
+* insert SetFmmandStatusRule ( 1, draft )
 * . ^short = "Observation battery Referto di Laboratorio"
 * value[x] 0..0
 * interpretation 0..0
