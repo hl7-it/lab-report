@@ -19,7 +19,9 @@ Description: "Esempio di richiesta: prestazione richiesta facente parte di un'au
 * category.coding.system = $sct
 * category.coding.code = #108252007
 * category.coding.display = "Laboratory procedure"
-
+* code.coding.system = $sct
+* code.coding.code = #5357009
+* code.coding.display = "Leukocyte poor blood preparation"
 * subject = Reference(Paziente-SSN) //$patient-url
 // * subject.type = "Patient"
 // * subject.identifier.system = "http://hl7.it/sid/codiceFiscale"

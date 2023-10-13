@@ -3,6 +3,7 @@ InstanceOf: patient-it-lab
 Usage: #example
 Description: "Esempio di un paziente: soggetto iscritto al Sistema Sanitario Nazionale (SSN) con rappresentazione strutturata dell'attributo birthPlace."
 
+* id = "8472931c-fbd0-437b-9ed1-4f66472c78b5"
 * extension.url = "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
 * extension.valueAddress.line.extension[0].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"
 * extension.valueAddress.line.extension[0].valueString = "Via della Vittoria"
