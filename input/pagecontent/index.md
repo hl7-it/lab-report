@@ -8,7 +8,7 @@ Il contenuto informativo del Referto di Laboratorio è disciplinato all'art.2 da
 
 ### Contesto
 La guida intende fornire delle specifiche adeguate al contesto italiano secondo lo standard HL7 FHIR, per assicurare l’accuratezza dei risultati degli esami di laboratorio e la trasmissione degli stessi, al paziente o ad altra figura professionale, in modo chiaro e corretto.
-Questa guida implementativa è stata creata per descrivere in modo più completo gli elementi standard necessari per supportare lo scambio sia semantico che sintattico di informazioni inerenti al referto di laboratorio. 
+Questa guida implementativa è stata creata per descrivere in modo più completo gli elementi standard necessari per supportare lo scambio sia semantico che sintattico di informazioni inerenti al referto di laboratorio e viene sviluppata considerando come soggetto la risorsa Patient. 
 
 La guida può essere utilizzata  per descrivere i risultati di laboratorio nei settori chiave della diagnostica in vitro, come:
 - biochimica clinica
