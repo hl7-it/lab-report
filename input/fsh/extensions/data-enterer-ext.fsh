@@ -3,7 +3,7 @@ Id:          composition-dataenterer-it
 Title:       "DataEnterer"
 Description: "Persona o dispositivo che trasforma un testo dettato nel documento FHIR."
 //-------------------------------------------------------------------------------------------
-
+* ^url = "http://hl7.it/fhir/StructureDefinition/composition-dataenterer-it"
 * extension contains
     dataEnterer 1..1 and
     $ext-dataEnterer-time named tempoCompilazione 0..1
