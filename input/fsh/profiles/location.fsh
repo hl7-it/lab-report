@@ -4,10 +4,11 @@ Id: location-it-lab
 Title: "Location - Lab Report"
 Description: "Profilo della risorsa Location utile alla descrizione delle informazioni relative alle strutture fisiche."
 * . ^short = "Location Referto di Laboratorio."
-* ^version = "0.0.1"
+/* * ^version = "0.0.1"
 * ^status = #draft
 * ^experimental = true
-* ^date = "2023-03-14T16:43:56.519+01:00"
+* ^date = "2023-03-14T16:43:56.519+01:00" */
+* insert SetFmmandStatusRule ( 1, draft )
 
 * identifier 1..
 * identifier ^short = "Identificativo della struttura (luogo)."
