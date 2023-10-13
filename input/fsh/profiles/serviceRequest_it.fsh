@@ -1,19 +1,21 @@
 Profile: ServiceRequestRefertoLabIt 
-Parent: ServiceRequest
+Parent: $ServiceRequest-eu-lab  // ServiceRequest
 Id: servicerequest-it-lab
 Title: "ServiceRequest - Lab Report"
 Description: "Descrive la risorsa ServiceRequest che genera l'incontro del Lab Report."
 * . ^short = "ServiceRequest Referto di Laboratorio"
-* ^version = "0.0.1"
-* ^status = #draft
-* ^experimental = true
-* ^date = "2023-03-09T16:43:56.519+01:00"
+/* * ^version = "0.0.1" */
+/* * ^status = #draft
+* ^experimental = true */
+/* * ^date = "2023-03-09T16:43:56.519+01:00"
 * ^publisher = "HL7 Italia"
-* ^copyright = "HL7 Italia"
-* code from http://hl7.org/fhir/ValueSet/procedure-code (example)
+* ^copyright = "HL7 Italia" */
+* insert SetFmmandStatusRule ( 1, draft )
+* code 1..
+* code from LabOrderCodes (preferred)
+//* code ^short = "codice test richiesti"// TOO GENERIC FOR  A LAB ORDER ! from http://hl7.org/fhir/ValueSet/procedure-code (example)
 * identifier ^short = "Identificativo assegnato all'ordine."
-* identifier 1..* 
-* priority MS 
+* identifier 1..*  
 * priority ^short = "Descrizione attributo: Priorità della richiesta. Possibili valori: routine | urgent | asap | stat"
 * priority from http://hl7.org/fhir/ValueSet/request-priority (required) //mettere il nostro DEMA
 

@@ -5,15 +5,18 @@ Title:    "Organization - Lab Report"
 Description: "Profilo della risorsa Organization che per la descrizione delle informazioni nel dominio di Lab Report."
 * . ^short = "Organization Referto di Laboratorio"
 //-------------------------------------------------------------------------------------------
-* identifier MS
+* insert SetFmmandStatusRule ( 1, draft )
+* insert ImposeProfile($Organization-uv-ips)
+
+* identifier  
 * identifier ^short = "Identificativo dell'organizzazione."
 * active ^short = "Indica se la risorsa è attiva."
-* active	MS
+* active	 
 * type ^short = "Tipo di organizzazione."
-* type	MS
+* type	 
 * type from $tipo-org (example) 
 * name ^short = "Nome human-readable dell'organizzazione."
-* name	MS
+* name	 
 
 Profile:  OrganizationOperatoreSanitarioRefertoLabIt
 Parent:   organization-it-lab
@@ -22,15 +25,15 @@ Title:    "Organization operatore sanitario/socio sanitario - Lab Report"
 Description: "Profilo della risorsa Organization che per la descrizione delle informazioni del operatore sanitario/socio sanitario nel dominio di Lab Report."
 * . ^short = "Organization operatore sanitario/socio sanitario Referto di Laboratorio"
 
-* identifier MS
+* identifier  
 * identifier ^slicing.discriminator[0].type = #value
 * identifier ^slicing.discriminator[0].path = "$this.system"
 * identifier ^slicing.discriminator[1].type = #value
 * identifier ^slicing.discriminator[1].path = "$this.value"
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Slice based on the identifier pattern"
-* identifier.system 1..1 MS
-* identifier.value 1..1 MS
+* identifier.system 1..1  
+* identifier.value 1..1  
 * identifier contains 
 	asl 0..1 
 	and aslRegione 0..1
@@ -68,7 +71,7 @@ Description: "Profilo della risorsa Organization che per la descrizione delle in
 * identifier[codiceFiscale].system = "http://hl7.it/sid/codiceFiscale" (exactly)  // pattern
 * identifier[codiceFiscale] ^short = "Codice Fiscale Organizzazione"
 
-* active	MS
-* type	MS
+* active	 
+* type	 
 * type from http://terminology.hl7.it/ValueSet/tipoOrgSocioSanitaria (extensible)
-* name	MS
+* name	 

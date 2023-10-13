@@ -1,24 +1,26 @@
 Profile: DiagnosticReportRefertoLabIt
-Parent: DiagnosticReport
+Parent: $DiagnosticReport-eu-lab //DiagnosticReport
 Id: diagnosticreport-it-lab
 Title: "DiagnosticReport - Lab Report"
 Description: "Descrizione della risorsa DiagnosticReport per la descrizione delle informazioni cliniche del dominio di Lab Report."
 
-* ^publisher = "HL7 Italia"
-* ^copyright = "HL7 Italia"
+* insert SetFmmandStatusRule ( 1, draft )
+
+/* * ^publisher = "HL7 Italia"
+* ^copyright = "HL7 Italia" */
 * . ^short = "DiagnosticReport Referto di Laboratorio"
 * . ^definition = "Laboratory Report DiagnosticReport"
-// * extension contains DiagnosticReportReference named DiagnosticReportCompositionR5 1..1
+//* extension contains DiagnosticReportReference named DiagnosticReportCompositionR5 1..1
 
-* extension contains $diagnostic-report-composition-r5 named DiagnosticReportCompositionR5 0..1
+//* extension contains $diagnostic-report-composition-r5 named DiagnosticReportCompositionR5 1..1
 * extension[DiagnosticReportCompositionR5] ^short = "Estensione di FHIR R5 per legare la DiagnosticReport a Composition."
 * extension[DiagnosticReportCompositionR5].value[x] ^short = "Reference a Composition."
-* extension[DiagnosticReportCompositionR5].value[x] 1..1
-* extension[DiagnosticReportCompositionR5].value[x] only Reference(composition-it-lab)
+// // * extension[DiagnosticReportCompositionR5].value[x] 1..1 */
+//* extension[DiagnosticReportCompositionR5].value[x] only Reference(composition-it-lab)
 
 * basedOn only Reference (servicerequest-it-lab)
 * basedOn ^short = "Reference a una o più prestazioni richieste associate al referto."
-* category 1.. 
+* category 0.. 
 * category ^short = "Categoria del servizio."
 * category ^definition = "Un codice che classifica la disciplina clinica, il reparto o il servizio diagnostico che ha creato il referto (es. cardiologia, biochimica, ematologia)."
 //* category from $diagnosticreport-category (example)
@@ -47,7 +49,7 @@ Description: "Descrizione della risorsa DiagnosticReport per la descrizione dell
 * performer ^definition = "Organizzazione o Persona che è responsabile del report; non è necessariamente l'autore dei dati atomici o l'entità che ha interpretato i risultati. "
 * code ^short = "Nome/codice della diagnostic report."
 * code.coding ^short = "Codice definito da un sistema terminologico."
-* code.coding.system = $LOINC
+* code.coding.system = $loinc
 * code.coding.system ^short = "Sistema terminologico."
 * code.coding.code = #11502-2
 * code.coding.code ^short = "Codice appartenente al sistema terminologico."
@@ -64,7 +66,7 @@ Description: "Descrizione della risorsa DiagnosticReport per la descrizione dell
 * media.link ^short = "Riferimento al contenuto multimediale."
 * presentedForm ^short = "Rappresentazione testuale del Referto di Laboratorio così come emesso."
 
-* insert ReportIdentifierRule
+* insert ReportIdentifierRule 
 * insert ReportCategoryRule 
 
 * insert ReportSubjectRule

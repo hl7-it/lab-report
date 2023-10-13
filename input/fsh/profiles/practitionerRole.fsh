@@ -10,30 +10,27 @@ Description: "Profilo della risorsa PractitionerRole per la descrizione delle in
 
 * . ^short = "PractitionerRole Referto di Laboratorio"
 
-* ^version = "0.0.1"
-
+/* /* * ^version = "0.0.1" */
+/* 
 * ^status = #draft
 
-* ^experimental = true
+* ^experimental = true */ 
 
-* ^publisher = "HL7 Italia"
+/* * ^publisher = "HL7 Italia"
 
-* ^copyright = "HL7 Italia"
+* ^copyright = "HL7 Italia" */
+* insert SetFmmandStatusRule ( 1, draft )
+* insert ImposeProfile($PractitionerRole-eu-lab)
 
-
-* identifier MS
 * identifier ^short = "Identificativo dell'operatore (e.g. Codice Fiscale, ID Regionale)"
 * period ^short = "Il periodo durante il quale il professionista è autorizzato a svolgere questi ruolo/i."
-* period MS
-* practitioner MS
+
 
 * practitioner ^short = "Professionista coinvolto nel processo di cura."
 * practitioner only Reference(practitioner-it-lab)
-* organization MS
 
 * organization ^short = "Organizzazione cui il professionista fa parte."
 * organization only Reference(organization-it-lab)
-* code MS
 * code from $practitionerrole-code-lab-it (example)
 * code ^short = "Ruolo/i del professionista."
 
@@ -54,7 +51,6 @@ Description: "Profilo della risorsa PractitionerRole per la descrizione delle in
 
 * ^copyright = "HL7 Italia"
 
-* code MS
 * code from $MMG-PLS-code-lab-it (required)
 * code ^short = "Ruolo/i del professionista."
 * organization only Reference(organizationOperatore-it-lab)
