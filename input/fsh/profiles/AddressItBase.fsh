@@ -3,9 +3,10 @@ Parent: Address
 Id: Address-it
 Title: "Address - ITA"
 Description: "Descrizione di Address con parti addizionali specifiche per gli indirizzi italiani. Questo profilo struttura l'elemento  Address.line in più parti, consente la codifica di alcune di queste parti e supporta la caratterizzazine degli indirizzi di tipo Residenza. Questa prima versione è ispirata al data type Address Olandese."
-* ^version = "0.0.1"
-* ^status = #draft
-* ^copyright = "CC0"
+/* * ^version = "0.0.1" */
+/* * ^status = #draft */
+/* * ^copyright = "CC0" */
+* insert SetFmmandStatusRule ( 1, draft )
 * . ^short = "Indirizzo fisico o postale"
 * . ^definition = "Esiste una varietà di formati di indirizzi postali definiti in tutto il mondo. Questo profilo (Address-it-base) estende il datatype base Address includendo una serie di informazioni rilevanti per esprimere gli indirizzi in Italia. \r \n \r \n Un Address-it-base è un indirizzo FHIR valido; i sistemi che non supportano le estensioni utilizzate saranno in grado comunque di eseguire il rendering e lavorare con un XXXX. \r \n \r \n Un indirizzo rende alcune parti di indirizzo comunicabili separatamente. Queste parti sono necessarie in alcuni scenari d'uso italiani, ma potrebbero non avere valore per i sistemi internazionali quando le informazioni vengono inviate all'estero."
 * . ^comment = "Nota: address è per indirizzi postali, non per la localizzazione fisica."
@@ -61,13 +62,14 @@ Description: "Descrizione di Address con parti addizionali specifiche per gli in
 * state.extension[codiceRegione] ^sliceName = "codiceRegione"
 * state.extension[codiceRegione] ^short = "Codice Regione"
 //* postalCode obeys it-postal-code-pattern
-* postalCode ^comment = "I codici postali italiani hanno un pattern '[1,9]\\d{4}'."
+* postalCode ^comment = "I codici postali italiani hanno un pattern '[1,9]{4}'."
 * postalCode ^alias[0] = "CAP"
 * postalCode ^alias[+] = "postcode"
 * postalCode ^condition = "it-postal-code-pattern"
+* postalCode ^constraint.key = "it-postal-code-pattern"
 * postalCode ^constraint.human = "I codici postali italiani hanno un pattern 'nnnnn' (n intero)"
-* postalCode ^constraint.expression = "(country in 'it' | 'ita' | 'italia' | 'italy').not() or matches('^[1-9]\\d{4}$')"
-* postalCode ^constraint.xpath = "not(../f:country[lower-case(@value)=('it','ita','italia', 'italy')]) or matches(@value,'^[1-9]\\d{4}$')"
+* postalCode ^constraint.expression = "matches('[0-9]{5}')"
+* postalCode ^constraint.xpath = "matches(@value,'[0-9]{5}')"
 * postalCode ^constraint.source = Canonical(Address-it) 
 // * country ^short = "Stato"
 * country.extension contains

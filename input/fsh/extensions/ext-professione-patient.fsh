@@ -8,6 +8,7 @@ Description: "Estensione per gestire la professione del paziente come CodeableCo
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "http://hl7.it"
 * ^jurisdiction = urn:iso:std:iso:3166#IT
+* ^url = "http://hl7.it/fhir/StructureDefinition/patient-occupation-it"
 * value[x] only CodeableConcept
 * valueCodeableConcept 0..1
 * valueCodeableConcept from $istat-professione (example)

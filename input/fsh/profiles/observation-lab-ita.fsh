@@ -1,34 +1,35 @@
 Profile: ObservationRefertoLabIt
-Parent: Observation
+Parent:  $Observation-resultslab-eu-lab //  Observation
 Id: observation-it-lab
 Title:    "Observation - Lab Report"
 Description: "Descrive come rappresentare la risorsa Observation per le rilevazioni cliniche nel dominio di Lab Report."
 * . ^short = "Observation Referto di Laboratorio"
+* insert SetFmmandStatusRule ( 1, draft )
 * obeys ita-lab-1
 * code from $risultato-osservazione (preferred)
 * code ^short = "Tipo di osservazione tramite codice."
 * status from $observation-status (required)
 * status ^short = "Descrizione attributo: Stato dell'osservazione. Possibili valori: registered | preliminary | final | amended +"
-* category ^slicing.discriminator.type = #pattern
-* category ^slicing.discriminator.path = "$this.coding.system"
-* category ^slicing.rules = #open
+// * category ^slicing.discriminator.type = #pattern
+// * category ^slicing.discriminator.path = "$this.coding.system"
+// * category ^slicing.rules = #open 
 * category ^short = "Codice che classifica il tipo di osservazione."
 * category ^definition = "La categoria di osservazione può definire la classificazione tramite diversi livelli di dettaglio, a partire da laboratory."
-* category contains 
-    esame-laboratorio 1..1 and
-    specialita-esame-laboratorio 0..*
-* category[esame-laboratorio] ^short = "Classificazione del tipo di osservazione."
-* category[esame-laboratorio].coding ^short = "Codice definito da un sistema terminologico."
-* category[esame-laboratorio].coding.system ^short = "Terminologia utilizzata."
-* category[esame-laboratorio].coding.system = $observation-category
-* category[esame-laboratorio].coding.code = #laboratory
-* category[esame-laboratorio].coding.code ^short = "Codice della terminologia per descrivere il dominio di laboratorio."
+// * category contains 
+//     laboratory 1..1 and
+//     specialita-laboratory 0..*
+* category[laboratory] ^short = "Classificazione del tipo di osservazione."
+* category[laboratory].coding ^short = "Codice definito da un sistema terminologico."
+* category[laboratory].coding.system ^short = "Terminologia utilizzata."
+* category[laboratory].coding.system = $observation-category
+* category[laboratory].coding.code = #laboratory
+* category[laboratory].coding.code ^short = "Codice della terminologia per descrivere il dominio di laboratorio."
 
-* category[specialita-esame-laboratorio] ^short = "Codice o testo della specialità dell'esame di laboratorio."
-* category[specialita-esame-laboratorio] from $sezione-referto-laboratorio (preferred)
-* category[specialita-esame-laboratorio].coding ^short = "Codice della terminologia per dettagliare la specialità di laboratorio"
-* category[specialita-esame-laboratorio].coding.system ^short = "Terminologia utilizzata."
-* category[specialita-esame-laboratorio].coding.system = $LOINC
+* category[specialty] ^short = "Codice o testo della specialità dell'esame di laboratorio."
+//* category[specialty] from $sezione-referto-laboratorio (preferred)
+* category[specialty].coding ^short = "Codice della terminologia per dettagliare la specialità di laboratorio"
+* category[specialty].coding.system ^short = "Terminologia utilizzata."
+//* category[specialty].coding.system = $loinc
 
 * subject 1..
 * subject ^short = "Soggetto della rilevazione clinica."
@@ -42,13 +43,13 @@ Description: "Descrive come rappresentare la risorsa Observation per le rilevazi
 * performer ^short = "Soggetto responsabile dell'osservazione."
 * performer only Reference(practitioner-it-lab or practitionerrole-it-lab or organization-it-lab or CareTeam or RelatedPerson)
 
-* value[x] ^short = "Risultato dell'osservaizone."
+* value[x] ^short = "Risultato dell'osservazione."
 
 * value[x] ^slicing.discriminator.type = #type
 * value[x] ^slicing.discriminator.path = "$this"
 * value[x] ^slicing.rules = #closed
 
-
+* effective[x] 1..
 * valueQuantity ^sliceName = "valueQuantity"
 * valueQuantity ^short = "Risultato misurabile tramite una quantità."
 * valueQuantity only quantity-it-lab
@@ -69,7 +70,9 @@ Description: "Descrive come rappresentare la risorsa Observation per le rilevazi
 * device ^short = "Dispositivo utilizzato per ottenere l'osservazione."
 * device only Reference(device-it-lab or DeviceMetric)
 * method ^short = "Metodo di rilevazione dell'osservazione."
-* method from $sct-method (example)
+// * method from $sct-method (example)
+//  the binding is preferred in the EU guide
+* method from $sct-method (preferred)
 * bodySite ^short = "Sito corporeo dell'osservazione."
 * derivedFrom only Reference(observation-it-lab or MediaRefertoLabIt)
 * derivedFrom ^short = "Reference dell'osservazione da cui deriva questo valore di osservazione. Ad esempio, un gap anionico calcolato o una misurazione fetale basata su un'immagine ecografica."

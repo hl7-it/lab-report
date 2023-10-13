@@ -12,6 +12,7 @@ Description: "Estensione usata per indicare che l'informazione associata è stat
 * ^context[=].expression = "Patient.identifier"
 * . ^short = "Certificazione del record"
 * . ^definition = "Identifica che un certo record paziente, o codice fiscale od indirizzo di residenza è stato certificato da una specifica entità (e.g. MEF)."
+* ^url = "http://hl7.it/fhir/StructureDefinition/recordCertification"
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

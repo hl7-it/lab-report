@@ -23,8 +23,24 @@ jurisdiction: urn:iso:std:iso:3166#IT "Italy"
 dependencies:
   #hl7.fhir.it.base: current
   hl7.fhir.it.terminology: current
+  hl7.fhir.eu.laboratory: current
+  hl7.fhir.uv.ips: current
   hl7.fhir.extensions.r5: 4.0.1
   # hl7.fhir.it.cda2fhir: 0.1.0
+parameters: #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
+#  produce-jekyll-data: true
+
+  special-url:
+    - http://hl7.org/fhir/StructureDefinition/address-official
+    - http://hl7.it/fhir/StructureDefinition/composition-basedOn-order-or-requisition-it
+    - http://hl7.it/fhir/StructureDefinition/composition-dataenterer-it
+    - http://hl7.it/fhir/StructureDefinition/dataEnterer-time
+    - http://hl7.it/fhir/StructureDefinition/patient-codeableBirthPlace
+    - http://hl7.it/fhir/StructureDefinition/patient-occupation-it
+    - http://hl7.it/fhir/StructureDefinition/patient-qualification-it
+    - http://hl7.it/fhir/StructureDefinition/recordCertification
+    - http://hl7.it/fhir/StructureDefinition/address-dug
+    - http://hl7.it/fhir/StructureDefinition/information-recipient
 
 pages:
   index.md:

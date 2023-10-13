@@ -6,5 +6,6 @@ Description: "Denominazione Urbanistica Ufficiale."
 * ^status = #draft
 * ^context.type = #element
 * ^context.expression = "Address.line"
+* ^url = "http://hl7.it/fhir/StructureDefinition/address-dug"
 * value[x] only CodeableConcept
 * value[x] from istat-dug (extensible)

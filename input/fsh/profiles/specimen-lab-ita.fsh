@@ -1,9 +1,10 @@
 Profile: SpecimenRefertoLabIt
-Parent: Specimen
+Parent: $Specimen-eu-lab
 Id: specimen-it-lab
 Title: "Specimen - Lab Report"
 Description: "Descrive la risorsa Specimen per il campione nel dominio del Lab Report."
-* ^status = #draft
+/* * ^status = #draft */
+* insert SetFmmandStatusRule ( 1, draft )
 * . ^short = "Campione Referto di Laboratorio"
 * . ^definition = "Campione Referto di Laboratorio"
 * type from $tipo-campione-lab-it (preferred)

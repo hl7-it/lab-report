@@ -1,7 +1,9 @@
+// GC: Suggest to reoganzie the entries (not always included in the right block )
+
 //------Valueset------//
 Alias: $conf = http://terminology.hl7.org/ValueSet/v3-Confidentiality
 Alias: $sct = http://snomed.info/sct
-Alias: $LOINC = http://loinc.org
+Alias: $loinc = http://loinc.org
 Alias: $diagn-status = http://hl7.org/fhir/ValueSet/diagnostic-report-status
 Alias: $diagnosticreport-category = http://terminology.hl7.org/CodeSystem/v2-0074
 Alias: $diagnosticreport-category-valueset = http://hl7.org/fhir/ValueSet/diagnostic-service-sections 
@@ -26,6 +28,7 @@ Alias: $additivo-campione-it = http://terminology.hl7.it/ValueSet/additivo-campi
 Alias: $sezione-referto-laboratorio = http://terminology.hl7.it/ValueSet/sezione-referto-laboratorio
 Alias: $risultato-osservazione = http://terminology.hl7.it/ValueSet/risultato-osservazione
 Alias: $media-type = http://terminology.hl7.org/CodeSystem/media-type
+Alias: $results-laboratory-observations-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/results-laboratory-observations-uv-ips
 //------Profile------//
 Alias: $sct-device = http://hl7.org/fhir/ValueSet/device-type
 Alias: $observation-status = http://hl7.org/fhir/ValueSet/observation-status
@@ -57,6 +60,29 @@ Alias: $sct-method = http://hl7.org/fhir/ValueSet/observation-methods
 Alias: $MediaType = http://hl7.org/fhir/ValueSet/media-type
 Alias: $typeName-device = http://hl7.org/fhir/ValueSet/device-nametype
 Alias: $practitionerrole-code-lab-it = http://hl7.org/fhir/ValueSet/practitioner-role
+
+//-- HL7 EU Profiles
+Alias: $Observation-resultslab-eu-lab = http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab
+Alias: $Specimen-eu-lab = http://hl7.eu/fhir/laboratory/StructureDefinition/Specimen-eu-lab
+Alias: $Patient-eu-lab = http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab
+Alias: $Quantity-eu-lab = http://hl7.eu/fhir/laboratory/StructureDefinition/Quantity-eu-lab
+Alias: $Practitioner-eu-lab  = http://hl7.eu/fhir/laboratory/StructureDefinition/Practitioner-eu-lab 
+Alias: $PractitionerRole-eu-lab  = http://hl7.eu/fhir/laboratory/StructureDefinition/PractitionerRole-eu-lab
+Alias: $Organization-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips
+Alias: $Composition-eu-lab = http://hl7.eu/fhir/laboratory/StructureDefinition/Composition-eu-lab
+Alias: $Bundle-eu-lab = http://hl7.eu/fhir/laboratory/StructureDefinition/Bundle-eu-lab
+Alias: $DiagnosticReport-eu-lab = http://hl7.eu/fhir/laboratory/StructureDefinition/DiagnosticReport-eu-lab
+Alias: $ServiceRequest-eu-lab = http://hl7.eu/fhir/laboratory/StructureDefinition/ServiceRequest-eu-lab
+Alias: $Specimen-additive-substance-eu-lab = http://hl7.eu/fhir/laboratory/StructureDefinition/specimen-additive-substance-eu-lab
+
+
+Alias: $CodeableConcept-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips
+Alias: $SD-data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
+
+Alias: $Range-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Range-uv-ips
+Alias: $Ratio-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Ratio-uv-ips
+Alias: $Quantity-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Quantity-uv-ips
+
 //---Example
 Alias: $serviceRequest-category = http://example.it/FHIR/schema/serviceRequest-category
 Alias: $servicerequest-lab = http://example.it/FHIR/schema/servicerequest-englab
@@ -71,3 +97,4 @@ Alias: $sequelTo = http://hl7.org/fhir/StructureDefinition/observation-sequelTo
 Alias: $diagnostic-report-composition-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition
 //---ClinicalDocument
 Alias: $clinical-document = http://hl7.org/fhir/StructureDefinition/clinicaldocument
+Alias: $CodeableConcept-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips

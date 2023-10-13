@@ -6,4 +6,5 @@ Description: "Codice comune e/o stato di nascita."
 * ^status = #draft
 * ^context.type = #element
 * ^context.expression = "Patient"
+* ^url = "http://hl7.it/fhir/StructureDefinition/patient-codeableBirthPlace"
 * value[x] only CodeableConcept
