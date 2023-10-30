@@ -10,17 +10,17 @@ Description: "Esempio di un PractitionerRole: medico in ematologia clinica press
 
 * active = true
 
-// * practitioner.type = "Practitioner"
-// * practitioner.identifier.use = #official
-// * practitioner.identifier.system = "http://hl7.it/sid/codiceFiscale" 
-// * practitioner.identifier.value = "MDCPRV80A01H501G"
-// * practitioner.display = "Medico Prova"
+
+
+
+
+
 * practitioner = Reference(Practitioner-Lab-Esempio)
 
-// * organization.display = "Policlinico di Roma"
-// * organization.type = "Organization"
-// * organization.identifier.system = "http://hl7.it/sid/fls"
-// * organization.identifier[0].value = "120201"
+
+
+
+
 * organization = Reference(Organization-Lab-Esempio)
 
 * code.coding.system = $sct

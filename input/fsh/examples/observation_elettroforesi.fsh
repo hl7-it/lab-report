@@ -8,9 +8,9 @@ Description: "Esempio di un'osservazione: rilevazione di albumina da elettrofore
 * category[=][laboratory].coding.system = "http://terminology.hl7.org/CodeSystem/observation-category"
 * category[=][laboratory].coding.display = "Laboratory"
 
-// * category[+][specialita-laboratory].coding.code = #26436-6	
-// * category[=][specialita-laboratory].coding.system = "http://loinc.org"
-// * category[=][specialita-laboratory].coding.display = "Laboratory studies (set)"
+
+
+
 
 * status = #final
 

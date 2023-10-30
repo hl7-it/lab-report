@@ -3,7 +3,7 @@ Parent: $Specimen-eu-lab
 Id: specimen-it-lab
 Title: "Specimen - Lab Report"
 Description: "Descrive la risorsa Specimen per il campione nel dominio del Lab Report."
-/* * ^status = #draft */
+
 * insert SetFmmandStatusRule ( 1, draft )
 * . ^short = "Campione Referto di Laboratorio"
 * . ^definition = "Campione Referto di Laboratorio"
@@ -18,6 +18,6 @@ Description: "Descrive la risorsa Specimen per il campione nel dominio del Lab R
 * container.type from campione-container-lab-it (preferred)
 * container.type ^short = "Tipo di dispositivo utilizzato per il contenere il campione."
 
-// * subject 1..
+
 * subject ^short = "Soggetto da cui è stato prelevato il campione."
 * subject only Reference(patient-it-lab)

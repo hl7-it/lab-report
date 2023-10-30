@@ -8,14 +8,6 @@ RuleSet: SetFmmandStatusRule ( fmm, status )
 
 
 RuleSet: ReportTypeRule (element)
-// constraints have to be defined in sushi as "Invariant"
-// no more needed here, moved to the build
-/* * {element} 
-  * ^constraint.key = "labRpt-code"
-  * ^constraint.severity = #warning
-  * ^constraint.human = "DiagnosticReport.code e Composition.type devono essere allineati." */
-
-//* {element} = $loinc#11502-2 
 * {element} 1..
   * ^constraint.key = "labRpt-code"
   * ^short = "Referto di Laboratorio"
@@ -24,19 +16,13 @@ RuleSet: ReportTypeRule (element)
 
 RuleSet: ReportCategoryRule
 * category 
-/*   * ^constraint.key = "labRpt-category"
-  * ^constraint.severity = #warning
-  * ^constraint.human = "DiagnosticReport.category e Composition.category  devono essere allineati." */
   * ^constraint.key = "labRpt-category"
   * ^short = "Report Category"
   * ^definition = "Specifies the Report Category: usually Laboratory"
   * ^comment = "DiagnosticReport.category e Composition.category  devono essere allineati."
 
 RuleSet: ReportAuthorRule
-/* * ^constraint.key = "labRpt-author"
-* ^constraint.severity = #warning
-* ^constraint.human = "Se DiagnosticReport.resultsInterpreter esiste, anche Composition.author deve essere valorizzato. Altrimenti DiagnosticReport.performer dovrebbe essere un autore."
- */
+
 * ^constraint.key = "labRpt-author"
 * ^comment = "Se DiagnosticReport.resultsInterpreter esiste, anche Composition.author deve essere valorizzato. Altrimenti DiagnosticReport.performer dovrebbe essere un autore."
 
@@ -45,16 +31,10 @@ RuleSet: ReportStatusRule
   * ^constraint.key = "labRpt-status"
   * ^short = "Stato del Referto" 
   * ^comment = "DiagnosticReport.status e Composition.status devono essere coerenti, vedi http://hl7.eu/fhir/laboratory/ConceptMap/ConceptMap-eu-diagRptStatus2CompStatus per il mapping."
-  /* 
-  * ^constraint.key = "labRpt-status"
-  * ^constraint.severity = #warning
-  * ^constraint.human = "DiagnosticReport.status e Composition.status devono essere allineati." */
+
 
 RuleSet: ReportEncounterRule
-* encounter only Reference (encounter-it-lab)
-/*   * ^constraint.key = "labRpt-enc"
-  * ^constraint.severity = #warning
-  * ^constraint.human = "DiagnosticReport.encounter e Composition.encounter devono essere allineati."  */  
+* encounter only Reference (encounter-it-lab) 
   * ^constraint.key = "labRpt-enc"
   * ^short = "The healthcare event which this Laboratory Report is about (when test ordered)."
   * ^definition = """The healthcare event (e.g. a patient and healthcare provider interaction) which this DiagnosticReport is about."""
@@ -65,9 +45,6 @@ RuleSet: ReportEncounterRule
 RuleSet: ReportSubjectRule
 * subject 1..
 * subject only Reference (patient-it-lab)
-/*   * ^constraint.key = "labRpt-subject"
-  * ^constraint.severity = #warning
-  * ^constraint.human = "DiagnosticReport.subject e Composition.subject devono essere allineati." */
   * ^constraint.key = "labRpt-subject"
   * ^short = "Who and/or what this report is about"
   * ^definition = "Who or what this report is about. The report can be about a human patient, a living subject, a device (e.g. a machine), a location or even a group of subjects (such as a document about a herd of livestock, or a set of patients that share a common exposure)."
@@ -75,11 +52,7 @@ RuleSet: ReportSubjectRule
   
 RuleSet: ReportIdentifierRule
 * identifier 1..1
-  * ^short = "Identificatore indipendente dalla versione."
-/*   * ^constraint.key = "labRpt-id"
-  * ^constraint.severity = #warning
-  * ^constraint.human = "DiagnosticReport.identifier e Composition.identifier devono essere allineati."
- */  
+  * ^short = "Identificatore indipendente dalla versione." 
   * ^constraint.key = "labRpt-id"
   * ^definition = "Identifiers assigned to this Laboratory Report by the performer or other systems. It shall be common to several report versions"
   * ^comment = "Composition.identifier DEVE essere uguale ad uno dei DiagnosticReport.identifier, se ne esiste almeno uno."

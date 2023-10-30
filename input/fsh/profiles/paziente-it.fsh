@@ -4,11 +4,9 @@ Id: patient-it-lab
 Title: "Patient - Lab Report"
 Description: "Descrive come rappresentare le informazioni del paziente nei documenti FHIR."
 * . ^short = "Patient Referto di Laboratorio"
-/* * ^version = "0.0.1" */
+
 * ^status = #draft
 * ^experimental = false
-/* * ^date = "2023-03-08T16:43:56.519+01:00"
-* .   */
 * insert SetFmmandStatusRule ( 1, draft )
 * insert ImposeProfile ( $Patient-eu-lab )
 
@@ -105,7 +103,7 @@ Description: "Descrive come rappresentare le informazioni del paziente nei docum
 * name ^constraint.expression = "family.exists() or given.exists()"
 * name ^constraint.xpath = "f:given or f:family" 
 * name ^constraint.source = Canonical(PatientRefertoLabIt)
-// * name ^constraint.source = Canonical(PatientRefertoLabIt) //"http://hl7.org/fhir/StructureDefinition/Patient"
+
 * name.extension contains http://hl7.org/fhir/StructureDefinition/data-absent-reason named name-absent-reason 0..*
 * name.extension[name-absent-reason] ^binding.strength = #example
 * name.extension[name-absent-reason] ^binding.valueSet = $data-absent-reason
@@ -117,9 +115,9 @@ Description: "Descrive come rappresentare le informazioni del paziente nei docum
 * managingOrganization ^short = "Organizzazione a cui è lasciata la custodia del dei dati del paziente."
 * managingOrganization only Reference(organization-it-lab)
 * address only Address-it
-* generalPractitioner  
+  
 * generalPractitioner ^slicing.discriminator.type = #profile
-* generalPractitioner ^slicing.discriminator.path = "$this"
+* generalPractitioner ^slicing.discriminator.path = "$this.resolve()"
 * generalPractitioner ^slicing.rules = #open
 * generalPractitioner ^short = "Principale fornitore di cure del paziente."
 * generalPractitioner contains
@@ -131,7 +129,7 @@ Description: "Descrive come rappresentare le informazioni del paziente nei docum
 * generalPractitioner[mmgPls] ^short = "Reference al MMG/PLS."
 * generalPractitioner[mmgPls] only Reference(PractitionerRefertoLabIt)
 * generalPractitioner[aziendaAssistenza] ^short = "Reference all'azienda che assiste il paziente."
-* generalPractitioner[aziendaAssistenza] only Reference(organizationOperatore-it-lab)
+* generalPractitioner[aziendaAssistenza] only Reference(OrganizationOperatoreSanitarioRefertoLabIt)
 
 
 Invariant: pat-id-cf-1
@@ -140,8 +138,3 @@ Severity: #error
 Expression: "matches('^[A-Za-z]{6}[0-9LMNPQRSTUV]{2}[A-Za-z]{1}[0-9LMNPQRSTUV]{2}[A-Za-z]{1}[0-9LMNPQRSTUV]{3}[A-Za-z]{1}$')"
 XPath: "matches(@value,'^[A-Za-z]{6}[0-9LMNPQRSTUV]{2}[A-Za-z]{1}[0-9LMNPQRSTUV]{2}[A-Za-z]{1}[0-9LMNPQRSTUV]{3}[A-Za-z]{1}$')"
 
-// Invariant: it-pat-1
-// Description: "Patient.name.given o Patient.name.family o entrambi DEVONO essere presenti"
-// Severity: #error
-// Expression: "family.exists() or given.exists()"
-// XPath: "f:given or f:family"

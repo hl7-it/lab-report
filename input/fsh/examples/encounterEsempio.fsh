@@ -10,16 +10,16 @@ Usage: #example
 * class.code = #AMB
 * class.display = "ambulatory"
 * subject = Reference(Paziente-SSN)
-// * subject.type = "Patient"
-// * subject.identifier.system = "http://hl7.it/sid/codiceFiscale"
-// * subject.identifier.value = "RSSMRA71E01F205E"
+
+
+
 
 * period.start = "2023-02-25T11:45:00+01:00"
 * period.end = "2023-02-25T12:45:00+01:00"
 
-// * location.location.type = "Location"
-// * location.location.identifier.use = #usual
-// * location.location.identifier.value = "123456"
+
+
+
 * location.location = Reference(Location-Lab-Esempio)
 
 * basedOn = Reference(ServiceRequest-Lab-Esempio)

@@ -3,9 +3,6 @@ Parent: Address
 Id: Address-it
 Title: "Address - ITA"
 Description: "Descrizione di Address con parti addizionali specifiche per gli indirizzi italiani. Questo profilo struttura l'elemento  Address.line in più parti, consente la codifica di alcune di queste parti e supporta la caratterizzazine degli indirizzi di tipo Residenza. Questa prima versione è ispirata al data type Address Olandese."
-/* * ^version = "0.0.1" */
-/* * ^status = #draft */
-/* * ^copyright = "CC0" */
 * insert SetFmmandStatusRule ( 1, draft )
 * . ^short = "Indirizzo fisico o postale"
 * . ^definition = "Esiste una varietà di formati di indirizzi postali definiti in tutto il mondo. Questo profilo (Address-it-base) estende il datatype base Address includendo una serie di informazioni rilevanti per esprimere gli indirizzi in Italia. \r \n \r \n Un Address-it-base è un indirizzo FHIR valido; i sistemi che non supportano le estensioni utilizzate saranno in grado comunque di eseguire il rendering e lavorare con un XXXX. \r \n \r \n Un indirizzo rende alcune parti di indirizzo comunicabili separatamente. Queste parti sono necessarie in alcuni scenari d'uso italiani, ma potrebbero non avere valore per i sistemi internazionali quando le informazioni vengono inviate all'estero."
@@ -61,7 +58,6 @@ Description: "Descrizione di Address con parti addizionali specifiche per gli in
     $iso21090-SC-coding named codiceRegione 0..1
 * state.extension[codiceRegione] ^sliceName = "codiceRegione"
 * state.extension[codiceRegione] ^short = "Codice Regione"
-//* postalCode obeys it-postal-code-pattern
 * postalCode ^comment = "I codici postali italiani hanno un pattern '[1,9]{4}'."
 * postalCode ^alias[0] = "CAP"
 * postalCode ^alias[+] = "postcode"
@@ -71,19 +67,8 @@ Description: "Descrizione di Address con parti addizionali specifiche per gli in
 * postalCode ^constraint.expression = "matches('[0-9]{5}')"
 * postalCode ^constraint.xpath = "matches(@value,'[0-9]{5}')"
 * postalCode ^constraint.source = Canonical(Address-it) 
-// * country ^short = "Stato"
+
 * country.extension contains
     $iso21090-SC-coding named codiceStato 0..1
 * country.extension[codiceStato] ^sliceName = "codiceStato"
 * country.extension[codiceStato] ^short = "Codice Stato"
-
-// Invariant: it-postal-code-pattern
-// Description: "I codici postali italiani hanno un pattern 'nnnnn' (n intero)"
-// Severity: #error
-// Expression: "(country in 'it' | 'ita' | 'italia' | 'italy').not() or matches('^[0-9]{4}')"
-// XPath: "not(../f:country[lower-case(@value)=('it','ita','italia', 'italy')]) or matches(@value,'^[0-9]{4}')"
-
-// Invariant: it-address-official
-// Description: "Se Address rappresenta la residenza allora city e line devono essere inclusi"
-// Severity: #error
-// Expression: "extension.where(url = 'http://hl7.org/fhir/StructureDefinition/address-official').valueBoolean.where(true).empty() or ( line.exists() and city.exists() )"

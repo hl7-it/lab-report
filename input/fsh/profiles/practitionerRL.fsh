@@ -7,8 +7,8 @@ Description: "Descrive la risorsa Practitioner per il dominio di Lab Report."
 * insert SetFmmandStatusRule ( 1, draft )
 * insert ImposeProfile($Practitioner-eu-lab)
 //-------------------------------------------------------------------------------------------
-* identifier // add a slice for the fiscal code
-* identifier ^short = "Identificativo dell'operatore sanitario" //
+* identifier 
+* identifier ^short = "Identificativo dell'operatore sanitario" 
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "$this"
 * identifier ^slicing.rules = #open
@@ -16,6 +16,6 @@ Description: "Descrive la risorsa Practitioner per il dominio di Lab Report."
 * identifier contains codiceFiscale  0..1
 * identifier[codiceFiscale]
 * identifier[codiceFiscale] ^short = "Codice fiscale dell'operatore sanitario."
-* identifier[codiceFiscale] ^patternIdentifier.system = "http://hl7.it/sid/codiceFiscale" // pattern
+* identifier[codiceFiscale] ^patternIdentifier.system = "http://hl7.it/sid/codiceFiscale" 
 * name 1..*
 * name ^short = "Nome dell'operatore sanitario: include le informazioni minime per descrivere un operatore sanitario"

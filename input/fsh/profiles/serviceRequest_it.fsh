@@ -1,19 +1,14 @@
 Profile: ServiceRequestRefertoLabIt 
-Parent: $ServiceRequest-eu-lab  // ServiceRequest
+Parent: $ServiceRequest-eu-lab  
 Id: servicerequest-it-lab
 Title: "ServiceRequest - Lab Report"
 Description: "Descrive la risorsa ServiceRequest che genera l'incontro del Lab Report."
 * . ^short = "ServiceRequest Referto di Laboratorio"
-/* * ^version = "0.0.1" */
-/* * ^status = #draft
-* ^experimental = true */
-/* * ^date = "2023-03-09T16:43:56.519+01:00"
-* ^publisher = "HL7 Italia"
-* ^copyright = "HL7 Italia" */
+
 * insert SetFmmandStatusRule ( 1, draft )
 * code 1..
 * code from LabOrderCodes (preferred)
-//* code ^short = "codice test richiesti"// TOO GENERIC FOR  A LAB ORDER ! from http://hl7.org/fhir/ValueSet/procedure-code (example)
+
 * identifier ^short = "Identificativo assegnato all'ordine."
 * identifier 1..*  
 * priority ^short = "Descrizione attributo: Priorità della richiesta. Possibili valori: routine | urgent | asap | stat"
@@ -30,5 +25,5 @@ Description: "Descrive la risorsa ServiceRequest che genera l'incontro del Lab R
 * reasonCode ^short = "Quesito diagnostico associato alla richiesta."
 * specimen ^short = "Reference usata solo se il campione cui punta la richiesta è già stato prelevato ed esiste."
 * specimen only Reference(specimen-it-lab)
-* intent ^short = "Descrizione attributo: Indica lo scopo associato ad una richiesta. Possibili valori: proposal | plan | directive | order | original-order | reflex-order | filler-order | instance-order | option "
+* intent ^short = "Descrizione attributo: Indica lo scopo associato ad una richiesta. Possibili valori: proposal | plan | directive | order | original-order | reflex-order | filler-order | instance-order | option"
 * intent from  $intent-code

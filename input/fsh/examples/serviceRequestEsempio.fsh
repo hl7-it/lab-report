@@ -23,9 +23,9 @@ Description: "Esempio di richiesta: prestazione richiesta facente parte di un'au
 * code.coding.code = #5357009
 * code.coding.display = "Leukocyte poor blood preparation"
 * subject = Reference(Paziente-SSN) //$patient-url
-// * subject.type = "Patient"
-// * subject.identifier.system = "http://hl7.it/sid/codiceFiscale"
-// * subject.identifier.value = "RSSMRA71E01F205E"
+
+
+
 
 * priority = #routine
 

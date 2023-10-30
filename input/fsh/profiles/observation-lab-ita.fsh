@@ -10,12 +10,12 @@ Description: "Descrive come rappresentare la risorsa Observation per le rilevazi
 * code ^short = "Tipo di osservazione tramite codice."
 * status from $observation-status (required)
 * status ^short = "Descrizione attributo: Stato dell'osservazione. Possibili valori: registered | preliminary | final | amended +"
-// * category ^slicing.discriminator.type = #pattern
-// * category ^slicing.discriminator.path = "$this.coding.system"
-// * category ^slicing.rules = #open 
+
+
+
 * category ^short = "Codice che classifica il tipo di osservazione."
 * category ^definition = "La categoria di osservazione può definire la classificazione tramite diversi livelli di dettaglio, a partire da laboratory."
-// * category contains 
+
 //     laboratory 1..1 and
 //     specialita-laboratory 0..*
 * category[laboratory] ^short = "Classificazione del tipo di osservazione."
@@ -70,8 +70,8 @@ Description: "Descrive come rappresentare la risorsa Observation per le rilevazi
 * device ^short = "Dispositivo utilizzato per ottenere l'osservazione."
 * device only Reference(device-it-lab or DeviceMetric)
 * method ^short = "Metodo di rilevazione dell'osservazione."
-// * method from $sct-method (example)
-//  the binding is preferred in the EU guide
+
+
 * method from $sct-method (preferred)
 * bodySite ^short = "Sito corporeo dell'osservazione."
 * derivedFrom only Reference(observation-it-lab or MediaRefertoLabIt)

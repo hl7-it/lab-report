@@ -16,3 +16,4 @@ Description: "Esempio di campione: sangue prelevato dall'avambraccio del pazient
 * container.type.coding.code = #706052002
 * container.type.coding.system = "http://www.snomed.org/"
 * container.type.coding.display = "Evacuated blood collection tube"
+* container.additiveReference = Reference(Specimen-Additive-Substance-Lab-Esempio)
