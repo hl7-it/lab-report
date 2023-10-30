@@ -33,3 +33,6 @@ Tutti gli esempi utilizzati in questa Implementation Guide sono disponibili per 
 - [XML](examples.xml.zip)
 - [JSON](examples.json.zip)
 - [TTL](examples.ttl.zip)
+
+### Global Profile Definitions
+{% include globals-table.xhtml %}

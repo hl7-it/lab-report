@@ -4,6 +4,8 @@ Title:       "DataEnterer"
 Description: "Persona o dispositivo che trasforma un testo dettato nel documento FHIR."
 //-------------------------------------------------------------------------------------------
 * ^url = "http://hl7.it/fhir/StructureDefinition/composition-dataenterer-it"
+* ^context.type = #element
+* ^context.expression = "Composition"
 * extension contains
     dataEnterer 1..1 and
     $ext-dataEnterer-time named tempoCompilazione 0..1

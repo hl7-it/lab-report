@@ -3,6 +3,8 @@ InstanceOf: practitioner-it-lab
 Usage: #example
 Description: "Esempio di un professionista sanitario: medico."
 
+* id = "dc5842a1-83b6-43c7-b063-75ae989b803c"
+
 * identifier.use = #official
 * identifier.system = "http://hl7.it/sid/codiceFiscale" 
 * identifier.value = "MDCPRV80A01H501G"

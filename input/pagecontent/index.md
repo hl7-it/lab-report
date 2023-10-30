@@ -24,6 +24,12 @@ Questo approccio consente inoltre agli implementatori di accedere facilmente all
 ### Dipendenze
 {% include dependency-table.xhtml %}
 
+### Details
+#### Cross-Version Analysis
+{% include cross-version-analysis.xhtml %}
+#### Dependency Table
+{% include dependency-table.xhtml %}
+
 ### Autori e contributori
 
 <table>
@@ -74,3 +80,6 @@ Questo approccio consente inoltre agli implementatori di accedere facilmente all
 </tr>
 </tbody>
 </table>
+
+### Intellectual Property Statements
+{% include ip-statements.xhtml %}

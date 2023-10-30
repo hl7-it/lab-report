@@ -12,6 +12,8 @@ Description: "Estensione per gestire il Titolo di studio del paziente come Codea
 * . ^short = "Titolo di Studio del paziente"
 * . ^definition = "Estensione per gestire il Titolo di studio del paziente come CodeableConcept."
 * ^url = "http://hl7.it/fhir/StructureDefinition/patient-qualification-it"
+* ^context.type = #element
+* ^context.expression = "Patient"
 * value[x] only CodeableConcept
 * valueCodeableConcept 0..1
 * valueCodeableConcept from $istat-titoloStudio (example)
