@@ -3,12 +3,7 @@ Parent: Encounter
 Id: encounter-it-lab
 Title: "Encounter - Lab Report"
 Description: "Profilo della risorsa Encounter utile a descrivere i dati dell'incontro per la richiesta specifica nel dominio di Referto di Laboratorio."
-/* * ^version = "0.0.1"
-* ^status = #draft
-* ^experimental = true
-* ^date = "2023-03-09T16:43:56.519+01:00"
-* ^publisher = "HL7 Italia"
-* ^copyright = "HL7 Italia" */
+
 * insert SetFmmandStatusRule ( 1, draft )
 * . ^short = "Encounter Referto di Laboratorio"
 

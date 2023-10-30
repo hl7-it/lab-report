@@ -30,21 +30,8 @@ Description: "Descrizione della risorsa Bundle per il contesto italiano del Lab 
 * entry.response 0..0
 * entry ^short = "Risorse contenute nel documento FHIR."
 
-/* * entry 1.. */
 * entry contains
-  //  composition 1..1 and
-  //  practitionerRole 0..* and
-  //  practitioner 0..* and
-  //  organization 0..* and
-    // patient 1..1 and 
-  //  encounter 0..1 and
-  //  location 0..* and
-  //  serviceRequest 0..* and
-  //  diagnosticReport 1..1 and
-  //  observation 0..* and
-  //  specimen 0..* and 
-   media 0..* //and
- //   observationGroup 0..*
+   media 0..* 
 
 * entry[composition].resource only composition-it-lab
 * entry[practitionerRole].resource only practitionerrole-it-lab
@@ -59,8 +46,6 @@ Description: "Descrizione della risorsa Bundle per il contesto italiano del Lab 
 * entry[observation].resource only observation-doc-it-lab  
 * entry[specimen].resource only specimen-it-lab
 * entry[media].resource only media-it-lab
-//* entry[observationGroup].resource only observation-grouping-it-lab
-
 
 
 * signature ^short = "Firma digitale del documento."

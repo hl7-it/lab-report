@@ -9,7 +9,7 @@ Alias: $diagnosticreport-category = http://terminology.hl7.org/CodeSystem/v2-007
 Alias: $diagnosticreport-category-valueset = http://hl7.org/fhir/ValueSet/diagnostic-service-sections 
 Alias: $ucum = https://ucum.org
 Alias: $istat-titoloStudio = http://terminology.hl7.it/ValueSet/istat-titoloStudio
-Alias: $istat-professione = http://terminology.hl7.it/ValueSet/istat-professione
+Alias: $istat-professione = http://terminology.hl7.it/ValueSet/istat-professione   
 Alias: $istat-cittadinanza = http://terminology.hl7.it/ValueSet/istat-cittadinanza
 Alias: $istat-luogoNascita = http://terminology.hl7.it/ValueSet/istat-luogoNascita
 Alias: $practitionerRole-code = http://terminology.hl7.org/CodeSystem/practitioner-role
@@ -60,7 +60,7 @@ Alias: $sct-method = http://hl7.org/fhir/ValueSet/observation-methods
 Alias: $MediaType = http://hl7.org/fhir/ValueSet/media-type
 Alias: $typeName-device = http://hl7.org/fhir/ValueSet/device-nametype
 Alias: $practitionerrole-code-lab-it = http://hl7.org/fhir/ValueSet/practitioner-role
-
+Alias: CS_Estero = http://terminology.hl7.it/sid/istat-unitaAmministrativeTerritorialiEstere
 //-- HL7 EU Profiles
 Alias: $Observation-resultslab-eu-lab = http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab
 Alias: $Specimen-eu-lab = http://hl7.eu/fhir/laboratory/StructureDefinition/Specimen-eu-lab
@@ -98,3 +98,6 @@ Alias: $diagnostic-report-composition-r5 = http://hl7.org/fhir/5.0/StructureDefi
 //---ClinicalDocument
 Alias: $clinical-document = http://hl7.org/fhir/StructureDefinition/clinicaldocument
 Alias: $CodeableConcept-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips
+//---EU
+Alias: $basedOnOrder = http://hl7.eu/fhir/StructureDefinition/composition-basedOn-order-or-requisition
+Alias: $informationRecipient = http://hl7.eu/fhir/StructureDefinition/information-recipient

@@ -10,15 +10,6 @@ Description: "Profilo della risorsa PractitionerRole per la descrizione delle in
 
 * . ^short = "PractitionerRole Referto di Laboratorio"
 
-/* /* * ^version = "0.0.1" */
-/* 
-* ^status = #draft
-
-* ^experimental = true */ 
-
-/* * ^publisher = "HL7 Italia"
-
-* ^copyright = "HL7 Italia" */
 * insert SetFmmandStatusRule ( 1, draft )
 * insert ImposeProfile($PractitionerRole-eu-lab)
 

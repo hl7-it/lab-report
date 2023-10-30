@@ -7,9 +7,9 @@ Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue a d
 * category[=][laboratory].coding.system = "http://terminology.hl7.org/CodeSystem/observation-category"
 * category[=][laboratory].coding.display = "Laboratory"
 
-// * category[+][specialita-laboratory].coding.code = #18723-7
-// * category[=][specialita-laboratory].coding.system = "http://loinc.org"
-// * category[=][specialita-laboratory].coding.display = "Hematology studies (set)"
+
+
+
 
 * status = #final
 
@@ -36,9 +36,9 @@ Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue dop
 * category[=][laboratory].coding.system = "http://terminology.hl7.org/CodeSystem/observation-category"
 * category[=][laboratory].coding.display = "Laboratory"
 
-// * category[+][specialita-laboratory].coding.code = #18723-7
-// * category[=][specialita-laboratory].coding.system = "http://loinc.org"
-// * category[=][specialita-laboratory].coding.display = "Hematology studies (set)"
+
+
+
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
 * status = #final
 
@@ -51,9 +51,9 @@ Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue dop
 * valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.value = 120
 
-// * subject.type = "Patient"
-// * subject.identifier.system = "http://hl7.it/sid/codiceFiscale"
-// * subject.identifier.value = "RSSMRA71E01F205E"
+
+
+
 * subject = Reference(Paziente-SSN)
 * extension.valueReference = Reference(Observation-TimedTest-T0-Lab-Esempio)
 * extension.url = $sequelTo
@@ -69,9 +69,9 @@ Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue dop
 * category[=][laboratory].coding.system = "http://terminology.hl7.org/CodeSystem/observation-category"
 * category[=][laboratory].coding.display = "Laboratory"
 
-// * category[+][specialita-laboratory].coding.code = #18723-7
-// * category[=][specialita-laboratory].coding.system = "http://loinc.org"
-// * category[=][specialita-laboratory].coding.display = "Hematology studies (set)"
+
+
+
 
 * status = #final
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
@@ -84,9 +84,9 @@ Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue dop
 * valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.value = 87
 
-// * subject.type = "Patient"
-// * subject.identifier.system = "http://hl7.it/sid/codiceFiscale"
-// * subject.identifier.value = "RSSMRA71E01F205E"
+
+
+
 * subject = Reference(Paziente-SSN)
 * extension.valueReference = Reference(Observation-TimedTest-T1-Lab-Esempio)
 * extension.url = $sequelTo
@@ -103,9 +103,9 @@ Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue dop
 * category[=][laboratory].coding.system = "http://terminology.hl7.org/CodeSystem/observation-category"
 * category[=][laboratory].coding.display = "Laboratory"
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
-// * category[+][specialita-laboratory].coding.code = #18723-7
-// * category[=][specialita-laboratory].coding.system = "http://loinc.org"
-// * category[=][specialita-laboratory].coding.display = "Hematology studies (set)"
+
+
+
 
 * status = #final
 
@@ -118,9 +118,9 @@ Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue dop
 * valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.value = 70
 
-// * subject.type = "Patient"
-// * subject.identifier.system = "http://hl7.it/sid/codiceFiscale"
-// * subject.identifier.value = "RSSMRA71E01F205E"
+
+
+
 * subject = Reference(Paziente-SSN)
 * extension.valueReference = Reference(Observation-TimedTest-T2-Lab-Esempio)
 * extension.url = $sequelTo
@@ -136,9 +136,9 @@ Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue dop
 * category[=][laboratory].coding.system = "http://terminology.hl7.org/CodeSystem/observation-category"
 * category[=][laboratory].coding.display = "Laboratory"
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
-// * category[+][specialita-laboratory].coding.code = #18723-7
-// * category[=][specialita-laboratory].coding.system = "http://loinc.org"
-// * category[=][specialita-laboratory].coding.display = "Hematology studies (set)"
+
+
+
 
 * status = #final
 
@@ -151,9 +151,9 @@ Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue dop
 * valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.value = 35
 
-// * subject.type = "Patient"
-// * subject.identifier.system = "http://hl7.it/sid/codiceFiscale"
-// * subject.identifier.value = "RSSMRA71E01F205E"
+
+
+
 * subject = Reference(Paziente-SSN)
 * extension.valueReference = Reference(Observation-TimedTest-T3-Lab-Esempio)
 * extension.url = $sequelTo

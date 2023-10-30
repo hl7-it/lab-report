@@ -1,29 +1,25 @@
 Profile: DiagnosticReportRefertoLabIt
-Parent: $DiagnosticReport-eu-lab //DiagnosticReport
+Parent: $DiagnosticReport-eu-lab 
 Id: diagnosticreport-it-lab
 Title: "DiagnosticReport - Lab Report"
 Description: "Descrizione della risorsa DiagnosticReport per la descrizione delle informazioni cliniche del dominio di Lab Report."
 
 * insert SetFmmandStatusRule ( 1, draft )
 
-/* * ^publisher = "HL7 Italia"
-* ^copyright = "HL7 Italia" */
 * . ^short = "DiagnosticReport Referto di Laboratorio"
 * . ^definition = "Laboratory Report DiagnosticReport"
-//* extension contains DiagnosticReportReference named DiagnosticReportCompositionR5 1..1
 
-//* extension contains $diagnostic-report-composition-r5 named DiagnosticReportCompositionR5 1..1
+* extension contains $diagnostic-report-composition-r5 named DiagnosticReportCompositionR5 1..1
 * extension[DiagnosticReportCompositionR5] ^short = "Estensione di FHIR R5 per legare la DiagnosticReport a Composition."
 * extension[DiagnosticReportCompositionR5].value[x] ^short = "Reference a Composition."
-// // * extension[DiagnosticReportCompositionR5].value[x] 1..1 */
-//* extension[DiagnosticReportCompositionR5].value[x] only Reference(composition-it-lab)
+* extension[DiagnosticReportCompositionR5].value[x] only Reference(composition-it-lab)
 
 * basedOn only Reference (servicerequest-it-lab)
 * basedOn ^short = "Reference a una o più prestazioni richieste associate al referto."
 * category 0.. 
 * category ^short = "Categoria del servizio."
 * category ^definition = "Un codice che classifica la disciplina clinica, il reparto o il servizio diagnostico che ha creato il referto (es. cardiologia, biochimica, ematologia)."
-//* category from $diagnosticreport-category (example)
+
 * category ^constraint.source = Canonical(DiagnosticReportRefertoLabIt)
 * category from $diagnosticreport-category-valueset (example)
 
@@ -57,7 +53,7 @@ Description: "Descrizione della risorsa DiagnosticReport per la descrizione dell
 * code.coding.display ^short = "Descrizione del codice."
 * insert ReportTypeRule ( code )
 * code ^constraint.source = Canonical(DiagnosticReportRefertoLabIt)
-* result only Reference (observation-it-lab or observation-grouping-it-lab)
+* result only Reference (observation-it-lab) 
 * result ^short = "Osservazioni cliniche." 
 * imagingStudy 0..0 
 * media ^short = "Contenuto multimediale associate al DiagnosticReport."

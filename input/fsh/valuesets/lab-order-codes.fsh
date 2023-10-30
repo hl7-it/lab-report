@@ -2,7 +2,7 @@ ValueSet: LabOrderCodes
 Id: lab-orderCodes-it-lab
 Title: "Codice Richiesta esame di Laboratorio [LOINC]"
 Description: "Codice della richiesta per un esame di Laboratorio."
-//* ^experimental = false
+
 
 * insert LOINCCopyrightForVS
 * insert SetFmmandStatusRule ( 0, draft )

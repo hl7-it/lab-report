@@ -3,14 +3,9 @@ Parent: $Composition-eu-lab //$clinical-document
 Id: composition-it-lab
 Title: "Composition - Lab Report"
 Description: "Descrizione in tramite la risorsa Composition di header e body del Lab Report."
-/* * ^version = "0.0.1" */
-/* * ^status = #draft
-* ^experimental = true */
-/* * ^publisher = "HL7 Italia"
-* ^copyright = "HL7 Italia" */
+
 * insert SetFmmandStatusRule ( 1, draft )
 * . ^short = "Composition Referto di Laboratorio"
-
 
 * language = #it-IT
 * language 1..1  
@@ -20,20 +15,10 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 
 * extension[dataEnterer] ^short = "Persona o dispositivo che trasforma un testo dettato nel documento FHIR."
 
-// * extension contains CompositionBasedOnOrderOrRequisitionIt named basedOn-order-or-requisition-it 0..*
-// * extension[basedOn-order-or-requisition-it].valueReference only Reference(ServiceRequestRefertoLabIt)
-/* * extension contains InformationRecipient named information-recipient 0..* */
 * extension[information-recipient] ^short = "Professionisti sanitari che ricevono una copia del documento (es. MMG/PLS)."
 * category ^constraint.source = Canonical(CompositionRefertoLabIt)
 * insert ReportIdentifierRule
 * identifier ^constraint.source = Canonical(CompositionRefertoLabIt)
-//* identifier 1..1
-/** identifier ^short = "Identificatore indipendente dalla versione." */
-/* * identifier ^constraint.source = Canonical(CompositionRefertoLabIt) */
-// * type.coding.system = $loinc
-// * type.coding.code = #11502-2 
-// * type.coding.display = "Laboratory report"
-
 
 * insert ReportTypeRule ( type )
 * type ^short = "Tipo di Composition."
@@ -87,71 +72,45 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * relatesTo ^short = "Ulteriori risorse Composition correlate al documento."
 * relatesTo.target[x] ^short = "Riferimento alla risorsa Composition correlata."
 * relatesTo.target[x] only Reference 
-//* relatesTo obeys it-composition-1
 
-// * section ^slicing.discriminator[0].type = #exists
-// * section ^slicing.discriminator[0].path = "$this.section"
-// * section ^slicing.discriminator[+].type = #type
-// * section ^slicing.discriminator[=].path = "$this.entry.resolve()"
-// * section ^slicing.discriminator[+].type = #pattern
-// * section ^slicing.discriminator[=].path = "$this.code"
-// * section ^slicing.ordered = false
-// * section ^slicing.rules = #open 
+
 * section.title 1..
 * section.title ^short = "Titolo della sezione."
 * section.code 1..
 * insert ReportTypeRule ( type )
 * type ^constraint.source = Canonical(CompositionRefertoLabIt)
-/* * type ^constraint.source = Canonical(CompositionRefertoLabIt) */
 * section.code ^short = "Codice della sezione."
 
-// * section contains lab-no-subsections ..* 
+
 * section[lab-no-subsections] ^short = "Variante 1: questa sezione presenta la entry e il text obbligatori."
 * section[lab-no-subsections].text ^short = "Sintesi testuale della sezione, per l'interpretazione dell'utente."
-// * section[lab-no-subsections].text 1..1
-// * section[lab-no-subsections].section ..0
-// * section[lab-no-subsections].code 1..
+
 * section[lab-no-subsections].code from $sezione-referto-laboratorio (preferred)
 * section[lab-no-subsections].entry only Reference (observation-it-lab or observation-grouping-it-lab or observation-doc-it-lab) // Aligned with the DR Reference (observation-it-lab)
-// * section[lab-no-subsections].entry 1..*
 
-
-//* section contains lab-subsections ..* 
-// * section[lab-subsections] ^short = "Variante 2: questa sezione presenta una sottosezione e non prevede gli attributi entry e text."
-// * section[lab-subsections].code only $CodeableConcept-uv-ips // CodeableConcept
-// * section[lab-subsections].text 0..0
-// * section[lab-subsections].entry 0..0
-// * section[lab-subsections].code 1..
 * section[lab-subsections].code from $sezione-referto-laboratorio (preferred)
 * section[lab-subsections].section ^short = "Sottosezione strutturata della sezione principale."
-// * section[lab-subsections].section 1..
-//   * code 1..  
-//   * code only CodeableConcept
-//   * code from $sezione-referto-laboratorio (preferred)
+
 * text ^short = "Sintesi testuale della sezione, per l'interpretazione dell'utente."
-//   * entry 1..
+
 * section[lab-subsections].entry only Reference (observation-it-lab or observation-grouping-it-lab or observation-doc-it-lab) // Aligned with the DR Reference (observation-it-lab)
 * section[lab-subsections] ^short = "Variante 2: questa sezione presenta una sottosezione e non prevede l'attributo entry"
-// * section contains annotazioni ..*
+
 * section[annotations] ^short = "Commenti testuali"
 * section[annotations] ^definition = """Rappresentazione testuale dei commenti che accompagnano il referto, come suggerimenti per la valutazione, note tecniche del laboratorio, ecc."""
-//   * code = $loinc#48767-8 // (exactly) 
-//   * text 1.. 
 * section[annotations].text ^short = "Sintesi testuale della sezione, per l'interpretazione dell'utente."
-//   * section ..0 
 
 
 
 * insert ReportStatusRule
-// * category 1.. // add VS binding
+
 * category from $diagnosticreport-category-valueset (example)
 * insert ReportCategoryRule 
-// * type = $loinc#11502-2 // change to a VS binding
+
 * type from http://hl7.eu/fhir/laboratory/ValueSet/lab-reportType-eu-lab (preferred)
 
 * insert ReportTypeRule ( type )
 
-  // slice the subject tp cover the three cases of human ; non-human and mixed
 * insert ReportSubjectRule
 * insert ReportEncounterRule
 * author 1..
@@ -159,8 +118,4 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
   * ^definition = "Identifies who is responsible for the information in the Laboratory Report, not necessarily who typed it in."
   * insert ReportAuthorRule
 
-// Invariant: it-composition-1
-// Description: "relatesTo diventa obbligatorio per versioni della risorsa maggiori di 1"
-// Severity: #error
-// Expression: "version > 1"
 
