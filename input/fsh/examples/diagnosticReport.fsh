@@ -9,7 +9,8 @@ Description: "Esempio di un report diagnostico: report prodotto durante l'incont
 * identifier.value = "urn:uuid:10b545ea-725c-446d-9b95-8aeb444eddf3"
 * basedOn = Reference(ServiceRequest-Lab-Esempio)
 * status = #final
-* category = $diagnosticreport-category#HM "Hematology"
+// * category = $diagnosticreport-category#HM "Hematology"
+* category[studyType] = $loinc#18723-7 "Hematology studies (set)"
 * code = $loinc#11502-2 "Laboratory report"
 * subject = Reference(Paziente-SSN)
 * encounter = Reference(Encounter-Lab-Esempio)

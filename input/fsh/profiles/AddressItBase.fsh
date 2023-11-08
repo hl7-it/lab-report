@@ -9,8 +9,8 @@ Description: "Descrizione di Address con parti addizionali specifiche per gli in
 * . ^comment = "Nota: address è per indirizzi postali, non per la localizzazione fisica."
 * . ^alias[0] = "Indirizzo"
 * extension contains
-    address-official named residenza 0..1 and
-    recordCertification named certificazioneIndirizzo 0..*
+    OfficialAddress named residenza 0..1 and
+    ExtRecordCertification named certificazioneIndirizzo 0..*
 * extension[residenza] ^short = "Indica l'indirizzo di residenza"
 * extension[residenza] ^definition = "Indica se questo indirizzo è quello di residenza, come indirizzo 'ufficialmente registrato' address."
 * extension[certificazioneIndirizzo] ^short = "Certificazione Indirizzo"
@@ -18,7 +18,7 @@ Description: "Descrizione di Address con parti addizionali specifiche per gli in
 * line ^short = "Nome completo strada (e.g. Via Corta 1, interno 2)"
 * line.extension contains
     $iso21090-ADXP-streetName named odonimo 0..1 and
-    address-dug named dugCode 0..1 and
+    ExtDug named dugCode 0..1 and
     $iso21090-ADXP-streetNameBase named denominazioneUrbanisticaUfficiale 0..1 and
     $iso21090-ADXP-houseNumber named houseNumber 0..1 and
     $iso21090-ADXP-streetNameType named denominazioneUrbanisticaGenerica 0..1
@@ -58,17 +58,20 @@ Description: "Descrizione di Address con parti addizionali specifiche per gli in
     $iso21090-SC-coding named codiceRegione 0..1
 * state.extension[codiceRegione] ^sliceName = "codiceRegione"
 * state.extension[codiceRegione] ^short = "Codice Regione"
-* postalCode ^comment = "I codici postali italiani hanno un pattern '[1,9]{4}'."
-* postalCode ^alias[0] = "CAP"
-* postalCode ^alias[+] = "postcode"
-* postalCode ^condition = "it-postal-code-pattern"
-* postalCode ^constraint.key = "it-postal-code-pattern"
-* postalCode ^constraint.human = "I codici postali italiani hanno un pattern 'nnnnn' (n intero)"
-* postalCode ^constraint.expression = "matches('[0-9]{5}')"
-* postalCode ^constraint.xpath = "matches(@value,'[0-9]{5}')"
-/* * postalCode ^constraint.source = Canonical(Address-it)  */
+* postalCode obeys it-postal-code-pattern
+  * ^comment = "I codici postali italiani hanno un pattern '[1,9]{4}'."
+  * ^alias[0] = "CAP"
+  * ^alias[+] = "postcode"
+  
 
 * country.extension contains
     $iso21090-SC-coding named codiceStato 0..1
 * country.extension[codiceStato] ^sliceName = "codiceStato"
 * country.extension[codiceStato] ^short = "Codice Stato"
+
+// ====== Invariants ====
+Invariant: it-postal-code-pattern
+Description: "I codici postali italiani hanno un pattern 'nnnnn' (n intero)"
+Expression: "matches('[0-9]{5}')"
+XPath: "matches(@value,'[0-9]{5}')"
+Severity:    #error

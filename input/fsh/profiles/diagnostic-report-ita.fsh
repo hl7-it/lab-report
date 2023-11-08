@@ -33,26 +33,26 @@ Description: "Descrizione della risorsa DiagnosticReport per la descrizione dell
 * subject ^constraint.source = Canonical(DiagnosticReportRefertoLabIt) */
 /* * subject only Reference(PatientRefertoLabIt) */
 
-* identifier ^constraint.source = Canonical(DiagnosticReportRefertoLabIt)
+
 * status ^short = "Descrizione attributo: Stato del report clinico. Possibili valori: registered | partial | preliminary | modified | final | amended | corrected | appended | cancelled | entered-in-error | unknown"
 * status from $diagn-status (required)
-* status ^constraint.source = Canonical(DiagnosticReportRefertoLabIt)
+/* * status ^constraint.source = Canonical(DiagnosticReportRefertoLabIt) */
 * insert ReportStatusRule
 * encounter only Reference (EncounterRefertoLabIt) 
 * encounter ^short = "Evento sanitario a cui si riferisce il Referto di Laboratorio (es. al momento della prescrizione)."
-* encounter ^constraint.source = Canonical(DiagnosticReportRefertoLabIt)
+/* * encounter ^constraint.source = Canonical(DiagnosticReportRefertoLabIt) */
 * specimen only Reference (SpecimenRefertoLabIt)
 * specimen ^short = "Reference ai campioni su cui si basa DiagnosticReport."
 * performer only Reference(PractitionerRefertoLabIt or PractitionerRoleRefertoLabIt or OrganizationRefertoLabIt or CareTeam)
   * insert ReportAuthorRule
-* performer ^constraint.source = Canonical(DiagnosticReportRefertoLabIt)
+/* * performer ^constraint.source = Canonical(DiagnosticReportRefertoLabIt) */
 * performer ^short = "Persona o Organizzazione che partecipa all'evento clinico descritto."
 * performer ^definition = "Organizzazione o Persona che è responsabile del report; non è necessariamente l'autore dei dati atomici o l'entità che ha interpretato i risultati. "
 * code ^short = "Nome/codice della diagnostic report."
 * code.coding ^short = "Codice definito da un sistema terminologico."
 * code = $loinc#11502-2 "Laboratory report"
 * insert ReportTypeRule ( code )
-* code ^constraint.source = Canonical(DiagnosticReportRefertoLabIt)
+/* * code ^constraint.source = Canonical(DiagnosticReportRefertoLabIt) */
 * result only Reference (ObservationRefertoLabIt) 
 * result ^short = "Osservazioni cliniche." 
 * imagingStudy 0..0 

@@ -63,6 +63,7 @@ Alias: $MediaType = http://hl7.org/fhir/ValueSet/media-type
 Alias: $typeName-device = http://hl7.org/fhir/ValueSet/device-nametype
 Alias: $practitionerrole-code-lab-it = http://hl7.org/fhir/ValueSet/practitioner-role
 Alias: $v3-Confidentiality = http://terminology.hl7.org/CodeSystem/v3-Confidentiality
+Alias: $v3-SpecimenType = http://terminology.hl7.org/CodeSystem/v3-SpecimenType
 
 //-- HL7 EU Profiles
 Alias: $Observation-resultslab-eu-lab = http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab
@@ -98,6 +99,7 @@ Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation
 Alias: $ext-dataEnterer-time = dataEnterer-time
 Alias: $sequelTo = http://hl7.org/fhir/StructureDefinition/observation-sequelTo
 Alias: $diagnostic-report-composition-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition
+Alias: $patient-citizenship = http://hl7.org/fhir/StructureDefinition/patient-citizenship
 //---ClinicalDocument
 Alias: $clinical-document = http://hl7.org/fhir/StructureDefinition/clinicaldocument
 Alias: $CodeableConcept-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips

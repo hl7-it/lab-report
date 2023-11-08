@@ -14,20 +14,9 @@ Description: "Descrive come rappresentare la risorsa Observation per le rilevazi
 * category ^short = "Codice che classifica il tipo di osservazione."
 * category ^definition = "La categoria di osservazione può definire la classificazione tramite diversi livelli di dettaglio, a partire da laboratory."
 
-//     laboratory 1..1 and
-//     specialita-laboratory 0..*
-* category[laboratory] ^short = "Classificazione del tipo di osservazione."
-* category[laboratory].coding ^short = "Codice definito da un sistema terminologico."
-/* * category[laboratory].coding.system ^short = "Terminologia utilizzata." */
-/* * category[laboratory].coding.system = $observation-category
-* category[laboratory].coding.code = #laboratory */
-/* * category[laboratory].coding.code ^short = "Codice della terminologia per descrivere il dominio di laboratorio." */
-
-* category[specialty] ^short = "Codice o testo della specialità dell'esame di laboratorio."
-//* category[specialty] from $sezione-referto-laboratorio (preferred)
-/* * category[specialty].coding ^short = "Codice della terminologia per dettagliare la specialità di laboratorio"
-* category[specialty].coding.system ^short = "Terminologia utilizzata." */
-//* category[specialty].coding.system = $loinc
+* category[laboratory] ^short = "Indica genericamente che si rifeirsce as un esame di Laboratorio"
+* category[studyType] ^short = "Classificazione per tipo di studio"
+* category[specialty] ^short = "Classificazione per specialità"
 
 * subject 1..
 * subject ^short = "Soggetto della rilevazione clinica."

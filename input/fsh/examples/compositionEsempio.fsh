@@ -14,7 +14,8 @@ Description: "Esempio di una Composition: descrizione header e struttura body de
 * identifier.value = "urn:uuid:10b545ea-725c-446d-9b95-8aeb444eddf3"
 * identifier.assigner.display = "Regione Lazio"
 * status = #final
-* category[studyType] = $diagnosticreport-category#HM "Hematology"
+// * category[studyType] = $diagnosticreport-category#HM "Hematology"
+* category[studyType] = $loinc#18723-7 "Hematology studies (set)"
 * type = http://loinc.org#11502-2 "Laboratory report"
 * type.text = "Referto di laboratorio"
 * subject = Reference(Patient/8472931c-fbd0-437b-9ed1-4f66472c78b5)

@@ -26,4 +26,4 @@ Parent: $patient-birthPlace
 Id: birth-place-ita
 Title: "Address Birth Place"
 Description: "Definizione dell'indirizzo base per la descrizione del luogo di nascita."
-* value[x] only Address-it
+* value[x] only AddressItBase

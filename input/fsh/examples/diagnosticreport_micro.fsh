@@ -8,7 +8,7 @@ Usage: #example
 * identifier.value = "urn:uuid:bfcf00e2-3de9d419d27e"
 * type = #transaction
 * timestamp = "2023-02-25T14:30:00+01:00"
-* entry[+].fullUrl = "DiagnosticReport/56f19992-e73e-45b5-bbdd-6d9aeb60b15a" 
+* entry[+].fullUrl = "DiagnosticReport/82c40e48-8ed5-43bd-a990-ae9b16d2f641" 
 * entry[=].resource = DiagnosticReport-Lab-Esempio2
 * entry[=].request.method = #POST
 * entry[=].request.url = "/DiagnosticReport"
@@ -106,9 +106,10 @@ InstanceOf: diagnosticreport-it-lab
 Usage: #inline
 Description: "Esempio di un report diagnostico: report di un esame del sangue che mette in evidenza i risultati di microbiologia, con i collegamenti tra risultato - germe - antibiotico."
 Title: "DiagnosticReport - Esempio Laboratorio"
-* id = "56f19992-e73e-45b5-bbdd-6d9aeb60b15a"
+* id = "82c40e48-8ed5-43bd-a990-ae9b16d2f641"
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/v2-0074#LAB "Laboratory"
+// * category = http://terminology.hl7.org/CodeSystem/v2-0074#LAB "Laboratory"
+* category = $loinc#26436-6	"Laboratory studies (set)"
 * extension[DiagnosticReportCompositionR5].valueReference = Reference(Composition-Lab-Esempio)
 * identifier.use = #official
 * identifier.value = "urn:uuid:10b545ea-725c-446d-9b95-8aeb444eddf3"
