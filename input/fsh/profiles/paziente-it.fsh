@@ -7,7 +7,7 @@ Description: "Descrive come rappresentare le informazioni del paziente nei docum
 
 * ^status = #draft
 * ^experimental = false
-* insert SetFmmandStatusRule ( 1, draft )
+* insert SetFmmandStatusRule ( 1, trial-use)
 * insert ImposeProfile ( $Patient-eu-lab )
 
 * extension contains 

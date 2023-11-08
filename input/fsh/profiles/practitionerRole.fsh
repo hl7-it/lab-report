@@ -10,7 +10,7 @@ Description: "Profilo della risorsa PractitionerRole per la descrizione delle in
 
 * . ^short = "PractitionerRole Referto di Laboratorio"
 
-* insert SetFmmandStatusRule ( 1, draft )
+* insert SetFmmandStatusRule ( 1, trial-use)
 * insert ImposeProfile($PractitionerRole-eu-lab)
 
 * identifier ^short = "Identificativo dell'operatore (e.g. Codice Fiscale, ID Regionale)"

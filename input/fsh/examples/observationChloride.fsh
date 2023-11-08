@@ -1,5 +1,5 @@
 Instance: Observation-Lab-Esempio-Cloruro
-InstanceOf: observation-it-lab
+InstanceOf: ObservationRefertoLabIt
 Usage: #example
 Description: "Esempio di un'osservazione: rilevazione di cloruro nel sangue."
 

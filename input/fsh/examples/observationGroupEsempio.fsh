@@ -1,5 +1,5 @@
 Instance: Observation-Lab-Esempio-Group
-InstanceOf: observation-grouping-it-lab
+InstanceOf: ObservationGroupingRefertoLabIt
 Usage: #example
 Description: "Esempio di contenitore per Battery Test: rilevazione di glucosio nel sangue."
 

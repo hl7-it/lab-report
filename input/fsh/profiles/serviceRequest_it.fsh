@@ -5,7 +5,7 @@ Title: "ServiceRequest - Lab Report"
 Description: "Descrive la risorsa ServiceRequest che genera l'incontro del Lab Report."
 * . ^short = "ServiceRequest Referto di Laboratorio"
 
-* insert SetFmmandStatusRule ( 1, draft )
+* insert SetFmmandStatusRule ( 1, trial-use)
 * code 1..
 * code from LabOrderCodes (preferred)
 
@@ -16,7 +16,7 @@ Description: "Descrive la risorsa ServiceRequest che genera l'incontro del Lab R
 
 * subject 1..
 * subject ^short = "Soggetto cui si riferisce la richiesta."
-* subject only Reference(patient-it-lab)
+* subject only Reference(PatientRefertoLabIt)
 
 
 * requisition ^short = "Idenificativo comune a più ServiceRequest autorizzate simultaneamente. Rappresenta l'identificativo univoco della richiesta."

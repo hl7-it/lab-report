@@ -1,5 +1,5 @@
 Instance: Observation-TimedTest-T0-Lab-Esempio
-InstanceOf: observation-it-lab
+InstanceOf: ObservationRefertoLabIt
 Usage: #example
 Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue a digiuno, dopo 30 minuti, dopo 60 minuti, dopo 90 minuti e dopo 120 minuti."
 
@@ -28,7 +28,7 @@ Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue a d
 * performer = Reference(PractitionerRole-Lab-Esempio)
 
 Instance: Observation-TimedTest-T1-Lab-Esempio
-InstanceOf: observation-it-lab
+InstanceOf: ObservationRefertoLabIt
 Usage: #example
 Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue dopo 30 minuti."
 
@@ -61,7 +61,7 @@ Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue dop
 * performer = Reference(PractitionerRole-Lab-Esempio)
 
 Instance: Observation-TimedTest-T2-Lab-Esempio
-InstanceOf: observation-it-lab
+InstanceOf: ObservationRefertoLabIt
 Usage: #example
 Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue dopo 60 minuti."
 
@@ -95,7 +95,7 @@ Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue dop
 
 
 Instance: Observation-TimedTest-T3-Lab-Esempio
-InstanceOf: observation-it-lab
+InstanceOf: ObservationRefertoLabIt
 Usage: #example
 Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue dopo 90 minuti."
 
@@ -128,7 +128,7 @@ Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue dop
 * performer = Reference(PractitionerRole-Lab-Esempio)
 
 Instance: Observation-TimedTest-T4-Lab-Esempio
-InstanceOf: observation-it-lab
+InstanceOf: ObservationRefertoLabIt
 Usage: #example
 Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue dopo 120 minuti."
 

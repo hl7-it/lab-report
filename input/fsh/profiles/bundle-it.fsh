@@ -5,7 +5,7 @@ Title:    "Bundle - Lab Report"
 Description: "Descrizione della risorsa Bundle per il contesto italiano del Lab Report."
 * . ^definition = "La creazione di un FHIR Document prevede la costruzione di una Bundle con le seguenti caratteristiche:\n - ′type′=document\n - identifier obbligatorio\n - prima risorsa referenziata ′Composition′ di cui ′identifier′ opzionale e ′date′ obbligatorio\n - ′timestamp′ obbligatorio\n"
 * . ^short = "Bundle Referto di Laboratorio"
-* insert SetFmmandStatusRule ( 1, draft )
+* insert SetFmmandStatusRule ( 1, trial-use)
 //* type = #document 
 * type ^short = "Indica cosa rappresenta e l'obiettivo del Bundle."
 * identifier 1.. 
@@ -19,7 +19,7 @@ Description: "Descrizione della risorsa Bundle per il contesto italiano del Lab 
 * total 0..0
 * link 0..0
 * timestamp ^short = "Quando la Bundle è stata assemblata."
-* entry ^slicing.discriminator[0].type = #type
+/* * entry ^slicing.discriminator[0].type = #type
 * entry ^slicing.discriminator[=].path = "resource"
 * entry ^slicing.rules = #open
 * entry.link 0..0
@@ -27,23 +27,23 @@ Description: "Descrizione della risorsa Bundle per il contesto italiano del Lab 
 * entry.resource 1..1
 * entry.search 0..0
 * entry.request 0..0
-* entry.response 0..0
+* entry.response 0..0 */
 * entry ^short = "Risorse contenute nel documento FHIR."
 
 * entry contains
    media 0..* 
 
-* entry[composition].resource only composition-it-lab
+* entry[composition].resource only CompositionRefertoLabIt
 * entry[practitionerRole].resource only practitionerrole-it-lab
 * entry[practitioner].resource only practitioner-it-lab
 * entry[organization].resource only organization-it-lab
-* entry[patient].resource only patient-it-lab
+* entry[patient].resource only PatientRefertoLabIt
 * entry[patient] 1..1
 * entry[encounter].resource only encounter-it-lab
 * entry[location].resource only location-it-lab
-* entry[serviceRequest].resource only servicerequest-it-lab
-* entry[diagnosticReport].resource only diagnosticreport-it-lab
-* entry[observation].resource only observation-doc-it-lab  
+* entry[serviceRequest].resource only ServiceRequestRefertoLabIt
+* entry[diagnosticReport].resource only DiagnosticReportRefertoLabIt
+* entry[observation].resource only ObservationDocRefertoLabIt  
 * entry[specimen].resource only specimen-it-lab
 * entry[media].resource only media-it-lab
 

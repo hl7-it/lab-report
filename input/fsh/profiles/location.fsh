@@ -5,7 +5,7 @@ Title: "Location - Lab Report"
 Description: "Profilo della risorsa Location utile alla descrizione delle informazioni relative alle strutture fisiche."
 * . ^short = "Location Referto di Laboratorio."
 
-* insert SetFmmandStatusRule ( 1, draft )
+* insert SetFmmandStatusRule ( 1, trial-use)
 
 * identifier 1..
 * identifier ^short = "Identificativo della struttura (luogo)."

@@ -1,5 +1,5 @@
 Instance: Paziente-SSN
-InstanceOf: patient-it-lab
+InstanceOf: PatientRefertoLabIt
 Usage: #example
 Description: "Esempio di un paziente: soggetto iscritto al Sistema Sanitario Nazionale (SSN) con rappresentazione strutturata dell'attributo birthPlace."
 

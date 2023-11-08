@@ -4,7 +4,7 @@ Id: observation-it-lab
 Title:    "Observation - Lab Report"
 Description: "Descrive come rappresentare la risorsa Observation per le rilevazioni cliniche nel dominio di Lab Report."
 * . ^short = "Observation Referto di Laboratorio"
-* insert SetFmmandStatusRule ( 1, draft )
+* insert SetFmmandStatusRule ( 1, trial-use)
 * obeys ita-lab-1
 * code from $risultato-osservazione (preferred)
 * code ^short = "Tipo di osservazione tramite codice."
@@ -33,7 +33,7 @@ Description: "Descrive come rappresentare la risorsa Observation per le rilevazi
 
 * subject 1..
 * subject ^short = "Soggetto della rilevazione clinica."
-* subject only Reference(patient-it-lab)
+* subject only Reference(PatientRefertoLabIt)
 
 * encounter 0..1
 * encounter only Reference(encounter-it-lab)
@@ -54,7 +54,7 @@ Description: "Descrive come rappresentare la risorsa Observation per le rilevazi
 * valueQuantity ^short = "Risultato misurabile tramite una quantità."
 * valueQuantity only quantity-it-lab
 
-* hasMember only Reference(observation-it-lab)
+* hasMember only Reference(ObservationRefertoLabIt)
 * hasMember ^short = "Osservazioni correlate alla risorsa."
 * specimen ^short = "Reference al campione su cui si basa l'osservazione."
 * specimen only Reference(specimen-it-lab)
@@ -74,7 +74,7 @@ Description: "Descrive come rappresentare la risorsa Observation per le rilevazi
 
 * method from $sct-method (preferred)
 * bodySite ^short = "Sito corporeo dell'osservazione."
-* derivedFrom only Reference(observation-it-lab or MediaRefertoLabIt)
+* derivedFrom only Reference(ObservationRefertoLabIt or MediaRefertoLabIt)
 * derivedFrom ^short = "Reference dell'osservazione da cui deriva questo valore di osservazione. Ad esempio, un gap anionico calcolato o una misurazione fetale basata su un'immagine ecografica."
 
 * valueCodeableConcept from $valueset-valuecodeableconcept-obs-it (preferred)

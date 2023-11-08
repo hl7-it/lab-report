@@ -28,7 +28,7 @@ Title: "eHN Modello Logico Organizer - FHIR R4 Map"
 Source: Organizer				
 Target: "hl7.org/fhir/r4"				
 				
-* -> "Observation.conformsTo('http://hl7.it/fhir/lab-report/StructureDefinition/observation-grouping-it-lab')"				
+* -> "Observation.conformsTo('http://hl7.it/fhir/lab-report/StructureDefinition/ObservationGroupingRefertoLabIt')"				
 * osservazione -> "Observation.hasMember.resolve()"				
 * osservazione -> "Observation.component"				
 * osservazione.data -> "Observation.effective[x]"				
