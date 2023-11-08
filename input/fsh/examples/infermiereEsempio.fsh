@@ -1,5 +1,5 @@
 Instance: Infermiere-Lab-Esempio
-InstanceOf: practitioner-it-lab
+InstanceOf: PractitionerRefertoLabIt
 Usage: #example
 Description: "Esempio di un professionista sanitario: infermiere."
 

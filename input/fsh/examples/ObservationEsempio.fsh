@@ -4,23 +4,16 @@ Usage: #example
 Description: "Esempio di un'osservazione: rilevazione di glucosio nel sangue."
 
 
-* category[+][laboratory].coding.code = #laboratory
-* category[=][laboratory].coding.system = "http://terminology.hl7.org/CodeSystem/observation-category"
-* category[=][laboratory].coding.display = "Laboratory"
-
-
-
-
+* category[laboratory] = $observation-category#laboratory
 
 * status = #final
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
-* code.coding.system = "http://loinc.org"
-* code.coding.code = #10450-5 	
-* code.coding.display = "Glucose [Mass/volume] in Serum or Plasma --10 hours fasting"
+
+* code = $loinc#10450-5 "Glucose [Mass/volume] in Serum or Plasma --10 hours fasting"
 
 * valueQuantity.unit = "mg/dL"
 * valueQuantity.code = #mg/dL
-* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.system = $ucum
 * valueQuantity.value = 70
 
 * subject = Reference(Paziente-SSN)

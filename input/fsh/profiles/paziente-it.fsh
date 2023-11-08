@@ -113,7 +113,7 @@ Description: "Descrive come rappresentare le informazioni del paziente nei docum
 * address  
 * address only Address-it
 * managingOrganization ^short = "Organizzazione a cui è lasciata la custodia del dei dati del paziente."
-* managingOrganization only Reference(organization-it-lab)
+* managingOrganization only Reference(OrganizationRefertoLabIt)
 * address only Address-it
   
 * generalPractitioner ^slicing.discriminator.type = #profile

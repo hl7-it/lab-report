@@ -25,7 +25,7 @@ Description: "Esempio di un paziente: soggetto iscritto al Sistema Sanitario Naz
 * identifier.extension[certificazioneId].extension[when].valueDateTime = "2022-05-01"
 
 * extension[luogoNascitaCodeable].url = "http://hl7.it/fhir/StructureDefinition/patient-codeableBirthPlace"
-* extension[luogoNascitaCodeable].valueCodeableConcept = CS_Estero#100 "Italia"
+* extension[luogoNascitaCodeable].valueCodeableConcept = $istat-stati#100 "Italia"
 
 * identifier.system = "http://hl7.it/sid/codiceFiscale"
 * identifier.value = "RSSMRA71E01F205E"

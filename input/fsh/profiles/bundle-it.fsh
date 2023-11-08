@@ -34,17 +34,17 @@ Description: "Descrizione della risorsa Bundle per il contesto italiano del Lab 
    media 0..* 
 
 * entry[composition].resource only CompositionRefertoLabIt
-* entry[practitionerRole].resource only practitionerrole-it-lab
-* entry[practitioner].resource only practitioner-it-lab
-* entry[organization].resource only organization-it-lab
+* entry[practitionerRole].resource only PractitionerRoleRefertoLabIt
+* entry[practitioner].resource only PractitionerRefertoLabIt
+* entry[organization].resource only OrganizationRefertoLabIt
 * entry[patient].resource only PatientRefertoLabIt
 * entry[patient] 1..1
-* entry[encounter].resource only encounter-it-lab
+* entry[encounter].resource only EncounterRefertoLabIt
 * entry[location].resource only location-it-lab
 * entry[serviceRequest].resource only ServiceRequestRefertoLabIt
 * entry[diagnosticReport].resource only DiagnosticReportRefertoLabIt
 * entry[observation].resource only ObservationDocRefertoLabIt  
-* entry[specimen].resource only specimen-it-lab
+* entry[specimen].resource only SpecimenRefertoLabIt
 * entry[media].resource only media-it-lab
 
 

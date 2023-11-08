@@ -9,5 +9,5 @@ Description: "Descrizione del valore ottenuto da una misurazione."
 * code 1..
 * code from $ucum-valueset (required) 
 * code ^short = "Descrizione codificata dell'unità di misura secondo UCUM."
-* system = "http://unitsofmeasure.org" (exactly)
+* system = $ucum (exactly)
 * value ^short = "Valore della misurazione."

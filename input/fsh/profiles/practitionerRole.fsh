@@ -1,7 +1,5 @@
 Profile: PractitionerRoleRefertoLabIt
-
 Parent: PractitionerRole
-
 Id: practitionerrole-it-lab
 
 Title: "PractitionerRole - Lab Report"
@@ -18,10 +16,10 @@ Description: "Profilo della risorsa PractitionerRole per la descrizione delle in
 
 
 * practitioner ^short = "Professionista coinvolto nel processo di cura."
-* practitioner only Reference(practitioner-it-lab)
+* practitioner only Reference(PractitionerRefertoLabIt)
 
 * organization ^short = "Organizzazione cui il professionista fa parte."
-* organization only Reference(organization-it-lab)
+* organization only Reference(OrganizationRefertoLabIt)
 * code from $practitionerrole-code-lab-it (example)
 * code ^short = "Ruolo/i del professionista."
 

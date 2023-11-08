@@ -1,5 +1,5 @@
 Instance: PractitionerRole-Lab-Esempio
-InstanceOf: practitionerrole-it-lab
+InstanceOf: PractitionerRoleRefertoLabIt
 Usage: #example
 Description: "Esempio di un PractitionerRole: medico in ematologia clinica presso il policlinico."
 

@@ -15,4 +15,4 @@ Description: "Profilo della risorsa Location utile alla descrizione delle inform
 * type from $location-type (extensible)
 * address ^short = "Indirizzo fisico della struttura (luogo)."
 * managingOrganization ^short = "Organizzazione responsabile della gestione della struttura (provisioning e manutenzione)."
-* managingOrganization only Reference(organization-it-lab)
+* managingOrganization only Reference(OrganizationRefertoLabIt)

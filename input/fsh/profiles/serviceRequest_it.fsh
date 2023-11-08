@@ -24,6 +24,6 @@ Description: "Descrive la risorsa ServiceRequest che genera l'incontro del Lab R
 * authoredOn ^short = "Data di invio della richiesta."
 * reasonCode ^short = "Quesito diagnostico associato alla richiesta."
 * specimen ^short = "Reference usata solo se il campione cui punta la richiesta è già stato prelevato ed esiste."
-* specimen only Reference(specimen-it-lab)
+* specimen only Reference(SpecimenRefertoLabIt)
 * intent ^short = "Descrizione attributo: Indica lo scopo associato ad una richiesta. Possibili valori: proposal | plan | directive | order | original-order | reflex-order | filler-order | instance-order | option"
 * intent from  $intent-code

@@ -38,24 +38,19 @@ Description: "Descrizione della risorsa DiagnosticReport per la descrizione dell
 * status from $diagn-status (required)
 * status ^constraint.source = Canonical(DiagnosticReportRefertoLabIt)
 * insert ReportStatusRule
-* encounter only Reference (encounter-it-lab) 
+* encounter only Reference (EncounterRefertoLabIt) 
 * encounter ^short = "Evento sanitario a cui si riferisce il Referto di Laboratorio (es. al momento della prescrizione)."
 * encounter ^constraint.source = Canonical(DiagnosticReportRefertoLabIt)
-* specimen only Reference (specimen-it-lab)
+* specimen only Reference (SpecimenRefertoLabIt)
 * specimen ^short = "Reference ai campioni su cui si basa DiagnosticReport."
-* performer only Reference(practitioner-it-lab or practitionerrole-it-lab or organization-it-lab or CareTeam)
+* performer only Reference(PractitionerRefertoLabIt or PractitionerRoleRefertoLabIt or OrganizationRefertoLabIt or CareTeam)
   * insert ReportAuthorRule
 * performer ^constraint.source = Canonical(DiagnosticReportRefertoLabIt)
 * performer ^short = "Persona o Organizzazione che partecipa all'evento clinico descritto."
 * performer ^definition = "Organizzazione o Persona che è responsabile del report; non è necessariamente l'autore dei dati atomici o l'entità che ha interpretato i risultati. "
 * code ^short = "Nome/codice della diagnostic report."
 * code.coding ^short = "Codice definito da un sistema terminologico."
-* code.coding.system = $loinc
-* code.coding.system ^short = "Sistema terminologico."
-* code.coding.code = #11502-2
-* code.coding.code ^short = "Codice appartenente al sistema terminologico."
-* code.coding.display = "Laboratory report"
-* code.coding.display ^short = "Descrizione del codice."
+* code = $loinc#11502-2 "Laboratory report"
 * insert ReportTypeRule ( code )
 * code ^constraint.source = Canonical(DiagnosticReportRefertoLabIt)
 * result only Reference (ObservationRefertoLabIt) 

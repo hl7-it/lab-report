@@ -19,7 +19,7 @@ Description: "Profilo della risorsa Organization che per la descrizione delle in
 * name	 
 
 Profile:  OrganizationOperatoreSanitarioRefertoLabIt
-Parent:   organization-it-lab
+Parent:   OrganizationRefertoLabIt
 Id:       organizationOperatore-it-lab
 Title:    "Organization operatore sanitario/socio sanitario - Lab Report"
 Description: "Profilo della risorsa Organization che per la descrizione delle informazioni dell' operatore sanitario/socio sanitario nel dominio di Lab Report."

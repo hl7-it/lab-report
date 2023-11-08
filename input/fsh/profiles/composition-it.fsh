@@ -34,11 +34,11 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 
 * encounter ^short = "Evento sanitario a cui si riferisce il Referto di Laboratorio (es. al momento della prescrizione)."
 /* * encounter ^constraint.source = Canonical(CompositionRefertoLabIt) */
-* encounter only Reference(encounter-it-lab)
+* encounter only Reference(EncounterRefertoLabIt)
 * date ^short = "Data di modifica della risorsa Composition."
 * confidentiality from $conf
 * confidentiality ^short = "Codice di confidenzialità della Composition."
-* author only Reference(practitioner-it-lab or practitionerrole-it-lab or PatientRefertoLabIt or organization-it-lab)
+* author only Reference(PractitionerRefertoLabIt or PractitionerRoleRefertoLabIt or PatientRefertoLabIt or OrganizationRefertoLabIt)
 /* * author ^short = "Autore della Composition." */
 /* * author ^constraint.source = Canonical(CompositionRefertoLabIt) */
 
@@ -62,7 +62,7 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * attester[legalAuthenticator] ^short = "Firmatario del documento FHIR."
 * attester[legalAuthenticator].mode 1..1
 * attester[legalAuthenticator].mode = #legal
-* attester[legalAuthenticator].party only Reference(practitioner-it-lab or practitionerrole-it-lab)
+* attester[legalAuthenticator].party only Reference(PractitionerRefertoLabIt or PractitionerRoleRefertoLabIt)
 * attester[legalAuthenticator].time 1..1
 * attester[legalAuthenticator].time ^short = "Riferimento temporale della firma."
 * attester[legalAuthenticator].party ^short = "Riferimento al firmatario."
@@ -70,11 +70,11 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * attester[authenticator] ^short = "Validatore del documento FHIR."
 * attester[authenticator].mode 1..1
 * attester[authenticator].mode = #professional
-* attester[authenticator].party only Reference(practitioner-it-lab or practitionerrole-it-lab)
+* attester[authenticator].party only Reference(PractitionerRefertoLabIt or PractitionerRoleRefertoLabIt)
 * attester[authenticator].party ^short = "Riferimento al validatore."
 
 * custodian 0..1
-* custodian only Reference(organization-it-lab)
+* custodian only Reference(OrganizationRefertoLabIt)
 * custodian ^short = "Organizzazione che si occupa della conservazione del documento FHIR."
 
 /* * relatesTo ^short = "Ulteriori risorse Composition correlate al documento."

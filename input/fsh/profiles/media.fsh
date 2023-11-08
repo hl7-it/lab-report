@@ -15,9 +15,9 @@ Description: "Descrizione della risorsa Media per la descrizione dei contenuti m
 * subject.reference 1..
 * subject ^short = "Reference al soggetto del  file multimediali."
 * device ^short = "Dispositivo utilizzato per raccogliere i file multimediali."
-* device only Reference(device-it-lab)
+* device only Reference(DeviceRefertoLabIt)
 * content ^short = "Contenuto multimediale."
-* operator only Reference(practitioner-it-lab or practitionerrole-it-lab or organization-it-lab or CareTeam or PatientRefertoLabIt or device-it-lab or RelatedPerson)
+* operator only Reference(PractitionerRefertoLabIt or PractitionerRoleRefertoLabIt or OrganizationRefertoLabIt or CareTeam or PatientRefertoLabIt or DeviceRefertoLabIt or RelatedPerson)
 * operator ^short = "Operatore che ha generato il contenuto multimediale."
 * type ^short = "Descrizione attributo: Tipo di contenuto multimediale. Possibili valori: image | video | audio"
 * type from $MediaType

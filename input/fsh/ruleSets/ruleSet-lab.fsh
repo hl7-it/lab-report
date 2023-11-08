@@ -37,7 +37,7 @@ RuleSet: ReportStatusRule
 
 
 RuleSet: ReportEncounterRule
-* encounter only Reference (encounter-it-lab) 
+* encounter only Reference (EncounterRefertoLabIt) 
 /*   * ^constraint.key = "labRpt-enc" */
   * ^short = "The healthcare event which this Laboratory Report is about (when test ordered)."
   * ^definition = """The healthcare event (e.g. a patient and healthcare provider interaction) which this DiagnosticReport is about."""
