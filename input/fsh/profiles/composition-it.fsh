@@ -10,37 +10,32 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * language = #it-IT
 * language 1..1  
 * language ^short = "Metadato che indica la lingua utilizzata per descrivere la risorsa."
-* extension contains
-    composition-dataenterer-it named dataEnterer 0..*
+* extension contains   composition-dataenterer-it named dataEnterer 0..*
 
 * extension[dataEnterer] ^short = "Persona o dispositivo che trasforma un testo dettato nel documento FHIR."
-
 * extension[information-recipient] ^short = "Professionisti sanitari che ricevono una copia del documento (es. MMG/PLS)."
-/* * category ^constraint.source = Canonical(CompositionRefertoLabIt) */
+
 * insert ReportIdentifierRule
-/* * identifier ^constraint.source = Canonical(CompositionRefertoLabIt) */
 
 * insert ReportTypeRule ( type )
-/* * type ^short = "Tipo di Composition." */
+/* * type from http://hl7.eu/fhir/laboratory/ValueSet/lab-reportType-eu-lab (preferred) */
+
 * status ^short = "Stato di completezza della risorsa Composition. Lo stato della risorsa rappresenta anche lo stato del documento."
-/* * status ^constraint.source = Canonical(CompositionRefertoLabIt) */
 * status ^definition = "Lo stato della Composition si sviluppa generalmente solo attraverso questo elenco: passa da preliminary a final e poi può passare a amended (ovvero modificato). "
 
 * insert ReportSubjectRule
-/* * subject 1..1
-* subject only Reference(PatientRefertoLabIt)
- *//* * subject ^constraint.source = Canonical(CompositionRefertoLabIt) */
-/* * subject ^short = "Soggetto del documento." */
 
-* encounter ^short = "Evento sanitario a cui si riferisce il Referto di Laboratorio (es. al momento della prescrizione)."
-/* * encounter ^constraint.source = Canonical(CompositionRefertoLabIt) */
-* encounter only Reference(EncounterRefertoLabIt)
+* insert ReportStatusRule
+
+/* * category from $diagnosticreport-category-valueset (example) */
+* insert ReportCategoryRule 
+
+* insert ReportEncounterRule
+
 * date ^short = "Data di modifica della risorsa Composition."
 * confidentiality from $conf
 * confidentiality ^short = "Codice di confidenzialità della Composition."
 * author only Reference(PractitionerRefertoLabIt or PractitionerRoleRefertoLabIt or PatientRefertoLabIt or OrganizationRefertoLabIt)
-/* * author ^short = "Autore della Composition." */
-/* * author ^constraint.source = Canonical(CompositionRefertoLabIt) */
 
 * author 1..
   * ^short = "Who and/or what authored the Laboratory Report"
@@ -85,7 +80,6 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * section.title ^short = "Titolo della sezione."
 * section.code 1..
 * insert ReportTypeRule ( type )
-* type ^constraint.source = Canonical(CompositionRefertoLabIt)
 * section.code ^short = "Codice della sezione."
 
 * section[lab-no-subsections] ^short = "Variante 1: questa sezione presenta solo entry senza sottosezioni."
@@ -107,15 +101,7 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * section[annotations].text ^short = "Sintesi testuale della sezione, per l'interpretazione dell'utente."
 
 
-* insert ReportStatusRule
-/* * category from $diagnosticreport-category-valueset (example) */
-* insert ReportCategoryRule 
 
-/* * type from http://hl7.eu/fhir/laboratory/ValueSet/lab-reportType-eu-lab (preferred) */
-
-* insert ReportTypeRule ( type )
-
-* insert ReportEncounterRule
 
 
 

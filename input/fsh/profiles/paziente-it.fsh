@@ -5,8 +5,6 @@ Title: "Patient - Lab Report"
 Description: "Descrive come rappresentare le informazioni del paziente nei documenti FHIR."
 * . ^short = "Patient Referto di Laboratorio"
 
-* ^status = #draft
-* ^experimental = false
 * insert SetFmmandStatusRule ( 1, trial-use)
 * insert ImposeProfile ( $Patient-eu-lab )
 

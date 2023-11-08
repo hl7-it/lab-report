@@ -29,17 +29,6 @@ Id: practitionerrole-MMGPLS-it-lab
 Title: "PractitionerRole MMG/PLS - Lab Report"
 Description: "Profilo della risorsa PractitionerRole per la descrizione delle informazioni del MMG/PLS."
 * . ^short = "PractitionerRole MMG/PLS Referto di Laboratorio"
-
-* ^version = "0.0.1"
-
-* ^status = #draft
-
-* ^experimental = true
-
-* ^publisher = "HL7 Italia"
-
-* ^copyright = "HL7 Italia"
-
 * code from $MMG-PLS-code-lab-it (required)
 * code ^short = "Ruolo/i del professionista."
 * organization only Reference(organizationOperatore-it-lab)
