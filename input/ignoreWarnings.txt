@@ -46,7 +46,7 @@ INFORMATION: Patient/8472931c-fbd0-437b-9ed1-4f66472c78b5: Patient.extension[3]:
 INFORMATION: Patient/8472931c-fbd0-437b-9ed1-4f66472c78b5: Patient.address[0].line[0].extension[0]: This element does not match any known slice defined in the profile http://hl7.eu/fhir/laboratory/StructureDefinition/Address-eu|0.1.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 
 
-# == fsh-generated\resources\StructureDefinition-Address-it.json ==
+# == fsh-generated\resources\StructureDefinition-address-it.json ==
 
-INFORMATION: StructureDefinition/Address-it: StructureDefinition.snapshot.element[12].example[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://hl7.it/fhir/ValueSet/istat-dug' is unknown so the code cannot be validated
-INFORMATION: StructureDefinition/Address-it: StructureDefinition.differential.element[6].example[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://hl7.it/fhir/ValueSet/istat-dug' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/address-it: StructureDefinition.snapshot.element[12].example[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://hl7.it/fhir/ValueSet/istat-dug' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/address-it: StructureDefinition.differential.element[6].example[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://hl7.it/fhir/ValueSet/istat-dug' is unknown so the code cannot be validated

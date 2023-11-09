@@ -5,7 +5,15 @@ Title: "Observation battery - Lab Report"
 Description: "Descrive come rappresentare un insieme di esami nel contesto del Referto di Laboratorio."
 * insert SetFmmandStatusRule ( 1, trial-use)
 * . ^short = "Observation battery Referto di Laboratorio"
-* value[x] 0..0
+* valueQuantity 0..0
+* valueCodeableConcept 0..0
+* valueRatio 0..0
+* valueRange 0..0
+* valueString 0..0
+* valueTime 0..0
+* valueDateTime 0..0
+* valuePeriod 0..0
+* value[x] 0..0 // this rule generate a sushi warning 
 * interpretation 0..0
 * referenceRange 0..0
 * component 0..0
