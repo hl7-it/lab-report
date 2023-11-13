@@ -5,7 +5,7 @@ Title: "Location - Lab Report"
 Description: "Profilo della risorsa Location utile alla descrizione delle informazioni relative alle strutture fisiche."
 * . ^short = "Location Referto di Laboratorio."
 
-* insert SetFmmandStatusRule ( 1, draft )
+* insert SetFmmandStatusRule ( 1, trial-use)
 
 * identifier 1..
 * identifier ^short = "Identificativo della struttura (luogo)."
@@ -15,4 +15,4 @@ Description: "Profilo della risorsa Location utile alla descrizione delle inform
 * type from $location-type (extensible)
 * address ^short = "Indirizzo fisico della struttura (luogo)."
 * managingOrganization ^short = "Organizzazione responsabile della gestione della struttura (provisioning e manutenzione)."
-* managingOrganization only Reference(organization-it-lab)
+* managingOrganization only Reference(OrganizationRefertoLabIt)

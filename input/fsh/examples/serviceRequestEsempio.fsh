@@ -1,5 +1,5 @@
 Instance: ServiceRequest-Lab-Esempio
-InstanceOf: servicerequest-it-lab
+InstanceOf: ServiceRequestRefertoLabIt
 Usage: #example
 Description: "Esempio di richiesta: prestazione richiesta facente parte di un'autorizzazione simultanea per esami di laboratorio."
 

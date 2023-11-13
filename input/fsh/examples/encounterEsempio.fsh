@@ -1,5 +1,5 @@
 Instance: Encounter-Lab-Esempio
-InstanceOf: encounter-it-lab
+InstanceOf: EncounterRefertoLabIt
 Description: "Esempio di incontro: informazioni di base per descrivere un incontro ambulatoriale pianificato."
 Usage: #example
 

@@ -1,5 +1,5 @@
 Instance: Device-Lab-Esempio
-InstanceOf: device-it-lab
+InstanceOf: DeviceRefertoLabIt
 Usage: #example
 Title: "Esempio di Device"
 Description: "Esempio di device utilizzato per l'analisi dell'emocromo: Analizzatore per analisi del sangue"

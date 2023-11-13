@@ -5,16 +5,14 @@ Title: "Patient - Lab Report"
 Description: "Descrive come rappresentare le informazioni del paziente nei documenti FHIR."
 * . ^short = "Patient Referto di Laboratorio"
 
-* ^status = #draft
-* ^experimental = false
-* insert SetFmmandStatusRule ( 1, draft )
+* insert SetFmmandStatusRule ( 1, trial-use)
 * insert ImposeProfile ( $Patient-eu-lab )
 
 * extension contains 
     BirthPlaceIta named luogoNascita 0..1 and 
     ExtRecordCertification named certificazione 0..1 and
     ExtCodeableBirthPlace named luogoNascitaCodeable 0..* and
-    http://hl7.org/fhir/StructureDefinition/patient-citizenship named cittadinanza 0..1 and
+    $patient-citizenship named cittadinanza 0..1 and
     ExtProfessionePaziente named professione 0..1 and
     ExtTitoloStudioPaziente named titoloStudio 0..1
 * extension[luogoNascita] ^short = "Luogo di nascita." 
@@ -92,29 +90,24 @@ Description: "Descrive come rappresentare le informazioni del paziente nei docum
 * identifier[codiceSTP].system from $uri-idStp (required)
 * name 1..  
 * name.family  
-* name.given  
-* telecom  
-* gender  
-* birthDate 1..
-//* name obeys it-pat-1
+* name.given 
+* name obeys it-pat-name-1
 * name ^short = "Nome associato al paziente."
-* name ^constraint.key = "it-pat-1"
-* name ^constraint.severity = #error
-* name ^constraint.expression = "family.exists() or given.exists()"
-* name ^constraint.xpath = "f:given or f:family" 
-* name ^constraint.source = Canonical(PatientRefertoLabIt)
-
 * name.extension contains http://hl7.org/fhir/StructureDefinition/data-absent-reason named name-absent-reason 0..*
 * name.extension[name-absent-reason] ^binding.strength = #example
 * name.extension[name-absent-reason] ^binding.valueSet = $data-absent-reason
 * name.extension[name-absent-reason] ^sliceName = "name-absent-reason"
 * name.extension[name-absent-reason] ^short = "Ragione non valorizzazione elemento name"
 * name.extension[name-absent-reason] ^definition = "Ragione per cui l'elemento name non è stato valorizzato"
-* address  
-* address only Address-it
+
+* telecom  
+* gender  
+* birthDate 1..
+
+* address only AddressItBase
 * managingOrganization ^short = "Organizzazione a cui è lasciata la custodia del dei dati del paziente."
-* managingOrganization only Reference(organization-it-lab)
-* address only Address-it
+* managingOrganization only Reference(OrganizationRefertoLabIt)
+* address only AddressItBase
   
 * generalPractitioner ^slicing.discriminator.type = #profile
 * generalPractitioner ^slicing.discriminator.path = "$this.resolve()"
@@ -138,3 +131,8 @@ Severity: #error
 Expression: "matches('^[A-Za-z]{6}[0-9LMNPQRSTUV]{2}[A-Za-z]{1}[0-9LMNPQRSTUV]{2}[A-Za-z]{1}[0-9LMNPQRSTUV]{3}[A-Za-z]{1}$')"
 XPath: "matches(@value,'^[A-Za-z]{6}[0-9LMNPQRSTUV]{2}[A-Za-z]{1}[0-9LMNPQRSTUV]{2}[A-Za-z]{1}[0-9LMNPQRSTUV]{3}[A-Za-z]{1}$')"
 
+Invariant: it-pat-name-1
+Description: "Il nome deve contenere almeno una delle aprti che compongono il nome (nome, cognome)"
+Severity: #warning
+Expression: "family.exists() or given.exists()"
+XPath: "f:given or f:family"

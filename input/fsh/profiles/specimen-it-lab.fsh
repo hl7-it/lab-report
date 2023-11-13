@@ -4,7 +4,7 @@ Id: specimen-it-lab
 Title: "Specimen - Lab Report"
 Description: "Descrive la risorsa Specimen per il campione nel dominio del Lab Report."
 
-* insert SetFmmandStatusRule ( 1, draft )
+* insert SetFmmandStatusRule ( 1, trial-use)
 * . ^short = "Campione Referto di Laboratorio"
 * . ^definition = "Campione Referto di Laboratorio"
 * type from $tipo-campione-lab-it (preferred)
@@ -13,11 +13,11 @@ Description: "Descrive la risorsa Specimen per il campione nel dominio del Lab R
 * identifier ^short = "Identificativo esterno del campione (identificativo locale al LIS)"
 * collection.bodySite from http://hl7.org/fhir/ValueSet/body-site (preferred)
 * collection.bodySite ^short = "Sito anatomico di prelievo del campione."
-* processing.additive only Reference(specimen-additive-substance-it-lab)
+* processing.additive only Reference(SpecimenAdditiveSubstanceRefertoLabIt)
 * processing.additive ^short = "Additivo."
-* container.type from campione-container-lab-it (preferred)
+* container.type from $campione-container-lab-it (preferred)
 * container.type ^short = "Tipo di dispositivo utilizzato per il contenere il campione."
 
 
 * subject ^short = "Soggetto da cui è stato prelevato il campione."
-* subject only Reference(patient-it-lab)
+* subject only Reference(PatientRefertoLabIt)

@@ -1,5 +1,5 @@
 Instance: Organization-Lab-Esempio
-InstanceOf: organization-it-lab
+InstanceOf: OrganizationRefertoLabIt
 Usage: #example
 Description: "Esempio di un'organizzazione: Azienda Sanitaria Locale."
 
@@ -11,10 +11,7 @@ Description: "Esempio di un'organizzazione: Azienda Sanitaria Locale."
 
 * active = true
 
-* type.coding.system = "http://terminology.hl7.it/CodeSystem/it-tipoEntita"
-* type.coding.code = #asl
-* type.coding.display = "Azienda Sanitaria Locale"
-
+* type =  $tipoEntita#asl "Azienda Sanitaria Locale"
 * name = "Azienda Sanitara Locale Roma 1"
 
 * contact.telecom.system = #phone

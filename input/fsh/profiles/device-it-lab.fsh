@@ -4,7 +4,7 @@ Id: device-it-lab
 Title: "Device - Lab Report"
 Description: "Descrive la risorsa Device che descrive un dispositivo."
 
-* insert SetFmmandStatusRule ( 1, draft )
+* insert SetFmmandStatusRule ( 1, trial-use)
 
 * . ^short = "Dispositivo coinvolto nel dominio di Referto di Laboratorio"
 * . ^definition = "Il dispositivo coinvolto nel dominio di Referto di Laboratorio può essere il dispositivo di raccolta del contenuto multimediale (Media) o utilizzato nella rilevazione dell'Observation." 

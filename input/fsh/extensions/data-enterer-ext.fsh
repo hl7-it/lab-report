@@ -12,7 +12,7 @@ Description: "Persona o dispositivo che trasforma un testo dettato nel documento
 * extension[dataEnterer] only Extension
 * extension[dataEnterer] ^short = "Informazioni sulla persona e sull'organizzazione che ha inserito i dati."
 * extension[dataEnterer].valueReference 1..
-* extension[dataEnterer].valueReference only Reference(practitioner-it-lab or practitionerrole-it-lab or Device)
+* extension[dataEnterer].valueReference only Reference(PractitionerRefertoLabIt or PractitionerRoleRefertoLabIt or Device)
 * extension[dataEnterer].valueReference ^short = "Compilatore dei dati presenti in Composition."
 * extension[tempoCompilazione] ^short = "Data e ora di compilazione dei dati."
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

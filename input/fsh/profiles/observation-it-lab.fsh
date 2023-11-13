@@ -4,60 +4,46 @@ Id: observation-it-lab
 Title:    "Observation - Lab Report"
 Description: "Descrive come rappresentare la risorsa Observation per le rilevazioni cliniche nel dominio di Lab Report."
 * . ^short = "Observation Referto di Laboratorio"
-* insert SetFmmandStatusRule ( 1, draft )
-* obeys ita-lab-1
+* insert SetFmmandStatusRule ( 1, trial-use)
+/* * obeys ita-lab-1 */ // Non allineato con il vincolo in HL7 EU
+
 * code from $risultato-osservazione (preferred)
 * code ^short = "Tipo di osservazione tramite codice."
 * status from $observation-status (required)
 * status ^short = "Descrizione attributo: Stato dell'osservazione. Possibili valori: registered | preliminary | final | amended +"
-
-
-
 * category ^short = "Codice che classifica il tipo di osservazione."
 * category ^definition = "La categoria di osservazione può definire la classificazione tramite diversi livelli di dettaglio, a partire da laboratory."
 
-//     laboratory 1..1 and
-//     specialita-laboratory 0..*
-* category[laboratory] ^short = "Classificazione del tipo di osservazione."
-* category[laboratory].coding ^short = "Codice definito da un sistema terminologico."
-* category[laboratory].coding.system ^short = "Terminologia utilizzata."
-* category[laboratory].coding.system = $observation-category
-* category[laboratory].coding.code = #laboratory
-* category[laboratory].coding.code ^short = "Codice della terminologia per descrivere il dominio di laboratorio."
-
-* category[specialty] ^short = "Codice o testo della specialità dell'esame di laboratorio."
-//* category[specialty] from $sezione-referto-laboratorio (preferred)
-* category[specialty].coding ^short = "Codice della terminologia per dettagliare la specialità di laboratorio"
-* category[specialty].coding.system ^short = "Terminologia utilizzata."
-//* category[specialty].coding.system = $loinc
+* category[laboratory] ^short = "Indica genericamente che si rifeirsce as un esame di Laboratorio"
+* category[studyType] ^short = "Classificazione per tipo di studio"
+* category[specialty] ^short = "Classificazione per specialità"
 
 * subject 1..
 * subject ^short = "Soggetto della rilevazione clinica."
-* subject only Reference(patient-it-lab)
+* subject only Reference(PatientRefertoLabIt)
 
 * encounter 0..1
-* encounter only Reference(encounter-it-lab)
+* encounter only Reference(EncounterRefertoLabIt)
 * encounter ^short = "Contesto in cui è stata prodotta l'osservazione."
 
 * performer 1..
 * performer ^short = "Soggetto responsabile dell'osservazione."
-* performer only Reference(practitioner-it-lab or practitionerrole-it-lab or organization-it-lab or CareTeam or RelatedPerson)
-
-* value[x] ^short = "Risultato dell'osservazione."
-
-* value[x] ^slicing.discriminator.type = #type
-* value[x] ^slicing.discriminator.path = "$this"
-* value[x] ^slicing.rules = #closed
+* performer only Reference(PractitionerRefertoLabIt or PractitionerRoleRefertoLabIt or OrganizationRefertoLabIt or CareTeam or RelatedPerson)
 
 * effective[x] 1..
-* valueQuantity ^sliceName = "valueQuantity"
-* valueQuantity ^short = "Risultato misurabile tramite una quantità."
-* valueQuantity only quantity-it-lab
 
-* hasMember only Reference(observation-it-lab)
+* value[x] ^short = "Risultato dell'osservazione."
+/* * value[x] ^slicing.discriminator.type = #type
+* value[x] ^slicing.discriminator.path = "$this"
+* value[x] ^slicing.rules = #closed
+* valueQuantity ^sliceName = "valueQuantity"  */
+* valueQuantity ^short = "Risultato misurabile tramite una quantità."
+* valueQuantity only QuantityLab
+
+* hasMember only Reference(ObservationRefertoLabIt)
 * hasMember ^short = "Osservazioni correlate alla risorsa."
 * specimen ^short = "Reference al campione su cui si basa l'osservazione."
-* specimen only Reference(specimen-it-lab)
+* specimen only Reference(SpecimenRefertoLabIt)
 
 * interpretation ^short = "Interpretazione del risultato (Alto, Basso, Normale, ecc.)"
 * referenceRange ^short = "Range di riferimento per la caratterizzazione dell'osservazione sulla base di un criterio.\nEsempio: Range di normalità per uomo adulto."
@@ -68,17 +54,20 @@ Description: "Descrive come rappresentare la risorsa Observation per le rilevazi
 * referenceRange.age ^short = "Età a cui si applica, se rilevante."
 * referenceRange.text ^short = "Note testuali."
 * device ^short = "Dispositivo utilizzato per ottenere l'osservazione."
-* device only Reference(device-it-lab or DeviceMetric)
+* device only Reference(DeviceRefertoLabIt or DeviceMetric)
 * method ^short = "Metodo di rilevazione dell'osservazione."
 
 
 * method from $sct-method (preferred)
 * bodySite ^short = "Sito corporeo dell'osservazione."
-* derivedFrom only Reference(observation-it-lab or MediaRefertoLabIt)
+* derivedFrom only Reference(ObservationRefertoLabIt or MediaRefertoLabIt)
 * derivedFrom ^short = "Reference dell'osservazione da cui deriva questo valore di osservazione. Ad esempio, un gap anionico calcolato o una misurazione fetale basata su un'immagine ecografica."
 
 * valueCodeableConcept from $valueset-valuecodeableconcept-obs-it (preferred)
-* valueCodeableConcept ^sliceName = "valueCodeableConcept"
+
+// => Gia presente nel profilo parent...
+
+/* * valueCodeableConcept ^sliceName = "valueCodeableConcept"
 * valueCodeableConcept ^binding.extension[0].extension[0].url = "purpose"
 * valueCodeableConcept ^binding.extension[=].extension[=].valueCode = #candidate
 * valueCodeableConcept ^binding.extension[=].extension[+].url = "valueSet"
@@ -99,9 +88,9 @@ Description: "Descrive come rappresentare la risorsa Observation per le rilevazi
 * valueCodeableConcept ^binding.extension[=].extension[=].valueCanonical = $results-microorganism-snomed-ct-ips-free-set
 * valueCodeableConcept ^binding.extension[=].extension[+].url = "documentation"
 * valueCodeableConcept ^binding.extension[=].extension[=].valueMarkdown = "Conformità aggiuntiva vincolante a un valuset di rilevazioni di microrganismi per i valori dei risultati di laboratorio da SNOMED CT IPS per l'uso a livello globale (nelle giurisdizioni membri e non membri SNOMED)." 
-* valueCodeableConcept ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
+* valueCodeableConcept ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding" */
 
-Invariant: ita-lab-1
+/* Invariant: ita-lab-1
 Description: "se  \"hasMember\" non è presente allora Observation deve avere un\" value\""
 Severity: #error
-Expression: "value.exists() or hasMember.exists()"
+Expression: "value.exists() or hasMember.exists()" */

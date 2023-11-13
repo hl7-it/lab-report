@@ -4,7 +4,7 @@ Id:       practitioner-it-lab
 Title:    "Practitioner - Lab Report"
 Description: "Descrive la risorsa Practitioner per il dominio di Lab Report."
 * . ^short = "Practitioner Referto di Laboratorio"
-* insert SetFmmandStatusRule ( 1, draft )
+* insert SetFmmandStatusRule ( 1, trial-use)
 * insert ImposeProfile($Practitioner-eu-lab)
 //-------------------------------------------------------------------------------------------
 * identifier 

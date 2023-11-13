@@ -3,8 +3,8 @@ canonical: http://hl7.it/fhir/lab-report
 name: HL7ITLabReport
 title: HL7 FHIR Implementation Guide Laboratory Report
 description: HL7 FHIR Implementation Guide Laboratory Report specifica come utilizzare lo standard HL7 FHIR per documentare un referto di medicina di laboratorio.
-status: draft # draft | active | retired | unknown
-version: 0.1.0
+status: active # draft | active | retired | unknown
+version: 0.2.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2022+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -23,8 +23,10 @@ jurisdiction: urn:iso:std:iso:3166#IT "Italy"
 dependencies:
   #hl7.fhir.it.base: current
   hl7.fhir.it.terminology: current
-  hl7.fhir.eu.laboratory: current
-  hl7.fhir.uv.ips: current
+  # hl7.fhir.eu.laboratory: current  # ONLY for the ci build
+  hl7.fhir.eu.laboratory: 0.1.0-ballot
+  # hl7.fhir.uv.ips: current # ONLY for the ci build
+  hl7.fhir.uv.ips: 1.1.0 
   hl7.fhir.extensions.r5: 4.0.1
   # hl7.fhir.it.cda2fhir: 0.1.0
 parameters: #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
@@ -111,6 +113,6 @@ groups:
       - StructureDefinition/organization-it-lab
       - StructureDefinition/organizationOperatore-it-lab
       - StructureDefinition/device-it-lab
-      - StructureDefinition/specimen-additive-substance-it-lab
+      - StructureDefinition/substance-additive-specimen-it-lab
       - StructureDefinition/observation-grouping-it-lab
       
