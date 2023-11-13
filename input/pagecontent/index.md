@@ -27,8 +27,6 @@ Questo approccio consente inoltre agli implementatori di accedere facilmente all
 ### Details
 #### Cross-Version Analysis
 {% include cross-version-analysis.xhtml %}
-#### Dependency Table
-{% include dependency-table.xhtml %}
 
 ### Autori e contributori
 
