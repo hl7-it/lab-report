@@ -9,20 +9,16 @@ Usage: #example
 * class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
 * class.code = #AMB
 * class.display = "ambulatory"
-* subject = Reference(Paziente-SSN)
-
-
+* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5)
 
 
 * period.start = "2023-02-25T11:45:00+01:00"
 * period.end = "2023-02-25T12:45:00+01:00"
 
 
+* location.location = Reference(urn:uuid:f148e54a-2046-4534-b9e9-54e7e9632224)
 
+* basedOn = Reference(urn:uuid:463ae6fe-60d4-4b38-84b3-1008e0925678)
 
-* location.location = Reference(Location-Lab-Esempio)
-
-* basedOn = Reference(ServiceRequest-Lab-Esempio)
-
-* participant.individual = Reference(Infermiere-Lab-Esempio)
+* participant.individual = Reference(urn:uuid:134a0bb1-aa0a-46b9-aa1e-a5d0e379e77c)
 * participant.type = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#SPRF "Secondary performer"

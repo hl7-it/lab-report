@@ -21,7 +21,7 @@ Description: "Esempio di un PractitionerRole: medico in ematologia clinica press
 
 
 
-* organization = Reference(Organization-Lab-Esempio)
+* organization = Reference(urn:uuid:5fd3f1a6-b2c8-44cb-8237-0b5f0a81f2a8)
 
 * code.coding.system = "http://terminology.hl7.it/CodeSystem/it-v3RoleCode"
 * code.coding.code = #MMG

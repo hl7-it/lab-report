@@ -7,7 +7,7 @@ status: active # draft | active | retired | unknown
 version: 0.2.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2022+
-releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: trial-use # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 
 publisher:
   - name: HL7 Italia
@@ -23,12 +23,11 @@ jurisdiction: urn:iso:std:iso:3166#IT "Italy"
 dependencies:
   #hl7.fhir.it.base: current
   hl7.fhir.it.terminology: current
-  hl7.fhir.eu.laboratory: current  # ONLY for the ci build
-  #hl7.fhir.eu.laboratory: 0.1.0-ballot
+  # hl7.fhir.eu.laboratory: current  # ONLY for the ci build
+  hl7.fhir.eu.laboratory: 0.1.0-ballot
   # hl7.fhir.uv.ips: current # ONLY for the ci build
   hl7.fhir.uv.ips: 1.1.0 
   hl7.fhir.extensions.r5: 4.0.1
-  # hl7.fhir.it.cda2fhir: 0.1.0
 parameters: #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
 #  produce-jekyll-data: true
 
@@ -42,7 +41,7 @@ parameters: #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Pa
     - http://hl7.it/fhir/StructureDefinition/patient-qualification-it
     - http://hl7.it/fhir/StructureDefinition/recordCertification
     - http://hl7.it/fhir/StructureDefinition/address-dug
-    - http://hl7.it/fhir/StructureDefinition/information-recipient
+  #  - http://hl7.it/fhir/StructureDefinition/information-recipient
 
 pages:
   index.md:

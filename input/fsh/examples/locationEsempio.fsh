@@ -3,6 +3,7 @@ InstanceOf: location-it-lab
 Usage: #example
 Description: "Esempio di location: struttura ospedaliera di Roma."
 
+* id = "f148e54a-2046-4534-b9e9-54e7e9632224"
 * identifier.use = #usual
 
 * identifier.value = "123456"

@@ -3,6 +3,7 @@ InstanceOf: PractitionerRefertoLabIt
 Usage: #example
 Description: "Esempio di un professionista sanitario: infermiere."
 
+* id = "134a0bb1-aa0a-46b9-aa1e-a5d0e379e77c"
 * identifier.use = #official
 * identifier.system = "http://hl7.it/sid/codiceFiscale" 
 * identifier.value = "NFRPRV80A01H501G"

@@ -15,13 +15,13 @@ Description: "Esempio di un PractitionerRole: medico in ematologia clinica press
 
 
 
-* practitioner = Reference(Practitioner-Lab-Esempio)
+* practitioner = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)
 
 
 
 
 
-* organization = Reference(Organization-Lab-Esempio)
+* organization = Reference(urn:uuid:5fd3f1a6-b2c8-44cb-8237-0b5f0a81f2a8)
 
 * code.coding.system = $sct
 * code.coding.code = #61246008

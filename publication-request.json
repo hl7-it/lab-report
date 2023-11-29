@@ -4,7 +4,6 @@
   "path" : "http://hl7.it/fhir/lab-report/0.2.0",
   "status" : "trial-use",
   "sequence" : "Release 1",
-  "first": true,
   "mode": "milestone",
   "desc" : "This is the November 2023 STU version."
 }
