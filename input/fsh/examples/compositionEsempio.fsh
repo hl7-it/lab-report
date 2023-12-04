@@ -6,8 +6,8 @@ Description: "Esempio di una Composition: descrizione header e struttura body de
 * extension[dataEnterer].extension[dataEnterer].valueReference = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803d)
 * extension[dataEnterer].extension[tempoCompilazione].valueDateTime = "2023-02-25T10:45:00+01:00"
 
-* extension[$basedOnOrder].valueReference = Reference(urn:uuid:463ae6fe-60d4-4b38-84b3-1008e0925678)
-* extension[$informationRecipient].valueReference = Reference(urn:uuid:134a0bb1-aa0a-46b9-aa1e-a5d0e379e77c)
+//* extension[$basedOnOrder].valueReference = Reference(urn:uuid:463ae6fe-60d4-4b38-84b3-1008e0925678)
+//* extension[$informationRecipient].valueReference = Reference(urn:uuid:134a0bb1-aa0a-46b9-aa1e-a5d0e379e77c)
 
 * language = #it-IT
 * identifier.use = #official

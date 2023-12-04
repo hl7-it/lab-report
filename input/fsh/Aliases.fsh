@@ -77,7 +77,7 @@ Alias: $Composition-eu-lab = http://hl7.eu/fhir/laboratory/StructureDefinition/C
 Alias: $Bundle-eu-lab = http://hl7.eu/fhir/laboratory/StructureDefinition/Bundle-eu-lab
 Alias: $DiagnosticReport-eu-lab = http://hl7.eu/fhir/laboratory/StructureDefinition/DiagnosticReport-eu-lab
 Alias: $ServiceRequest-eu-lab = http://hl7.eu/fhir/laboratory/StructureDefinition/ServiceRequest-eu-lab
-Alias: $Substance-additive-specimen-it-lab = http://hl7.eu/fhir/laboratory/StructureDefinition/specimen-additive-substance-eu-lab // The name will be changed
+Alias: $Substance-additive-specimen-it-lab = http://hl7.eu/fhir/laboratory/StructureDefinition/substance-additive-eu-lab //http://hl7.eu/fhir/laboratory/StructureDefinition/specimen-additive-substance-eu-lab // The name will be changed
 
 
 Alias: $CodeableConcept-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips
