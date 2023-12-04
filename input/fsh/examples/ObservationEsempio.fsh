@@ -20,8 +20,6 @@ Description: "Esempio di un'osservazione: rilevazione di glucosio nel sangue."
 
 * encounter = Reference(urn:uuid:7b06368c-7089-4f66-acc8-29e1fcbd31f6)
 * performer = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)
-
 * specimen = Reference (urn:uuid:168d4960-0a0b-43af-8025-180f0965f325)
 * device = Reference (urn:uuid:168d4960-0a0b-43af-8025-180f0965f324)
 * derivedFrom = Reference(urn:uuid:059927b1-7e17-409e-ae60-68cc3c0b3aea)
-
