@@ -106,3 +106,6 @@ Alias: $CodeableConcept-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/
 //---EU
 Alias: $basedOnOrder = http://hl7.eu/fhir/StructureDefinition/composition-basedOn-order-or-requisition
 Alias: $informationRecipient = http://hl7.eu/fhir/StructureDefinition/information-recipient
+Alias: $it-tipoEntita = http://terminology.hl7.it/CodeSystem/it-tipoEntita
+Alias: $istat-unitaAmministrativeTerritoriali = http://terminology.hl7.it/CodeSystem/istat-unitaAmministrativeTerritoriali
+Alias: $minsan-regione = http://terminology.hl7.it/CodeSystem/minsan-regione

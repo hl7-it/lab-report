@@ -8,6 +8,8 @@
 # Pre adoption of R5 rules for Document Bundles
 
 WARNING: Bundle/Bundle-Lab-Esempio: Bundle.entry[12]: Entry 'DiagnosticReport/56f19992-e73e-45b5-bbdd-6d9aeb60b15a' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+WARNING: Bundle.entry[23]: Entry 'urn:uuid:a7d1b3b0-9aee-4bc7-b0f2-46d441ba6246' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+WARNING: Bundle.entry[23]: Entry 'urn:uuid:a7d1b3b0-9aee-4bc7-b0f2-46d441ba6246' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 
 # == Bundle-Bundle-Lab-Esempio.json ==
 
@@ -50,3 +52,40 @@ INFORMATION: Patient/8472931c-fbd0-437b-9ed1-4f66472c78b5: Patient.address[0].li
 
 INFORMATION: StructureDefinition/address-it: StructureDefinition.snapshot.element[12].example[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://hl7.it/fhir/ValueSet/istat-dug' is unknown so the code cannot be validated
 INFORMATION: StructureDefinition/address-it: StructureDefinition.differential.element[6].example[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://hl7.it/fhir/ValueSet/istat-dug' is unknown so the code cannot be validated
+
+# == fsh-generated\resources\Organization-ae0365ea-d8a1-45e0-a39d-f14fac4ccfe8.json ==
+
+INFORMATION: Organization/ae0365ea-d8a1-45e0-a39d-f14fac4ccfe8: Organization.address[0].city.extension[0].value.ofType(Coding): Code System URI 'http://terminology.hl7.it/CodeSystem/istat-unitaAmministrativeTerritoriali' could not be found so the code cannot be validated
+INFORMATION: Organization/ae0365ea-d8a1-45e0-a39d-f14fac4ccfe8: Organization.address[0].state.extension[0].value.ofType(Coding): Code System URI 'http://terminology.hl7.it/CodeSystem/minsan-regione' could not be found so the code cannot be validated
+
+# == fsh-generated\resources\Patient-8472931c-fbd0-437b-9ed1-4f66472c78b5.json ==
+
+INFORMATION: Patient/8472931c-fbd0-437b-9ed1-4f66472c78b5: Patient.extension[3].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.it/sid/istat-unitaAmministrativeTerritorialiEstere' could not be found so the code cannot be validated
+INFORMATION: Patient/8472931c-fbd0-437b-9ed1-4f66472c78b5: Patient.contact[0].relationship[0].coding[0]: Code System URI 'http://terminology.hl7.org/5.1.0/CodeSystem-v2-0131' could not be found so the code cannot be validated
+INFORMATION: Patient/8472931c-fbd0-437b-9ed1-4f66472c78b5: Patient.contact[1].relationship[0].coding[0]: Code System URI 'http://terminology.hl7.org/5.1.0/CodeSystem-v2-0131' could not be found so the code cannot be validated
+
+# == fsh-generated\resources\StructureDefinition-address-it.json ==
+
+INFORMATION: StructureDefinition/address-it: StructureDefinition.snapshot.element[12].example[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://hl7.it/fhir/ValueSet/istat-dug' could not be found so the code cannot be validated
+INFORMATION: StructureDefinition/address-it: StructureDefinition.differential.element[6].example[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://hl7.it/fhir/ValueSet/istat-dug' could not be found so the code cannot be validated
+
+
+Code System URI 'http://terminology.hl7.it/sid/istat-unitaAmministrativeTerritorialiEstere' could not be found so the code cannot be validated
+Code System URI 'http://terminology.hl7.org/5.1.0/CodeSystem-v2-0131' could not be found so the code cannot be validated
+Code System URI 'http://terminology.hl7.org/5.1.0/CodeSystem-v2-0131' could not be found so the code cannot be validated
+This element does not match any known slice defined in the profile http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab|0.1.0-ballot 
+This element does not match any known slice defined in the profile http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab|0.1.0-ballot
+This element does not match any known slice defined in the profile http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab|0.1.0-ballot
+This element does not match any known slice defined in the profile http://hl7.eu/fhir/laboratory/StructureDefinition/Address-eu|0.1.0-ballot
+
+Code System URI 'http://terminology.hl7.it/CodeSystem/istat-unitaAmministrativeTerritoriali' could not be found so the code cannot be validated
+Code System URI 'http://terminology.hl7.it/CodeSystem/minsan-regione' could not be found so the code cannot be validated
+Reference to draft item http://terminology.hl7.it/CodeSystem/it-tipoEntita|0.1.1
+
+This element does not match any known slice defined in the profile http://hl7.it/fhir/lab-report/StructureDefinition/patient-it-lab|0.2.0
+
+None of the codings provided are in the value set 'Tipo campione' (http://terminology.hl7.it/ValueSet/tipo-campione-lab-it|0.1.1), and a coding is recommended to come from this value set) (codes = http://terminology.hl7.org/CodeSystem/v3-SpecimenType#BLD)
+
+None of the codings provided are in the value set 'Codice Richiesta esame di Laboratorio [LOINC]' (http://hl7.it/fhir/lab-report/ValueSet/lab-orderCodes-it-lab|0.2.0), and a coding is recommended to come from this value set) (codes = http://snomed.info/sct#5357009)
+
+Entry 'urn:uuid:56f19992-e73e-45b5-bbdd-6d9aeb60b15a' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)

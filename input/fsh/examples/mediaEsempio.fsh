@@ -1,13 +1,14 @@
 Instance: Media-Lab-Esempio
-InstanceOf: media-it-lab
+InstanceOf: MediaRefertoLabIt
 Usage: #example
 Description: "Esempio di file multimediale: Valori di albumina ottenuti con elettroforesi."
+* id = "059927b1-7e17-409e-ae60-68cc3c0b3aea"
 * status = #completed
 * type = $media-type#image "Image"
-* subject = Reference(Paziente-SSN)
+* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5)
 * createdDateTime = "2023-06-21"
 * issued = "2023-06-21T14:56:18Z"
-* operator = Reference(Practitioner-Lab-Esempio)
+* operator = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)
 * height = 128
 * width = 128
 * content.id = "a1"

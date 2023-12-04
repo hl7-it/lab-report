@@ -14,7 +14,7 @@ Description: "Descrive come rappresentare la risorsa Observation per le rilevazi
 * category ^short = "Codice che classifica il tipo di osservazione."
 * category ^definition = "La categoria di osservazione può definire la classificazione tramite diversi livelli di dettaglio, a partire da laboratory."
 
-* category[laboratory] ^short = "Indica genericamente che si rifeirsce as un esame di Laboratorio"
+* category[laboratory] ^short = "Indica genericamente che si riferisce ad un esame di Laboratorio"
 * category[studyType] ^short = "Classificazione per tipo di studio"
 * category[specialty] ^short = "Classificazione per specialità"
 

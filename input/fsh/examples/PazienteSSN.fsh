@@ -58,7 +58,7 @@ Description: "Esempio di un paziente: soggetto iscritto al Sistema Sanitario Naz
 * contact[0].telecom.value = "3312345567"
 * contact[1].telecom.system = #phone
 * contact[1].telecom.value = "3311234598"
-* generalPractitioner[aziendaAssistenza] = Reference(OrganizationOperatore-Lab-Esempio)
+* generalPractitioner[aziendaAssistenza] = Reference(urn:uuid:ae0365ea-d8a1-45e0-a39d-f14fac4ccfe8)
 
 
 
