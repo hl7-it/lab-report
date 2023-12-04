@@ -1,7 +1,3 @@
-Alias: $it-tipoEntita = http://terminology.hl7.it/CodeSystem/it-tipoEntita
-Alias: $istat-unitaAmministrativeTerritoriali = http://terminology.hl7.it/CodeSystem/istat-unitaAmministrativeTerritoriali
-Alias: $minsan-regione = http://terminology.hl7.it/CodeSystem/minsan-regione
-
 Instance: OrganizationOperatore-Lab-Esempio
 InstanceOf: OrganizationOperatoreSanitarioRefertoLabIt
 Usage: #example

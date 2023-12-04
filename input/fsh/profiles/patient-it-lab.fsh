@@ -93,12 +93,12 @@ Description: "Descrive come rappresentare le informazioni del paziente nei docum
 * name.given 
 * name obeys it-pat-name-1
 * name ^short = "Nome associato al paziente."
-* name.extension contains http://hl7.org/fhir/StructureDefinition/data-absent-reason named name-absent-reason 0..*
-* name.extension[name-absent-reason] ^binding.strength = #example
-* name.extension[name-absent-reason] ^binding.valueSet = $data-absent-reason
-* name.extension[name-absent-reason] ^sliceName = "name-absent-reason"
-* name.extension[name-absent-reason] ^short = "Ragione non valorizzazione elemento name"
-* name.extension[name-absent-reason] ^definition = "Ragione per cui l'elemento name non è stato valorizzato"
+// * name.extension contains http://hl7.org/fhir/StructureDefinition/data-absent-reason named name-absent-reason 0..*
+// * name.extension[name-absent-reason] ^binding.strength = #example
+// * name.extension[name-absent-reason] ^binding.valueSet = $data-absent-reason
+// * name.extension[name-absent-reason] ^sliceName = "name-absent-reason"
+// * name.extension[name-absent-reason] ^short = "Ragione non valorizzazione elemento name"
+// * name.extension[name-absent-reason] ^definition = "Ragione per cui l'elemento name non è stato valorizzato"
 
 * telecom  
 * gender  

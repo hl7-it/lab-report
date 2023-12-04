@@ -1,5 +1,5 @@
 Instance: Media-Lab-Esempio
-InstanceOf: media-it-lab
+InstanceOf: MediaRefertoLabIt
 Usage: #example
 Description: "Esempio di file multimediale: Valori di albumina ottenuti con elettroforesi."
 * id = "059927b1-7e17-409e-ae60-68cc3c0b3aea"

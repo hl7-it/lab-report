@@ -3,7 +3,7 @@ InstanceOf: ObservationRefertoLabIt
 Usage: #example
 Description: "Esempio di un'osservazione: rilevazione di albumina da elettroforesi."
 
-
+* id = "a7d1b3b0-9aee-4bc7-b0f2-46d441ba6246"
 * category[laboratory] = $observation-category#laboratory
 
 * status = #final
