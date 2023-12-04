@@ -10,6 +10,4 @@ Description: "Esempio di campione: sangue prelevato dall'avambraccio del pazient
 
 * collection.bodySite = $sct#7311008 "Anterior surface of arm"
 * container.type = $sct#706052002 "Evacuated blood collection tube"
-
 * container.additiveReference = Reference(urn:uuid:168d4960-0a0b-43af-8025-180f0965f326)
-

@@ -16,7 +16,6 @@ Usage: #example
 * entry[diagnosticReport].resource = DiagnosticReport-Lab-Esempio
 * entry[encounter].fullUrl = "urn:uuid:7b06368c-7089-4f66-acc8-29e1fcbd31f6" 
 * entry[encounter].resource = Encounter-Lab-Esempio
-
 * entry[specimen].fullUrl = "urn:uuid:168d4960-0a0b-43af-8025-180f0965f325" 
 * entry[specimen].resource = Specimen-Lab-Esempio
 * entry[observation][+].fullUrl = "urn:uuid:7e2f354b-de83-4472-bd07-1571cdb50fde" 
@@ -33,12 +32,10 @@ Usage: #example
 // * entry[observation][=].resource = Observation-TimedTest-T2-Lab-Esempio
 // * entry[observation][+].fullUrl = "urn:uuid:a7d1b3b0-9aee-4bc7-b0f2-46d441ba6246" 
 // * entry[observation][=].resource = Observation-Lab-Esempio-Elettroforesi
-
 * entry[serviceRequest].fullUrl = "urn:uuid:463ae6fe-60d4-4b38-84b3-1008e0925678" 
 * entry[serviceRequest].resource = ServiceRequest-Lab-Esempio
 * entry[practitionerRole].fullUrl = "urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c" 
 * entry[practitionerRole].resource = PractitionerRole-Lab-Esempio
-
 * entry[practitioner][+].fullUrl = "urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803d" 
 * entry[practitioner][=].resource = Practitioner-Lab-Esempio
 * entry[practitioner][+].fullUrl = "urn:uuid:134a0bb1-aa0a-46b9-aa1e-a5d0e379e77c" 
@@ -55,7 +52,6 @@ Usage: #example
 * entry[device].resource = Device-Lab-Esempio
 * entry[media].fullUrl = "urn:uuid:059927b1-7e17-409e-ae60-68cc3c0b3aea" 
 * entry[media].resource = Media-Lab-Esempio
-
 
 
 
