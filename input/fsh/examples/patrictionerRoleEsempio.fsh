@@ -16,9 +16,11 @@ Description: "Esempio di un PractitionerRole: medico in ematologia clinica press
 
 * organization = Reference(urn:uuid:5fd3f1a6-b2c8-44cb-8237-0b5f0a81f2a8)
 
+
 * code.coding.system = "urn:oid:2.16.840.1.113883.2.9.6.2.7"
 * code.coding.code = #2211
 * code.coding.display = "Generalist Medical Practitioners"
+
 
 * specialty.coding.system = "http://snomed.info/sct"
 * specialty.coding.code = #394803006

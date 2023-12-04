@@ -192,7 +192,9 @@ Title: "DiagnosticReport - Esempio Laboratorio"
 * subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5)
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
 * performer = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)
+
 * specimen = Reference(urn:uuid:168d4960-0a0b-43af-8025-180f0965f325)
+
 * result[0] = Reference(Inline-Observation-gram-stain)
 * result[+] = Reference(Inline-Observation-aerobic-culture)
 * result[+] = Reference(Inline-Observation-anaerobic-culture)

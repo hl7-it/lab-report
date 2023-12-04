@@ -31,4 +31,6 @@ Description: "Esempio di richiesta: prestazione richiesta facente parte di un'au
 
 * reasonCode.coding = $sct#4307007 "Pregestational diabetes mellitus AND/OR impaired glucose tolerance, modified White class F"
 
+
 * specimen = Reference(urn:uuid:168d4960-0a0b-43af-8025-180f0965f325)
+
