@@ -46,9 +46,9 @@ Description: "Profilo della risorsa Organization che per la descrizione delle in
 * identifier[asl] ^short = "Identificativo Azienda Sanitaria Locale (FLS 11 - 6 char)"
 * identifier[asl].system = "http://hl7.it/sid/fls" (exactly) // pattern
 
-* identifier[asl].value from http://terminology.hl7.it/ValueSet/minsan-idAsl (required)
+* identifier[asl].value from http://terminologie.hl7.it/ValueSet/minsan-idAsl (required)
 
-* identifier[aslRegione].system from http://terminology.hl7.it/ValueSet/uri-idAslRegione // pattern
+* identifier[aslRegione].system from http://terminologie.hl7.it/ValueSet/uri-idAslRegione // pattern
 * identifier[aslRegione] ^short = "Identificativo Regionale Azienda Sanitaria Locale (FLS 11 - 3 char)"
 
 
@@ -58,13 +58,13 @@ Description: "Profilo della risorsa Organization che per la descrizione delle in
 
 
 
-* identifier[aziendaOspedaliera].value from http://terminology.hl7.it/ValueSet/minsan-idAziendeOspedaliere (required)
+* identifier[aziendaOspedaliera].value from http://terminologie.hl7.it/ValueSet/minsan-idAziendeOspedaliere (required)
 * identifier[struttura].system = "http://hl7.it/sid/hsp" (exactly) // pattern
 * identifier[struttura] ^short = "Identificativo Struttura di Ricovero (HSP 11)"
-* identifier[struttura].value from http://terminology.hl7.it/ValueSet/minsan-idStrutture (required)
+* identifier[struttura].value from http://terminologie.hl7.it/ValueSet/minsan-idStrutture (required)
 * identifier[strutturaInterna].system = "http://hl7.it/sid/hsp" (exactly) // pattern
 
-* identifier[strutturaInterna].value from http://terminology.hl7.it/ValueSet/minsan-idStruttureInterne (required)
+* identifier[strutturaInterna].value from http://terminologie.hl7.it/ValueSet/minsan-idStruttureInterne (required)
 * identifier[partitaIva].system = "http://hl7.it/sid/partitaIva" (exactly)  // pattern
 * identifier[partitaIva] ^short = "Partita IVA Organizzazione"
 * identifier[codiceFiscale].system = "http://hl7.it/sid/codiceFiscale" (exactly)  // pattern
@@ -72,5 +72,5 @@ Description: "Profilo della risorsa Organization che per la descrizione delle in
 
 * active	 
 * type	 
-* type from http://terminology.hl7.it/ValueSet/tipoOrgSocioSanitaria (extensible)
+* type from http://terminologie.hl7.it/ValueSet/tipoOrgSocioSanitaria (extensible)
 * name	 

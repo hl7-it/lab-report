@@ -1,4 +1,4 @@
-Alias: $istat-titoloStudio = http://terminology.hl7.it/ValueSet/istat-titoloStudio
+Alias: $istat-titoloStudio = http://terminologie.hl7.it/ValueSet/istat-titoloStudio
 
 Extension: ExtTitoloStudioPaziente
 Id: patient-qualification-it

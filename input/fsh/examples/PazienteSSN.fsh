@@ -49,10 +49,10 @@ Description: "Esempio di un paziente: soggetto iscritto al Sistema Sanitario Naz
 * contact[1].name.family = "Bianchi"
 * contact[1].name.given = "Maria"
 * contact[0].relationship.coding.code = #C
-* contact[0].relationship.coding.system = "http://terminology.hl7.org/5.1.0/CodeSystem-v2-0131"
+* contact[0].relationship.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0131"
 * contact[0].relationship.coding.display = "Emergency Contact"
 * contact[1].relationship.coding.code = #C
-* contact[1].relationship.coding.system = "http://terminology.hl7.org/5.1.0/CodeSystem-v2-0131"
+* contact[1].relationship.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0131"
 * contact[1].relationship.coding.display = "Emergency Contact"
 * contact[0].telecom.system = #phone
 * contact[0].telecom.value = "3312345567"
