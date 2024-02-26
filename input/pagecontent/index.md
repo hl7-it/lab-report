@@ -60,7 +60,7 @@ Questo approccio consente inoltre agli implementatori di accedere facilmente all
 </tr>
 <tr class="odd">
 <td>Autore</td>
-<td>Valeria Cesarò</td>
+<td>Valeria Cesaro'</td>
 <td>EY Advisory S.p.A.</td>
 <td>valeria.cesaro@it.ey.com</td>
 </tr>
