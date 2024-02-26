@@ -294,9 +294,9 @@ Description: "Esempio di Observation: rilevazione coltura aerobica da campione d
 * status = #final
 * category[laboratory] = $observation-category#laboratory
 
-* code = $loinc#17898-8
+* code = $loinc#18718-7
  //"Coltura Aerobica"
-* code.text = "Coltura Aerobica"
+* code.text = "Studi di marcatori cellulari"
 * subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5)
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
 * performer = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)

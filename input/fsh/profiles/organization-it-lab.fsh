@@ -46,25 +46,25 @@ Description: "Profilo della risorsa Organization che per la descrizione delle in
 * identifier[asl] ^short = "Identificativo Azienda Sanitaria Locale (FLS 11 - 6 char)"
 * identifier[asl].system = "http://hl7.it/sid/fls" (exactly) // pattern
 
-* identifier[asl].value from http://terminology.hl7.it/ValueSet/minsan-idAsl (required)
+* identifier[asl].value from VsMinisteroSaluteAsl (required) //$asl
 
-* identifier[aslRegione].system from http://terminology.hl7.it/ValueSet/uri-idAslRegione // pattern
+* identifier[aslRegione].system from VsMinisteroSaluteAsl // pattern $asl
 * identifier[aslRegione] ^short = "Identificativo Regionale Azienda Sanitaria Locale (FLS 11 - 3 char)"
 
 
 
 * identifier[aziendaOspedaliera].system = "http://hl7.it/sid/hsp" (exactly)  // pattern
-* identifier[aziendaOspedaliera] ^short = "Identificativo Azienda Ospedaliera (HSP 11)"
+* identifier[aziendaOspedaliera] ^short = "Identificativo Azienda Ospedaliera"
 
 
 
 * identifier[aziendaOspedaliera].value from http://terminology.hl7.it/ValueSet/minsan-idAziendeOspedaliere (required)
 * identifier[struttura].system = "http://hl7.it/sid/hsp" (exactly) // pattern
-* identifier[struttura] ^short = "Identificativo Struttura di Ricovero (HSP 11)"
+* identifier[struttura] ^short = "Identificativo Struttura di Ricovero"
 * identifier[struttura].value from http://terminology.hl7.it/ValueSet/minsan-idStrutture (required)
 * identifier[strutturaInterna].system = "http://hl7.it/sid/hsp" (exactly) // pattern
 
-* identifier[strutturaInterna].value from http://terminology.hl7.it/ValueSet/minsan-idStruttureInterne (required)
+* identifier[strutturaInterna].value from $minsan-idStruttureInterne (required)
 * identifier[partitaIva].system = "http://hl7.it/sid/partitaIva" (exactly)  // pattern
 * identifier[partitaIva] ^short = "Partita IVA Organizzazione"
 * identifier[codiceFiscale].system = "http://hl7.it/sid/codiceFiscale" (exactly)  // pattern

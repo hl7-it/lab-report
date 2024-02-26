@@ -25,11 +25,12 @@ INFORMATION: Bundle/Bundle-Lab-Esempio: Bundle.entry[3].resource/*Patient/847293
 
 # == Bundle-Bundle-Lab-Esempio-2.json ==
 
-INFORMATION: Bundle/Bundle-Lab-Esempio-2: Bundle.entry[3].resource/*Observation/297c84f2-28d6-41b5-a270-6f563ef0fdfc*/.code: None of the codings provided are in the value set 'Sezioni Composition Lab Report' (http://terminology.hl7.it/ValueSet/sezione-referto-laboratorio|0.1.1), and a coding is recommended to come from this value set) (codes = http://loinc.org#17898-8)
-INFORMATION: Bundle/Bundle-Lab-Esempio-2: Bundle.entry[5].resource/*Observation/333b62b2-47b0-43b5-9745-abec1f0c4656*/.code: None of the codings provided are in the value set 'Sezioni Composition Lab Report' (http://terminology.hl7.it/ValueSet/sezione-referto-laboratorio|0.1.1), and a coding is recommended to come from this value set) (codes = http://loinc.org#664-3)
-INFORMATION: Bundle/Bundle-Lab-Esempio-2: Bundle.entry[10].resource/*Observation/516884c4-8a1f-4e5b-8492-a7dd190f1fb0*/.value.ofType(CodeableConcept): None of the codings provided are in the value set 'Risultato osservazione codificato' (http://terminology.hl7.it/ValueSet/valueset-valuecodeableconcept-obs-it|0.1.1), and a coding is recommended to come from this value set) (codes = http://snomed.info/sct#70003006)
-INFORMATION: Bundle/Bundle-Lab-Esempio-2: Bundle.entry[20].resource/*Observation/ed8a917b-2e94-4aa9-b824-5dceee2deb90*/.value.ofType(CodeableConcept): None of the codings provided are in the value set 'Risultato osservazione codificato' (http://terminology.hl7.it/ValueSet/valueset-valuecodeableconcept-obs-it|0.1.1), and a coding is recommended to come from this value set) (codes = http://snomed.info/sct#263866000)
-
+INFORMATION: Bundle/Bundle-Lab-Esempio-2: Bundle​.entry[3]​.resource​/*Observation​/297c84f2-28d6-41b5-a270-6f563ef0fdfc*​/​.code: None of the codings provided are in the value set 'Sezioni Composition Lab Report' (http://terminology.hl7.it/ValueSet/sezione-referto-laboratorio|0.0.1), and a coding is recommended to come from this value set) (codes = http://loinc.org#17898-8)
+INFORMATION: Bundle/Bundle-Lab-Esempio-2: Bundle.entry[5].resource/*Observation/333b62b2-47b0-43b5-9745-abec1f0c4656*/.code: None of the codings provided are in the value set 'Sezioni Composition Lab Report' (http://terminology.hl7.it/ValueSet/sezione-referto-laboratorio|0.0.1), and a coding is recommended to come from this value set) (codes = http://loinc.org#664-3)
+INFORMATION: Bundle/Bundle-Lab-Esempio-2: Bundle.entry[10].resource/*Observation/516884c4-8a1f-4e5b-8492-a7dd190f1fb0*/.value.ofType(CodeableConcept): None of the codings provided are in the value set 'Risultato osservazione codificato' (http://terminology.hl7.it/ValueSet/valueset-valuecodeableconcept-obs-it|0.0.1), and a coding is recommended to come from this value set) (codes = http://snomed.info/sct#70003006)
+INFORMATION: Bundle/Bundle-Lab-Esempio-2: Bundle.entry[20].resource/*Observation/ed8a917b-2e94-4aa9-b824-5dceee2deb90*/.value.ofType(CodeableConcept): None of the codings provided are in the value set 'Risultato osservazione codificato' (http://terminology.hl7.it/ValueSet/valueset-valuecodeableconcept-obs-it|0.0.1), and a coding is recommended to come from this value set) (codes = http://snomed.info/sct#263866000)
+A definition for CodeSystem 'http://terminology.hl7.org/5.1.0/CodeSystem-v2-0131' could not be found, so the code cannot be validated (from http://tx.fhir.org/r4)
+A definition for CodeSystem 'http://terminology.hl7.org/5.1.0/CodeSystem-v2-0131' could not be found, so the code cannot be validated (from http://tx.fhir.org/r4)
 
 # == fsh-generated\resources\Organization-ae0365ea-d8a1-45e0-a39d-f14fac4ccfe8.json ==
 
@@ -42,11 +43,8 @@ INFORMATION: Organization/ae0365ea-d8a1-45e0-a39d-f14fac4ccfe8: Organization.add
 INFORMATION: Patient/8472931c-fbd0-437b-9ed1-4f66472c78b5: Patient.extension[3].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.it/sid/istat-unitaAmministrativeTerritorialiEstere' is unknown so the code cannot be validated
 INFORMATION: Patient/8472931c-fbd0-437b-9ed1-4f66472c78b5: Patient.contact[0].relationship[0].coding[0]: Code System URI 'http://terminology.hl7.org/5.1.0/CodeSystem-v2-0131' is unknown so the code cannot be validated
 INFORMATION: Patient/8472931c-fbd0-437b-9ed1-4f66472c78b5: Patient.contact[1].relationship[0].coding[0]: Code System URI 'http://terminology.hl7.org/5.1.0/CodeSystem-v2-0131' is unknown so the code cannot be validated
-INFORMATION: Patient/8472931c-fbd0-437b-9ed1-4f66472c78b5: Patient.extension[1]: This element does not match any known slice defined in the profile http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab|0.1.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Patient/8472931c-fbd0-437b-9ed1-4f66472c78b5: Patient.extension[2]: This element does not match any known slice defined in the profile http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab|0.1.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Patient/8472931c-fbd0-437b-9ed1-4f66472c78b5: Patient.extension[3]: This element does not match any known slice defined in the profile http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab|0.1.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Patient/8472931c-fbd0-437b-9ed1-4f66472c78b5: Patient.address[0].line[0].extension[0]: This element does not match any known slice defined in the profile http://hl7.eu/fhir/laboratory/StructureDefinition/Address-eu|0.1.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
-
+This element does not match any known slice defined in the profile http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab|0.1.0-ci (this may not be a problem, but you should check that it's not intended to match a slice) 
+INFORMATION: Patient/8472931c-fbd0-437b-9ed1-4f66472c78b5: Patient.address[0].line[0].extension[0]: This element does not match any known slice defined in the profile http://hl7.eu/fhir/laboratory/StructureDefinition/Address-eu|0.1.0-ci (this may not be a problem, but you should check that it's not intended to match a slice)
 
 # == fsh-generated\resources\StructureDefinition-address-it.json ==
 
@@ -57,6 +55,7 @@ INFORMATION: StructureDefinition/address-it: StructureDefinition.differential.el
 
 INFORMATION: Organization/ae0365ea-d8a1-45e0-a39d-f14fac4ccfe8: Organization.address[0].city.extension[0].value.ofType(Coding): Code System URI 'http://terminology.hl7.it/CodeSystem/istat-unitaAmministrativeTerritoriali' could not be found so the code cannot be validated
 INFORMATION: Organization/ae0365ea-d8a1-45e0-a39d-f14fac4ccfe8: Organization.address[0].state.extension[0].value.ofType(Coding): Code System URI 'http://terminology.hl7.it/CodeSystem/minsan-regione' could not be found so the code cannot be validated
+This element does not match any known slice defined in the profile http://hl7.it/fhir/lab-report/StructureDefinition/organizationOperatore-it-lab|0.2.0 (this may not be a problem, but you should check that it's not intended to match a slice) 
 
 # == fsh-generated\resources\Patient-8472931c-fbd0-437b-9ed1-4f66472c78b5.json ==
 
@@ -90,16 +89,15 @@ None of the codings provided are in the value set 'Codice Richiesta esame di Lab
 
 Entry 'urn:uuid:56f19992-e73e-45b5-bbdd-6d9aeb60b15a' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 
-This element does not match any known slice defined in the profile http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab|0.1.0-ci (this may not be a problem, but you should check that it's not intended to match a slice)
-This element does not match any known slice defined in the profile http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab|0.1.0-ci (this may not be a problem, but you should check that it's not intended to match a slice)
-This element does not match any known slice defined in the profile http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab|0.1.0-ci (this may not be a problem, but you should check that it's not intended to match a slice)
+# New Info
 This element does not match any known slice defined in the profile http://hl7.eu/fhir/laboratory/StructureDefinition/Address-eu|0.1.0-ci (this may not be a problem, but you should check that it's not intended to match a slice)
-This element does not match any known slice defined in the profile http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab|0.1.0-ci (this may not be a problem, but you should check that it's not intended to match a slice)
-This element does not match any known slice defined in the profile http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab|0.1.0-ci (this may not be a problem, but you should check that it's not intended to match a slice)
-This element does not match any known slice defined in the profile http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab|0.1.0-ci (this may not be a problem, but you should check that it's not intended to match a slice)
-This element does not match any known slice defined in the profile http://hl7.eu/fhir/laboratory/StructureDefinition/Address-eu|0.1.0-ci (this may not be a problem, but you should check that it's not intended to match a slice)
+Reference to draft CodeSystem
+Reference to draft CodeSystem http://terminology.hl7.it/CodeSystem/istat-unitaAmministrativeTerritorialiEstere|0.0.1
+Reference to draft CodeSystem http://terminology.hl7.it/CodeSystem/it-tipoEntita|0.0.1
+Reference to draft CodeSystem http://terminology.hl7.it/CodeSystem/cs-asl|0.0.1
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
+The value set expansion is incomplete
+Reference to draft CodeSystem http://terminology.hl7.it/CodeSystem/istat-unitaAmministrativeTerritoriali|0.0.1
 
-This element does not match any known slice defined in the profile http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab|0.1.0-ci (this may not be a problem, but you should check that it's not intended to match a slice)
-This element does not match any known slice defined in the profile http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab|0.1.0-ci (this may not be a problem, but you should check that it's not intended to match a slice)
-This element does not match any known slice defined in the profile http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab|0.1.0-ci (this may not be a problem, but you should check that it's not intended to match a slice)
-This element does not match any known slice defined in the profile http://hl7.eu/fhir/laboratory/StructureDefinition/Address-eu|0.1.0-ci (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://hl7.eu/fhir/laboratory/StructureDefinition/Address-eu|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) 

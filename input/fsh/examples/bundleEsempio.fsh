@@ -44,8 +44,8 @@ Usage: #example
 * entry[organization][=].resource = Organization-Lab-Esempio
 * entry[organization][+].fullUrl = "urn:uuid:ae0365ea-d8a1-45e0-a39d-f14fac4ccfe8" 
 * entry[organization][=].resource = OrganizationOperatore-Lab-Esempio
-* entry[substance].fullUrl = "urn:uuid:168d4960-0a0b-43af-8025-180f0965f326" 
-* entry[substance].resource = Specimen-Additive-Substance-Lab-Esempio
+// * entry[substance].fullUrl = "urn:uuid:168d4960-0a0b-43af-8025-180f0965f326" 
+// * entry[substance].resource = Specimen-Additive-Substance-Lab-Esempio
 * entry[location].fullUrl = "urn:uuid:f148e54a-2046-4534-b9e9-54e7e9632224" 
 * entry[location].resource = Location-Lab-Esempio
 * entry[device].fullUrl = "urn:uuid:168d4960-0a0b-43af-8025-180f0965f324" 
