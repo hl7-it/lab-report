@@ -34,6 +34,9 @@ Description: "Descrizione della risorsa Bundle per il contesto italiano del Lab 
    media 0..* and
    substance 0.. 
 
+   // device 0..
+
+
 
 * entry[composition].resource only CompositionRefertoLabIt
 * entry[practitionerRole].resource only PractitionerRoleRefertoLabIt
@@ -50,6 +53,6 @@ Description: "Descrizione della risorsa Bundle per il contesto italiano del Lab 
 * entry[media].resource only media-it-lab
 * entry[substance].resource only substance-additive-specimen-it-lab
 * entry[location].resource only location-it-lab
-* entry[device].resource only device-it-lab
+// * entry[device].resource only device-it-lab
 
 * signature ^short = "Firma digitale del documento."

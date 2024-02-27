@@ -8,7 +8,7 @@ Description: "Esempio di un'osservazione: rilevazione di cloruro nel sangue."
 * id = "5ea6e05a-e271-4ef9-bcc1-0bd10e55c90c"
 * status = #final
 
-* code = $loinc#100745-9 "Chimica Concentrazione di Sostanza Punto nel tempo (episodio) Sangue venoso misto"
+* code = $loinc#100745-9 "Chloride [Moles/volume] in Mixed venous blood"
 * effectiveDateTime = "2023-05-01"
 * valueQuantity.unit = "meq/L"
 * valueQuantity.code = #meq/L

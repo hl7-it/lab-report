@@ -7,7 +7,7 @@ Description: "Descrive la risorsa Specimen per il campione nel dominio del Lab R
 * insert SetFmmandStatusRule ( 1, trial-use)
 * . ^short = "Campione Referto di Laboratorio"
 * . ^definition = "Campione Referto di Laboratorio"
-* type from $tipo-campione-lab-it (preferred)
+* type from VsTipoCampione (preferred)
 * type 1..1
 * type ^short = "Tipo di campione."
 * identifier ^short = "Identificativo esterno del campione (identificativo locale al LIS)"
