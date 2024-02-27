@@ -1,5 +1,5 @@
 Profile: SpecimenAdditiveSubstanceRefertoLabIt
-Parent: $Substance-additive-eu-lab // Substance
+Parent: $Substance-additive-specimen-it-lab // Substance
 Id: substance-additive-specimen-it-lab
 Title: "Substance (specimen additive) - Lab Report"
 Description: "Descrive la risorsa Substance additiva del campione nel dominio del Lab Report."

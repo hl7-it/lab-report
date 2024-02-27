@@ -33,9 +33,7 @@ Description: "Descrizione della risorsa Bundle per il contesto italiano del Lab 
 * entry contains
    media 0..* and
    substance 0.. 
-
    // device 0..
-
 
 
 * entry[composition].resource only CompositionRefertoLabIt
