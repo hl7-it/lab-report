@@ -8,11 +8,12 @@ Alias: $diagn-status = http://hl7.org/fhir/ValueSet/diagnostic-report-status
 Alias: $diagnosticreport-category = http://terminology.hl7.org/CodeSystem/v2-0074
 Alias: $diagnosticreport-category-valueset = http://hl7.org/fhir/ValueSet/diagnostic-service-sections 
 Alias: $ucum = http://unitsofmeasure.org
-Alias: $istat-titoloStudio = http://terminology.hl7.it/ValueSet/istat-titoloStudio
-Alias: $istat-professione = http://terminology.hl7.it/ValueSet/istat-professione   
-Alias: $istat-cittadinanza = http://terminology.hl7.it/ValueSet/istat-cittadinanza
-Alias: $istat-luogoNascita = http://terminology.hl7.it/ValueSet/istat-luogoNascita
+Alias: $istat-titoloStudio = http://terminologie.hl7.it/ValueSet/istat-titoloStudio
+Alias: $istat-professione = http://terminologie.hl7.it/ValueSet/istat-professione   
+Alias: $istat-cittadinanza = http://terminologie.hl7.it/ValueSet/istat-cittadinanza
+Alias: $istat-luogoNascita = http://terminologie.hl7.it/ValueSet/istat-luogoNascita
 Alias: $practitionerRole-code = http://terminology.hl7.org/CodeSystem/practitioner-role
+
 
 //Alias: $asl = 	http://terminology.hl7.it/ValueSet/uri-idAslRegione
 
@@ -21,18 +22,19 @@ Alias: $Codice-Observation = http://hl7.org/fhir/uv/ips/ValueSet/results-laborat
 Alias: $tipoIdentificatore = http://terminology.hl7.it/ValueSet/VstipoIdentificatore
 Alias: $data-absent-reason = 	http://hl7.org/fhir/ValueSet/data-absent-reason
 Alias: $MMG-PLS-code-lab-it = 	http://terminology.hl7.it/ValueSet/mmgOrPls
+
 Alias: $ucum-valueset = http://hl7.org/fhir/ValueSet/ucum-units
-Alias: $results-observation-bloodgroup = http://terminology.hl7.it/ValueSet/results-observation-bloodgroup
-Alias: $tipo-campione-lab-it = http://terminology.hl7.it/ValueSet/tipo-campione-lab-it
-Alias: $valueset-valuecodeableconcept-obs-it = http://terminology.hl7.it/ValueSet/valueset-valuecodeableconcept-obs-it
-Alias: $results-microorganism-snomed-ct-ips-free-set = http://terminology.hl7.it/ValueSet/results-microorganism-snomed-ct-ips-free-set
-Alias: $results-presence-absence-snomed-ct-ips-free-set = http://terminology.hl7.it/ValueSet/results-presence-absence-snomed-ct-ips-free-set
-Alias: $additivo-campione-it = http://terminology.hl7.it/ValueSet/additivo-campione-it
-Alias: $sezione-referto-laboratorio = http://terminology.hl7.it/ValueSet/sezione-referto-laboratorio
-Alias: $risultato-osservazione = http://terminology.hl7.it/ValueSet/risultato-osservazione
+Alias: $results-observation-bloodgroup = http://terminologie.hl7.it/ValueSet/results-observation-bloodgroup
+Alias: $tipo-campione-lab-it = http://terminologie.hl7.it/ValueSet/tipo-campione-lab-it
+Alias: $valueset-valuecodeableconcept-obs-it = http://terminologie.hl7.it/ValueSet/valueset-valuecodeableconcept-obs-it
+Alias: $results-microorganism-snomed-ct-ips-free-set = http://terminologie.hl7.it/ValueSet/results-microorganism-snomed-ct-ips-free-set
+Alias: $results-presence-absence-snomed-ct-ips-free-set = http://terminologie.hl7.it/ValueSet/results-presence-absence-snomed-ct-ips-free-set
+Alias: $additivo-campione-it = http://terminologie.hl7.it/ValueSet/additivo-campione-it
+Alias: $sezione-referto-laboratorio = http://terminologie.hl7.it/ValueSet/sezione-referto-laboratorio
+Alias: $risultato-osservazione = http://terminologie.hl7.it/ValueSet/risultato-osservazione
 Alias: $media-type = http://terminology.hl7.org/CodeSystem/media-type
 Alias: $results-laboratory-observations-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/results-laboratory-observations-uv-ips
-Alias: $campione-container-lab-it = http://terminology.hl7.it/ValueSet/campione-container-lab-it
+Alias: $campione-container-lab-it = http://terminologie.hl7.it/ValueSet/campione-container-lab-it
 //------Profile------//
 Alias: $sct-device = http://hl7.org/fhir/ValueSet/device-type
 Alias: $observation-status = http://hl7.org/fhir/ValueSet/observation-status
@@ -41,6 +43,7 @@ Alias: $encounter-status = http://hl7.org/fhir/ValueSet/encounter-status
 Alias: $entityCode = http://terminology.hl7.org/ValueSet/v3-EntityCode
 Alias: $patient-birthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
 Alias: $gender-code = http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender
+
 Alias: $uri-idRegionali = http://terminology.hl7.it/ValueSet/vs-anagrafi-regionali
 Alias: $uri-idEni = http://terminology.hl7.it/ValueSet/VstipoIdentificatore //http://terminology.hl7.it/CodeSystem/it-identifier-type
 Alias: $uri-idStp = http://terminology.hl7.it/ValueSet/URI-idStp
@@ -52,13 +55,16 @@ Alias: $istat-comune = http://terminology.hl7.it/ValueSet/istat-comune
 Alias: $istat-provincia = http://terminology.hl7.it/ValueSet/istat-provincia
 Alias: $istat-regione = http://terminology.hl7.it/ValueSet/istat-regione
 Alias: $istat-stati = http://terminology.hl7.it/CodeSystem/istat-unitaAmministrativeTerritorialiEstere
+
 Alias: $iso21090-SC-coding = http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding
 Alias: $iso21090-ADXP-streetName = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName
 Alias: $iso21090-ADXP-streetNameBase = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameBase
 Alias: $iso21090-ADXP-streetNameType = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameType
 Alias: $iso21090-ADXP-houseNumber = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber
+
 Alias: $istat-dug = 	http://terminology.hl7.it/CodeSystem/dug
 Alias: $tipoEntita = http://terminology.hl7.it/CodeSystem/it-tipoEntita
+
 Alias: $location-type = http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType
 Alias: $intent-code = http://hl7.org/fhir/ValueSet/request-intent
 Alias: $sct-method = http://hl7.org/fhir/ValueSet/observation-methods
@@ -80,7 +86,9 @@ Alias: $Composition-eu-lab = http://hl7.eu/fhir/laboratory/StructureDefinition/C
 Alias: $Bundle-eu-lab = http://hl7.eu/fhir/laboratory/StructureDefinition/Bundle-eu-lab
 Alias: $DiagnosticReport-eu-lab = http://hl7.eu/fhir/laboratory/StructureDefinition/DiagnosticReport-eu-lab
 Alias: $ServiceRequest-eu-lab = http://hl7.eu/fhir/laboratory/StructureDefinition/ServiceRequest-eu-lab
+
 Alias: $Substance-additive-specimen-it-lab = http://hl7.eu/fhir/laboratory/StructureDefinition/Substance-additive-eu-lab // The name will be changed
+
 
 
 Alias: $CodeableConcept-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips
@@ -109,8 +117,10 @@ Alias: $CodeableConcept-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/
 //---EU
 Alias: $basedOnOrder = http://hl7.eu/fhir/StructureDefinition/composition-basedOn-order-or-requisition
 Alias: $informationRecipient = http://hl7.eu/fhir/StructureDefinition/information-recipient
+
 Alias: $it-tipoEntita = http://terminology.hl7.it/CodeSystem/it-tipoEntita
 Alias: $istat-unitaAmministrativeTerritoriali = http://terminology.hl7.it/CodeSystem/istat-unitaAmministrativeTerritoriali
 Alias: $minsan-regione = http://terminology.hl7.it/CodeSystem/minsan-regione
 //Alias: $UriHsp =  http://hl7.it/fhir/lab-report/CodeSystem/cs-mds-idStruttureInterne
 Alias: $minsan-idStruttureInterne = http://terminology.hl7.it/ValueSet/minsan-idStruttureInterne
+

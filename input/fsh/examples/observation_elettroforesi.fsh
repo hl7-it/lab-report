@@ -8,6 +8,8 @@ Description: "Esempio di un'osservazione: rilevazione di albumina da elettrofore
 
 * status = #final
 
+
+
 * code = $loinc#2862-1 "Albumin [Mass/volume] in Serum or Plasma by Electrophoresis"
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
 * valueQuantity.unit = "g/dL"
