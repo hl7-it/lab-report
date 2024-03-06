@@ -204,8 +204,10 @@ Description: "Esempio di Observation: rilevazione della colorazione di gram su c
 * id = "333b62b2-47b0-43b5-9745-abec1f0c4656"
 * status = #final
 * category[laboratory] = $observation-category#laboratory
-* code = $loinc#664-3 
-* code.text = "Gram Stain"
+// * code = $loinc#664-3 
+// * code.text = "Gram Stain"
+* code = $loinc#26436-6
+* code.text = "Esami di laboratorio"
 * subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5)
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
 * performer  = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)
@@ -238,7 +240,8 @@ Usage: #inline
 * subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5)
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
 * performer = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)
-* valueCodeableConcept = $sct#70003006 "Gram-positive cocci in clusters"
+// * valueCodeableConcept = $sct#70003006 "Gram-positive cocci in clusters"
+* valueCodeableConcept = $sct#8745002 "Gram-positive bacterium"
 * hasMember[+] = Reference(Inline-Observation-gs-org1-quant) 
 * encounter = Reference(urn:uuid:7b06368c-7089-4f66-acc8-29e1fcbd31f6)
 

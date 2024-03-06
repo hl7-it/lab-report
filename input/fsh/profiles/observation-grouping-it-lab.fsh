@@ -2,7 +2,7 @@ Profile: ObservationGroupingRefertoLabIt
 Parent: ObservationRefertoLabIt
 Id: observation-grouping-it-lab
 Title: "Observation battery - Lab Report"
-Description: "Descrive come rappresentare un insieme di esami nel contesto del Referto di Laboratorio."
+Description: "Descrizione di un inseme di esami tramite il profilo della risorsa Observation per il referto di laboratorio."
 * insert SetFmmandStatusRule ( 1, trial-use)
 * . ^short = "Observation battery Referto di Laboratorio"
 * valueQuantity 0..0

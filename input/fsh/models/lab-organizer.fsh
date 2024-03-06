@@ -4,7 +4,7 @@
 Logical: Organizer				
 Id: Organizer				
 Title: "A.6 - Organizer"				
-Description:  """A.6 Risultato di un insieme di esami."""				
+Description:  """Risultato di un insieme di esami."""				
 * osservazione 0..* BackboneElement "A.5.2 Dettagli dell'osservazione" """A.5.2 Dettagli dell'osservazione (il rapporto può consistere di più osservazioni) """				
 * osservazione.data 0..* CodeableConcept "A.5.2.1 Data dell'osservazione" """Data e ora dell'osservazione - Sistema di codifica: ISO 8601"""				
 * osservazione.codice 0..* CodeableConcept "A.5.2.3 Codice dell'osservazione" """Codice che rappresenta l'osservazione utilizzando i sistemi di codici concordati.

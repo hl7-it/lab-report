@@ -4,7 +4,7 @@ Id: practitionerrole-it-lab
 
 Title: "PractitionerRole - Lab Report"
 
-Description: "Profilo della risorsa PractitionerRole per la descrizione delle informazioni del dominio di Lab Report."
+Description: "Descrizione delle informazioni relative al ruolo del professionista sanitario tramite il profilo della risorsa PractitionerRole per il referto di laboratorio."
 
 * . ^short = "PractitionerRole Referto di Laboratorio"
 
@@ -27,7 +27,7 @@ Profile: PractitionerRoleMMGPLSRefertoLabIt
 Parent: PractitionerRoleRefertoLabIt
 Id: practitionerrole-MMGPLS-it-lab
 Title: "PractitionerRole MMG/PLS - Lab Report"
-Description: "Profilo della risorsa PractitionerRole per la descrizione delle informazioni del MMG/PLS."
+Description: "Descrizione delle informazioni del MMG/PLS tramite il profilo della risorsa PractitionerRole per il referto di laboratorio."
 * . ^short = "PractitionerRole MMG/PLS Referto di Laboratorio"
 * code from $MMG-PLS-code-lab-it (required)
 * code ^short = "Ruolo/i del professionista."

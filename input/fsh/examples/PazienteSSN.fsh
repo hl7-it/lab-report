@@ -11,8 +11,8 @@ Description: "Esempio di un paziente: soggetto iscritto al Sistema Sanitario Naz
 * extension[luogoNascita].valueAddress.city = "Milano"
 * extension[luogoNascita].valueAddress.postalCode = "20100"
 * extension[luogoNascita].valueAddress.country = "IT"
-* extension[professione].valueCodeableConcept = CsIstatProfessioni#1.1.3 "Dirigenti della magistratura"
-* extension[titoloStudio].valueCodeableConcept = CsIstatTitoliStudio#40205013 "Giuridico economico aziendale"
+* extension[professione].valueCodeableConcept = $CS_ProfessioniIstat#1.1.3 "Dirigenti della magistratura"
+* extension[titoloStudio].valueCodeableConcept = $CS_TitoloStudioIstat#40205013 "Giuridico economico aziendale"
 
 * identifier
   * system = "http://hl7.it/sid/codiceFiscale"

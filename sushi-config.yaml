@@ -23,7 +23,7 @@ jurisdiction: urn:iso:std:iso:3166#IT "Italy"
 dependencies:
   #hl7.fhir.it.base: current
 
-  hl7.fhir.it.terminology: current
+  #hl7.fhir.it.terminology: current
 
   #hl7.fhir.eu.laboratory: current  # ONLY for the ci build
 
@@ -73,7 +73,6 @@ menu:
   Indice Artefatti: artifacts.html
   Support:
     FHIR Spec: new-tab http://hl7.org/fhir/R4/index.html
-    Maps: new-tab https://build.fhir.org/ig/hl7-it/cda2fhir/index.html
     Downloads: downloads.html
 
 groups:
@@ -118,4 +117,79 @@ groups:
       - StructureDefinition/device-it-lab
       - StructureDefinition/substance-additive-specimen-it-lab
       - StructureDefinition/observation-grouping-it-lab
-      
+  LabReportCSTerminology:
+    name: Terminology - Code Systems  
+    description: Codesystems per il dominio di Lab Report. I seguenti CodeSystems successivamente saranno spostati all'interno della Guida Terminologica Italiana.
+    resources:
+      - CodeSystem/aifa-aic
+      - CodeSystem/administrative-gender
+      - CodeSystem/it-V3RoleCode
+      - CodeSystem/it-identifier-type
+      - CodeSystem/it-tipoEntita
+      - CodeSystem/v3-MaritalStatus
+      - CodeSystem/istat-ctsi03
+      - CodeSystem/istat-professioni
+      - CodeSystem/istat-comuni
+      - CodeSystem/istat-continente
+      - CodeSystem/province-istat
+      - CodeSystem/dug
+      - CodeSystem/istat-ripartizione-geografica
+      - CodeSystem/istat-statoCivile
+      - CodeSystem/istat-unitaAmministrativeTerritorialiEstere
+      - CodeSystem/istat-unitaAmministrativeTerritoriali
+      - CodeSystem/cs-asl
+      - CodeSystem/minsan-regione
+      - CodeSystem/cs-mds-idStruttureInterne
+      - CodeSystem/mds-tipo-struttura
+  LabReportVSTerminology:
+    name: Terminology - Value Sets  
+    description: ValueSets   per il dominio di Lab Report. I seguenti ValueSets   successivamente saranno spostati all'interno della Guida Terminologica Italiana.
+    resources:
+      - ValueSet/aifa-aic
+      - ValueSet/additivo-campione-it
+      - ValueSet/vs-anagrafi-regionali
+      - ValueSet/lab-orderCodes-it-lab
+      - ValueSet/campione-container-lab-it
+      - ValueSet/oid-ehicPersonalId
+      - ValueSet/iso-ehicCountryCode
+      - ValueSet/istat-cittadinanza
+      - ValueSet/istat-luogoNascita
+      - ValueSet/istat-comune
+      - ValueSet/istat-dug
+      - ValueSet/istat-professione
+      - ValueSet/istat-provincia
+      - ValueSet/istat-stato
+      - ValueSet/istat-statoCivile-vs
+      - ValueSet/istat-titoloStudio
+      - ValueSet/URI-idStp
+      - ValueSet/uri-idAslRegione
+      - ValueSet/minsan-asl
+      - ValueSet/minsan-regione
+      - ValueSet/minsan-esenzioni
+      - ValueSet/valueset-status-obs-it
+      - ValueSet/valueset-valuecodeableconcept-obs-it
+      - ValueSet/results-presence-absence-snomed-ct-ips-free-set
+      - ValueSet/results-observation-bloodgroup
+      - ValueSet/results-microorganism-snomed-ct-ips-free-set
+      - ValueSet/valueset-observation-value-bloodgroup
+      - ValueSet/valueset-observation-value-microorganism
+      - ValueSet/valueset-observation-value-presence-absence
+      - ValueSet/sezione-referto-laboratorio
+      - ValueSet/statoCivile
+      - ValueSet/tipo-campione
+      - ValueSet/risultato-osservazione
+      - ValueSet/tipo-campione-lab-it
+      - ValueSet/tipoCertificatore
+      - ValueSet/VstipoIdentificatore
+      - ValueSet/mmgOrPls
+      - ValueSet/tipoOrganizzazione
+      - ValueSet/tipoOrgSocioSanitaria
+      - ValueSet/who-icd9cm
+      - ValueSet/minsan-idStrutture
+      - ValueSet/minsan-idAziendeOspedaliere
+      - ValueSet/minsan-idStruttureInterne
+      - ValueSet/uri-idAslRegione
+
+
+ 
+ 

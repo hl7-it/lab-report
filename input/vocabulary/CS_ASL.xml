@@ -1,0 +1,1804 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="cs-asl"/>
+    <name value="CsMDSASL"/>
+    <title value="MDS - ASL"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <caseSensitive value="false"/>
+    <description value="MDS - ASL"/>
+    <content value="complete"/>
+    <filter>
+        <code value="regione"/>
+        <description value="Permette di ricercare i codici secondo il codice Regionale di appartenenza"/>
+        <operator value="="/>
+        <value value="codice della Regione"/>
+    </filter>
+    <filter>
+        <code value="comune"/>
+        <description value="Permette di ricercare i codici secondo il codice del comune di appartenenza"/>
+        <operator value="="/>
+        <value value="codice del Comune"/>
+    </filter>
+    <filter>
+        <code value="provincia"/>
+        <description value="Permette di ricercare i codici secondo il codice della provincia di appartenenza"/>
+        <operator value="="/>
+        <value value="codice della Provincia"/>
+    </filter>
+    <property>
+        <code value="regione"/>
+        <description value="Proprietà che identifica la regione di appartenenza dell'ASL"/>        
+        <type value="code"/>
+    </property>
+    <property>
+        <code value="comune"/>
+        <description value="Proprietà che identifica il comune di appartenenza dell'ASL"/>
+        <type value="code"/>
+    </property>
+    <property>
+        <code value="provincia"/>
+        <description value="Proprietà che identifica la provincia di appartenenza dell'ASL"/>
+        <type value="code"/>
+    </property>
+    <concept>
+        <code value="010203"/>
+        <display value="TO3"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="010"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="001090"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="001"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="010204"/>
+        <display value="TO4"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="010"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="001082"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="001"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="010205"/>
+        <display value="TO5"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="010"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="001078"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="001"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="010206"/>
+        <display value="VC"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="010"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="002158"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="002"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="010207"/>
+        <display value="BI"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="010"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="096047"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="096"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="010208"/>
+        <display value="NO"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="010"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="003106"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="003"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="010209"/>
+        <display value="VCO"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="010"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value = "103050"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value = "103"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="010210"/>
+        <display value="CN1"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="010"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="004078"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="004"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="010211"/>
+        <display value="CN2"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="010"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="004003"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="004"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="010212"/>
+        <display value="AT"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="010"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="005005"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="005"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="010213"/>
+        <display value="AL"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="010"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="006003"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="006"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="010301"/>
+        <display value="ASL CITTA' DI TORINO"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="010"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="001272"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="001"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="020101"/>
+        <display value="AZIENDA U.S.L. VALLE D'AOSTA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="020"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="007003"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="007"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="030321"/>
+        <display value="ATS DELLA CITTA' METROPOLITANA DI MILANO"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="030"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="015146"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="015"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="030322"/>
+        <display value="ATS DELL'INSUBRIA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="030"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="012133"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="012"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="030323"/>
+        <display value="ATS DELLA MONTAGNA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="030"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="014061"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="014"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="030324"/>
+        <display value="ATS DELLA BRIANZA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="030"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="015149"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value = "108"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="030325"/>
+        <display value="ATS DI BERGAMO"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="030"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="016024"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="016"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="030326"/>
+        <display value="ATS DI BRESCIA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="030"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="017029"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="017"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="030327"/>
+        <display value="ATS DELLA VAL PADANA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="030"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="020030"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="020"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="030328"/>
+        <display value="ATS DI PAVIA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="030"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="018110"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="018"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="041201"/>
+        <display value="AZIENDA SANITARIA DELLA P.A. DI BOLZANO"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="041"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="021008"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="021"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="042101"/>
+        <display value="TRENTO"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="042"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="022205"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="022"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="050501"/>
+        <display value="AZIENDA ULSS N. 1 DOLOMITI"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="050"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="025006"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="025"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="050502"/>
+        <display value="AZIENDA ULSS N. 2 MARCA TREVIGIANA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="050"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="026086"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="026"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="050503"/>
+        <display value="AZIENDA ULSS N. 3 SERENISSIMA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="050"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="027042"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="027"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="050504"/>
+        <display value="AZIENDA ULSS N. 4 VENETO ORIENTALE"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="050"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="027033"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="027"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="050505"/>
+        <display value="AZIENDA ULSS N. 5 POLESANA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="050"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="029041"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="029"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="050506"/>
+        <display value="AZIENDA ULSS N. 6 EUGANEA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="050"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="028060"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="028"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="050507"/>
+        <display value="AZIENDA ULSS N. 7 PEDEMONTANA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="050"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="024012"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="024"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="050508"/>
+        <display value="AZIENDA ULSS N. 8 BERICA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="050"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="024116"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="024"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="050509"/>
+        <display value="AZIENDA ULSS N. 9 SCALIGERA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="050"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="023091"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="023"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="060205"/>
+        <display value="AS FRIULI OCCIDENTALE"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="060"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="093033"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="093"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="060206"/>
+        <display value="ASU FRIULI CENTRALE"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="060"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="030129"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="030"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="060207"/>
+        <display value="ASU GIULIANO ISONTINA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="060"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="032006"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="032"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="070101"/>
+        <display value="IMPERIESE"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="070"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="008055"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="008"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="070102"/>
+        <display value="SAVONESE"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="070"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="009056"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="009"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="070103"/>
+        <display value="GENOVESE"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="070"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="010025"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="010"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="070104"/>
+        <display value="CHIAVARESE"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="070"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="010015"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="010"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="070105"/>
+        <display value="SPEZZINO"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="070"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="011015"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="011"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="080101"/>
+        <display value="AZIENDA USL PIACENZA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="080"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="033032"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="033"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="080102"/>
+        <display value="AZIENDA USL PARMA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="080"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="034027"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="034"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="080103"/>
+        <display value="AZIENDA USL REGGIO EMILIA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="080"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="035033"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="035"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="080104"/>
+        <display value="AZIENDA USL MODENA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="080"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="036023"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="036"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="080105"/>
+        <display value="AZIENDA USL BOLOGNA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="080"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="037006"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="037"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="080106"/>
+        <display value="AZIENDA USL IMOLA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="080"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="037032"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="037"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="080109"/>
+        <display value="AZIENDA USL FERRARA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="080"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="038008"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="038"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="080114"/>
+        <display value="AZIENDA USL DELLA ROMAGNA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="080"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="039014"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="039"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="090201"/>
+        <display value="AZIENDA USL TOSCANA CENTRO"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="090"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="048017"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="048"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="090202"/>
+        <display value="AZIENDA USL TOSCANA NORD-OVEST"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="090"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="050026"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="050"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="090203"/>
+        <display value="AZIENDA USL TOSCANA SUD-EST"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="090"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="051002"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="051"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="100201"/>
+        <display value="AUSL UMBRIA N. 1"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="100"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="054039"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="054"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="100202"/>
+        <display value="AUSL UMBRIA N. 2"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="100"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="055032"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="055"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="110301"/>
+        <display value="AST1 DI PESARO E URBINO"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="110"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="041044"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="041"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="110302"/>
+        <display value="AST2 DI ANCONA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="110"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="042002"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="042"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="110303"/>
+        <display value="AST3 DI MACERATA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="110"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="043023"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="043"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="110304"/>
+        <display value="AST4 DI FERMO"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="110"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="044019"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value = "109"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="110305"/>
+        <display value="AST5 DI ASCOLI PICENO"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="110"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="044007"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="044"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="120109"/>
+        <display value="VITERBO"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="120"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="056059"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="056"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="120110"/>
+        <display value="RIETI"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="120"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="057059"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="057"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="120111"/>
+        <display value="LATINA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="120"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="059011"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="059"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="120112"/>
+        <display value="FROSINONE"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="120"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="060038"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="060"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="120201"/>
+        <display value="ROMA 1"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="120"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="058091"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="058"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="120202"/>
+        <display value="ROMA 2"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="120"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="058091"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="058"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="120203"/>
+        <display value="ROMA 3"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="120"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="058091"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="058"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="120204"/>
+        <display value="ROMA 4"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="120"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="058032"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="058"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="120205"/>
+        <display value="ROMA 5"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="120"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="058104"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="058"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="120206"/>
+        <display value="ROMA 6"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="120"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="058003"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="058"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="130201"/>
+        <display value="AVEZZANO-SULMONA-L'AQUILA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="130"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="066049"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="066"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="130202"/>
+        <display value="LANCIANO-VASTO-CHIETI"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="130"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="069022"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="069"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="130203"/>
+        <display value="PESCARA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="130"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="068028"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="068"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="130204"/>
+        <display value="TERAMO"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="130"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="067041"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="067"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="140201"/>
+        <display value="ASREM"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="140"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="070006"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="070"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="150201"/>
+        <display value="A.S.L. AVELLINO"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="150"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="064008"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="064"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="150202"/>
+        <display value="A.S.L. BENEVENTO"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="150"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="062008"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="062"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="150203"/>
+        <display value="A.S.L. CASERTA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="150"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="061022"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="061"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="150204"/>
+        <display value="A.S.L. NAPOLI 1 CENTRO"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="150"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="063049"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="063"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="150205"/>
+        <display value="A.S.L. NAPOLI 2 NORD"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="150"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="063032"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="063"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="150206"/>
+        <display value="A.S.L. NAPOLI 3 SUD"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="150"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="063084"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="063"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="150207"/>
+        <display value="A.S.L. SALERNO"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="150"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="065116"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="065"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="160106"/>
+        <display value="ASL BR"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="160"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="074001"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="074"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="160112"/>
+        <display value="ASL TA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="160"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="073027"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="073"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="160113"/>
+        <display value="ASL BT"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="160"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="072005"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value = "110"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="160114"/>
+        <display value="ASL BA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="160"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="072006"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="072"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="160115"/>
+        <display value="ASL FG"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="160"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="071024"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="071"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="160116"/>
+        <display value="ASL LE"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="160"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="075035"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="075"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="170201"/>
+        <display value="AZIENDA SANITARIA LOCALE DI POTENZA ASP"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="170"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="076063"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="076"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="170202"/>
+        <display value="AZIENDA SANITARIA LOCALE DI MATERA  ASM"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="170"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="077014"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="077"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="180201"/>
+        <display value="A.S.P. COSENZA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="180"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="078045"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="078"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="180202"/>
+        <display value="A.S.P. CROTONE"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="180"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value = "101010"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value = "101"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="180203"/>
+        <display value="A.S.P. CATANZARO"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="180"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="079023"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="079"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="180204"/>
+        <display value="A.S.P. VIBO VALENTIA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="180"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value = "102047"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value = "102"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="180205"/>
+        <display value="A.S.P. REGGIO CALABRIA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="180"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="080063"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="080"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="190201"/>
+        <display value="ASP AGRIGENTO"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="190"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="084001"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="084"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="190202"/>
+        <display value="ASP CALTANISSETTA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="190"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="085004"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="085"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="190203"/>
+        <display value="ASP CATANIA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="190"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="087015"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="087"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="190204"/>
+        <display value="ASP ENNA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="190"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="086009"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="086"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="190205"/>
+        <display value="ASP MESSINA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="190"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="083048"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="083"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="190206"/>
+        <display value="ASP PALERMO"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="190"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="082053"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="082"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="190207"/>
+        <display value="ASP RAGUSA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="190"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="088009"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="088"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="190208"/>
+        <display value="ASP SIRACUSA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="190"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="089017"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="089"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="190209"/>
+        <display value="ASP DI TRAPANI"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="190"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="081021"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="081"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="200301"/>
+        <display value="ASL N. 1 DI SASSARI"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="200"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="090064"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="090"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="200302"/>
+        <display value="ASL N. 2 DELLA GALLURA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="200"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="090047"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="090"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="200303"/>
+        <display value="ASL N. 3 DI NUORO"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="200"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="091051"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="091"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="200304"/>
+        <display value="ASL N. 4 DELL'OGLIASTRA"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="200"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="091037"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="091"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="200305"/>
+        <display value="ASL N. 5 DI ORISTANO"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="200"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="095038"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="095"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="200306"/>
+        <display value="ASL N. 6 DEL MEDIO CAMPIDANO"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="200"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="092057"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="111"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="200307"/>
+        <display value="ASL N. 7 DEL SULCIS"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="200"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="092012"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="111"/>
+        </property>
+    </concept>  
+    <concept>          
+        <code value="200308"/>
+        <display value="ASL N. 8 DI CAGLIARI"/>
+        <property>
+            <code value="regione"/>
+            <valueCode value="200"/>
+        </property>
+        <property>
+            <code value="comune"/>
+            <valueCode value="092009"/>
+        </property>
+        <property>
+            <code value="provincia"/>
+            <valueCode value="092"/>
+        </property>
+    </concept>    
+</CodeSystem>

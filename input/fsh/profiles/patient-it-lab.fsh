@@ -2,7 +2,7 @@ Profile: PatientRefertoLabIt
 Parent: Patient
 Id: patient-it-lab
 Title: "Patient - Lab Report"
-Description: "Descrive come rappresentare le informazioni del paziente nei documenti FHIR."
+Description: "Descrizione delle informazioni del paziente nei documenti FHIR."
 * . ^short = "Patient Referto di Laboratorio"
 
 * insert SetFmmandStatusRule ( 1, trial-use)
@@ -16,8 +16,8 @@ Description: "Descrive come rappresentare le informazioni del paziente nei docum
     ExtProfessionePaziente named professione 0..1 and
     ExtTitoloStudioPaziente named titoloStudio 0..1
 * extension[luogoNascita] ^short = "Luogo di nascita." 
-* extension[certificazione] ^short = "Indica che i dati presenti nella risorsa sono stati certificati da uno specifico entità"
-* extension[certificazione] ^definition = "Indica che i dati presenti nella risorsa (non quelli referenziati) sono stati certificati da uno specifico entità"
+* extension[certificazione] ^short = "Indica che i dati presenti nella risorsa sono stati certificati da una specifica entità"
+* extension[certificazione] ^definition = "Indica che i dati presenti nella risorsa (non quelli referenziati) sono stati certificati da una specifica entità"
 * extension[luogoNascitaCodeable] ^binding.strength = #example
 * extension[luogoNascitaCodeable] ^binding.valueSet = $istat-luogoNascita
 * extension[luogoNascitaCodeable] ^short = "Codice del comune e/o dello stato di nascita"
@@ -93,12 +93,6 @@ Description: "Descrive come rappresentare le informazioni del paziente nei docum
 * name.given 
 * name obeys it-pat-name-1
 * name ^short = "Nome associato al paziente."
-// * name.extension contains http://hl7.org/fhir/StructureDefinition/data-absent-reason named name-absent-reason 0..*
-// * name.extension[name-absent-reason] ^binding.strength = #example
-// * name.extension[name-absent-reason] ^binding.valueSet = $data-absent-reason
-// * name.extension[name-absent-reason] ^sliceName = "name-absent-reason"
-// * name.extension[name-absent-reason] ^short = "Ragione non valorizzazione elemento name"
-// * name.extension[name-absent-reason] ^definition = "Ragione per cui l'elemento name non è stato valorizzato"
 
 * telecom  
 * gender  

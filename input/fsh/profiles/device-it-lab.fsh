@@ -2,7 +2,7 @@ Profile: DeviceRefertoLabIt
 Parent: Device
 Id: device-it-lab
 Title: "Device - Lab Report"
-Description: "Descrive la risorsa Device che descrive un dispositivo."
+Description: "Descrizione di un dispositivo tramite il profilo della risorsa Device per il referto di laboratorio."
 
 * insert SetFmmandStatusRule ( 1, trial-use)
 

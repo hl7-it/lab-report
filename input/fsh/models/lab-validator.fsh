@@ -4,7 +4,7 @@
 Logical: ValidatorLabEhn				
 Id: Validatore				
 Title: "A.1.7 - Validatore"				
-Description:  """A.1.7 Validatore del documento."""				
+Description:  """Validatore del documento."""				
 * identifier 0..1 Identifier "A.1.7.1 Identificativo del validatore dei risultati" """Numero di identificazione dell'operatore sanitario. Identificativo assegnato da un'istituzione erogatrice di assistenza sanitaria o (preferibilmente) un'identificativo nazionale dell'operatore sanitario come il numero di licenza o di registrazione. - Sistema: """				
 * name 0..* HumanName "A.1.7.2 Nome del validatore dei risultati" """Nome della persona. - Sistema: """				
 * organization 0..* Organization "A.1.7.3 Organizzazione del validatore" """Informazioni sull'organizzazione dell'operatore sanitario. - Sistema: """		 		

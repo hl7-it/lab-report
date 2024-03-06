@@ -100,4 +100,15 @@ The value set expansion is incomplete
 Reference to draft CodeSystem http://terminology.hl7.it/CodeSystem/istat-unitaAmministrativeTerritoriali|0.0.1
 
 This element does not match any known slice defined in the profile http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-This element does not match any known slice defined in the profile http://hl7.eu/fhir/laboratory/StructureDefinition/Address-eu|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) 
+This element does not match any known slice defined in the profile http://hl7.eu/fhir/laboratory/StructureDefinition/Address-eu|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+
+Unknown System 'urn:ietf:rfc:1155' specified, so Concepts and Filters can't be checked (Details: A definition for CodeSystem 'urn:ietf:rfc:1155' could not be found, so the code cannot be validated)
+Error from http://tx.fhir.org/r4: Unable to provide support for code system urn:ietf:rfc:1155
+
+The value set include has too many codes to validate (1.342)
+The value set include has too many codes to validate (1,342)
+
+Error from http://tx.fhir.org/r4: Unable to provide support for code system http://hl7.it/fhir/lab-report/CodeSystem/aifa-nota
+Error from http://tx.fhir.org/r4: Unable to provide support for code system http://hl7.it/fhir/lab-report/CodeSystem/aifa-aic
+Error from http://tx.fhir.org/r4: Unable to provide support for code system http://hl7.it/fhir/lab-report/CodeSystem/minsan-esenzioni
+None of the codings provided are in the value set 'Risultato osservazione codificato' (http://hl7.it/fhir/lab-report/ValueSet/valueset-valuecodeableconcept-obs-it|0.2.0), and a coding is recommended to come from this value set) (codes = http://snomed.info/sct#263866000)

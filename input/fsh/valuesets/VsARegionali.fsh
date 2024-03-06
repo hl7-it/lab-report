@@ -1,0 +1,27 @@
+ValueSet: VsAnagrafiRegionali
+Id: vs-anagrafi-regionali
+Title: "Anagrafi Regionali"
+Description: "Anagrafi Regionali"
+//-------------------------------------------------------------------------------------------
+* ^experimental = false
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.10.4.1. "Anagrafi Regionali - Piemonte"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.20.4.1 "Anagrafi Regionali - Valle d`aosta"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.30.4.1 "Anagrafi Regionali - Lombardia"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.41.4.1 "Anagrafi Regionali - prov. auton. bolzano"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.42.4.1 "Anagrafi Regionali - prov. auton. trento"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.50.4.1 "Anagrafi Regionali - Veneto"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.60.4.1 "Anagrafi Regionali - Friuli venezia giulia"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.70.4.1 "Anagrafi Regionali - Liguria"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.80.4.1 "Anagrafi Regionali - Emilia romagna"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.90.4.1 "Anagrafi Regionali - Toscana"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.100.4.1 "Anagrafi Regionali - Umbria"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.110.4.1 "Anagrafi Regionali - Marche"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.120.4.1 "Anagrafi Regionali - Lazio"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.130.4.1 "Anagrafi Regionali - Abruzzo"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.140.4.1 "Anagrafi Regionali - Molise"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.150.4.1 "Anagrafi Regionali - Campania"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.160.4.1 "Anagrafi Regionali - Puglia"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.170.4.1 "Anagrafi Regionali - Basilicata"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.180.4.1 "Anagrafi Regionali - Calabria"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.190.4.1 "Anagrafi Regionali - Sicilia"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.200.4.1 "Anagrafi Regionali - Sardegna"

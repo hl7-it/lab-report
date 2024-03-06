@@ -2,7 +2,7 @@ Profile: CompositionRefertoLabIt
 Parent: $Composition-eu-lab //$clinical-document 
 Id: composition-it-lab
 Title: "Composition - Lab Report"
-Description: "Descrizione in tramite la risorsa Composition di header e body del Lab Report."
+Description: "Descrizione del referto di laboratorio tramite il profilo della risorsa Composition per il referto di laboratorio."
 
 * insert SetFmmandStatusRule ( 1, trial-use)
 * . ^short = "Composition Referto di Laboratorio"
@@ -38,7 +38,7 @@ Description: "Descrizione in tramite la risorsa Composition di header e body del
 * author only Reference(PractitionerRefertoLabIt or PractitionerRoleRefertoLabIt or PatientRefertoLabIt or OrganizationRefertoLabIt)
 
 * author 1..
-  * ^short = "Who and/or what authored the Laboratory Report"
+  * ^short = "Chi e/o cosa è l'autore del referto di laboratorio."
   * ^definition = "Identifies who is responsible for the information in the Laboratory Report, not necessarily who typed it in."
   * insert ReportAuthorRule
 

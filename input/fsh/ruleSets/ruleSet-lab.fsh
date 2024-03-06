@@ -22,7 +22,7 @@ RuleSet: ReportCategoryRule
 
 
 RuleSet: ReportAuthorRule
-* ^short = "Who and/or what authored the Laboratory Report"
+* ^short = "Chi e/o cosa è l'autore del referto di laboratorio."
 * ^definition = "Identifies who is responsible for the information in the Laboratory Report, not necessarily who typed it in."
 * ^comment = "Se DiagnosticReport.resultsInterpreter esiste, anche Composition.author deve essere valorizzato. Altrimenti DiagnosticReport.performer dovrebbe essere un autore."
 
@@ -49,7 +49,7 @@ RuleSet: ReportSubjectRule
   
 RuleSet: ReportIdentifierRule
 * identifier 1..1
-  * ^short = "Identificatore indipendente dalla versione." 
+  * ^short = "Identificativo indipendente dalla versione." 
   * ^definition = "Identifiers assigned to this Laboratory Report by the performer or other systems. It shall be common to several report versions"
   * ^comment = "Composition.identifier DEVE essere uguale ad uno dei DiagnosticReport.identifier, se ne esiste almeno uno."
 

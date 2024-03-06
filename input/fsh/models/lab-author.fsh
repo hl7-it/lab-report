@@ -4,7 +4,7 @@
 Logical: Autore				
 Id: Autore				
 Title: "A.1.5 - Autore"				
-Description:  """A.1.5 Autore (da cui è stato redatto il rapporto sui risultati di laboratorio o un sottoinsieme dei risultati)."""				
+Description:  """Autore (da chi è stato redatto il referto sui risultati di laboratorio o un sottoinsieme dei risultati)."""				
 * identificativo 0..1 Identifier "A.1.5.1 Identificativo dell'autore" """Numero per l'identificazione dell'operatore sanitario o del dispositivo autore. Un identificatore interno assegnato da un'istituzione erogatrice di assistenza sanitaria o (preferibilmente) un identificativo nazionale dell'operatore sanitario come il numero di licenza o di registrazione. - Sistema: """				
 * nome 0..* HumanName "A.1.5.2 Nome dell'autore" """Nome della persona o del dispositivo. - Sistema: """				
 * organizzazione 0..* Organization "A.1.5.3 Organizzazione dell'autore" """Informazioni sull'organizzazione dell'operatore sanitario. - Sistema: """		 		

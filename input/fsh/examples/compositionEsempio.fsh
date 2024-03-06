@@ -1,20 +1,15 @@
 Instance: Composition-Lab-Esempio
 InstanceOf: composition-it-lab
 Usage: #example
-Description: "Esempio di una Composition: descrizione header e struttura body del referto."
+Description: "Esempio di Composition: esempio di referto di laboratorio."
 * id = "2ae95a5c-9094-41a3-a437-ce6d34c55a54"
 * extension[dataEnterer].extension[dataEnterer].valueReference = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803d)
 * extension[dataEnterer].extension[tempoCompilazione].valueDateTime = "2023-02-25T10:45:00+01:00"
-
-//* extension[$basedOnOrder].valueReference = Reference(urn:uuid:463ae6fe-60d4-4b38-84b3-1008e0925678)
-//* extension[$informationRecipient].valueReference = Reference(urn:uuid:134a0bb1-aa0a-46b9-aa1e-a5d0e379e77c)
-
 * language = #it-IT
 * identifier.use = #official
 * identifier.value = "urn:uuid:10b545ea-725c-446d-9b95-8aeb444eddf3"
 * identifier.assigner.display = "Regione Lazio"
 * status = #final
-// * category[studyType] = $diagnosticreport-category#HM "Hematology"
 * category[studyType] = $loinc#18723-7 "Hematology studies (set)"
 * type = http://loinc.org#11502-2 "Laboratory report"
 * type.text = "Referto di laboratorio"
@@ -28,27 +23,8 @@ Description: "Esempio di una Composition: descrizione header e struttura body de
 * attester[legalAuthenticator].time = "2023-02-25T12:45:00+01:00"
 * attester[legalAuthenticator].party = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)
 * custodian = Reference(urn:uuid:5fd3f1a6-b2c8-44cb-8237-0b5f0a81f2a8)
-
 * section[lab-subsections].code = $loinc#26436-6  "Laboratory studies (set)"
 * section[lab-subsections].title = "Laboratory studies (set)"
-
-// * section[lab-subsections].section[+].title = "Esame del sangue"
-// * section[lab-subsections].section[=].code = $loinc#18723-7 "Hematology studies (set)"
-// * section[lab-subsections].section[=].text.status = #generated
-// * section[lab-subsections].section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li><table id=\"nota1\"><thead><tr><th>Esame</th><th>Metodo utilizzato per l'esame</th><th>Materiale utilizzato per l'esame</th><th>Risultato dell'esame</th><th>Commenti e note</th><th>Unità di Misura</th><th>Range di Riferimento</th><th>Criteri per il range di riferimento</th><th>Interpretazione</th><th>Allegati multimediali</th></tr></thead><tbody><tr><td>Microalbumina massa/volume in urine</td><td/><td>Urine</td><td>20</td><td/><td>mg/L</td><td> 0 - 20 </td><td/><td>N</td><td/></tr></tbody></table></li></ul></div>"
-// * section[lab-subsections].section[=].entry = Reference(urn:uuid:7e2f354b-de83-4472-bd07-1571cdb50fde)
-// * section[lab-subsections].section[+].title = "Esame del sangue"
-// * section[lab-subsections].section[=].code = $loinc#18723-7 "Hematology studies (set)"
-// * section[lab-subsections].section[=].text.status = #generated
-// * section[lab-subsections].section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li><table id=\"nota1\"><thead><tr><th>Esame</th><th>Metodo utilizzato per l'esame</th><th>Materiale utilizzato per l'esame</th><th>Risultato dell'esame</th><th>Commenti e note</th><th>Unità di Misura</th><th>Range di Riferimento</th><th>Criteri per il range di riferimento</th><th>Interpretazione</th><th>Allegati multimediali</th></tr></thead><tbody><tr><td>Microalbumina massa/volume in urine</td><td/><td>Urine</td><td>20</td><td/><td>mg/L</td><td> 0 - 20 </td><td/><td>N</td><td/></tr></tbody></table></li></ul></div>"
-// * section[lab-subsections].section[=].entry = Reference(urn:uuid:a8a27a81-4543-45a9-8859-fa17053d963e)
-// * section[lab-subsections].section[+].title = "Esame del sangue"
-// * section[lab-subsections].section[=].code = $loinc#18723-7 "Hematology studies (set)"
-// * section[lab-subsections].section[=].text.status = #generated
-// * section[lab-subsections].section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li><table id=\"nota1\"><thead><tr><th>Esame</th><th>Metodo utilizzato per l'esame</th><th>Materiale utilizzato per l'esame</th><th>Risultato dell'esame</th><th>Commenti e note</th><th>Unità di Misura</th><th>Range di Riferimento</th><th>Criteri per il range di riferimento</th><th>Interpretazione</th><th>Allegati multimediali</th></tr></thead><tbody><tr><td>Microalbumina massa/volume in urine</td><td/><td>Urine</td><td>20</td><td/><td>mg/L</td><td> 0 - 20 </td><td/><td>N</td><td/></tr></tbody></table></li></ul></div>"
-// * section[lab-subsections].section[=].entry = Reference(urn:uuid:a7d1b3b0-9aee-4bc7-b0f2-46d441ba6246)
-
-
 * section[lab-subsections].section[+].title = "Esame del sangue"
 * section[lab-subsections].section[=].code = $loinc#18723-7 "Hematology studies (set)"
 * section[lab-subsections].section[=].text.status = #generated
