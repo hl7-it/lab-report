@@ -2,7 +2,7 @@ Profile: ServiceRequestRefertoLabIt
 Parent: $ServiceRequest-eu-lab  
 Id: servicerequest-it-lab
 Title: "ServiceRequest - Lab Report"
-Description: "Descrive la risorsa ServiceRequest che genera l'incontro del Lab Report."
+Description: "Descrizione delle informazioni della prescrizione tramite il profilo della risorsa ServiceRequest per il referto di laboratorio."
 * . ^short = "ServiceRequest Referto di Laboratorio"
 
 * insert SetFmmandStatusRule ( 1, trial-use)

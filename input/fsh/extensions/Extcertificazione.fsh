@@ -22,5 +22,5 @@ Description: "Estensione usata per indicare che l'informazione associata è stat
 * extension[when].value[x] only dateTime or Period
 * extension[who] ^short = "Entità Certificante"
 * extension[who].value[x] only CodeableConcept or Reference
-* extension[who].value[x] from 	http://terminology.hl7.it/ValueSet/tipoCertificatore (extensible)
+* extension[who].value[x] from 	VsTipoCertificatore (extensible)
 * extension[rank].value[x] only decimal

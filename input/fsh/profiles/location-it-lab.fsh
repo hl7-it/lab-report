@@ -2,7 +2,7 @@ Profile: LocationRefertoLabIt
 Parent: Location
 Id: location-it-lab
 Title: "Location - Lab Report"
-Description: "Profilo della risorsa Location utile alla descrizione delle informazioni relative alle strutture fisiche."
+Description: "Descrizione delle informazioni relative alle strutture fisiche tramite il profilo della risorsa Location per il referto di laboratorio."
 * . ^short = "Location Referto di Laboratorio."
 
 * insert SetFmmandStatusRule ( 1, trial-use)

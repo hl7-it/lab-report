@@ -2,7 +2,7 @@ Profile:  PractitionerRefertoLabIt
 Parent:   Practitioner
 Id:       practitioner-it-lab
 Title:    "Practitioner - Lab Report"
-Description: "Descrive la risorsa Practitioner per il dominio di Lab Report."
+Description: "Descrizione dei dati del professionista sanitario tramite il profilo della risorsa Practitioner per il referto di laboratorio."
 * . ^short = "Practitioner Referto di Laboratorio"
 * insert SetFmmandStatusRule ( 1, trial-use)
 * insert ImposeProfile($Practitioner-eu-lab)

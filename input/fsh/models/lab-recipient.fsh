@@ -4,12 +4,12 @@
 Logical: Destinatario				
 Id: Destinatario				
 Title: "A.1.4 - Informazioni Destinatario"				
-Description:  """A.1.4 Destinatario delle informazioni (destinatario o destinatari del rapporto, ulteriori destinatari potrebbero essere individuati dal committente, ad es. medico di base, altro specialista), se applicabile."""				
+Description:  """Destinatario delle informazioni (destinatario o destinatari del referto, ulteriori destinatari potrebbero essere individuati dal committente, ad es. medico di base, altro specialista), se applicabile."""				
 * identificativo 0..1 Identifier "A.1.4.1 Identificativo del destinatario" """Il numero di identificazione dell'operatore sanitario.
 Un identificatore interno assegnato da un istituto di assistenza sanitaria o (preferibilmente) un ID professionale sanitario nazionale come il numero di licenza o di registrazione.
 Nel caso in cui il destinatario non sia un operatore sanitario, ad es. paziente, deve essere utilizzato un identificatore personale appropriato."""				
-* nome 0..* HumanName "A.1.4.2 Recipient name" """Person name."""				
-* organizzazione 0..* Organization "A.1.4.3 Recipient organization" """The healthcare provider organization information."""		 		
+* nome 0..* HumanName "A.1.4.2 Nome del destinatario" """Person name."""				
+* organizzazione 0..* Organization "A.1.4.3 Organizzazione di appartenenza del destinatario" """The healthcare provider organization information."""		 		
 //--- END				
 //--- END				
 //--- END				

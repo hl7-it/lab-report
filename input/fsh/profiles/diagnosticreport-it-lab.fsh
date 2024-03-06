@@ -2,7 +2,7 @@ Profile: DiagnosticReportRefertoLabIt
 Parent: $DiagnosticReport-eu-lab 
 Id: diagnosticreport-it-lab
 Title: "DiagnosticReport - Lab Report"
-Description: "Descrizione della risorsa DiagnosticReport per la descrizione delle informazioni cliniche del dominio di Lab Report."
+Description: "Descrizione delle informazioni cliniche tramite il profilo della risorsa DiagnosticReport per il referto di laboratorio."
 
 * insert SetFmmandStatusRule (1, trial-use)
 
@@ -30,7 +30,7 @@ Description: "Descrizione della risorsa DiagnosticReport per la descrizione dell
 * encounter ^short = "Evento sanitario a cui si riferisce il Referto di Laboratorio (es. al momento della prescrizione)."
 
 * specimen only Reference (SpecimenRefertoLabIt)
-* specimen ^short = "Reference ai campioni su cui si basa DiagnosticReport."
+* specimen ^short = "Reference ai campioni su cui si basa la DiagnosticReport."
 * performer only Reference(PractitionerRefertoLabIt or PractitionerRoleRefertoLabIt or OrganizationRefertoLabIt or CareTeam)
   * insert ReportAuthorRule
 * performer ^short = "Persona o Organizzazione che partecipa all'evento clinico descritto."

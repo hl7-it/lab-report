@@ -1,0 +1,27 @@
+ValueSet: VsURIIdStp
+Id: URI-idStp
+Title: "Identificativi per codici STP regionali"
+Description: "Identificativi per codici STP regionali."
+* ^experimental = false
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.10.4.1.1 "Codici STP - Piemonte"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.20.4.1.1 "Codici STP - Valle d`aosta"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.30.4.1.1 "Codici STP - Lombardia"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.41.4.1.1 "Codici STP - prov. auton. bolzan"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.42.4.1.1 "Codici STP - prov. auton. trento"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.50.4.1.1 "Codici STP - Veneto"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.60.4.1.1 "Codici STP - Friuli venezia giulia"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.70.4.1.1 "Codici STP - Liguria"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.80.4.1.1 "Codici STP - Emilia romagna"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.90.4.1.1 "Codici STP - Toscana"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.100.4.1.1 "Codici STP - Umbria"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.110.4.1.1 "Codici STP - Marche"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.120.4.1.1 "Codici STP - Lazio"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.130.4.1.1 "Codici STP - Abruzzo"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.140.4.1.1 "Codici STP - Molise"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.150.4.1.1 "Codici STP - Campania"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.160.4.1.1 "Codici STP - Puglia"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.170.4.1.1 "Codici STP - Basilicata"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.180.4.1.1 "Codici STP - Calabria"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.190.4.1.1 "Codici STP - Sicilia"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.200.4.1.1 "Codici STP - Sardegna"
+

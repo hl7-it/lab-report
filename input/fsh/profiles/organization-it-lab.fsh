@@ -2,7 +2,7 @@ Profile:  OrganizationRefertoLabIt
 Parent:   Organization
 Id:       organization-it-lab
 Title:    "Organization - Lab Report"
-Description: "Profilo della risorsa Organization che per la descrizione delle informazioni nel dominio di Lab Report."
+Description: "Descrizione delle informazioni relative all'organizzazione tramite il profilo della risorsa Organization per il referto di laboratorio."
 * . ^short = "Organization Referto di Laboratorio"
 //-------------------------------------------------------------------------------------------
 * insert SetFmmandStatusRule ( 1, trial-use)
@@ -22,7 +22,7 @@ Profile:  OrganizationOperatoreSanitarioRefertoLabIt
 Parent:   OrganizationRefertoLabIt
 Id:       organizationOperatore-it-lab
 Title:    "Organization operatore sanitario/socio sanitario - Lab Report"
-Description: "Profilo della risorsa Organization che per la descrizione delle informazioni dell' operatore sanitario/socio sanitario nel dominio di Lab Report."
+Description: "Descrizione delle informazioni relative all'operatore socio/sanitario tramite il profilo della risorsa Organization per il referto di laboratorio."
 * . ^short = "Organization operatore sanitario/socio sanitario Referto di Laboratorio"
 
 * identifier  
@@ -48,7 +48,7 @@ Description: "Profilo della risorsa Organization che per la descrizione delle in
 
 * identifier[asl].value from VsMinisteroSaluteAsl (required) //$asl
 
-* identifier[aslRegione].system from VsMinisteroSaluteAsl // pattern $asl
+* identifier[aslRegione].system from VsUriIdAslRegione // pattern $asl
 * identifier[aslRegione] ^short = "Identificativo Regionale Azienda Sanitaria Locale (FLS 11 - 3 char)"
 
 
@@ -58,10 +58,10 @@ Description: "Profilo della risorsa Organization che per la descrizione delle in
 
 
 
-* identifier[aziendaOspedaliera].value from http://terminology.hl7.it/ValueSet/minsan-idAziendeOspedaliere (required)
+* identifier[aziendaOspedaliera].value from VsMinisteroSaluteIdAziendeOspedaliere (required)
 * identifier[struttura].system = "http://hl7.it/sid/hsp" (exactly) // pattern
 * identifier[struttura] ^short = "Identificativo Struttura di Ricovero"
-* identifier[struttura].value from http://terminology.hl7.it/ValueSet/minsan-idStrutture (required)
+* identifier[struttura].value from VsMinisteroSaluteIdStrutture (required)
 * identifier[strutturaInterna].system = "http://hl7.it/sid/hsp" (exactly) // pattern
 
 * identifier[strutturaInterna].value from $minsan-idStruttureInterne (required)
@@ -72,5 +72,5 @@ Description: "Profilo della risorsa Organization che per la descrizione delle in
 
 * active	 
 * type	 
-* type from http://terminology.hl7.it/ValueSet/tipoOrgSocioSanitaria (extensible)
+* type from http://hl7.it/fhir/lab-report/ValueSet/tipoOrgSocioSanitaria (extensible)
 * name	 

@@ -2,7 +2,7 @@ Profile: EncounterRefertoLabIt
 Parent: Encounter
 Id: encounter-it-lab
 Title: "Encounter - Lab Report"
-Description: "Profilo della risorsa Encounter utile a descrivere i dati dell'incontro per la richiesta specifica nel dominio di Referto di Laboratorio."
+Description: "Descrizione dei dati relativi all'incontro per la specifica richiesta tramite il profilo della risorsa Encounter per il referto di laboratorio."
 
 * insert SetFmmandStatusRule ( 1, trial-use)
 * . ^short = "Encounter Referto di Laboratorio"

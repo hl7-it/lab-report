@@ -2,7 +2,7 @@ Profile: ObservationRefertoLabIt
 Parent:  $Observation-resultslab-eu-lab //  Observation
 Id: observation-it-lab
 Title:    "Observation - Lab Report"
-Description: "Descrive come rappresentare la risorsa Observation per le rilevazioni cliniche nel dominio di Lab Report."
+Description: "Descrizione delle rilevazioni cliniche tramite il profilo della risorsa Observation per il referto di laboratorio."
 * . ^short = "Observation Referto di Laboratorio"
 * insert SetFmmandStatusRule ( 1, trial-use)
 /* * obeys ita-lab-1 */ // Non allineato con il vincolo in HL7 EU

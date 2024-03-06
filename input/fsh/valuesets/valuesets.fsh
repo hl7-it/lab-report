@@ -1,11 +1,11 @@
 ValueSet: VsMinisteroSaluteAsl
 Id: minsan-asl
-Title: "Ministero della Salute - ASL"
-Description: "Ministero della Salute - ASL"
+Title: "MDS - ASL"
+Description: "MDS - ASL"
 //-------------------------------------------------------------------------------------------
 * ^experimental = false
 * ^status = #active
-* include codes from system http://terminology.hl7.it/CodeSystem/cs-asl
+* include codes from system http://hl7.it/fhir/lab-report/CodeSystem/cs-asl
 
 
 ValueSet: VsTipoCampione

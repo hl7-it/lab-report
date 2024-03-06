@@ -4,7 +4,7 @@
 Logical: ResultLabEhn				
 Id: Risultato				
 Title: "A.5 - Risultato"				
-Description:  """A.5 Risultato dell'esame."""				
+Description:  """Risultato dell'esame."""				
 * bloccoNarrativo 0..1 BackboneElement "A.5.1 Parte Narrativa del Referto di Laboratorio" """A.5.1 Parte Narrativa del Referto di Laboratorio"""				
 * bloccoNarrativo.report 0..* Narrative "A.5.1.1 Report" """Referto completo (sintesi testuale del documento del Referto di laboratorio) così come emesso dal laboratorio."""				
 * bloccoNarrativo.note 0..* Narrative "A.5.1.2 Commenti, interpretazione e raccomandazioni" """Commenti, ad esempio un'interpretazione testuale o consigli che accompagnano il rapporto sui risultati."""		 		

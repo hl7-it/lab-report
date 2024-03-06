@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../fhir-all-xsd/codesystem.xsd">
+	<id value="it-identifier-type"/>
+	<url value="http://hl7.it/fhir/lab-report/CodeSystem/it-identifier-type"/>
+	<name value="CsItIdentifierType"/>
+	<title value="HL7 Italia - Tipi di identificatore"/>
+	<status value="active"/>
+	<experimental value="true"/>
+	<description value="Estensione (codici addizionali) alla tabella  per i tipi di identificatore"/>
+	<caseSensitive value="true"/>
+	<content value="complete"/>
+	<concept>
+		<code value="ENI"/>
+		<display value="Europeo Non Iscritto"/>		
+	</concept>
+	<concept>
+		<code value="STP"/>
+		<display value="Straniero Temporaneamente Presente"/>
+	</concept>
+	<concept>
+		<code value="CF"/>
+		<display value="Cittadino italiano o straniero residente, iscritto SSN"/>
+	</concept>
+	<concept>
+		<code value="TEAM"/>
+		<display value="Soggetti assicurati da istituzioni estere"/>
+	</concept>	
+	<concept>
+		<code value="ANA"/>
+		<display value="Codice Anagrafica Nazionale degli Assistiti"/>
+	</concept>		
+</CodeSystem>

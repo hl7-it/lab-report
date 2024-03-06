@@ -1,0 +1,1834 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="istat-unitaAmministrativeTerritorialiEstere"/>
+    <name value="CsIstatEstere"/>
+    <title value="ISTAT - Unita Amministrative Territoriali Estere"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <caseSensitive value="false"/>
+    <description value="ISTAT - Unita Amministrative Territoriali Estere"/>
+    <content value="complete"/>
+    <filter>
+        <code value="continente"/>
+        <description value="Permette di ricercare i codici secondo il continente di appartenenza"/>
+        <operator value="="/>
+        <value value="code"/>
+    </filter>
+    <property>
+        <code value="continente"/>
+        <description value="Proprietà che identifica il continente di appartenenza dell'unità amministrativa estera"/>
+        <type value="code"/>
+    </property>
+    <concept>
+        <code value="100"/>
+        <display value="Italia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="201"/>
+        <display value="Albania"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="202"/>
+        <display value="Andorra"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="203"/>
+        <display value="Austria"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="206"/>
+        <display value="Belgio"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="209"/>
+        <display value="Bulgaria"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="212"/>
+        <display value="Danimarca"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="214"/>
+        <display value="Finlandia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="215"/>
+        <display value="Francia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="216"/>
+        <display value="Germania"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="219"/>
+        <display value="Regno Unito"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="220"/>
+        <display value="Grecia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="221"/>
+        <display value="Irlanda"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="223"/>
+        <display value="Islanda"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="225"/>
+        <display value="Liechtenstein"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="226"/>
+        <display value="Lussemburgo"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="227"/>
+        <display value="Malta"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="229"/>
+        <display value="Monaco"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="231"/>
+        <display value="Norvegia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="232"/>
+        <display value="Paesi Bassi"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="233"/>
+        <display value="Polonia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="234"/>
+        <display value="Portogallo"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="235"/>
+        <display value="Romania"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="236"/>
+        <display value="San Marino"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="239"/>
+        <display value="Spagna"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="240"/>
+        <display value="Svezia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="241"/>
+        <display value="Svizzera"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="243"/>
+        <display value="Ucraina"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="244"/>
+        <display value="Ungheria"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="245"/>
+        <display value="Federazione russa"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="246"/>
+        <display value="Stato della Città del Vaticano"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="247"/>
+        <display value="Estonia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="248"/>
+        <display value="Lettonia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="249"/>
+        <display value="Lituania"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="250"/>
+        <display value="Croazia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="251"/>
+        <display value="Slovenia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="252"/>
+        <display value="Bosnia-Erzegovina"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="253"/>
+        <display value="Macedonia del Nord"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="254"/>
+        <display value="Moldova"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="255"/>
+        <display value="Slovacchia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="256"/>
+        <display value="Bielorussia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="257"/>
+        <display value="Repubblica ceca"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="270"/>
+        <display value="Montenegro"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="271"/>
+        <display value="Serbia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="272"/>
+        <display value="Kosovo"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="301"/>
+        <display value="Afghanistan"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="302"/>
+        <display value="Arabia Saudita"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="304"/>
+        <display value="Bahrein"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="305"/>
+        <display value="Bangladesh"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="306"/>
+        <display value="Bhutan"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="307"/>
+        <display value="Myanmar/Birmania"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="309"/>
+        <display value="Brunei Darussalam"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="310"/>
+        <display value="Cambogia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="311"/>
+        <display value="Sri Lanka"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="314"/>
+        <display value="Cina"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="315"/>
+        <display value="Cipro"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="319"/>
+        <display value="Corea del Nord"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="320"/>
+        <display value="Corea del Sud"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="322"/>
+        <display value="Emirati Arabi Uniti"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="323"/>
+        <display value="Filippine"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="324"/>
+        <display value="Palestina"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="326"/>
+        <display value="Giappone"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="327"/>
+        <display value="Giordania"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="330"/>
+        <display value="India"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="331"/>
+        <display value="Indonesia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="332"/>
+        <display value="Iran"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="333"/>
+        <display value="Iraq"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="334"/>
+        <display value="Israele"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="335"/>
+        <display value="Kuwait"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="336"/>
+        <display value="Laos"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="337"/>
+        <display value="Libano"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="338"/>
+        <display value="Timor Leste"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="339"/>
+        <display value="Maldive"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="340"/>
+        <display value="Malaysia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="341"/>
+        <display value="Mongolia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="342"/>
+        <display value="Nepal"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="343"/>
+        <display value="Oman"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="344"/>
+        <display value="Pakistan"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="345"/>
+        <display value="Qatar"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="346"/>
+        <display value="Singapore"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="348"/>
+        <display value="Siria"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="349"/>
+        <display value="Thailandia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="351"/>
+        <display value="Turchia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="353"/>
+        <display value="Vietnam"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="354"/>
+        <display value="Yemen"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="356"/>
+        <display value="Kazakhstan"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="357"/>
+        <display value="Uzbekistan"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="358"/>
+        <display value="Armenia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="359"/>
+        <display value="Azerbaigian"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="360"/>
+        <display value="Georgia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="361"/>
+        <display value="Kirghizistan"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="362"/>
+        <display value="Tagikistan"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="363"/>
+        <display value="Taiwan"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="364"/>
+        <display value="Turkmenistan"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="3"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="401"/>
+        <display value="Algeria"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="402"/>
+        <display value="Angola"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="404"/>
+        <display value="Costa d'Avorio"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="406"/>
+        <display value="Benin"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="408"/>
+        <display value="Botswana"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="409"/>
+        <display value="Burkina Faso"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="410"/>
+        <display value="Burundi"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="411"/>
+        <display value="Camerun"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="413"/>
+        <display value="Capo Verde"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="414"/>
+        <display value="Repubblica Centrafricana"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="415"/>
+        <display value="Ciad"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="417"/>
+        <display value="Comore"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="418"/>
+        <display value="Congo"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="419"/>
+        <display value="Egitto"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="420"/>
+        <display value="Etiopia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="421"/>
+        <display value="Gabon"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="422"/>
+        <display value="Gambia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="423"/>
+        <display value="Ghana"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="424"/>
+        <display value="Gibuti"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="425"/>
+        <display value="Guinea"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="426"/>
+        <display value="Guinea-Bissau"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="427"/>
+        <display value="Guinea equatoriale"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="428"/>
+        <display value="Kenya"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="429"/>
+        <display value="Lesotho"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="430"/>
+        <display value="Liberia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="431"/>
+        <display value="Libia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="432"/>
+        <display value="Madagascar"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="434"/>
+        <display value="Malawi"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="435"/>
+        <display value="Mali"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="436"/>
+        <display value="Marocco"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="437"/>
+        <display value="Mauritania"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="438"/>
+        <display value="Maurizio"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="440"/>
+        <display value="Mozambico"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="441"/>
+        <display value="Namibia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="442"/>
+        <display value="Niger"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="443"/>
+        <display value="Nigeria"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="446"/>
+        <display value="Ruanda"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="448"/>
+        <display value="Sao Tomé e Principe"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="449"/>
+        <display value="Seychelles"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="450"/>
+        <display value="Senegal"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="451"/>
+        <display value="Sierra Leone"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="453"/>
+        <display value="Somalia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="454"/>
+        <display value="Sudafrica"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="455"/>
+        <display value="Sudan"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="456"/>
+        <display value="Eswatini"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="457"/>
+        <display value="Tanzania"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="458"/>
+        <display value="Togo"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="460"/>
+        <display value="Tunisia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="461"/>
+        <display value="Uganda"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="463"/>
+        <display value="Repubblica Democratica del Congo"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="464"/>
+        <display value="Zambia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="465"/>
+        <display value="Zimbabwe"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="466"/>
+        <display value="Eritrea"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="467"/>
+        <display value="Sud Sudan"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="503"/>
+        <display value="Antigua e Barbuda"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="505"/>
+        <display value="Bahamas"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="506"/>
+        <display value="Barbados"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="507"/>
+        <display value="Belize"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="509"/>
+        <display value="Canada"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="513"/>
+        <display value="Costa Rica"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="514"/>
+        <display value="Cuba"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="515"/>
+        <display value="Dominica"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="516"/>
+        <display value="Repubblica Dominicana"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="517"/>
+        <display value="El Salvador"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="518"/>
+        <display value="Giamaica"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="519"/>
+        <display value="Grenada"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="523"/>
+        <display value="Guatemala"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="524"/>
+        <display value="Haiti"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="525"/>
+        <display value="Honduras"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="527"/>
+        <display value="Messico"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="529"/>
+        <display value="Nicaragua"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="530"/>
+        <display value="Panama"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="532"/>
+        <display value="Santa Lucia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="533"/>
+        <display value="Saint Vincent e Grenadine"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="534"/>
+        <display value="Saint Kitts e Nevis"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="536"/>
+        <display value="Stati Uniti d'America"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="602"/>
+        <display value="Argentina"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="604"/>
+        <display value="Bolivia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="605"/>
+        <display value="Brasile"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="606"/>
+        <display value="Cile"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="608"/>
+        <display value="Colombia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="609"/>
+        <display value="Ecuador"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="612"/>
+        <display value="Guyana"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="614"/>
+        <display value="Paraguay"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="615"/>
+        <display value="Perù"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="616"/>
+        <display value="Suriname"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="617"/>
+        <display value="Trinidad e Tobago"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="618"/>
+        <display value="Uruguay"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="619"/>
+        <display value="Venezuela"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="701"/>
+        <display value="Australia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="5"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="703"/>
+        <display value="Figi"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="5"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="708"/>
+        <display value="Kiribati"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="5"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="712"/>
+        <display value="Isole Marshall"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="5"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="713"/>
+        <display value="Stati Federati di Micronesia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="5"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="715"/>
+        <display value="Nauru"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="5"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="719"/>
+        <display value="Nuova Zelanda"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="5"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="720"/>
+        <display value="Palau"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="5"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="721"/>
+        <display value="Papua Nuova Guinea"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="5"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="725"/>
+        <display value="Isole Salomone"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="5"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="727"/>
+        <display value="Samoa"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="5"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="730"/>
+        <display value="Tonga"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="5"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="731"/>
+        <display value="Tuvalu"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="5"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="732"/>
+        <display value="Vanuatu"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="5"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="902"/>
+        <display value="Nuova Caledonia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="5"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="904"/>
+        <display value="Saint-Martin (FR)"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="905"/>
+        <display value="Sahara occidentale"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="906"/>
+        <display value="Saint-Barthélemy"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="908"/>
+        <display value="Bermuda"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="909"/>
+        <display value="Isole Cook (NZ)"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="5"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="910"/>
+        <display value="Gibilterra"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="911"/>
+        <display value="Isole Cayman"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="917"/>
+        <display value="Anguilla"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="920"/>
+        <display value="Polinesia francese"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="5"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="924"/>
+        <display value="Isole Fær Øer"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="925"/>
+        <display value="Jersey"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="926"/>
+        <display value="Aruba"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="928"/>
+        <display value="Sint Maarten (NL)"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="934"/>
+        <display value="Groenlandia"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="939"/>
+        <display value="Sark"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="940"/>
+        <display value="Guernsey"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="958"/>
+        <display value="Isole Falkland (Malvine)"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="959"/>
+        <display value="Isola di Man"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="1"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="964"/>
+        <display value="Montserrat"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="966"/>
+        <display value="Curaçao"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="972"/>
+        <display value="Isole Pitcairn"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="5"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="980"/>
+        <display value="Saint Pierre e Miquelon"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="983"/>
+        <display value="Sant'Elena"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="2"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="988"/>
+        <display value="Terre australi e antartiche francesi"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="5"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="992"/>
+        <display value="Isole Turks e Caicos"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="994"/>
+        <display value="Isole Vergini britanniche"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="4"/>
+        </property>
+    </concept>
+    <concept>
+        <code value="997"/>
+        <display value="Wallis e Futuna"/>
+        <property>
+            <code value="continente"/>
+            <valueCode value="5"/>
+        </property>
+    </concept>    
+    <concept>
+        <code value="888"/>
+        <display value="Cittadini non riconosciuti"/>
+    </concept>  
+    <concept>
+        <code value="999"/>
+        <display value="Apolide"/>
+    </concept>            
+    <concept>
+        <code value="998"/>
+        <display value="Altro/Non indicato/In corso di definizione"/>
+    </concept>                
+</CodeSystem>

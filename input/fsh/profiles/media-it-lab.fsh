@@ -2,7 +2,7 @@ Profile: MediaRefertoLabIt
 Parent: Media
 Id: media-it-lab
 Title: "Media - Lab Report"
-Description: "Descrizione della risorsa Media per la descrizione dei contenuti multimediali allegati al DiagnosticReport del Lab Report."
+Description: "Descrizione dei contenuti multimediali tramite il profilo della risorsa Media per il referto di laboratorio."
 * . ^short = "Media Referto di Laboratorio"
 * insert SetFmmandStatusRule ( 1, trial-use)
 * ^purpose = "Questa risorsa viene utilizzata per illustrare i contenuti multimediali legati al Referto di Laboratorio."
