@@ -112,3 +112,8 @@ Error from http://tx.fhir.org/r4: Unable to provide support for code system http
 Error from http://tx.fhir.org/r4: Unable to provide support for code system http://hl7.it/fhir/lab-report/CodeSystem/aifa-aic
 Error from http://tx.fhir.org/r4: Unable to provide support for code system http://hl7.it/fhir/lab-report/CodeSystem/minsan-esenzioni
 None of the codings provided are in the value set 'Risultato osservazione codificato' (http://hl7.it/fhir/lab-report/ValueSet/valueset-valuecodeableconcept-obs-it|0.2.0), and a coding is recommended to come from this value set) (codes = http://snomed.info/sct#263866000)
+
+
+The value set expansion is too large, and only a subset has been displayed
+The value set include has too many codes to validate (1.342), so each individual code has not been checked
+The value set include has too many codes to validate (1,342), so each individual code has not been checked
