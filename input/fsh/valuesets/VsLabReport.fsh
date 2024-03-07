@@ -2,7 +2,7 @@
 ValueSet: VsMicroorganismiOsservazioni
 Id: results-microorganism-snomed-ct-ips-free-set
 Title: "Risultato osservazione codificato - microorganismo IPS di SNOMED CT"
-Description: "Questo valueset include i codici per i microrganismi dal sottoinsieme SNOMED International Patient Set (IPS) di SNOMED CT."
+Description: "Valueset che include i codici per i microrganismi dal sottoinsieme SNOMED International Patient Set (IPS) di SNOMED CT."
 
 * ^status = #active
 * insert SNOMEDCopyrightForVS
@@ -1677,7 +1677,7 @@ Description: "Valueset contenente i codici SNOMED di microorganismi per la risor
 ValueSet: VsGruppoSanguigno
 Id: results-observation-bloodgroup
 Title: "Risultato osservazione codificato - Gruppo Sanguigno IPS di SNOMED CT"
-Description: "Questo valueset include i codici per i risultati dei gruppi sanguigni dal sottoinsieme SNOMED International Patient Set (IPS) di SNOMED CT."
+Description: "Valueset che include i codici per i risultati dei gruppi sanguigni dal sottoinsieme SNOMED International Patient Set (IPS) di SNOMED CT."
 
 * ^status = #active
 * insert SNOMEDCopyrightForVS
@@ -1699,7 +1699,7 @@ Description: "Questo valueset include i codici per i risultati dei gruppi sangui
 ValueSet: VsResultsPresenceAbsenceSnomedCtIpsFreeSet
 Id: results-presence-absence-snomed-ct-ips-free-set
 Title: "Risultato osservazione codificato -  presenza/assenza IPS di SNOMED CT"
-Description: "Questo valueset include i codici per i risultati di presenza o assenza dal sottoinsieme SNOMED International Patient Set (IPS) di SNOMED CT."
+Description: "Valueset che include i codici per i risultati di presenza o assenza dal sottoinsieme SNOMED International Patient Set (IPS) di SNOMED CT."
 
 * insert SNOMEDCopyrightForVS
 * $sct#441614007 "Present one plus out of three plus"

@@ -141,9 +141,10 @@ groups:
       - CodeSystem/minsan-regione
       - CodeSystem/cs-mds-idStruttureInterne
       - CodeSystem/mds-tipo-struttura
+      - CodeSystem/minsan-hsp
   LabReportVSTerminology:
     name: Terminology - Value Sets  
-    description: ValueSets   per il dominio di Lab Report. I seguenti ValueSets   successivamente saranno spostati all'interno della Guida Terminologica Italiana.
+    description: ValueSets per il dominio di Lab Report. I seguenti ValueSets successivamente saranno spostati all'interno della Guida Terminologica Italiana.
     resources:
       - ValueSet/aifa-aic
       - ValueSet/additivo-campione-it
@@ -189,7 +190,12 @@ groups:
       - ValueSet/minsan-idAziendeOspedaliere
       - ValueSet/minsan-idStruttureInterne
       - ValueSet/uri-idAslRegione
-
+      - ValueSet/uri-idEni
+  LabReportCMTerminology:
+    name: Terminology - Concept Maps  
+    description: La seguente Concept Maps successivamente sarà spostata all'interno della Guida Terminologica Italiana.
+    resources:
+    - ConceptMap/ConceptMap-statoCivile
 
  
  
