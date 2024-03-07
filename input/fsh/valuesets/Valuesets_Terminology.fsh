@@ -315,17 +315,17 @@ Description: "Identificativi regionali per ASL a 3 caratteri, come da file minis
 
 
 //=========================
-// ValueSet: UriIdEni
-// Id: uri-idEni
-// Title: "Identificativi per codici ENI regionali"
-// Description: "Identificativi per codici ENI regionali."
-// * ^experimental = false
-// * ^copyright = "Copyright (C) The Internet Society (2005)"
-// * $uri#http://hl7.it/sid/eni "Codici ENI"
-// * $uri#http://hl7.it/sid/lazio/eni "Codici ENI - Lazio"
-// * $uri#http://hl7.it/sid/piemonte/eni  "Codici ENI - Piemonte"
-// * $uri#http://hl7.it/sid/vallee/eni "Codici ENI - Valle d'Aosta"
-// * $uri#urn:oid:2.16.840.1.113883.2.9.2.50.4.1.4 "Codici ENI - Veneto"
+ValueSet: UriIdEni
+Id: uri-idEni
+Title: "Identificativi per codici ENI regionali"
+Description: "Identificativi per codici ENI regionali."
+* ^experimental = false
+* ^copyright = "Copyright (C) The Internet Society (2005)"
+* $uri#http://hl7.it/sid/eni "Codici ENI"
+* $uri#http://hl7.it/sid/lazio/eni "Codici ENI - Lazio"
+* $uri#http://hl7.it/sid/piemonte/eni  "Codici ENI - Piemonte"
+* $uri#http://hl7.it/sid/vallee/eni "Codici ENI - Valle d'Aosta"
+* $uri#urn:oid:2.16.840.1.113883.2.9.2.50.4.1.4 "Codici ENI - Veneto"
 //=========================
 
 
