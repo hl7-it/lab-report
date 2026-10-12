@@ -1,5 +1,5 @@
 Profile: SpecimenAdditiveSubstanceRefertoLabIt
-Parent: $Substance-additive-specimen-it-lab // Substance
+Parent: Substance // Substance
 Id: substance-additive-specimen-it-lab
 Title: "Substance (specimen additive) - Lab Report"
 Description: "Descrizione dell'additivo usato sul campione tramite il profilo della risorsa Substance per il referto di laboratorio."
@@ -7,3 +7,5 @@ Description: "Descrizione dell'additivo usato sul campione tramite il profilo de
 * . ^short = "Substance Referto di Laboratorio"
 * code ^short = "Sostanza additiva."
 * code from additivo-campione-it (preferred)
+
+* ingredient.substanceReference only Reference (SpecimenAdditiveSubstanceRefertoLabIt)

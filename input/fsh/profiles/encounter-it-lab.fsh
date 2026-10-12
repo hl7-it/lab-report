@@ -10,18 +10,18 @@ Description: "Descrizione dei dati relativi all'incontro per la specifica richie
 
 * subject 1..
 * subject ^short = "Soggetto dell'incontro."
-* subject only Reference(PatientRefertoLabIt)
+* subject only Reference(PatientItcore)
 
 * status ^short = "Descrizione attributo: Stato attuale dell'incontro. Possibili valori: planned | arrived | triaged | in-progress | onleave | finished | cancelled"
 * status from $encounter-status (required)
 * class ^short = "Classificazione dell'incontro con il paziente."
 * class from $encounter-class (extensible)
 * basedOn only Reference(ServiceRequestRefertoLabIt)
-* basedOn ^short = "Reference alla ServiceRequest che ha avviato l'incontro."
+* basedOn ^short = "Reference alla richiesta (ServiceRequest) che ha avviato l'incontro."
 * participant ^short = "Partecipanti coinvolti durante l'incontro."
 
 * participant.individual ^short = "Persone coinvolte nell'incontro oltre il paziente."
-* participant.individual only Reference(PractitionerRefertoLabIt or PractitionerRoleRefertoLabIt or RelatedPerson)
+* participant.individual only Reference(PractitionerItcore or PractitionerItcore or RelatedPerson)
 
 * period ^short = "L'inizio e la fine dell'incontro."
 * location ^short = "Dati relativi alle strutture in cui si svolge l'incontro."

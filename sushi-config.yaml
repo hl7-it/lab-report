@@ -22,30 +22,33 @@ jurisdiction: urn:iso:std:iso:3166#IT "Italy"
 
 dependencies:
   #hl7.fhir.it.base: current
-
+  hl7.fhir.eu.base: 2.0.0
   #hl7.fhir.it.terminology: current
 
   #hl7.fhir.eu.laboratory: current  # ONLY for the ci build
 
-  hl7.fhir.eu.laboratory: 0.1.0
+  hl7.fhir.eu.laboratory: 2.0.0
+  hl7.fhir.eu.extensions.r4: 1.3.0
+  hl7.fhir.it.core: 0.2.0
+ # hl7.fhir.uv.xver-r5.r4: 0.1.0
 
   # hl7.fhir.uv.ips: current # ONLY for the ci build
-  hl7.fhir.uv.ips: 1.1.0 
+  hl7.fhir.uv.ips: 1.1.0
   hl7.fhir.extensions.r5: 4.0.1
 parameters: #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
 #  produce-jekyll-data: true
 
   special-url:
-    - http://hl7.org/fhir/StructureDefinition/address-official
+    # - http://hl7.org/fhir/StructureDefinition/address-official
     - http://hl7.it/fhir/StructureDefinition/composition-basedOn-order-or-requisition-it
     - http://hl7.it/fhir/StructureDefinition/composition-dataenterer-it
     - http://hl7.it/fhir/StructureDefinition/dataEnterer-time
-    - http://hl7.it/fhir/StructureDefinition/patient-codeableBirthPlace
-    - http://hl7.it/fhir/StructureDefinition/patient-occupation-it
-    - http://hl7.it/fhir/StructureDefinition/patient-qualification-it
+    # - http://hl7.it/fhir/StructureDefinition/patient-codeableBirthPlace
+    # - http://hl7.it/fhir/StructureDefinition/patient-occupation-it
+    # - http://hl7.it/fhir/StructureDefinition/patient-qualification-it
     - http://hl7.it/fhir/StructureDefinition/recordCertification
-    - http://hl7.it/fhir/StructureDefinition/address-dug
-  #  - http://hl7.it/fhir/StructureDefinition/information-recipient
+    # - http://hl7.it/fhir/StructureDefinition/address-dug
+    - http://hl7.it/fhir/StructureDefinition/information-recipient
 
 pages:
   index.md:
@@ -57,15 +60,15 @@ pages:
   # methodology.md:
   #   title: Metodologia
   #scenario.md:
-  #  title: Scenario 
+  #  title: Scenario
   modelliLogici.md:
-    title: Modelli Logici  
+    title: Modelli Logici
 
 menu:
   IG Home: index.html
   Sommario: toc.html
   # Contesto: contesto.html
-    # Contesto: 
+    # Contesto:
     # Metodologia: methodology.html
   Specifiche:
     # Scenari: scenario.html
@@ -90,112 +93,116 @@ groups:
       - StructureDefinition/Risultato
       - StructureDefinition/Campione
       - StructureDefinition/Organizer
-  LabReportDOC:
-    name: Profili Risorse Documento FHIR
-    description: Profili risorse necessarie per produrre il documento FHIR Lab Report.
+  LabReportRES:
+    name: Profili Risorse
+    description: Profili risorse specifiche per il dominio di Lab Report.
     resources:
       - StructureDefinition/bundle-it-lab
       - StructureDefinition/composition-it-lab
-      - StructureDefinition/observation-doc-it-lab
       - StructureDefinition/diagnosticreport-it-lab
-      - StructureDefinition/patient-it-lab
-  LabReportRES:
-    name: Profili Risorse  
-    description: Profili risorse specifiche per il dominio di Lab Report.
-    resources:
+      #- StructureDefinition/patient-it-lab
       - StructureDefinition/observation-it-lab
+      - StructureDefinition/observation-doc-it-lab
+      - StructureDefinition/observation-grouping-it-lab
       - StructureDefinition/specimen-it-lab
-      - StructureDefinition/media-it-lab      
+      - StructureDefinition/media-it-lab
       - StructureDefinition/encounter-it-lab
       - StructureDefinition/servicerequest-it-lab
       - StructureDefinition/location-it-lab
-      - StructureDefinition/practitionerrole-it-lab
-      - StructureDefinition/practitionerrole-MMGPLS-it-lab
-      - StructureDefinition/practitioner-it-lab
-      - StructureDefinition/organization-it-lab
-      - StructureDefinition/organizationOperatore-it-lab
+       #- StructureDefinition/practitionerrole-it-lab
+       #- StructureDefinition/practitionerrole-MMGPLS-it-lab
+       #- StructureDefinition/practitioner-it-lab
+       #- StructureDefinition/organization-it-lab
+       #- StructureDefinition/organizationOperatore-it-lab
       - StructureDefinition/device-it-lab
       - StructureDefinition/substance-additive-specimen-it-lab
-      - StructureDefinition/observation-grouping-it-lab
-  LabReportCSTerminology:
-    name: Terminology - Code Systems  
-    description: Codesystems per il dominio di Lab Report. I seguenti CodeSystems successivamente saranno spostati all'interno della Guida Terminologica Italiana.
+  LabReportDataTypes:
+    name:  DataTypes
+    description: Profili datatypes necessari per produrre il documento FHIR Lab Report.
     resources:
-      - CodeSystem/aifa-aic
-      - CodeSystem/administrative-gender
+      - StructureDefinition/quantity-it-lab
+      - StructureDefinition/Range-it-lab
+      - StructureDefinition/Ratio-it-lab
+  LabReportCSTerminology:
+    name: Terminology - Code Systems
+    description: Codesystems per il dominio di Lab Report. 
+    resources:
+      #- CodeSystem/aifa-aic
+      #- CodeSystem/administrative-gender
       - CodeSystem/it-V3RoleCode
-      - CodeSystem/it-identifier-type
-      - CodeSystem/it-tipoEntita
-      - CodeSystem/v3-MaritalStatus
-      - CodeSystem/istat-ctsi03
-      - CodeSystem/istat-professioni
-      - CodeSystem/istat-comuni
-      - CodeSystem/istat-continente
-      - CodeSystem/province-istat
-      - CodeSystem/dug
-      - CodeSystem/istat-ripartizione-geografica
-      - CodeSystem/istat-statoCivile
-      - CodeSystem/istat-unitaAmministrativeTerritorialiEstere
-      - CodeSystem/istat-unitaAmministrativeTerritoriali
-      - CodeSystem/cs-asl
-      - CodeSystem/minsan-regione
-      - CodeSystem/cs-mds-idStruttureInterne
-      - CodeSystem/mds-tipo-struttura
-      - CodeSystem/minsan-hsp
+      - CodeSystem/cs-cnd
+      #- CodeSystem/it-identifier-type
+      #- CodeSystem/it-tipoEntita
+      #- CodeSystem/v3-MaritalStatus
+      #- CodeSystem/istat-ctsi03
+      #- CodeSystem/istat-professioni
+      #- CodeSystem/istat-comuni
+      #- CodeSystem/istat-continente
+      #- CodeSystem/province-istat
+      #- CodeSystem/dug
+      #- CodeSystem/istat-ripartizione-geografica
+      #- CodeSystem/istat-statoCivile
+     #- CodeSystem/istat-unitaAmministrativeTerritorialiEstere
+      #- CodeSystem/istat-unitaAmministrativeTerritoriali
+      #- CodeSystem/cs-asl
+      #- CodeSystem/minsan-regione
+      # - CodeSystem/cs-mds-idStruttureInterne
+      # - CodeSystem/mds-tipo-struttura
+      # - CodeSystem/minsan-hsp
   LabReportVSTerminology:
-    name: Terminology - Value Sets  
+    name: Terminology - Value Sets
     description: ValueSets per il dominio di Lab Report. I seguenti ValueSets successivamente saranno spostati all'interno della Guida Terminologica Italiana.
     resources:
       - ValueSet/aifa-aic
       - ValueSet/additivo-campione-it
-      - ValueSet/vs-anagrafi-regionali
+      - ValueSet/vs-cnd
+      #- ValueSet/vs-anagrafi-regionali
       - ValueSet/lab-orderCodes-it-lab
       - ValueSet/campione-container-lab-it
       - ValueSet/oid-ehicPersonalId
-      - ValueSet/iso-ehicCountryCode
-      - ValueSet/istat-cittadinanza
-      - ValueSet/istat-luogoNascita
-      - ValueSet/istat-comune
-      - ValueSet/istat-dug
-      - ValueSet/istat-professione
-      - ValueSet/istat-provincia
-      - ValueSet/istat-stato
-      - ValueSet/istat-statoCivile-vs
+      #- ValueSet/iso-ehicCountryCode
+      # ValueSet/istat-cittadinanza
+      #- ValueSet/istat-luogoNascita
+      #- ValueSet/istat-comune
+      #- ValueSet/istat-dug
+      #- ValueSet/istat-professione
+      #- ValueSet/istat-provincia
+      #- ValueSet/istat-stato
+      #- ValueSet/istat-statoCivile-vs
       - ValueSet/istat-titoloStudio
-      - ValueSet/URI-idStp
-      - ValueSet/uri-idAslRegione
+      #- ValueSet/URI-idStp
+      #- ValueSet/uri-idAslRegione
       - ValueSet/minsan-asl
-      - ValueSet/minsan-regione
-      - ValueSet/minsan-esenzioni
+      #- ValueSet/minsan-regione
+      #- ValueSet/minsan-esenzioni
       - ValueSet/valueset-status-obs-it
       - ValueSet/valueset-valuecodeableconcept-obs-it
-      - ValueSet/results-presence-absence-snomed-ct-ips-free-set
-      - ValueSet/results-observation-bloodgroup
-      - ValueSet/results-microorganism-snomed-ct-ips-free-set
+      #- ValueSet/results-presence-absence-snomed-ct-ips-free-set
+      #- ValueSet/results-observation-bloodgroup
+      #- ValueSet/results-microorganism-snomed-ct-ips-free-set
       - ValueSet/valueset-observation-value-bloodgroup
       - ValueSet/valueset-observation-value-microorganism
       - ValueSet/valueset-observation-value-presence-absence
       - ValueSet/sezione-referto-laboratorio
-      - ValueSet/statoCivile
+      #- ValueSet/statoCivile
       - ValueSet/tipo-campione
       - ValueSet/risultato-osservazione
-      - ValueSet/tipo-campione-lab-it
+      #- ValueSet/tipo-campione-lab-it
       - ValueSet/tipoCertificatore
-      - ValueSet/VstipoIdentificatore
+     # - ValueSet/VstipoIdentificatore
       - ValueSet/mmgOrPls
-      - ValueSet/tipoOrganizzazione
-      - ValueSet/tipoOrgSocioSanitaria
+      # - ValueSet/tipoOrganizzazione
+      #- ValueSet/tipoOrgSocioSanitaria
       - ValueSet/who-icd9cm
       - ValueSet/minsan-idStrutture
       - ValueSet/minsan-idAziendeOspedaliere
       - ValueSet/minsan-idStruttureInterne
       - ValueSet/uri-idAslRegione
-      - ValueSet/uri-idEni
+      #- ValueSet/uri-idEni
   LabReportCMTerminology:
-    name: Terminology - Concept Maps  
+    name: Terminology - Concept Maps
     description: La seguente Concept Maps successivamente sarà spostata all'interno della Guida Terminologica Italiana.
     resources:
-    - ConceptMap/ConceptMap-statoCivile
+    #- ConceptMap/ConceptMap-statoCivile
 
- 
- 
+

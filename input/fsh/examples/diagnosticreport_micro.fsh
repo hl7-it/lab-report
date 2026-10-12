@@ -104,7 +104,7 @@ Usage: #example
 * entry[=].resource = Composition-Lab-Esempio
 * entry[=].request.method = #POST
 * entry[=].request.url = "/Composition"
-* entry[+].fullUrl = "urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5" 
+* entry[+].fullUrl = "urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b6" 
 * entry[=].resource = Paziente-SSN
 * entry[=].request.method = #POST
 * entry[=].request.url = "/Patient"
@@ -189,7 +189,7 @@ Title: "DiagnosticReport - Esempio Laboratorio"
 * identifier.use = #official
 * identifier.value = "urn:uuid:10b545ea-725c-446d-9b95-8aeb444eddf3"
 * code.text = "Coltura e suscettibilità batterica aerobica e anaerobica"
-* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5)
+* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b6)
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
 * performer = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)
 * specimen = Reference(urn:uuid:168d4960-0a0b-43af-8025-180f0965f325)
@@ -208,7 +208,7 @@ Description: "Esempio di Observation: rilevazione della colorazione di gram su c
 // * code.text = "Gram Stain"
 * code = $loinc#26436-6
 * code.text = "Esami di laboratorio"
-* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5)
+* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b6)
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
 * performer  = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)
 * hasMember[+] = Reference(Inline-Observation-wbc) 
@@ -223,7 +223,7 @@ Usage: #inline
 * status = #final
 * category[laboratory] = $observation-category#laboratory
 * code = $loinc#72163-9 
-* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5)
+* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b6)
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
 * performer = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)
 * valueCodeableConcept = $sct#2667000 "Absent"
@@ -237,7 +237,7 @@ Usage: #inline
 * status = #final
 * category[laboratory] = $observation-category#laboratory
 * code = $loinc#664-3 
-* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5)
+* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b6)
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
 * performer = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)
 // * valueCodeableConcept = $sct#70003006 "Gram-positive cocci in clusters"
@@ -252,7 +252,7 @@ Usage: #inline
 * status = #final
 * category[laboratory] = $observation-category#laboratory
 * code.text = "Quantità osservata"
-* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5)
+* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b6)
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
 * performer = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)
 * valueCodeableConcept = $sct#441614007 "Present + out of +++"
@@ -266,7 +266,7 @@ Usage: #inline
 * status = #final
 * category[laboratory] = $observation-category#laboratory
 * code = $loinc#664-3 
-* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5)
+* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b6)
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
 * performer = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)
 * valueCodeableConcept = $sct#87172008 "Gram-negative rods"
@@ -282,7 +282,7 @@ Usage: #inline
 * category[laboratory] = $observation-category#laboratory
 
 * code.text = "Quantità osservata"
-* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5)
+* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b6)
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
 * performer = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)
 * valueCodeableConcept = $sct#441517005 "Present ++ out of +++"
@@ -300,7 +300,7 @@ Description: "Esempio di Observation: rilevazione coltura aerobica da campione d
 * code = $loinc#18718-7
  //"Coltura Aerobica"
 * code.text = "Studi di marcatori cellulari"
-* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5)
+* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b6)
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
 * performer = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)
 * hasMember[+] = Reference(urn:uuid:6b103ad8-1870-45bb-884a-86675ad404f1) // Inline-Observation-org-id1
@@ -315,7 +315,7 @@ Usage: #inline
 * category[laboratory] = $observation-category#laboratory
 
 * code = $loinc#634-6 //"Coltura aerobi Microbiologia Presenza o Identità (episodio)"
-* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5)
+* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b6)
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
 * performer = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)
 * valueCodeableConcept = $sct#3092008 "Staphylococcus aureus"
@@ -331,7 +331,7 @@ Usage: #inline
 * category[laboratory] = $observation-category#laboratory
 
 * code.text = "Crescita di microrganismi"
-* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5)
+* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b6)
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
 * performer = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)
 * valueCodeableConcept = $sct#441517005 "Present ++ out of +++"
@@ -346,7 +346,7 @@ Usage: #inline
 * category[laboratory] = $observation-category#laboratory
 
 * code = $loinc#29576-6 //"Suscettibilità batterica, panel"
-* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5)
+* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b6)
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
 * performer = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)
 * hasMember[+] = Reference(urn:uuid:652d16a5-91d9-40fb-9c5c-3950683e5d9f)
@@ -364,7 +364,7 @@ Usage: #inline
 * category[laboratory] = $observation-category#laboratory
 
 * code = $loinc#18900-1 //"Cefalotina [Suscettibilità agli antibiotici]"
-* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5)
+* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b6)
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
 * performer = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)
 * valueQuantity.value = 2
@@ -382,7 +382,7 @@ Usage: #inline
 * category[laboratory] = $observation-category#laboratory
 
 * code = $loinc#20629-2 //"Levofloxacina [Suscettibilità agli antibiotici]"
-* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5)
+* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b6)
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
 * performer = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)
 * valueQuantity.value = 4
@@ -400,7 +400,7 @@ Usage: #inline
 * category[laboratory] = $observation-category#laboratory
 
 * code = $loinc#18961-3 //"Oxacillina [Suscettibilità agli antibiotici]"
-* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5)
+* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b6)
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
 * performer = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)
 * valueQuantity.value = 0.5
@@ -417,7 +417,7 @@ Usage: #inline
 * category[laboratory] = $observation-category#laboratory
 
 * code = $loinc#19000-9 //"Vancomicina [Suscettibilità agli antibiotici]"
-* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5)
+* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b6)
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
 * performer = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)
 * valueQuantity.value = 1
@@ -435,7 +435,7 @@ Usage: #inline
 * category[laboratory] = $observation-category#laboratory
 
 * code = $loinc#634-6 //"Coltura aerobi Microbiologia Presenza o Identità (episodio)"
-* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5)
+* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b6)
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
 * performer = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)
 * valueCodeableConcept = $sct#40886007 "Klebsiella oxytoca"
@@ -451,7 +451,7 @@ Usage: #inline
 * category[laboratory] = $observation-category#laboratory
 
 * code.text = "Crescita di microrganismi"
-* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5)
+* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b6)
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
 * performer = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)
 * valueCodeableConcept = $sct#263866000 "Scanty growth"
@@ -465,7 +465,7 @@ Usage: #inline
 * category[laboratory] = $observation-category#laboratory
 
 * code = $loinc#29576-6 //"Suscettibilità batterica, panel"
-* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5)
+* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b6)
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
 * performer = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)
 * hasMember[+] = Reference(urn:uuid:4edf70e9-b332-4804-a3bf-5d1c14e9f892)
@@ -482,7 +482,7 @@ Usage: #inline
 * category[laboratory] = $observation-category#laboratory
 
 * code = $loinc#18864-9 //"Ampicillina [Suscettibilità agli antibiotici]"
-* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5)
+* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b6)
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
 * performer = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)
 * valueQuantity.value = 16
@@ -500,7 +500,7 @@ Usage: #inline
 * category[laboratory] = $observation-category#laboratory
 
 * code = $loinc#18906-8 //"Ciprofloxacina [Suscettibilità agli antibiotici]"
-* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5)
+* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b6)
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
 * performer = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)
 * valueQuantity.value = 0.5
@@ -518,7 +518,7 @@ Usage: #inline
 * category[laboratory] = $observation-category#laboratory
 
 * code = $loinc#18928-2 //"Gentamicina [Suscettibilità agli antibiotici]"
-* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5)
+* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b6)
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
 * performer = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)
 * valueQuantity.value = 8
@@ -536,7 +536,7 @@ Usage: #inline
 * category[laboratory] = $observation-category#laboratory
 
 * code = $loinc#18932-4 //"Imipenem [Suscettibilità agli antibiotici]"
-* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5)
+* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b6)
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
 * performer = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)
 * valueQuantity.value = 1
@@ -556,7 +556,7 @@ Description: "Esempio di Observation: rilevazione coltura anaerobi da campione d
 
 * code = $loinc#635-3 //"Batteri , identificato: Coltura anaerobica"
 * code.text = "Coltura Anaerobi"
-* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5)
+* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b6)
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
 * performer = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)
 * valueCodeableConcept = $sct#264868006 "No growth"

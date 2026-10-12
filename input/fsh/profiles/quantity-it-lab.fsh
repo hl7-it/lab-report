@@ -1,5 +1,5 @@
 Profile: QuantityLab
-Parent: $Quantity-eu-lab 
+Parent: Quantity
 Id: quantity-it-lab
 Title: "Quantity - Lab Report"
 Description: "Descrizione del valore ottenuto da una misurazione."
@@ -11,3 +11,6 @@ Description: "Descrizione del valore ottenuto da una misurazione."
 * code ^short = "Descrizione codificata dell'unità di misura secondo UCUM."
 * system = $ucum (exactly)
 * value ^short = "Valore della misurazione."
+* extension contains $iso21090-uncertainty named uncertainty 0..1
+* extension contains $iso21090-uncertaintyType named uncertaintyType 0..1
+

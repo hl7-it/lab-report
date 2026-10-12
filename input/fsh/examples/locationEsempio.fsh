@@ -16,7 +16,7 @@ Description: "Esempio di location: struttura ospedaliera di Roma."
 
 * alias[1] = "Ospedale universitario di Roma"
 
-* type.coding.system = "http://terminology.hl7.org/CodeSystem/v3-RoleCode"
+* type.coding.system = $V3RoleCode
 * type.coding.code = #HOSP
 * type.coding.display = "Hospital"
 
@@ -28,3 +28,6 @@ Description: "Esempio di location: struttura ospedaliera di Roma."
 * address[=].type = #physical
 * address[=].postalCode = "00144"
 * address[=].city = "ROMA"
+* address[=].state = $minsan-regione#120 "Lazio"
+* address[=].country = $istat-stati#100 "Italia"
+* address.use = #billing

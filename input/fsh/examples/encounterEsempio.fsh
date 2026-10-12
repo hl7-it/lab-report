@@ -6,10 +6,9 @@ Usage: #example
 * id = "7b06368c-7089-4f66-acc8-29e1fcbd31f6"
 * status = #finished
 
-* class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
-* class.code = #AMB
-* class.display = "ambulatory"
-* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5)
+* class = $cs-coveragetype#AMB
+
+* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b6)
 
 
 * period.start = "2023-02-25T11:45:00+01:00"
@@ -21,4 +20,4 @@ Usage: #example
 * basedOn = Reference(urn:uuid:463ae6fe-60d4-4b38-84b3-1008e0925678)
 
 * participant.individual = Reference(urn:uuid:134a0bb1-aa0a-46b9-aa1e-a5d0e379e77c)
-* participant.type = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#SPRF "Secondary performer"
+* participant.type = $cs-participationtype#SPRF "Secondary performer"

@@ -15,6 +15,6 @@ Description: "Esempio di un'osservazione: rilevazione di albumina da elettrofore
 * valueQuantity.system = $ucum
 * valueQuantity.value = 5
 
-* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5)
-* performer = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)
+* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b6)
+* performer = Reference(urn:uuid:134a0bb1-aa0a-46b9-aa1e-a5d0e379e77c)
 * derivedFrom = Reference(urn:uuid:059927b1-7e17-409e-ae60-68cc3c0b3aea)

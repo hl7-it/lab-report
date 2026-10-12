@@ -1,5 +1,5 @@
 Instance: PractitionerRoleMMG-Lab-Esempio
-InstanceOf: practitionerrole-MMGPLS-it-lab
+InstanceOf: PractitionerRoleItcore
 Usage: #example
 Description: "Esempio di un PractitionerRole: medico di medicina generale."
 
@@ -8,7 +8,7 @@ Description: "Esempio di un PractitionerRole: medico di medicina generale."
 // * identifier.system = "http://esempio_policlinico.it/codiceEmatologo"
 // * identifier.value = "12345"
 * identifier.use = #official
-* identifier.system = "http://hl7.it/sid/codiceFiscale" 
+* identifier.system = $cf 
 * identifier.value = "MDCPRV80A01H501G"
 
 
@@ -16,6 +16,4 @@ Description: "Esempio di un PractitionerRole: medico di medicina generale."
 
 * organization = Reference(urn:uuid:5fd3f1a6-b2c8-44cb-8237-0b5f0a81f2a8)
 
-* code.coding.system = "http://hl7.it/fhir/lab-report/CodeSystem/it-V3RoleCode"
-* code.coding.code = #MMG
-* code.coding.display = "medico di medicina generale"
+* code = $cs-role-it#MMG "Medico di Medicina Generale"

@@ -55,14 +55,26 @@ Questo approccio consente inoltre agli implementatori di accedere facilmente all
 <tr class="odd">
 <td>Autore</td>
 <td>Davide Spanu</td>
-<td>EY Advisory S.p.A.</td>
-<td>davide.spanu@it.ey.com</td>
+<td>N/A</td>
+<td>N/A</td>
 </tr>
 <tr class="odd">
 <td>Autore</td>
 <td>Valeria Cesaro'</td>
-<td>EY Advisory S.p.A.</td>
-<td>valeria.cesaro@it.ey.com</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr class="odd">
+<td>Autore</td>
+<td>Xhuliana Haxhi</td>
+<td>EY Advisory Spa</td>
+<td>xhuliana.haxhi@it.ey.com</td>
+</tr>
+<tr class="odd">
+<td>Autore</td>
+<td>Chiara Fulgenzio</td>
+<td>EY Advisory Spa</td>
+<td>chiara.fulgenzio@it.ey.com</td>
 </tr>
 <tr class="even">
 <td>Autore</td>

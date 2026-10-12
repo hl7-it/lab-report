@@ -11,9 +11,9 @@ Description: "Definizione dell'indirizzo inteso come indirizzo 'ufficiale' di qu
 * value[x] 1..1
 * value[x] only boolean or CodeableConcept
 
-Extension: BirthPlaceIta
-Parent: $patient-birthPlace
-Id: birth-place-ita
-Title: "Address Birth Place"
-Description: "Definizione dell'indirizzo base per la descrizione del luogo di nascita."
-* value[x] only AddressItBase
+// Extension: BirthPlaceIta
+// Parent: $patient-birthPlace
+// Id: birth-place-ita
+// Title: "Address Birth Place"
+// Description: "Definizione dell'indirizzo base per la descrizione del luogo di nascita."
+// * value[x] only AddressItBase

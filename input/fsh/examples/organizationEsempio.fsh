@@ -1,5 +1,5 @@
 Instance: Organization-Lab-Esempio
-InstanceOf: OrganizationRefertoLabIt
+InstanceOf: OrganizationItCore
 Usage: #example
 Description: "Esempio di un'organizzazione: Azienda Sanitaria Locale."
 

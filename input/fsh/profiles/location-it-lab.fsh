@@ -13,6 +13,7 @@ Description: "Descrizione delle informazioni relative alle strutture fisiche tra
 
 * type ^short = "Tipo di struttura sulla base dei servizi offerti."
 * type from $location-type (extensible)
+* address only AddressItcore 
 * address ^short = "Indirizzo fisico della struttura (luogo)."
 * managingOrganization ^short = "Organizzazione responsabile della gestione della struttura (provisioning e manutenzione)."
-* managingOrganization only Reference(OrganizationRefertoLabIt)
+* managingOrganization only Reference(OrganizationItCore)

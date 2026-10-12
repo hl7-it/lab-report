@@ -14,7 +14,7 @@ Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue a d
 * valueQuantity.value = 20
 
 * effectiveDateTime = "2022-10-25T13:35:00+01:00"
-* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5)
+* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b6)
 //* performer = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)
 * encounter = Reference(urn:uuid:7b06368c-7089-4f66-acc8-29e1fcbd31f6)
 * performer = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)
@@ -37,11 +37,11 @@ Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue dop
 * valueQuantity.system = $ucum
 * valueQuantity.value = 120
 
-* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5)
+* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b6)
 //* extension.valueReference = Reference(urn:uuid:a7d1b3b0-9aee-4bc7-b0f2-46d441ba6244)
 //* extension.url = $sequelTo
 * encounter = Reference(urn:uuid:7b06368c-7089-4f66-acc8-29e1fcbd31f6)
-* performer = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)
+* performer = Reference(urn:uuid:134a0bb1-aa0a-46b9-aa1e-a5d0e379e77c)
 
 Instance: Observation-TimedTest-T2-Lab-Esempio
 InstanceOf: ObservationRefertoLabIt
@@ -61,11 +61,11 @@ Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue dop
 * valueQuantity.system = $ucum
 * valueQuantity.value = 87
 
-* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5)
+* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b6)
 //* extension.valueReference = Reference(urn:uuid:a7d1b3b0-9aee-4bc7-b0f2-46d441ba6245)
 //* extension.url = $sequelTo
 * encounter = Reference(urn:uuid:7b06368c-7089-4f66-acc8-29e1fcbd31f6)
-* performer = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)
+* performer = Reference(urn:uuid:134a0bb1-aa0a-46b9-aa1e-a5d0e379e77c)
 
 
 Instance: Observation-TimedTest-T3-Lab-Esempio
@@ -88,11 +88,11 @@ Description: "Esempio di un'osservazione: rilevazione di insulina nel sangue dop
 * valueQuantity.system = $ucum
 * valueQuantity.value = 70
 
-* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5)
+* subject = Reference(urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b6)
 //* extension.valueReference = Reference(urn:uuid:9474efca-8c8a-436d-a1a4-5706a1dd057a)
 //* extension.url = $sequelTo
 * encounter = Reference(urn:uuid:7b06368c-7089-4f66-acc8-29e1fcbd31f6)
-* performer = Reference(urn:uuid:dc5842a1-83b6-43c7-b063-75ae989b803c)
+* performer = Reference(urn:uuid:134a0bb1-aa0a-46b9-aa1e-a5d0e379e77c)
 
 // Instance: Observation-TimedTest-T4-Lab-Esempio
 // InstanceOf: ObservationRefertoLabIt

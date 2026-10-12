@@ -71,54 +71,54 @@ Description: "Sistema di identificazione delle persone fisiche"
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-ValueSet: VsEHICCountryCodes
-Id: iso-ehicCountryCode
-Title: "ISO 3166 - EHIC Country Codes"
-Description: "Codifica geografica standardizzata"
-//-------------------------------------------------------------------------------------------
-* ^experimental = false
-* ^copyright = "ISO Maintains the copyright on the country codes, and controls it's use carefully. For further details, see the ISO 3166 Home Page"
-* $iso3166#AT "Austria"
-* $iso3166#BE "Belgium"
-* $iso3166#BG "Bulgaria"
-* $iso3166#HR "Croatia"
-* $iso3166#CY "Cyprus"
-* $iso3166#CZ "Czech Republic"
-* $iso3166#DK "Denmark"
-* $iso3166#EE "Estonia"
-* $iso3166#FI "Finland"
-* $iso3166#FR "France"
-* $iso3166#GR "Greece"
-* $iso3166#DE "Germany"
-* $iso3166#HU "Hungary"
-* $iso3166#IE "Ireland"
-* $iso3166#IT "Italy" 
-* $iso3166#LV "Latvia"
-* $iso3166#LT "Lithuania" 
-* $iso3166#LU "Luxembourg" 
-* $iso3166#MT "Malta" 
-* $iso3166#NL "Netherlands"
-* $iso3166#PL "Poland"
-* $iso3166#PT "Portugal" 
-* $iso3166#RO "Romania"
-* $iso3166#SK "Slovakia" 
-* $iso3166#SI "Slovenia"
-* $iso3166#ES "Spain" 
-* $iso3166#SE "Sweden"
-* $iso3166#IS "Iceland"
-* $iso3166#LI "Liechtenstein"
-* $iso3166#NO "Norway"
-* $iso3166#CH "Switzerland"
+// ValueSet: VsEHICCountryCodes
+// Id: iso-ehicCountryCode
+// Title: "ISO 3166 - EHIC Country Codes"
+// Description: "Codifica geografica standardizzata"
+// //-------------------------------------------------------------------------------------------
+// * ^experimental = false
+// * ^copyright = "ISO Maintains the copyright on the country codes, and controls it's use carefully. For further details, see the ISO 3166 Home Page"
+// * $iso3166#AT "Austria"
+// * $iso3166#BE "Belgium"
+// * $iso3166#BG "Bulgaria"
+// * $iso3166#HR "Croatia"
+// * $iso3166#CY "Cyprus"
+// * $iso3166#CZ "Czech Republic"
+// * $iso3166#DK "Denmark"
+// * $iso3166#EE "Estonia"
+// * $iso3166#FI "Finland"
+// * $iso3166#FR "France"
+// * $iso3166#GR "Greece"
+// * $iso3166#DE "Germany"
+// * $iso3166#HU "Hungary"
+// * $iso3166#IE "Ireland"
+// * $iso3166#IT "Italy" 
+// * $iso3166#LV "Latvia"
+// * $iso3166#LT "Lithuania" 
+// * $iso3166#LU "Luxembourg" 
+// * $iso3166#MT "Malta" 
+// * $iso3166#NL "Netherlands"
+// * $iso3166#PL "Poland"
+// * $iso3166#PT "Portugal" 
+// * $iso3166#RO "Romania"
+// * $iso3166#SK "Slovakia" 
+// * $iso3166#SI "Slovenia"
+// * $iso3166#ES "Spain" 
+// * $iso3166#SE "Sweden"
+// * $iso3166#IS "Iceland"
+// * $iso3166#LI "Liechtenstein"
+// * $iso3166#NO "Norway"
+// * $iso3166#CH "Switzerland"
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-ValueSet: VsMinsanregione
-Id: minsan-regione
-Title: "MDS - Codici Regionali"
-Description: "MDS - Codici Regionali usati nei file FLS11. La regione Trentino Alto-Adige è rappresentata dalle province autonome di cui è composta."
-//-------------------------------------------------------------------------------------------
-* ^experimental = false
-* codes from system $MinSanRegioni
+// ValueSet: VsMinsanregione
+// Id: minsan-regione
+// Title: "MDS - Codici Regionali"
+// Description: "MDS - Codici Regionali usati nei file FLS11. La regione Trentino Alto-Adige è rappresentata dalle province autonome di cui è composta."
+// //-------------------------------------------------------------------------------------------
+// * ^experimental = false
+// * codes from system $MinSanRegioni
 
 
 
@@ -129,49 +129,49 @@ Title: "Tipo certificatore"
 Description: "Tipo di Entità (organizzazione o persona) che ha certificato un certo record"
 //-------------------------------------------------------------------------------------------
 * ^experimental = false
-* $CS_tipoEntita#gov
-* $CS_tipoEntita#mef
-* $CS_tipoEntita#regione
-* $CS_tipoEntita#comune
-* $CS_tipoEntita#as
-* $CS_tipoEntita#asl
-* $CS_tipoEntita#ric-hsp
-* $CS_tipoEntita#ao
-* $CS_tipoEntita#dist-san
+* $tipoEntita#gov
+* $tipoEntita#mef
+* $tipoEntita#regione
+* $tipoEntita#comune
+* $tipoEntita#as
+* $tipoEntita#asl
+* $tipoEntita#ric-hsp
+* $tipoEntita#ao
+* $tipoEntita#dist-san
 * $V3RoleCode#subject
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-ValueSet: VsTipoOrganizzazione
-Id: tipoOrganizzazione
-Title: "Tipo organizzazione (esempio)"
-Description: "Tipo di organizzazione: value set di esempio"
-//-------------------------------------------------------------------------------------------
-* ^experimental = false
-* codes from system $CS_tipoEntita
+// ValueSet: VsTipoOrganizzazione
+// Id: tipoOrganizzazione
+// Title: "Tipo organizzazione (esempio)"
+// Description: "Tipo di organizzazione: value set di esempio"
+// //-------------------------------------------------------------------------------------------
+// * ^experimental = false
+// * codes from system $tipoEntita
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-ValueSet: VsTipoOrgSocioSanitaria
-Id: tipoOrgSocioSanitaria
-Title: "Tipo organizzazione socio-sanitaria"
-Description: "Tipo di organizzazione socio-sanitaria"
-//-------------------------------------------------------------------------------------------
-* ^experimental = false
-* $CS_tipoEntita#as
-* $CS_tipoEntita#asl
-* $CS_tipoEntita#ric-hsp
-* $CS_tipoEntita#ao
-* $CS_tipoEntita#aou
-* $CS_tipoEntita#irccs
-* $CS_tipoEntita#irccs-pub
-* $CS_tipoEntita#irccs-priv
-* $CS_tipoEntita#irccs-fond
-* $CS_tipoEntita#ente-ric-hsp
-* $CS_tipoEntita#osp-dir
-* $CS_tipoEntita#pol-univ
-* $CS_tipoEntita#cc-priv
-* $CS_tipoEntita#cc-priv-a
-* $CS_tipoEntita#cc-priv-na
-* $CS_tipoEntita#dist-san
+// ValueSet: VsTipoOrgSocioSanitaria
+// Id: tipoOrgSocioSanitaria
+// Title: "Tipo organizzazione socio-sanitaria"
+// Description: "Tipo di organizzazione socio-sanitaria"
+// //-------------------------------------------------------------------------------------------
+// * ^experimental = false
+// * $tipoEntita#as
+// * $tipoEntita#asl
+// * $tipoEntita#ric-hsp
+// * $tipoEntita#ao
+// * $tipoEntita#aou
+// * $tipoEntita#irccs
+// * $tipoEntita#irccs-pub
+// * $tipoEntita#irccs-priv
+// * $tipoEntita#irccs-fond
+// * $tipoEntita#ente-ric-hsp
+// * $tipoEntita#osp-dir
+// * $tipoEntita#pol-univ
+// * $tipoEntita#cc-priv
+// * $tipoEntita#cc-priv-a
+// * $tipoEntita#cc-priv-na
+// * $tipoEntita#dist-san
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: VsMmgPlsRoles
@@ -236,27 +236,26 @@ Title: "ISTAT - Titolo Studio"
 Description: "ISTAT - Titolo Studio"
 * ^experimental = false
 
-//-------------------------------------------------------------------------------------------
-* codes from system $CS_TitoloStudioIstat
+* codes from system $cs-titoloStudio
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-ValueSet: VsIstatProfessionePaziente
-Id: istat-professione
-Title: "ISTAT - Professioni"
-Description: "ISTAT - Professioni"
-* ^experimental = false
+// ValueSet: VsIstatProfessionePaziente
+// Id: istat-professione
+// Title: "ISTAT - Professioni"
+// Description: "ISTAT - Professioni"
+// * ^experimental = false
 
-//-------------------------------------------------------------------------------------------
-* codes from system $CS_ProfessioniIstat
+// //-------------------------------------------------------------------------------------------
+// * codes from system $CS_ProfessioniIstat
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-ValueSet: VsIstatDug
-Id: istat-dug
-Title: "ISTAT - DUG"
-Description: "ISTAT - Registro delle Denominazioni Urbanistiche Generiche (DUG)"
-* ^experimental = false
-* codes from system http://hl7.it/fhir/lab-report/CodeSystem/dug //http://registry.geodati.gov.it/dug
+// ValueSet: VsIstatDug
+// Id: istat-dug
+// Title: "ISTAT - DUG"
+// Description: "ISTAT - Registro delle Denominazioni Urbanistiche Generiche (DUG)"
+// * ^experimental = false
+// * codes from system http://hl7.it/fhir/lab-report/CodeSystem/dug //http://registry.geodati.gov.it/dug
 
 //=========================
 ValueSet: VsUriIdAslRegione
@@ -315,17 +314,17 @@ Description: "Identificativi regionali per ASL a 3 caratteri, come da file minis
 
 
 //=========================
-ValueSet: UriIdEni
-Id: uri-idEni
-Title: "Identificativi per codici ENI regionali"
-Description: "Identificativi per codici ENI regionali."
-* ^experimental = false
-* ^copyright = "Copyright (C) The Internet Society (2005)"
-* $uri#http://hl7.it/sid/eni "Codici ENI"
-* $uri#http://hl7.it/sid/lazio/eni "Codici ENI - Lazio"
-* $uri#http://hl7.it/sid/piemonte/eni  "Codici ENI - Piemonte"
-* $uri#http://hl7.it/sid/vallee/eni "Codici ENI - Valle d'Aosta"
-* $uri#urn:oid:2.16.840.1.113883.2.9.2.50.4.1.4 "Codici ENI - Veneto"
+// ValueSet: UriIdEni
+// Id: uri-idEni
+// Title: "Identificativi per codici ENI regionali"
+// Description: "Identificativi per codici ENI regionali."
+// * ^experimental = false
+// * ^copyright = "Copyright (C) The Internet Society (2005)"
+// * $uri#http://hl7.it/sid/eni "Codici ENI"
+// * $uri#http://hl7.it/sid/lazio/eni "Codici ENI - Lazio"
+// * $uri#http://hl7.it/sid/piemonte/eni  "Codici ENI - Piemonte"
+// * $uri#http://hl7.it/sid/vallee/eni "Codici ENI - Valle d'Aosta"
+// * $uri#urn:oid:2.16.840.1.113883.2.9.2.50.4.1.4 "Codici ENI - Veneto"
 //=========================
 
 
@@ -426,14 +425,14 @@ Description: "MDS - Aziende Ospedaliere (HSP11)"
 // * $UriHsp#160910 "AO UNIV. 'OO RR FOGGIA'"
 
 
-ValueSet: VsIstatStatoCivile
-Id: istat-statoCivile-vs
-Title: "ISTAT - Stato Civile"
-Description: "ISTAT - Stato Civile"
-//-------------------------------------------------------------------------------------------
-* ^experimental = false
-* ^status = #active
-* include codes from  system $statoCivile
+// ValueSet: VsIstatStatoCivile
+// Id: istat-statoCivile-vs
+// Title: "ISTAT - Stato Civile"
+// Description: "ISTAT - Stato Civile"
+// //-------------------------------------------------------------------------------------------
+// * ^experimental = false
+// * ^status = #active
+// * include codes from  system $statoCivile
 
 
 //----------------------------------------
